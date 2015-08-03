@@ -144,9 +144,9 @@ export class MockDataProvider {
     };
         
     // **@returns** a host object with the host name for the specific
-    public getMockHost(node_name) {
+    public getMockHost(nodeName) {
         var tempHost: any = _.find(this.mockHosts, (host: any) => {
-            return host.node_name === node_name;
+            return host.nodeName === nodeName;
         });
         return tempHost === undefined ? this.byDefaultHost : tempHost;
     };

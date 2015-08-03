@@ -106,16 +106,16 @@ export class ClustersController {
      * Here we change the current path to '/clusters/expand/' where details about a particular
      * cluster can be seen. 
     */
-    public expandCluster(clusterId: any): void {
-        this.locationSvc.path('/clusters/expand/' + clusterId);
+    public expandCluster(clusterID: any): void {
+        this.locationSvc.path('/clusters/expand/' + clusterID);
     }
     
     /**
      * This function helps in cleaning up or deleting the cluster with the help
-     * of clusterId.
+     * of clusterID.
     */
-    public removeCluster(clusterId: any): void {
-        this.clusterSvc.remove(clusterId).then((result) => {
+    public removeCluster(clusterID: any): void {
+        this.clusterSvc.remove(clusterID).then((result) => {
             this.reloadData();
         });
     }
@@ -128,14 +128,14 @@ export class ClustersController {
         _.each(this.clusterList, (cluster) => {
             var mockCluster: any = this.mockDataProviderHelper.getMockCluster(cluster.clusterName);
             var tempCluster: any = {
-                clusterId: cluster.clusterId,
+                clusterID: cluster.clusterID,
                 clusterName: cluster.clusterName,
                 clusterType: cluster.clusterType,
                 storageType: cluster.storageType,
                 clusterStatus: cluster.clusterStatus,
                 used: cluster.used,
-                areaSplineCols: [{ id: 1, name: 'Used', color: '#39a5dc', type: 'area-spline' }],
-                areaSplineValues: mockCluster.areaSpline_values,
+                areaSplineCols: [{ ID: 1, name: 'Used', color: '#39a5dc', type: 'area-spline' }],
+                areaSplineValues: mockCluster.areaSplineValues,
                 gaugeValues: _.random(20, 70) / 10,
                 alerts: mockCluster.alerts,
                 noOfVolumeOrPools: 0
@@ -147,11 +147,11 @@ export class ClustersController {
             }
 
             if (this.getClusterTypeTitle(cluster.clusterType) === 'Gluster') {
-                this.volumeService.getListByCluster(cluster.clusterId).then((volumes) => {
+                this.volumeService.getListByCluster(cluster.clusterID).then((volumes) => {
                     tempCluster.noOfVolumeOrPools = volumes.length;
                 });
             } else {
-                this.poolService.getListByCluster(cluster.clusterId).then(function(pools) {
+                this.poolService.getListByCluster(cluster.clusterID).then(function(pools) {
                     tempCluster.noOfVolumeOrPools = pools.length;
                 });
             }
@@ -163,8 +163,8 @@ export class ClustersController {
             
             //Here we create a list of promises.
             _.each(tempClusters, (cluster) => {
-                hosts.push(this.serverService.getListByCluster(cluster.clusterId));
-                sizes.push(this.clusterSvc.getCapacity(cluster.clusterId));
+                hosts.push(this.serverService.getListByCluster(cluster.clusterID));
+                sizes.push(this.clusterSvc.getCapacity(cluster.clusterID));
             });
             
             //The promises that are stored in the list are taken out one by one and processed here. 

@@ -13,7 +13,7 @@ export class ClusterService {
     getList() {
         return this.rest.all('clusters').getList().then(function(clusters) {
             clusters = _.sortBy(clusters, function(cluster){
-                return cluster.cluster_name;
+                return cluster.clusterName;
             });
             return clusters;
         });

@@ -22,54 +22,54 @@ export class ClusterHelper     {
         
         //Different types of Storages.    
         ClusterHelper.storgeTypes = [
-            { id:1, type:'Block' },
-            { id:2, type:'File' },
-            { id:3, type:'Object' }
+            { ID:1, type:'Block' },
+            { ID:2, type:'File' },
+            { ID:3, type:'Object' }
         ];
         
         //Different types of clusters.
         ClusterHelper.clusterTypes = [
-            {    id : 1, 
+            {    ID : 1, 
                 type : 'Gluster', 
                 deploymentType :[
-                    { id:1, type:'Demo (2 nodes)', nodeCount:2 },
-                    { id:2, type:'Minimum (3 nodes)', nodeCount:3 },
-                    { id:3, type:'Basic (more than 3 nodes)', nodeCount:3 },
-                    { id:4, type:'Standard (6 nodes)', nodeCount:6 },
-                    { id:5, type:'Big (more than 6 nodes)',nodeCount:6}
+                    { ID:1, type:'Demo (2 nodes)', nodeCount:2 },
+                    { ID:2, type:'Minimum (3 nodes)', nodeCount:3 },
+                    { ID:3, type:'Basic (more than 3 nodes)', nodeCount:3 },
+                    { ID:4, type:'Standard (6 nodes)', nodeCount:6 },
+                    { ID:5, type:'Big (more than 6 nodes)',nodeCount:6}
                 ],
                 workLoads : [
-                    { id:0, type: 'Generic' },
-                    { id:1, type: 'Hadoop' },
-                    { id:2, type: 'Virtualization' },
-                    { id:3, type: 'OpenStack (Glance)' }
+                    { ID:0, type: 'Generic' },
+                    { ID:1, type: 'Hadoop' },
+                    { ID:2, type: 'Virtualization' },
+                    { ID:3, type: 'OpenStack (Glance)' }
                 ]
             },
             {
-                id :2,
+                ID :2,
                 type : 'Ceph', 
                 deploymentType :[
-                    { id:1, type:'Demo (2 nodes)', nodeCount:2 },
-                    { id:2, type:'Minimum (3 nodes)', nodeCount:3 },
-                    { id:3, type:'Basic (more than 3 nodes)', nodeCount:3 },
-                    { id:4, type:'Standard (10 nodes)', nodeCount:10 },
-                    { id:5, type:'Big (more than 10 nodes)',nodeCount:10}
+                    { ID:1, type:'Demo (2 nodes)', nodeCount:2 },
+                    { ID:2, type:'Minimum (3 nodes)', nodeCount:3 },
+                    { ID:3, type:'Basic (more than 3 nodes)', nodeCount:3 },
+                    { ID:4, type:'Standard (10 nodes)', nodeCount:10 },
+                    { ID:5, type:'Big (more than 10 nodes)',nodeCount:10}
                 ],
                 workLoads : [
-                    { id:0, type: 'Generic' },
-                    { id:1, type: 'OpenStack (with Swift)' },
-                    { id:2, type: 'OpenStack (without Swift)' }
+                    { ID:0, type: 'Generic' },
+                    { ID:1, type: 'OpenStack (with Swift)' },
+                    { ID:2, type: 'OpenStack (without Swift)' }
                 ]
             }
         ];
         
         //This property indicates the states that a cluster can have.
         ClusterHelper.clusterStates = [
-            { id:1, state:'Inactive'},
-            { id:2, state:'Not Available'},
-            { id:3, state:'Active'},
-            { id:4, state:'Creating'},
-            { id:5, state:'Failed'}
+            { ID:1, state:'Inactive'},
+            { ID:2, state:'Not Available'},
+            { ID:3, state:'Active'},
+            { ID:4, state:'Creating'},
+            { ID:5, state:'Failed'}
         ];
     }
 
@@ -79,7 +79,7 @@ export class ClusterHelper     {
     
     public static getClusterType(id : number) : Cluster{
         return _.find(ClusterHelper.clusterTypes, function(type) {
-            return type.id === id;
+            return type.ID === id;
         });    
     }
     
@@ -89,13 +89,13 @@ export class ClusterHelper     {
     
     public static getStorageType(id : number) : KeyValue    {
         return _.find(ClusterHelper.storgeTypes, function(type) {
-            return type.id === id;
+            return type.ID === id;
         });
     }
     
     public static getClusterStatus(id : number)  : ClusterState{
         return _.find(ClusterHelper.clusterStates, function(type) {
-            return type.id === id;
+            return type.ID === id;
         });
     }
     
@@ -176,7 +176,7 @@ export class ClusterHelper     {
              "port": 22,
              "fingerprint": newHost.fingerprint,
              "username": newHost.username,
-             "ssh_password": newHost.password
+             "sshPassword": newHost.password
          };
         
         //This called on success[promise].
