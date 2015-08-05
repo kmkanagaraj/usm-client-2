@@ -1,4 +1,6 @@
 # USM Client
+
+[![Join the chat at https://gitter.im/kmkanagaraj/usm-client-2](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kmkanagaraj/usm-client-2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 USM Client is a user interface for Unified Storage Manager
 
 This uses following frameworks and tools
