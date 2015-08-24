@@ -3,11 +3,11 @@ declare function require(name: string);
 
 import {default as RequestsModule} from "./components/requests/module";
 import {default as RestModule} from "./components/rest/rest-module";
-import {default as HostModule} from "./components/hosts/host-module";
 
 import {RouteConfig} from "./components/router/route-config";
 import {MenuService} from "./components/base/menu-svc";
 
+import {LoginController} from "./components/login/login";
 import {ApplicationController} from "./components/base/application-controller";
 import {MenuController} from "./components/base/menu-controller";
 import {FirstController} from "./components/first/first-controller";
@@ -46,9 +46,9 @@ class USMApp {
 			'gridshore.c3js.chart',
             'restangular',
             RequestsModule,
-            RestModule,
-            HostModule
+            RestModule
         ])
+            .controller('LoginController', LoginController)
             .controller('ApplicationController', ApplicationController)
             .controller('MenuController', MenuController)
             .controller('FirstController', FirstController)
