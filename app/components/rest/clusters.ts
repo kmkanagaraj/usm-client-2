@@ -8,10 +8,10 @@ export class ClusterService {
     private clusterModel: any;
     rest: restangular.IService;
     restFull: restangular.IService;
-    static $inject: Array<string> = ['Restangular', '$location', '$q', 'ServerService'];
+    static $inject: Array<string> = ['Restangular', '$q', '$location', 'ServerService'];
     constructor(rest: restangular.ICollection,
-        private $location: ng.ILocationService,
         private $q: ng.IQService,
+        private $location: ng.ILocationService,
         private serverSvc: ServerService) {
         this.rest = rest.withConfig((RestangularConfigurer) => {
             RestangularConfigurer.setBaseUrl('/api/v1/');
@@ -37,12 +37,14 @@ export class ClusterService {
     // **@returns** a promise with the cluster capacity for the specific
     // cluster based on it's id.
     getCapacity(id) {
+        var q = this.$q;
+        var tempServerSvc = this.serverSvc;
         return this.serverSvc.getListByCluster(id).then(function(servers) {
             var requests = [];
             _.each(servers, function(server) {
-                requests.push(this.serverSvc.getDiskStorageDevices(server.node_id));
+                requests.push(tempServerSvc.getDiskStorageDevices(server.node_id));
             });
-            return this.$q.all(requests).then(function(devicesList) {
+            return q.all(requests).then(function(devicesList) {
                 var capacity = 0;
                 _.each(devicesList, function(devices: Array<any>) {
                     var size = _.reduce(devices, function(size, device) {

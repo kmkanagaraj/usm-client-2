@@ -16,6 +16,7 @@ import {PoolNewController} from "./components/pools/pool-new";
 import {HostController} from "./components/hosts/host";
 import {VolumeController} from "./components/volumes/volume-controller";
 import {HostDetailController} from "./components/hosts/host-detail";
+import {DashboardController} from "./components/dashboard/dashboard-controller";
 
 var angular: ng.IAngularStatic = require("angular");
 var ngRoute = require("angular-route");
@@ -57,7 +58,8 @@ class USMApp {
             .controller('PoolNewController', PoolNewController)
             .controller('HostController', HostController)
             .controller('HostDetailController', HostDetailController)
-            .controller('VolumeController', VolumeController)
+            .controller('VolumeController', VolumeController) 
+            .controller('DashboardController', DashboardController)
             .service('MenuService', MenuService)
             .config(RouteConfig);
         angular.element(document).ready(function() {
