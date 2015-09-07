@@ -128,12 +128,7 @@
               </div>
             </div>
             <div class="col-md-9">
-              <c3chart bindto-id="cluster-donut" chart-columns="dash.totalCapacity.legends" chart-data="dash.totalCapacity.values">
-                <chart-donut title="Usage" width="50"></chart-donut>
-                <chart-legend show-legend="true" legend-position="right"> </chart-legend>
-                <chart-events on-click-data="dash.selectClusterCapacityLegend(data)"> </chart-events>
-                <chart-size chart-height="300"></chart-size>
-              </c3chart>
+              <div pf-donut-pct-chart config="dash.chartConfig" data="dash.chartData"></div>
             </div>
           </div>
           <div class="row">

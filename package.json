@@ -40,6 +40,7 @@
   "browser": {
     "restangular": "./app/bower_components/restangular/dist/restangular.js",
     "c3-angular": "./app/bower_components/c3-angular/c3-angular.min.js",
+    "angular-patternfly": "./app/bower_components/angular-patternfly/dist/angular-patternfly.js",
     "angular-strap": "./node_modules/angular-strap/dist/angular-strap.js",
     "angular-strap-tpl": "./node_modules/angular-strap/dist/angular-strap.tpl.js",
     "angular-growl": "./node_modules/angular-growl-v2/build/angular-growl.js",
@@ -58,6 +59,13 @@
       ]
     },
     "c3-angular": {
+      "depends": [
+        "angular",
+        "d3",
+        "c3: c3"
+      ]
+    },
+    "angular-patternfly": {
       "depends": [
         "angular",
         "d3",

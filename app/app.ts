@@ -34,6 +34,7 @@ var idbWrapper = require("idb-wrapper");
 var c3 = require("c3");
 var d3 = require("d3");
 var c3Angular = require("c3-angular");
+var angularPatternfly = require("angular-patternfly");
 
 class USMApp {
     initialize() {
@@ -47,6 +48,7 @@ class USMApp {
             'mgcrea.ngStrap',
             'gridshore.c3js.chart',
             'restangular',
+            'patternfly.charts' ,
             RequestsModule,
             RestModule,
             HostModule

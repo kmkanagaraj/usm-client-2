@@ -28,20 +28,30 @@ export class DashboardController {
     private storageTiers: Array<any>;
     private totalCapacity: any;
     private trendCapacity: any;
+    private chartConfig: any;
+    private chartData: any;
 
     static $inject: Array<string> = [
         '$scope',
         '$location',
         '$log',
+        '$interval',
         'ClusterService',
         'ServerService',
         'VolumeService',
         'PoolService',
     ];
 
+    //This line refresh the content every 15 second.
+    private timer;
+    
+    //This variable helps in load the chart once we have real data.
+    private isChartLoaded = false;
+
     constructor(private $scope: ng.IScope,
         private $location: ng.ILocationService,
         private $log: ng.ILogService,
+        private intervalSvc: ng.IIntervalService,
         private clusterService: ClusterService,
         private serverService: ServerService,
         private volumeService: VolumeService,
@@ -74,11 +84,7 @@ export class DashboardController {
             { id:2, name: 'Faster', color: '#0088ce', type: 'donut' },
             { id:3, name: 'Slower', color: '#00659c', type: 'donut' },
             { id:9, name: 'Free', color: '#969696', type: 'donut' } ];
-         this.totalCapacity = {
-                freeGB: 0, usedGB: 0, totalGB: 0,
-                freeFormatted: '0 B', usedFormatted: '0 B', totalFormatted: '0 B'
-            };
-
+         this.totalCapacity = {};
          this.totalCapacity.legends = this.clusterTypes;
          this.totalCapacity.values = [];
          this.totalCapacity.byType = [];
@@ -96,6 +102,42 @@ export class DashboardController {
          this.clusterService.getList().then((clusters) => this.updateClusterData(clusters));
          this.volumeService.getList().then((volumes) => this.updateVolumeData(volumes));
          this.poolService.getList().then((pools) => this.updatePoolData(pools));
+         this.timer = this.intervalSvc(() => this.loadChart(), 100);
+         this.chartData = {
+           'used': 0,
+           'total': 0,
+         };
+         this.chartConfig = {
+             'chartId': 'donutChart',
+             'units': 'TB',
+             "legend":{"show":true},
+             'tooltipFn': function (d) {
+               return '<span class="donut-tooltip-pf"style="white-space: nowrap;">' +
+                        d[0].value + ' ' + d[0].name +
+                      '</span>';
+               }
+         };
+    }
+
+    /**
+     * This function helps in generate the main chart.
+    */
+    public loadChart() {
+        if (this.isChartLoaded) {
+            this.chartData.used = this.totalCapacity.usedGB;
+            this.chartData.total = this.totalCapacity.usedGB + this.totalCapacity.freeGB;
+            var usedData = this.totalCapacity.usedFormatted;
+            var totalData = this.totalCapacity.totalFormatted;
+            var usedPercentage = (this.chartData.used * (100/this.chartData.total) ) + "%";
+            this.chartConfig.centerLabelFn = function () {
+               return '<tspan dy="0" x="0" class="donut-title-big-pf">' + usedPercentage + '</tspan>' +
+                        '<tspan dy="20" x="0" class="donut-title-small-pf">'+ usedData +' Used of</tspan>'+
+                        '<tspan dy="20" x="0" class="donut-title-small-pf">'+ totalData +' Total</tspan>';
+            }
+            this.isChartLoaded = false;
+        }else {
+           return;
+        }
     }
 
     //This is to fix the 'this' problem with callbacks
@@ -123,6 +165,7 @@ export class DashboardController {
                     cluster.capacity.usedGB = cluster.used,
                     cluster.capacity.freeGB = cluster.capacity.totalGB - cluster.capacity.usedGB;
                     this.calculateTotalCapacity();
+                    this.isChartLoaded = true;
                 });
 
                 var iops = _.random(30000,60000);
