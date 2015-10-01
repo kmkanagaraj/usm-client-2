@@ -1,9 +1,12 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 before_install:
-  - npm install -g gulp bower tsd
-  - bower install
-  - tsd install
+- npm install -g gulp bower tsd
+- bower install
+- tsd install
 script:
-  - gulp compile 
+- gulp compile
+env:
+  global:
+    secure: Zm1onQRcApgbdW2Q+IbytAsj9CJ5lr5D8szYkDIzn9nsUTLpQnZ8J3Uw/1tCGzpAjjmknpvsmMiceUVx40y7sw99QK1uR0b5ABvqQtLLBDY9nDlcnotU2sjUIY3LHzgRDgRV8TEQCpjP6l0X8pWNVSxNKfjjflW5vBKWPZ4IFZQplZEaIBNVSqvCBteH0yF6vM4/iSpw81lCmGkYNxI3aJYmQJ8C+fLRw4iwj7RrL1Y9FyNFq+mY+34ITvbm2LvJxnGGpIb+TlDdExlqk7AsbPSIa2vCMARXGn5tm1sdNTyI4BAnC55IKJlu/HMxnFMpeUbPbky/PUfKUS4t6a/oL5YDhp5N1eR9CPa4PaHtuUZbT4zmmwN5QL1zurtNkdBhVS2RGb7vR8qrj52uemV/2oig8dVpTlAiqA9GpLcJdDUmWux3xDzM3IOWLp32iwss5jVgQP0mYVu2pzXphzDLaXRaVNfcWmfo/Q3b1EG0q4yqujiT1/DNjzYsBte7xbCht/wQt1sXOWA2DXEXlmT9svlcqZJNNVheZt7JgTpatdvWXdetEjyf1ewQvo3qe69rgJiG85ROdw7HMoFnFAolDXlcq2CX0wKBlc/3KTWyce32pz2BqixXX7bc4PG2AkHI26MMijkb+9cepzQdMljFRsjdIMQIt/109zpWRdafmKc=
