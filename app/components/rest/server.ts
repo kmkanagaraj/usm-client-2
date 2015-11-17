@@ -15,6 +15,14 @@ export class ServerService {
         });
     }
 
+    // **getEvents**
+    // **@returns** a promise with all events.
+    getEvents() {
+        return this.rest.all('events').getList().then(function(events) {
+            return events;
+        });
+    }
+
     // **getList**
     // **@returns** a promise with all servers.
     getList() {
@@ -24,10 +32,10 @@ export class ServerService {
     }
 
     // **getListByCluster**
-    // **@returns** a promise with all nodes part of the cluster.
+    // **@returns** a promise with all servers.
     getListByCluster(clusterId) {
-        return this.rest.one('clusters', clusterId).all('nodes').getList().then(function(nodes) {
-            return nodes;
+        return this.rest.one('clusters', clusterId).all('hosts').getList().then(function(servers) {
+            return servers;
         });
     }
 

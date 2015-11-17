@@ -11,7 +11,7 @@ import {RequestService} from '../rest/request';
 
 export class RequestsController {
    private tasks;
-   private alerts : Array<any>;
+   private events : Array<any>;
    private discoveredHosts : Array<any>;
    private discoveredHostsLength: number;
     static $inject: Array<string> = [
@@ -34,22 +34,24 @@ export class RequestsController {
         private requestSvc: RequestService,
         private requestTrackingService: RequestTrackingService,
         private userSvc: UserService) {
-        this.alerts = [];
+        this.events = [];
         this.tasks = {};
         this.discoveredHostsLength = 0;
         this.discoveredHosts = [];
+        this.$interval(() => this.reloadEvents(), 5000);
         this.$interval(() => this.reloadDiscoveredHosts(), 5000);
     }
 
-    public reloadAlerts() {
-        this.serverSvc.getList().then((hosts) => {
-            var alerts = [];
-            _.each(hosts, (host: any) => {
-                if (host.node_status === 1) {
-                    alerts.push('Host ' + host.node_name + ' is down');
-                }
+    public reloadEvents() {
+        this.serverSvc.getEvents().then((events) => {
+            this.events = [];
+            _.each(events, (event: any) => {
+                var tempEvent = {
+                    message: event.message,
+                    nodeName: event.tag.split("/")[2]
+                };
+                this.events.push(tempEvent);
             });
-            this.alerts = alerts;
         });
     }
 
@@ -105,18 +107,22 @@ export class RequestsController {
         this.utilSvc.acceptHost(host.hostname, saltfingerprint).then((result) => {
             this.$log.info(result);
             host.state = "ACCEPTING";
-            host.taskid = result.data.taskid;
-            var self = this;
-            var callback = function() {
-                self.requestSvc.get(host.taskid).then((task) => {
-                    if (task.completed) {
-                        self.$log.info('Accepted host in first controller ' + host.hostname);
+            host.task = result;
+            var callback = () => {
+                this.requestSvc.get(result).then((request) => {
+                    if (request.status === 'FAILED' || request.status === 'FAILURE') {
+                        this.$log.info('Failed to accept host in requests controller' + host.hostname);
+                        host.state = "FAILED";
+                        host.task = undefined;
+                    }
+                    else if (request.status === 'SUCCESS') {
+                        this.$log.info('Accepted host in requests controller ' + host.hostname);
                         host.state = "ACCEPTED";
                         host.task = undefined;
                     }
                     else {
-                        self.$log.info('Accepting host in first controller ' + host.hostname);
-                        self.$timeout(callback, 5000);
+                        this.$log.info('Accepting host in requests controller' + host.hostname);
+                        this.$timeout(callback, 5000);
                     }
                 });
             }
@@ -136,3 +142,4 @@ export class RequestsController {
         });
     }
 }
+    
