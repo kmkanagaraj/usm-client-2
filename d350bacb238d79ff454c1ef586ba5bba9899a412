@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "5ac4a560_c3bac26d",
+        "filename": "Makefile",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-07T17:47:06Z",
+      "side": 1,
+      "message": "sudo is required only when using \u0027-g\u0027 option.",
+      "revId": "d350bacb238d79ff454c1ef586ba5bba9899a412",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ac4a560_46c4005f",
         "filename": "kitoon.spec",
         "patchSetId": 3
@@ -13,6 +30,24 @@
       "writtenOn": "2015-12-07T12:56:40Z",
       "side": 1,
       "message": "Is kitoon license MIT and not apache 2??",
+      "revId": "d350bacb238d79ff454c1ef586ba5bba9899a412",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_51ee7cb5",
+        "filename": "kitoon.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-07T17:47:06Z",
+      "side": 1,
+      "message": "Its Apache V2 - https://github.com/skyrings/kitoon/blob/master/LICENSE",
+      "parentUuid": "5ac4a560_46c4005f",
       "revId": "d350bacb238d79ff454c1ef586ba5bba9899a412",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
