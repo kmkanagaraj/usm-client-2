@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac4a560_20fd2c3b",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-07T07:14:56Z",
+      "side": 1,
+      "message": "Remove the commented line",
+      "revId": "2dbc54b109306bf2bce808ed043eaa4bf93772b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_40f86849",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-07T07:14:56Z",
+      "side": 1,
+      "message": "Above 3 variables are not being used",
+      "revId": "2dbc54b109306bf2bce808ed043eaa4bf93772b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_609644f2",
+        "filename": "kitoon.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-07T07:14:56Z",
+      "side": 1,
+      "message": "Calamari -\u003e GUI for Skyring",
+      "revId": "2dbc54b109306bf2bce808ed043eaa4bf93772b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
