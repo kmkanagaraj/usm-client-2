@@ -107,6 +107,23 @@
       "revId": "f3b4ad78e68d7c5e5efb030531337bcbca39d6d9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_661c97c2",
+        "filename": "kitoon.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T12:45:14Z",
+      "side": 1,
+      "message": "tarname should be replaced with SOURCE0",
+      "revId": "f3b4ad78e68d7c5e5efb030531337bcbca39d6d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
