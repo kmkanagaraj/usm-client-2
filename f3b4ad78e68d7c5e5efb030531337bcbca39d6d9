@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac4a560_a6d78f22",
+        "filename": "Makefile",
+        "patchSetId": 5
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T12:04:18Z",
+      "side": 1,
+      "message": "$(TARDIR) is not removed after \u0027dist-gen\u0027",
+      "revId": "f3b4ad78e68d7c5e5efb030531337bcbca39d6d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_26e37f06",
+        "filename": "kitoon.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T12:04:18Z",
+      "side": 1,
+      "message": "BuildArch: noarch is missing",
+      "revId": "f3b4ad78e68d7c5e5efb030531337bcbca39d6d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
