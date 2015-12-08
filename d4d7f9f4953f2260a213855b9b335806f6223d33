@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac4a560_c9b57cef",
+        "filename": "Makefile",
+        "patchSetId": 7
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T15:27:16Z",
+      "side": 1,
+      "message": "REVISION is not being used",
+      "revId": "d4d7f9f4953f2260a213855b9b335806f6223d33",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_89bb84e4",
+        "filename": "Makefile",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T15:27:16Z",
+      "side": 1,
+      "message": "PKGDIR not being used",
+      "revId": "d4d7f9f4953f2260a213855b9b335806f6223d33",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_29ca706e",
+        "filename": "Makefile",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T15:27:16Z",
+      "side": 1,
+      "message": "the path should be $(RPMBUILD)/RPMS/noarch",
+      "revId": "d4d7f9f4953f2260a213855b9b335806f6223d33",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
