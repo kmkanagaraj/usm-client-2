@@ -19,6 +19,57 @@
     },
     {
       "key": {
+        "uuid": "5ac4a560_9251f210",
+        "filename": "Makefile",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T06:12:45Z",
+      "side": 1,
+      "message": "why do we need to create $(TARDIR) here?",
+      "revId": "d350bacb238d79ff454c1ef586ba5bba9899a412",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_b258ae33",
+        "filename": "Makefile",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T06:12:45Z",
+      "side": 1,
+      "message": "Content of $(TARNAME) is getting overridden here.",
+      "revId": "d350bacb238d79ff454c1ef586ba5bba9899a412",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_d25b6a2c",
+        "filename": "Makefile",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T06:12:45Z",
+      "side": 1,
+      "message": "dpkg is not applicable",
+      "revId": "d350bacb238d79ff454c1ef586ba5bba9899a412",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ac4a560_46c4005f",
         "filename": "kitoon.spec",
         "patchSetId": 3
