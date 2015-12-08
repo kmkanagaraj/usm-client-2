@@ -2,6 +2,80 @@
   "comments": [
     {
       "key": {
+        "uuid": "5ac4a560_e6eb47ae",
+        "filename": "Makefile",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T12:33:14Z",
+      "side": 1,
+      "message": "TARDIR and TARNAME are looking similar. I would suggest to change TARDIR to TARGET_DIR\n\nAlso TARNAME can be in the current directory itself instead of parent",
+      "revId": "f3b4ad78e68d7c5e5efb030531337bcbca39d6d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_46f31b9e",
+        "filename": "Makefile",
+        "patchSetId": 5
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T12:33:14Z",
+      "side": 1,
+      "message": "we could use TARNAME itself here",
+      "range": {
+        "startLine": 46,
+        "startChar": 129,
+        "endLine": 46,
+        "endChar": 149
+      },
+      "revId": "f3b4ad78e68d7c5e5efb030531337bcbca39d6d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_46dcfb12",
+        "filename": "Makefile",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T12:33:14Z",
+      "side": 1,
+      "message": "\u0027npm install\u0027 is not required here",
+      "revId": "f3b4ad78e68d7c5e5efb030531337bcbca39d6d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_66ee57b6",
+        "filename": "Makefile",
+        "patchSetId": 5
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-08T12:33:14Z",
+      "side": 1,
+      "message": "$(PKGDIR) is not being used below",
+      "revId": "f3b4ad78e68d7c5e5efb030531337bcbca39d6d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5ac4a560_a6d78f22",
         "filename": "Makefile",
         "patchSetId": 5
