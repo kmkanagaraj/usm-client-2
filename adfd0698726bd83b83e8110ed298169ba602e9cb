@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac4a560_68be10d6",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-14T06:45:26Z",
+      "side": 1,
+      "message": "the address should not be hardcoded here",
+      "revId": "adfd0698726bd83b83e8110ed298169ba602e9cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
