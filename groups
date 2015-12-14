@@ -1,4 +1,5 @@
-# UUID             	Group Name
+# UUID                 	Group Name
 #
-user:kmkanagaraj   	user/Kanagaraj M (kmkanagaraj)
-user:nthomas-redhat	user/Nishanth Thomas (nthomas-redhat)
+global:Registered-Users	Registered Users
+user:kmkanagaraj       	user/Kanagaraj M (kmkanagaraj)
+user:nthomas-redhat    	user/Nishanth Thomas (nthomas-redhat)
