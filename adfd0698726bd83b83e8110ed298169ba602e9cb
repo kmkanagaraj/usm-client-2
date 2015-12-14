@@ -16,6 +16,24 @@
       "revId": "adfd0698726bd83b83e8110ed298169ba602e9cb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac4a560_e8c9407a",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2015-12-14T11:43:58Z",
+      "side": 1,
+      "message": "There is any constant file there i can put this ip ?",
+      "parentUuid": "5ac4a560_68be10d6",
+      "revId": "adfd0698726bd83b83e8110ed298169ba602e9cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
