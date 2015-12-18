@@ -2,8 +2,7 @@ language: node_js
 node_js:
   - "0.10"
 before_install:
-  - npm install -g gulp bower tsd
-  - bower install
+  - npm install -g gulp tsd
   - tsd install
 script:
   - gulp compile 
