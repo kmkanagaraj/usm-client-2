@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_6ab597cc",
+        "filename": "app/components/first/first-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-31T06:44:10Z",
+      "side": 1,
+      "message": "Remove this file from the commit",
+      "revId": "d4bd4feeb26480b8feb497fe9d608bfb32c8b8f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_8ac9eb5c",
+        "filename": "app/components/hosts/discovered-hosts.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2015-12-31T06:44:10Z",
+      "side": 1,
+      "message": "why empty class?",
+      "revId": "d4bd4feeb26480b8feb497fe9d608bfb32c8b8f9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
