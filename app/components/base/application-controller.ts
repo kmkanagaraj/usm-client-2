@@ -9,7 +9,7 @@ export class ApplicationController {
 
         $scope.$on( "$routeChangeStart", function(event, next, current) {
                 userService.getCurrentUser().catch(() => {
-                    locationService.path('/');
+                    //locationService.path('/');
                 });
         });
     }

@@ -86,6 +86,12 @@ export class ServerService {
     add(host) {
         return this.restFull.all('nodes').post(host);
     }
+    
+    // **updateDiskStorageProfile**
+    // **@returns** status of the http request.
+    updateDiskStorageProfile(nodeid: string, diskid: string, storageprofile: string) {
+        return this.restFull.one('nodes', nodeid).one('disks', diskid).customPUT({ storageprofile: storageprofile });
+    }
 
     // **remove**
     // **@param** id - id of server you wish to remove.
