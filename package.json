@@ -21,7 +21,8 @@
     "jquery": "~1.11.3",
     "es6-shim": "~0.33.6",
     "restangular": "git://github.com/mgonto/restangular#1.5.1",
-    "c3-angular": "git://github.com/jettro/c3-angular-directive#0.7.1"
+    "c3-angular": "git://github.com/jettro/c3-angular-directive#0.7.1",
+    "angular-loading-bar": "~0.7.1"
   },
   "devDependencies": {
     "bower": "*",
@@ -53,7 +54,8 @@
     "angular-strap-tpl": "./node_modules/angular-strap/dist/angular-strap.tpl.js",
     "angular-growl": "./node_modules/angular-growl-v2/build/angular-growl.js",
     "idb-wrapper": "./node_modules/idb-wrapper/idbstore.js",
-    "patternfly": "./node_modules/patternfly/dist/js/patternfly.js"
+    "patternfly": "./node_modules/patternfly/dist/js/patternfly.js",
+    "angular-loading-bar": "./node_modules/angular-loading-bar/build/loading-bar.js"
   },
   "browserify": {
     "transform": [
@@ -87,6 +89,11 @@
     "patternfly": {
       "depends": [
         "jquery: jQuery"
+      ]
+    },
+    "angular-loading-bar": {
+      "depends": [
+        "angular"
       ]
     }
   }

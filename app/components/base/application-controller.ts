@@ -3,7 +3,7 @@
 import {UserService} from '../rest/user';
 
 export class ApplicationController {
-    static $inject: Array<string> = ['$scope', '$location', 'UserService'];
+    static $inject: Array<string> = ['$scope', '$location', 'UserService','cfpLoadingBar'];
     constructor($scope: any, locationService: ng.ILocationService, userService: UserService) {
         $scope.expandedView = true;
 

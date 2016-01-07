@@ -42,6 +42,7 @@ var d3 = require("d3");
 var c3Angular = require("c3-angular");
 var jquery = require("jquery");
 var patternfly = require("patternfly");
+var loadingBar = require("angular-loading-bar");
 
 class USMApp {
     initialize() {
@@ -55,6 +56,7 @@ class USMApp {
             'mgcrea.ngStrap',
             'gridshore.c3js.chart',
             'restangular',
+            'angular-loading-bar',
             RequestsModule,
             RestModule,
             HostModule,
@@ -96,6 +98,10 @@ class USMApp {
             }])
             .config(['$logProvider', function($logProvider) {
                 $logProvider.debugEnabled(true);
+            }])
+            .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+                cfpLoadingBarProvider.includeBar = true;
+                cfpLoadingBarProvider.includeSpinner = false;
             }])
             .config(['RestangularProvider', function(RestangularProvider) {
                 RestangularProvider.addResponseInterceptor(function(data, operation, what, url, response, deferred) {
