@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_4d63771a",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 494,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-01-07T11:54:24Z",
+      "side": 1,
+      "message": "Instead of storing this in a class variable and using it, you could return the count itself.",
+      "revId": "f57d48e854c4a98b2ab166f4d2728fe21e1ea0fd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
