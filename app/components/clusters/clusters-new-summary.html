@@ -81,7 +81,7 @@
          <span ng-class="cluster.summaryHostsSortOrder === '-hostname' ? 'fa fa-angle-up': 'fa fa-angle-down'"></span>
       </th>
       <th>IP Address</th>
-      <th ng-show="cluster.clusterType.id === 2">Type</th>
+      <th>Role</th>
       <th>Cluster IP Adress</th>
     </tr>
   </thead>
@@ -89,7 +89,7 @@
     <tr ng-repeat="host in cluster.hosts | filter: { selected: true } | orderBy: cluster.summaryHostsSortOrder">
       <td>{{host.hostname}}</td>
       <td>{{host.ipaddress}}</td>
-      <td ng-show="cluster.clusterType.id === 2">{{host.isMon ? 'Monitor' : 'OSD'}}</td>
+      <td>{{host.isMon ? 'Monitor' : 'OSD'}}</td>
       <td>{{host.ipaddress}}</td>
     </tr>
   </tbody>
