@@ -79,7 +79,6 @@ export class ClustersController {
                 area_spline_values: mockCluster.areaSplineValues,
                 gauge_values: _.random(20, 70) / 10,
                 no_of_hosts: 0,
-                alerts: mockCluster.alerts,
                 no_of_volumes_or_pools: 0,
                 enabled: cluster.enabled
             };
@@ -93,6 +92,10 @@ export class ClustersController {
                 tempCluster.no_of_hosts = nodes.length;
             });
 
+            this.clusterSvc.getAlerts(cluster.clusterid).then((alerts) => {
+                tempCluster.alerts = alerts;
+            });
+
             if (this.getClusterTypeTitle(cluster.type) === 'gluster') {
                 this.volumeService.getListByCluster(cluster.clusterid).then((volumes) => {
                     tempCluster.no_of_volume_or_pools = volumes.length;
@@ -103,11 +106,9 @@ export class ClustersController {
                     tempCluster.no_of_volumes_or_pools = pools.length;
                 });
             }
-
             tempCluster.total_size = 0;
             tempCluster.free_size = 0;
             tempCluster.percent_used = 0;
-
             tempClusters.push(tempCluster);
         });
         this.clusterList = tempClusters;
