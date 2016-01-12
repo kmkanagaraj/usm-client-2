@@ -167,6 +167,9 @@ export class RequestsController {
         document.getElementById("mySettings").click();
     }
 
+    public openDemoVideo(){
+        document.getElementById("demoVideo").click();
+    }
     public acceptAllHosts() {
         _.each(this.discoveredHosts, (host: any) => {
             if (host.state === "UNACCEPTED") {
