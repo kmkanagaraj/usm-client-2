@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_c35805fd",
+        "filename": "app/components/clusters/clusters.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-01-13T11:18:33Z",
+      "side": 1,
+      "message": "Click/hover action needs to be added to the count/icon. not on the header",
+      "revId": "9671e20adc14844fca9abf245b9280796c0518d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
