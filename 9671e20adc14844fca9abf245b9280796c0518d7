@@ -16,6 +16,24 @@
       "revId": "9671e20adc14844fca9abf245b9280796c0518d7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_32da0979",
+        "filename": "app/components/clusters/clusters.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-14T09:37:38Z",
+      "side": 1,
+      "message": "Click/hover action should be on count or icon ?",
+      "parentUuid": "fa81d914_c35805fd",
+      "revId": "9671e20adc14844fca9abf245b9280796c0518d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
