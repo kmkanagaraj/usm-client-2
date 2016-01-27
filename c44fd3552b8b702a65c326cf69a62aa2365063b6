@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_5164ad48",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-01-27T10:40:34Z",
+      "side": 1,
+      "message": "Commit header should be separated from the message like,\n\nliteral changes\n\n-Public Network to Access Network\n-Delete to Forget",
+      "revId": "c44fd3552b8b702a65c326cf69a62aa2365063b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
