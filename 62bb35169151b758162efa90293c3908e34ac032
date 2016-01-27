@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_16a6ab53",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-27T09:32:09Z",
+      "side": 1,
+      "message": "Can we have \u0027\u003d\u003d\u003d\u0027 operator if host.cluster_type is a number",
+      "range": {
+        "startLine": 81,
+        "startChar": 41,
+        "endLine": 81,
+        "endChar": 43
+      },
+      "revId": "62bb35169151b758162efa90293c3908e34ac032",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_36648f21",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-27T09:32:09Z",
+      "side": 1,
+      "message": "same as above comment",
+      "range": {
+        "startLine": 83,
+        "startChar": 46,
+        "endLine": 83,
+        "endChar": 49
+      },
+      "revId": "62bb35169151b758162efa90293c3908e34ac032",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
