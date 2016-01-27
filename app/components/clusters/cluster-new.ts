@@ -137,7 +137,7 @@ export class ClusterNewController {
     public loadFreeHosts(freeHosts: any) {
         this.hosts = [];
         this.availableNetworks = [];
-        var subnets = new Set();
+        var subnets = [];
         _.each(freeHosts, (freeHost: any) => {
             var host = {
                 id: freeHost.nodeid,
@@ -154,7 +154,7 @@ export class ClusterNewController {
             this.hosts.push(host);
             this.updateFingerPrint(host);
             _.each(freeHost.network_info.Subnet, (network) => {
-                subnets.add(network);
+                subnets.push(network);
             });
         });
         subnets.forEach((network) => {
