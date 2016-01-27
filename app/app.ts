@@ -26,7 +26,6 @@ import {UserNewController} from "./components/admin/user-new";
 import {UserEditController} from "./components/admin/user-edit";
 import {LdapUserController} from "./components/admin/ldap-user-controller";
 
-var es6shim = require("es6-shim");
 var angular: ng.IAngularStatic = require("angular");
 var ngRoute = require("angular-route");
 var ngAnimate = require("angular-animate");
