@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_56e103cf",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-27T09:27:07Z",
+      "side": 1,
+      "message": "what i feel , \"$\" this sign is really need to use here .\nit look like we are using jQuery inside angular .",
+      "range": {
+        "startLine": 73,
+        "startChar": 16,
+        "endLine": 73,
+        "endChar": 17
+      },
+      "revId": "576163428fe574b486bd3eb76c3a9369703af002",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_56bae3c0",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-27T09:27:07Z",
+      "side": 1,
+      "message": "\"Disks\" This string should be depend upon the disks length \nif it is more than 1 than it should be \"Disks\" otherwise \"Disk\"",
+      "range": {
+        "startLine": 86,
+        "startChar": 32,
+        "endLine": 86,
+        "endChar": 37
+      },
+      "revId": "576163428fe574b486bd3eb76c3a9369703af002",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_76b1a7e0",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-27T09:27:07Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 120,
+        "startChar": 32,
+        "endLine": 120,
+        "endChar": 37
+      },
+      "revId": "576163428fe574b486bd3eb76c3a9369703af002",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_96b45bd2",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-27T09:27:07Z",
+      "side": 1,
+      "message": "same as above comment",
+      "range": {
+        "startLine": 142,
+        "startChar": 46,
+        "endLine": 142,
+        "endChar": 51
+      },
+      "revId": "576163428fe574b486bd3eb76c3a9369703af002",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_96a37b4e",
+        "filename": "app/styles/storage-profile-disks.scss",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-27T09:27:07Z",
+      "side": 1,
+      "message": "instead creating new file for this. Can we merge into existing one ?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 1
+      },
+      "revId": "576163428fe574b486bd3eb76c3a9369703af002",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
