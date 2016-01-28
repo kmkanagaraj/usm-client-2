@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_e2ba2a09",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-01-28T08:51:30Z",
+      "side": 1,
+      "message": "This will create duplicate entries. We want to show the only unique ones.",
+      "revId": "1f7d325871980495b01b12c591e63ad1b7381931",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
