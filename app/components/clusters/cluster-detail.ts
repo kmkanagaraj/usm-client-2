@@ -22,6 +22,8 @@ export class ClusterDetailController {
     private pgs: any;
     private osds: any;
     private mockCluster: any;
+    private tabList: Array<any>;
+    private tabIndex: any;
     
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -46,6 +48,11 @@ export class ClusterDetailController {
         private volumeService: VolumeService,
         private poolService: PoolService) {
 
+        this.tabList = [
+            { tabName: "Overview" },{ tabName: "CRUSH map" },{ tabName: "Pools" },{ tabName: "RBDs" },
+            { tabName: "OSDs" },{ tabName: "Storage Profiles" },{ tabName: "Configuration" }
+        ];
+        this.tabIndex = 0;
         this.clusterHelpers = new ClusterHelper(null, null, null, null);
         this.mockDataProvider = new MockDataProvider();
         
@@ -184,4 +191,13 @@ export class ClusterDetailController {
             return 'heat-l3';
         }
     }
+
+    public setTab(newTab: any) {
+        this.tabIndex = newTab;
+    }
+
+    public isSet(tabNum: any) {
+        return this.tabIndex === tabNum;
+    }
+
 }
