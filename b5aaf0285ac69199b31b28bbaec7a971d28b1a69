@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_ab2baa92",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-01-29T13:14:36Z",
+      "side": 1,
+      "message": "All unused code should be removed from this file.",
+      "revId": "b5aaf0285ac69199b31b28bbaec7a971d28b1a69",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_8b59865c",
+        "filename": "app/components/clusters/cluster-list-menu-dropdown.tpl.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-01-29T13:14:36Z",
+      "side": 1,
+      "message": "Why is this hardcoded? We have an api to get list of clusters",
+      "revId": "b5aaf0285ac69199b31b28bbaec7a971d28b1a69",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_8b30a602",
+        "filename": "app/styles/cluster-detail.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-01-29T13:14:36Z",
+      "side": 1,
+      "message": "Above css styles should be put inside .cluster-detail to avoid conflicting in other places.\n\nAlso if any of the above styles are not being used, those should be removed",
+      "revId": "b5aaf0285ac69199b31b28bbaec7a971d28b1a69",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
