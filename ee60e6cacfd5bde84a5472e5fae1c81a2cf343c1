@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_c4c0cb2c",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-30T16:14:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_24cc47bc",
+      "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_64c55f8d",
         "filename": "app/components/clusters/cluster-detail.ts",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2016-01-30T09:32:03Z",
       "side": 1,
       "message": "MockDataProvider is not being used",
+      "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_e4deaf10",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-30T16:14:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_64c55f8d",
       "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_04e2e3d4",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-30T16:14:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_44cf7bb0",
+      "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_04d58342",
         "filename": "app/components/clusters/cluster-detail.ts",
         "patchSetId": 3
@@ -64,6 +118,24 @@
       "writtenOn": "2016-01-30T09:32:03Z",
       "side": 1,
       "message": "poolService is not being used. It should be removed",
+      "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_24e9a7b8",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-30T16:14:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_04d58342",
       "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_44ecdbc7",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-30T16:14:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_84c0937d",
+      "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_a4bf57fa",
         "filename": "app/components/clusters/cluster-detail.ts",
         "patchSetId": 3
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_64d2bf01",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-30T16:14:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_a4bf57fa",
+      "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_e4386fa2",
         "filename": "app/styles/cluster-detail.scss",
         "patchSetId": 3
@@ -115,6 +223,24 @@
       "writtenOn": "2016-01-30T09:32:03Z",
       "side": 1,
       "message": "Remove the whitespace",
+      "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_84cdf35f",
+        "filename": "app/styles/cluster-detail.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-01-30T16:14:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_e4386fa2",
       "revId": "ee60e6cacfd5bde84a5472e5fae1c81a2cf343c1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
