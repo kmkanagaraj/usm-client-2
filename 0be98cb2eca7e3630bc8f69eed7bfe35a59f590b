@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_fa99ea1f",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-01T06:02:05Z",
+      "side": 1,
+      "message": "I think there is an api available to get the list of OSDs. You can check with Shubhendu for the details.",
+      "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_7afeda39",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-01T06:02:05Z",
+      "side": 1,
+      "message": "This hard coding should be removed.\n\nWe have unmanaged_nodes API available to get the list of nodes waiting for acceptance.",
+      "range": {
+        "startLine": 87,
+        "startChar": 100,
+        "endLine": 87,
+        "endChar": 101
+      },
+      "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_baf8524a",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-01T06:02:05Z",
+      "side": 1,
+      "message": "We have an API to get the list of nodes and find monitor nodes.",
+      "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_da96e6ef",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-01T06:02:05Z",
+      "side": 1,
+      "message": "We have API available to get list of storage entities",
+      "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
