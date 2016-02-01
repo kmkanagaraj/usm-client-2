@@ -55,7 +55,7 @@ export class ClusterDetailController {
         this.cluster = {};
         this.capacity = { free: 25, used: 75, total: 100 };
         this.hosts = { total: 0, warning: 0, critical: 0 };
-        this.pgs = { total: 1024, warning: 0, critical: 0 };
+        this.pgs = { total: 1024, warning: 2, critical: 1 };
         this.osds = { total: 0, warning: 0, critical: 0 };
         this.pools = { total: 0, warning: 0, critical: 0 };
 
@@ -79,6 +79,8 @@ export class ClusterDetailController {
     public loadCluster(cluster: any) {
         this.cluster.name = cluster.name;
         this.cluster.type = this.clusterHelpers.getClusterType(cluster.cluster_type);
+        this.cluster.status = cluster.status;
+        this.cluster.enabled = cluster.enabled;
     }
 
     public getHostStatus(hosts: any) {
