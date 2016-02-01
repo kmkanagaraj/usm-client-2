@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_5a7836c4",
+        "filename": "app/components/router/route-config.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-01T06:47:07Z",
+      "side": 1,
+      "message": "Change this route to /tasks/:taskId",
+      "revId": "3dcbeef9eccd511bcd192c4f3962f3b704ea0359",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_9a82ae92",
+        "filename": "app/components/tasks/task-detail-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-01T06:47:07Z",
+      "side": 1,
+      "message": "Remove unused services",
+      "revId": "3dcbeef9eccd511bcd192c4f3962f3b704ea0359",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_7a733ae7",
+        "filename": "app/components/tasks/task-detail-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-01T06:47:07Z",
+      "side": 1,
+      "message": "we need to refresh only till the task is completed",
+      "revId": "3dcbeef9eccd511bcd192c4f3962f3b704ea0359",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
