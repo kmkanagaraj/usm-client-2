@@ -1,15 +1,19 @@
 // <reference path="../../../typings/tsd.d.ts" />
 
 import {Cluster} from '../../rest/resources';
+import {StorageProfile} from '../../rest/storage-profile';
 
 import {ClusterService} from '../../rest/clusters';
+import {StorageProfileService} from '../../rest/storage-profile';
 import {StorageService} from '../../rest/storage';
 import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import * as ModalHelpers from '../../modal/modal-helpers';
+import {GetCephPGsForOSD} from '../storage-util';
 
 export class ObjectStorageController {
     private cluster: Cluster;
+    private slus: any[];
     private name: string;
     private count: number = 1;
     private types = ['Replicated', 'Erasure Coded'];
@@ -17,8 +21,10 @@ export class ObjectStorageController {
     private replicas: number = 3;
     private sizeUnits = ['GB', 'TB'];
     private targetSize = { value: 0, unit: 'GB' };
-    private profiles = ['SAS', 'SSD', 'General'];
-    private profile = 'SAS';
+    private profiles: StorageProfile[];
+    private profile: StorageProfile;
+    private pgs: number = 0;
+    private pgSlider = {};
     private pools = [];
 
     static $inject: Array<string> = [
@@ -28,6 +34,7 @@ export class ObjectStorageController {
         '$q',
         '$modal',
         'ClusterService',
+        'StorageProfileService',
         'StorageService',
         'RequestTrackingService',
         'RequestService'
@@ -38,12 +45,41 @@ export class ObjectStorageController {
         private $q: ng.IQService,
         private $modal,
         private clusterSvc: ClusterService,
+        private storageProfileSvc: StorageProfileService,
         private storageSvc: StorageService,
         private requestTrackingSvc: RequestTrackingService,
         private requestSvc: RequestService) {
         let clusterId = $routeParams['clusterid'];
         this.clusterSvc.get(clusterId).then(cluster => {
             this.cluster = cluster;
+        });
+        this.clusterSvc.getSlus(clusterId).then(slus => {
+            var list = [];
+            for (var i = 0; i < 60; i++) {
+                list.push(slus[0]);
+            }
+            this.slus = list;
+            this.pgs = GetCephPGsForOSD(list, 1024 * 1024 * 1024 * 5, 3);
+        });
+        this.storageProfileSvc.getList().then((profiles) => {
+            this.profiles = profiles;
+            this.profile = profiles[0];
+        });
+        this.pgSlider = {
+            value: 12,
+            options: {
+                floor: 10,
+                ceil: 100,
+                step: 5,
+                showTicks: true
+            }
+        };
+    }
+
+    public changeStorageProfile(selectedProfile: StorageProfile) {
+        this.clusterSvc.getSlus(this.cluster.clusterid).then(slus => {
+            this.slus = slus;
+            this.pgs = GetCephPGsForOSD(slus, 100, 3);
         });
     }
 

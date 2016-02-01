@@ -26,23 +26,36 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-md-2 control-label" for="targetPoolSize">Target Pool Size</label>
-                <div class="col-md-2">
-                    <div class="input-group">
-                        <input type="number" ng-model="storage.targetSize.value" class="form-control"></input>
-                        <div class="input-group-btn">
-                            <select pf-select ng-model="storage.targetSize.unit" class="form-control size-selector" ng-options="sizeUnit for sizeUnit in storage.sizeUnits"></select>
+                <div class="col-md-12">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="profile">Storage Profile</label>
+                            <div class="col-md-2">
+                                <select pf-select ng-model="storage.profile" id="profile" class="form-control" ng-options="profile.name for profile in storage.profiles"></select>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="form-control-static">{{storage.slus.length}} OSDs</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <p class="text-info">
+                                    <strong>Note:</strong>
+                                    Pools are created based on the number of OSD's in this cluster. When the number of OSDs available is 50 or less, a fixed number of Placement Groups will be assigned.
+                                </p>
+                            </div>
+                            <label class="col-md-2 control-label" for="profile">Placement Groups</label>
+                            <div class="col-md-2">
+                                <p class="form-control-static">{{storage.pgs}}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-9">
+                                <rzslider rz-slider-model="storage.pgSlider.value" rz-slider-options="storage.pgSlider.options"></rzslider>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label" for="profile">Storage Profile</label>
-                <div class="col-md-2">
-                    <select pf-select ng-model="storage.profile" id="profile" class="form-control" ng-options="profile for profile in storage.profiles"></select>
-                    <p class="help-block">OSD's will be created based on the selected storage profile</p>
-                </div>
-                <div class="col-md-4">768 GB available</div>
             </div>
             <!-- End: General Configuration -->
             <!-- Adavanced Configuration -->
