@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_bfde810f",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-01T11:11:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_fa99ea1f",
+      "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_7afeda39",
         "filename": "app/components/clusters/clusters-detail.html",
         "patchSetId": 4
@@ -30,6 +48,30 @@
       "writtenOn": "2016-02-01T06:02:05Z",
       "side": 1,
       "message": "This hard coding should be removed.\n\nWe have unmanaged_nodes API available to get the list of nodes waiting for acceptance.",
+      "range": {
+        "startLine": 87,
+        "startChar": 100,
+        "endLine": 87,
+        "endChar": 101
+      },
+      "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_dfe175d1",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-01T11:11:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_7afeda39",
       "range": {
         "startLine": 87,
         "startChar": 100,
@@ -59,6 +101,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_ffe8f9b5",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-01T11:11:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_baf8524a",
+      "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_da96e6ef",
         "filename": "app/components/clusters/clusters-detail.html",
         "patchSetId": 4
@@ -70,6 +130,24 @@
       "writtenOn": "2016-02-01T06:02:05Z",
       "side": 1,
       "message": "We have API available to get list of storage entities",
+      "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_1fecedc6",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-01T11:11:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_da96e6ef",
       "revId": "0be98cb2eca7e3630bc8f69eed7bfe35a59f590b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
