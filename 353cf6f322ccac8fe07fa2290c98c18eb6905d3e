@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_9fe37d32",
+        "filename": "app/components/rest/request.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-01T10:22:35Z",
+      "side": 1,
+      "message": "// **@returns** a promise with list of subtasks",
+      "revId": "353cf6f322ccac8fe07fa2290c98c18eb6905d3e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
