@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_9ca62b52",
+        "filename": "app/components/hosts/hosts.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-01T09:58:11Z",
+      "side": 1,
+      "message": "rather than putting style here , it should be in proper css class .",
+      "range": {
+        "startLine": 26,
+        "startChar": 61,
+        "endLine": 26,
+        "endChar": 84
+      },
+      "revId": "aa3c0b9055cd8191eefd66b1c25ed75a0d851177",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
