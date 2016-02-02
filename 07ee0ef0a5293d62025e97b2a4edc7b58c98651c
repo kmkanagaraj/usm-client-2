@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_968c4281",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-02T09:32:40Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be clusterdetail.hosts.warning ?",
+      "range": {
+        "startLine": 92,
+        "startChar": 56,
+        "endLine": 92,
+        "endChar": 84
+      },
+      "revId": "07ee0ef0a5293d62025e97b2a4edc7b58c98651c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_16f852e4",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-02T09:32:40Z",
+      "side": 1,
+      "message": "Wouldn\u0027t this create two green ticks instead of one?\n\nHave you tested all the possible flows?",
+      "revId": "07ee0ef0a5293d62025e97b2a4edc7b58c98651c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
