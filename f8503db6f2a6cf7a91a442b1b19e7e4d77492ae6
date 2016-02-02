@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_b664e622",
+        "filename": "app/components/hosts/hosts.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-02T12:01:09Z",
+      "side": 1,
+      "message": "Should be \u003d\u003d\u003d",
+      "range": {
+        "startLine": 21,
+        "startChar": 65,
+        "endLine": 21,
+        "endChar": 67
+      },
+      "revId": "f8503db6f2a6cf7a91a442b1b19e7e4d77492ae6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
