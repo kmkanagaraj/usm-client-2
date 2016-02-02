@@ -30,7 +30,6 @@ import {LdapUserController} from "./components/admin/ldap-user-controller";
 import {KTDraggable} from "./components/shared/directives/kt-draggable";
 import {KTDroppable} from "./components/shared/directives/kt-droppable";
 
-var es6shim = require("es6-shim");
 var angular: ng.IAngularStatic = require("angular");
 var ngRoute = require("angular-route");
 var ngAnimate = require("angular-animate");
