@@ -22,6 +22,30 @@
       "revId": "aa5a11731db87bc34eb92c04fce8c1cbb5301b5c",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_a6c83123",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-03T07:05:41Z",
+      "side": 1,
+      "message": "for font-awesome, yes.\nfor patternfly, there is 3.0.0 , but i dont want to move to that immediately since i might have some non-backward compatible changes.",
+      "parentUuid": "fa81d914_6678f9f2",
+      "range": {
+        "startLine": 15,
+        "startChar": 5,
+        "endLine": 16,
+        "endChar": 26
+      },
+      "revId": "aa5a11731db87bc34eb92c04fce8c1cbb5301b5c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
