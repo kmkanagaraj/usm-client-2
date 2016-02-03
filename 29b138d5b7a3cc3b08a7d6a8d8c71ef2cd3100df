@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_b93bf69a",
+        "filename": "app/components/hosts/hosts.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-03T10:30:53Z",
+      "side": 1,
+      "message": "This label should be changed OS:",
+      "range": {
+        "startLine": 73,
+        "startChar": 34,
+        "endLine": 73,
+        "endChar": 43
+      },
+      "revId": "29b138d5b7a3cc3b08a7d6a8d8c71ef2cd3100df",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
