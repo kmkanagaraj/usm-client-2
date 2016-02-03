@@ -16,6 +16,24 @@
       "revId": "e450bebaff62c188e8ed5640e6a6435e599f2461",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_b2a6f9bf",
+        "filename": "app/components/admin/my-settings.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-03T06:48:36Z",
+      "side": 1,
+      "message": "we can not close this dialog box on button click because may be user\u0027 enter old password is incorrect . and how can we close this dialog . so instead of that i am showing msg . if user give the incorrect old password than , user get error msg - Old password does not match . and if user able to update password successfully , than user get success msg - Password updated successfully.",
+      "parentUuid": "fa81d914_72ee41ee",
+      "revId": "e450bebaff62c188e8ed5640e6a6435e599f2461",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
