@@ -22,6 +22,30 @@
       "revId": "7281b62f1099c10d0ff237c598147a1bd8a978d8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_799b3e72",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-02-08T12:28:37Z",
+      "side": 1,
+      "message": "No this won\u0027t always result in false.\n\nThis is to avoid corner-case of validating against NaN. Theoretically NaN !\u003d\u003d NaN.\n\nAll the array prototypes like contains/includes in different libraries (and in ES6) are implemented keeping this in mind.\n\nIf curious, you can check out the main algorithm in the spec draft: https://tc39.github.io/ecma262/#sec-array.prototype.includes\n\nand a demo implementation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes\n\nHope this explains.",
+      "parentUuid": "fa81d914_31b00043",
+      "range": {
+        "startLine": 162,
+        "startChar": 25,
+        "endLine": 162,
+        "endChar": 74
+      },
+      "revId": "7281b62f1099c10d0ff237c598147a1bd8a978d8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
