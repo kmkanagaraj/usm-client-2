@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_21025d6f",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 463,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-08T12:52:41Z",
+      "side": 1,
+      "message": "we should try to avoid using !important.\n\nIs there any other way around?",
+      "revId": "b23285a912be3c7ec35ac1a688e3bad2412d8882",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
