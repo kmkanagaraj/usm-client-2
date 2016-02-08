@@ -52,6 +52,24 @@
       "revId": "02f91cc67772e6c2242a2b9e69b2ffb89e113498",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_e10be58b",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-08T12:51:28Z",
+      "side": 1,
+      "message": "getting this error without angular-ui-bootstarp\n\n\nError: [$injector:modulerr] Failed to instantiate module usm-client due to:\n[$injector:modulerr] Failed to instantiate module patternfly due to:\n[$injector:modulerr] Failed to instantiate module patternfly.filters due to:\n[$injector:modulerr] Failed to instantiate module ui.bootstrap due to:\n[$injector:nomod] Module \u0027ui.bootstrap\u0027 is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.",
+      "parentUuid": "fa81d914_a171ed45",
+      "revId": "02f91cc67772e6c2242a2b9e69b2ffb89e113498",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
