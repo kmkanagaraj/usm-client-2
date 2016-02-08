@@ -16,6 +16,75 @@
       "revId": "10115b1ea6771bc06ab68fcf4e79d48183f65c67",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_afc9d927",
+        "filename": "app/components/admin/user-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-08T10:10:32Z",
+      "side": 1,
+      "message": "change string to any . because now it will hold user object.",
+      "range": {
+        "startLine": 6,
+        "startChar": 26,
+        "endLine": 6,
+        "endChar": 32
+      },
+      "revId": "10115b1ea6771bc06ab68fcf4e79d48183f65c67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_8f4975b9",
+        "filename": "app/components/admin/user-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-08T10:10:32Z",
+      "side": 1,
+      "message": "Here this will be object , not a list , so it should be \"user\" only.",
+      "range": {
+        "startLine": 26,
+        "startChar": 48,
+        "endLine": 26,
+        "endChar": 53
+      },
+      "revId": "10115b1ea6771bc06ab68fcf4e79d48183f65c67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_6f4c41c9",
+        "filename": "app/components/admin/user-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-08T10:10:32Z",
+      "side": 1,
+      "message": "what i feel here . instead of assigning user name into currentUser.\nyou should assign whole user object here .\n\nlike :\n\nthis.currentUser \u003d user;\n\nand in html page , you can use like this -\n \nusers.currentUser.username",
+      "range": {
+        "startLine": 27,
+        "startChar": 12,
+        "endLine": 27,
+        "endChar": 46
+      },
+      "revId": "10115b1ea6771bc06ab68fcf4e79d48183f65c67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
