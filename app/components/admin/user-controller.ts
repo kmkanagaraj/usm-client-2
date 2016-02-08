@@ -3,6 +3,7 @@ import {UserService} from '../rest/user';
 export class UserController {
     private errorMsg;
     private userList : Array<any>;
+    private currentUser : string;
     static $inject: Array<string> = [
         '$location',
         'UserService',
@@ -12,6 +13,7 @@ export class UserController {
         private $location: ng.ILocationService,
         private UserService: UserService) {
         this.getUsers();
+        this.getCurrentUser();
     }
    
     public getUsers(){
@@ -19,7 +21,13 @@ export class UserController {
             this.userList = users;
         });
     }
-           
+
+    public getCurrentUser(){
+        this.UserService.getCurrentUser().then((users)=>{
+            this.currentUser = users.username;
+        });
+    }
+
     public addUser(): void {
         this.$location.path('/admin/new');
     }
