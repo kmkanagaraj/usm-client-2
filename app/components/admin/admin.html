@@ -5,10 +5,11 @@
 </ul>
 
   <div class="row dataTables_wrapper">
-    <div class="col-md-3" style="display:-webkit-box;">
-        <input type="text" class="form-control" placeholder="Search" ng-model="search"></input>
-        <i class="btn-lg fa fa-search"></i>
+    <div class="col-md-3 form-group has-feedback" style="display:-webkit-box;">
+            <input type="text" class="form-control" placeholder="Search" ng-model="search"></input>
+            <span class="fa fa-search form-control-feedback user-search-feedback"></span>
     </div>
+
     <div class="col-md-offset-4 col-md-5">
       <span class="pull-right"> 
         <button class="btn btn-primary btn-lg" ng-click="users.addUser()">Add User</button>
