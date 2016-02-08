@@ -106,6 +106,24 @@
       "revId": "02f91cc67772e6c2242a2b9e69b2ffb89e113498",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_a48bbb66",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-08T15:05:52Z",
+      "side": 1,
+      "message": "\u0027patternfly.charts\u0027 module is defined as following,\n\n \n angular.module(\u0027patternfly.charts\u0027, [\u0027patternfly.utils\u0027, \u0027ui.bootstrap\u0027, \u0027ngSanitize\u0027]);\n\n\nSo you need \u0027ui.bootstrap\u0027",
+      "parentUuid": "fa81d914_c1c98127",
+      "revId": "02f91cc67772e6c2242a2b9e69b2ffb89e113498",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
