@@ -46,6 +46,30 @@
       "revId": "7281b62f1099c10d0ff237c598147a1bd8a978d8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_c1b8a1ca",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-08T12:45:28Z",
+      "side": 1,
+      "message": "Agree with it.\n\nNaN is a \u0027number\u0027 whose value is NaN. So the comparison make sense if we iterating through a number array which might have NaN.\n\nIn the current code context, \u0027network\u0027 is a string.\n\nSo the comparisons valid and make sense, but not required in this context.\n\nBtw, subnets array is populated by us, so there is no way NaN get through because of \u0027network !\u003d\u003d network\u0027",
+      "parentUuid": "fa81d914_799b3e72",
+      "range": {
+        "startLine": 162,
+        "startChar": 25,
+        "endLine": 162,
+        "endChar": 74
+      },
+      "revId": "7281b62f1099c10d0ff237c598147a1bd8a978d8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
