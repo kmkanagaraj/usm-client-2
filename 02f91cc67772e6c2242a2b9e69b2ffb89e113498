@@ -88,6 +88,24 @@
       "revId": "02f91cc67772e6c2242a2b9e69b2ffb89e113498",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_c1c98127",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-08T13:19:48Z",
+      "side": 1,
+      "message": "ya , you are right , only \u0027patternfly.charts\u0027 is required.\nupdate in next patch .",
+      "parentUuid": "fa81d914_613e152a",
+      "revId": "02f91cc67772e6c2242a2b9e69b2ffb89e113498",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
