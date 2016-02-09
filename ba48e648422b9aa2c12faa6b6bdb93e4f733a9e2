@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_3a6fe62c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-09T05:53:02Z",
+      "side": 1,
+      "message": "Add a new line after this.",
+      "revId": "ba48e648422b9aa2c12faa6b6bdb93e4f733a9e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_5a6c9a35",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-09T05:53:02Z",
+      "side": 1,
+      "message": "bug-Url to Bug-Url",
+      "revId": "ba48e648422b9aa2c12faa6b6bdb93e4f733a9e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
