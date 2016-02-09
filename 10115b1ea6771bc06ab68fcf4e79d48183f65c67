@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_1ab862e4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006049
+      },
+      "writtenOn": "2016-02-09T04:06:08Z",
+      "side": 1,
+      "message": "Put the bug reference as well (copy paste URL from BZ)\n\nBug-URL: https://bugziall.redhat.com/\u003cid\u003e",
+      "revId": "10115b1ea6771bc06ab68fcf4e79d48183f65c67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_afc9d927",
         "filename": "app/components/admin/user-controller.ts",
         "patchSetId": 1
