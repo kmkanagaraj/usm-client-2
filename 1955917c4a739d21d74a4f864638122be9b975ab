@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_1a1062a7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-09T05:45:15Z",
+      "side": 1,
+      "message": "Split this sentence into two lines since its crossing 72 chars mark. Also introduce a new line.",
+      "revId": "1955917c4a739d21d74a4f864638122be9b975ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_3a28c6e1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-09T05:45:15Z",
+      "side": 1,
+      "message": "It should be\n\nBug-Url: https://bugzilla.redhat.com/show_bug.cgi?id\u003d1303992",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 52
+      },
+      "revId": "1955917c4a739d21d74a4f864638122be9b975ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
