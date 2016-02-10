@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_4bebe7af",
+        "filename": "app/index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-10T05:25:19Z",
+      "side": 0,
+      "message": "The unused css classes should be removed",
+      "revId": "b5d8beb321ce83b1ec3f7bb38980ff0a4442e0ba",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
