@@ -111,4 +111,12 @@ export class ClusterService {
             return slus;
         });
     }
+
+    // **getClusterUtilization**
+    // **@returns** a promise with all cluster's utilization.
+    getClusterUtilization(cluster_id) {
+        return this.rest.all('monitoring/cluster/'+cluster_id+'/utilization?resource=cluster_utilization&&duration=latest').getList().then(function(alerts) {
+            return alerts;
+        });
+    }
 }
