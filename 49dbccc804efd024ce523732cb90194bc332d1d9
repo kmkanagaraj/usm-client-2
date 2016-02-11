@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_7d678de9",
+        "filename": "app/components/admin/admin.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-11T11:13:49Z",
+      "side": 1,
+      "message": "Do we have the function implemented in the controller?",
+      "range": {
+        "startLine": 52,
+        "startChar": 47,
+        "endLine": 52,
+        "endChar": 75
+      },
+      "revId": "49dbccc804efd024ce523732cb90194bc332d1d9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
