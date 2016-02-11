@@ -14,6 +14,7 @@ export class ClusterHelper     {
     public clusterTypes : Array<Cluster>;
     public openstackServices: Array<OpenstackService>;
     public clusterStates : Array<ClusterState>;
+    public clusterSystemPerformance : Array<any>;
     
     constructor(private utilService : UtilService,
         private requestService : RequestService,
@@ -41,6 +42,111 @@ export class ClusterHelper     {
             { ID:4, state:'Creating'},
             { ID:5, state:'Failed'}
         ];
+
+        this.clusterSystemPerformance = [];
+    }
+
+    public getClusterSystemPerformance() : Array<any>{
+        var today = new Date();
+        var dates = [];
+        dates.push("dates");
+        for (var d = 20 - 1; d >= 0; d--) {
+             dates.push(new Date(today.getTime() - (d * 24 * 60 * 60 * 1000)));
+        }
+        this.clusterSystemPerformance = [
+            {
+                title: "CPU utilization",
+                data: {
+                      dataAvailable: true,
+                      total: 250,
+                      xData: dates,
+                      yData: ['used', 10, 20, 30, 20, 30, 10, 14, 20, 25, 68, 54, 56, 78, 56, 67, 88, 76, 65, 87, 76]
+                },
+                config: {
+                    chartId      : 'exampleTrendsChart1',
+                    title        : 'Network Utilization Trends',
+                    layout       : 'inline',
+                    valueType    : 'actual',
+                    timeFrame    : 'Last 15 Minutes',
+                    units        : 'MHz',
+                    tooltipType  : 'percentage'
+                }
+            },
+            {
+                title: "Memory utilization",
+                data: {
+                      dataAvailable: true,
+                      total: 250,
+                      xData: dates,
+                      yData: ['used', 30, 20, 30, 20, 10, 20, 44, 20, 25, 68, 5, 56, 78, 56, 50, 88, 16, 65, 87, 76]
+                },
+                config: {
+                    chartId      : 'exampleTrendsChart2',
+                    title        : 'Network Utilization Trends',
+                    layout       : 'inline',
+                    valueType    : 'actual',
+                    timeFrame    : 'Last 15 Minutes',
+                    units        : 'MHz',
+                    tooltipType  : 'percentage'
+                }
+            },
+            {
+                title: "IOPS",
+                data: {
+                      dataAvailable: true,
+                      total: 150,
+                      xData: dates,
+                      yData: ['used', 10, 20, 30, 20, 10, 30, 44, 20, 25, 68, 5, 56, 78, 56, 50, 88, 16, 65, 87, 76]
+                },
+                config: {
+                    chartId      : 'exampleTrendsChart3',
+                    title        : 'Network Utilization Trends',
+                    layout       : 'inline',
+                    valueType    : 'actual',
+                    timeFrame    : 'Last 15 Minutes',
+                    units        : 'MHz',
+                    tooltipType  : 'percentage'
+                }
+            },
+            {
+                title: "Throughput",
+                data: {
+                      dataAvailable: true,
+                      total: 450,
+                      xData: dates,
+                      yData: ['used', 30, 20, 30, 20, 10, 30, 44, 20, 25, 68, 5, 56, 78, 56, 50, 88, 16, 65, 87, 76]
+                },
+                config: {
+                    chartId      : 'exampleTrendsChart4',
+                    title        : 'Network Utilization Trends',
+                    layout       : 'inline',
+                    valueType    : 'actual',
+                    timeFrame    : 'Last 15 Minutes',
+                    units        : 'MHz',
+                    tooltipType  : 'percentage'
+                }
+            },
+            {
+                title: "Latency",
+                data: {
+                      dataAvailable: true,
+                      total: 300,
+                      xData: dates,
+                      yData: ['used', 30, 20, 30, 20, 10, 30, 44, 20, 15, 68, 5, 56, 78, 36, 50, 88, 16, 65, 87, 76]
+                },
+                config: {
+                    chartId      : 'exampleTrendsChart5',
+                    title        : 'Network Utilization Trends',
+                    layout       : 'inline',
+                    valueType    : 'actual',
+                    timeFrame    : 'Last 15 Minutes',
+                    units        : 'MHz',
+                    tooltipType  : 'percentage'
+                }
+            }
+
+        ];
+        return this.clusterSystemPerformance;
     }
 
     public  getClusterTypes() : Array<Cluster>{
