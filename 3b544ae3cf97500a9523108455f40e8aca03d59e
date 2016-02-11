@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_fd7b7d89",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-11T11:11:56Z",
+      "side": 1,
+      "message": "This also can be removed",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 1
+      },
+      "revId": "3b544ae3cf97500a9523108455f40e8aca03d59e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
