@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fa81d914_c8c6f267",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-12T06:05:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_48b3e209",
+      "revId": "765c8c5925634d5382fd93ea235d5cdfed47fa63",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa81d914_88e95ae8",
         "filename": "app/components/rest/clusters.ts",
         "patchSetId": 2
@@ -30,6 +48,30 @@
       "writtenOn": "2016-02-12T05:48:44Z",
       "side": 1,
       "message": "datapoint is not structured?\n\nwe need to be as much as specific as possible.",
+      "range": {
+        "startLine": 8,
+        "startChar": 4,
+        "endLine": 8,
+        "endChar": 13
+      },
+      "revId": "765c8c5925634d5382fd93ea235d5cdfed47fa63",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_e8c3b654",
+        "filename": "app/components/rest/clusters.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-12T06:05:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_88e95ae8",
       "range": {
         "startLine": 8,
         "startChar": 4,
