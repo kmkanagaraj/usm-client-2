@@ -1,0 +1,141 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_487be27a",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T04:30:51Z",
+      "side": 1,
+      "message": "rename this to openStackPools",
+      "revId": "082bc07b87dbc02feee3078f3fc66ef7beb809ed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_6880a646",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T04:30:51Z",
+      "side": 1,
+      "message": "is this being used?",
+      "revId": "082bc07b87dbc02feee3078f3fc66ef7beb809ed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_a8953e88",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T04:30:51Z",
+      "side": 1,
+      "message": "I would suggest to declare the type of utilization in the rest service. So whoever is using it will have more clarity on the structure.\n\nFor example, refer storage-profile.ts, line: 2",
+      "revId": "082bc07b87dbc02feee3078f3fc66ef7beb809ed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_88987ac1",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T04:30:51Z",
+      "side": 1,
+      "message": "Remove the onClickFn if not required",
+      "revId": "082bc07b87dbc02feee3078f3fc66ef7beb809ed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_08856a59",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T04:30:51Z",
+      "side": 1,
+      "message": "Total",
+      "range": {
+        "startLine": 40,
+        "startChar": 86,
+        "endLine": 40,
+        "endChar": 91
+      },
+      "revId": "082bc07b87dbc02feee3078f3fc66ef7beb809ed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_c88ef278",
+        "filename": "app/components/rest/clusters.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T04:30:51Z",
+      "side": 1,
+      "message": "// **@returns** a promise with cluster\u0027s utilization.",
+      "range": {
+        "startLine": 116,
+        "startChar": 4,
+        "endLine": 116,
+        "endChar": 61
+      },
+      "revId": "082bc07b87dbc02feee3078f3fc66ef7beb809ed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_288a2e6a",
+        "filename": "app/components/rest/clusters.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T04:30:51Z",
+      "side": 1,
+      "message": "rename it to something like capacity or stats",
+      "range": {
+        "startLine": 118,
+        "startChar": 148,
+        "endLine": 118,
+        "endChar": 154
+      },
+      "revId": "082bc07b87dbc02feee3078f3fc66ef7beb809ed",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
