@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_48b3e209",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T05:48:44Z",
+      "side": 1,
+      "message": "I see the following expressions repeated twice\n\nutilization.target.split(\u0027.\u0027)[3]\nutilization.datapoints[0][0]).format(\u00270 b\u0027)\nutilization.datapoints[0][0];\n\nCan these be extracted and used?\n\nThis block can be refactored as,\n\n\n var label \u003d utilization.target.split(\u0027.\u0027)[3];\n var data  \u003d utilization.datapoints[0][0];\n var dataFormated \u003d numeral(data).format(\u00270 b\u0027);\n if ( label \u003d\u003d\u003d \u0027total_bytes\u0027) {\n     this.capacity.total \u003d dataFormated;\n     this.clusterUtilization.data.total \u003d data;\n }\n else if (label \u003d\u003d\u003d \u0027total_used_bytes\u0027) {\n     this.capacity.used \u003d dataFormated;\n     this.clusterUtilization.data.used \u003d data;\n }",
+      "revId": "765c8c5925634d5382fd93ea235d5cdfed47fa63",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_88e95ae8",
+        "filename": "app/components/rest/clusters.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-12T05:48:44Z",
+      "side": 1,
+      "message": "datapoint is not structured?\n\nwe need to be as much as specific as possible.",
+      "range": {
+        "startLine": 8,
+        "startChar": 4,
+        "endLine": 8,
+        "endChar": 13
+      },
+      "revId": "765c8c5925634d5382fd93ea235d5cdfed47fa63",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
