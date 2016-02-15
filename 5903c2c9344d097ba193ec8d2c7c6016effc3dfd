@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_b9558f51",
+        "filename": "app/components/events/event-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-15T04:39:25Z",
+      "side": 1,
+      "message": "put this style in css class",
+      "range": {
+        "startLine": 20,
+        "startChar": 23,
+        "endLine": 20,
+        "endChar": 91
+      },
+      "revId": "5903c2c9344d097ba193ec8d2c7c6016effc3dfd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
