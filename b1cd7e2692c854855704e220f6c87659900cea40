@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_5967334d",
+        "filename": "app/components/admin/add-ldap-user.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-15T04:34:49Z",
+      "side": 1,
+      "message": "use \"\u003d\u003d\u003d\" here .",
+      "range": {
+        "startLine": 46,
+        "startChar": 41,
+        "endLine": 46,
+        "endChar": 43
+      },
+      "revId": "b1cd7e2692c854855704e220f6c87659900cea40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_7958778a",
+        "filename": "app/components/admin/add-ldap-user.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-15T04:34:49Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 47,
+        "startChar": 66,
+        "endLine": 47,
+        "endChar": 68
+      },
+      "revId": "b1cd7e2692c854855704e220f6c87659900cea40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_19721b11",
+        "filename": "app/components/admin/ldap-user-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-15T04:34:49Z",
+      "side": 1,
+      "message": "It should be camel case \ni.e \u0027allUserList\u0027.",
+      "range": {
+        "startLine": 6,
+        "startChar": 12,
+        "endLine": 6,
+        "endChar": 23
+      },
+      "revId": "b1cd7e2692c854855704e220f6c87659900cea40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_f97467ff",
+        "filename": "app/components/admin/ldap-user-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-15T04:34:49Z",
+      "side": 1,
+      "message": "please remove this tab space",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 12
+      },
+      "revId": "b1cd7e2692c854855704e220f6c87659900cea40",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
