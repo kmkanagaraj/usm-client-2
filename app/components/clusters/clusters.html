@@ -33,11 +33,12 @@
                 </div>
                 <div class="col-md-offset-1 col-md-10 set-top-margin pull-right">
                     <div>
-                        <span class="fa fa-wrench" style="font-size: 2em;" ng-if="!cluster.enabled"></span>
-                        <span class="pficon-ok" style="font-size: 2em;" ng-if="cluster.enabled && cluster.status == 0"></span>
-                        <span class="pficon-warning-triangle-o" style="font-size: 2em;" ng-if="cluster.enabled && cluster.status == 1"></span>
-                        <span class="pficon-error-circle-o" style="font-size: 2em;" ng-if="cluster.enabled && cluster.status == 2"></span>
-                        <span class="pficon-running fa-spin" style="font-size: 2em;" ng-if="cluster.enabled && cluster.status == 3" title="Creating"></span>
+                        <span class="pficon-running fa-spin fa-2x" ng-if="cluster.state === 0" title="Creating"></span>
+                        <span class="pficon-error-circle-o fa-2x" ng-if="cluster.state === 1" title="Failed"></span>
+                        <span class="fa fa-wrench fa-2x" ng-if="cluster.state === 3" title="Unmanaged"></span>
+                        <span class="pficon-ok fa-2x" ng-if="cluster.state === 2 && cluster.status == 0" title="Ok"></span>
+                        <span class="pficon-warning-triangle-o fa-2x" ng-if="cluster.state === 2 && cluster.status == 1" title="Warning"></span>
+                        <span class="pficon-error-circle-o fa-2x" ng-if="cluster.state === 2 && cluster.status == 2" title="Error"></span>
                         <a ng-href="#/clusters/{{cluster.clusterid}}"><span class="heading" ng-bind="cluster.cluster_name"></span></a>
                     </div>
                 </div>

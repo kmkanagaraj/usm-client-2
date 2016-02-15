@@ -1,5 +1,6 @@
 
-import {Cluster} from '../rest/resources';
+import {Cluster} from '../rest/clusters';
+import {ClusterState} from '../rest/clusters';
 import {ClusterService} from '../rest/clusters';
 import {MockDataProvider} from './mock-data-provider-helpers';
 import {ClusterHelper} from './cluster-helpers';
@@ -73,6 +74,7 @@ export class ClustersController {
                 clusterid: cluster.clusterid,
                 cluster_name: cluster.name,
                 cluster_type: cluster.type,
+                state: cluster.state,
                 status: cluster.status,
                 used: undefined,
                 area_spline_cols: [{ id: 1, name: 'Used', color: '#39a5dc', type: 'area-spline' }],
@@ -80,9 +82,9 @@ export class ClustersController {
                 gauge_values: _.random(20, 70) / 10,
                 no_of_hosts: 0,
                 alerts: mockCluster.alerts,
-                no_of_volumes_or_pools: 0,
-                enabled: cluster.enabled
+                no_of_volumes_or_pools: 0
             };
+            // tempCluster.state = 0;
 
             if (tempCluster.used === 0) {
                 tempCluster.area_spline_values = [{ '1': 0 }, { '1': 0 }];
@@ -150,16 +152,38 @@ export class ClustersController {
     public createNewCluster(): void {
         this.$location.path('/clusters/new');
     }
-    
+
+    public isExpandAvailable(clusterState: ClusterState) {
+        return clusterState === ClusterState.ACTIVE;
+    }
+
+    public isManageAvailable(clusterState: ClusterState) {
+        return clusterState === ClusterState.UNMANAGED;
+    }
+
+    public isUnManageAvailable(clusterState: ClusterState) {
+        return clusterState === ClusterState.FAILED || clusterState === ClusterState.ACTIVE;
+    }
+
+    public isForgetAvailable(clusterState: ClusterState) {
+        return clusterState === ClusterState.UNMANAGED;
+    }
+
     /**
-     * Here we change the current path to '/clusters/expand/' where details about a particular
-     * cluster can be seen. 
+     * Here we change the current path to '/clusters/expand/' where the cluster can be extended
+     * by adding new nodes to it.
     */
-    public expandCluster(clusterID: string): void {
+    public expandCluster(clusterID: string, clusterState: ClusterState): void {
+        if (!this.isExpandAvailable(clusterState)) {
+            return;
+        }
         this.$location.path('/clusters/expand/' + clusterID);
     }
 
-    public enableCluster(clusterID: string): void {
+    public enableCluster(clusterID: string, clusterState: ClusterState): void {
+        if (!this.isManageAvailable(clusterState)) {
+            return;
+        }
         this.clusterSvc.enable(clusterID).then((result) => {
             this.requestSvc.get(result.taskid).then((task) => {
                 this.requestTrackingSvc.add(task.id, task.name);
@@ -167,7 +191,10 @@ export class ClustersController {
         });
     }
 
-    public disableCluster(clusterID: string): void {
+    public disableCluster(clusterID: string, clusterState: ClusterState): void {
+        if (!this.isUnManageAvailable(clusterState)) {
+            return;
+        }
         this.clusterSvc.disable(clusterID).then((result) => {
             this.requestSvc.get(result.taskid).then((task) => {
                 this.requestTrackingSvc.add(task.id, task.name);
@@ -176,10 +203,13 @@ export class ClustersController {
     }
 
     /**
-     * This function helps in cleaning up or deleting the cluster with the help
+     * This function helps in deleting the cluster with the help
      * of clusterID.
     */
-    public removeCluster(clusterID: any): void {
+    public removeCluster(clusterID: string, clusterState: ClusterState): void {
+        if (!this.isForgetAvailable(clusterState)) {
+            return;
+        }
         this.clusterSvc.remove(clusterID).then((result) => {
             this.requestSvc.get(result.taskid).then((task) => {
                 this.requestTrackingSvc.add(task.id, task.name);
