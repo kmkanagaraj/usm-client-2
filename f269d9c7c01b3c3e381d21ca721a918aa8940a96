@@ -22,6 +22,30 @@
       "revId": "f269d9c7c01b3c3e381d21ca721a918aa8940a96",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_5c06411e",
+        "filename": "app/components/storage/object/storage-new-object.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-15T06:57:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa81d914_79423769",
+      "range": {
+        "startLine": 72,
+        "startChar": 16,
+        "endLine": 72,
+        "endChar": 49
+      },
+      "revId": "f269d9c7c01b3c3e381d21ca721a918aa8940a96",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
