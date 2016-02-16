@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "da86d52c_fda94f7c",
+        "filename": "app/components/admin/ldap-config-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-16T10:37:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da86d52c_5d417b0a",
+      "range": {
+        "startLine": 5,
+        "startChar": 12,
+        "endLine": 5,
+        "endChar": 22
+      },
+      "revId": "7ef6d8de1c4bfa3233cdbb9b2bb570af3f192fc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da86d52c_7d463f25",
         "filename": "app/components/admin/ldap-config-controller.ts",
         "patchSetId": 3
@@ -71,6 +95,30 @@
     },
     {
       "key": {
+        "uuid": "da86d52c_7db55fcc",
+        "filename": "app/components/admin/ldap-config-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-16T10:37:46Z",
+      "side": 1,
+      "message": "Tested.. Working fine. No value of errorMsg not retained",
+      "parentUuid": "da86d52c_9d4a1326",
+      "range": {
+        "startLine": 38,
+        "startChar": 16,
+        "endLine": 38,
+        "endChar": 37
+      },
+      "revId": "7ef6d8de1c4bfa3233cdbb9b2bb570af3f192fc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da86d52c_3d63e7b2",
         "filename": "app/components/admin/ldap-settings.html",
         "patchSetId": 3
@@ -82,6 +130,30 @@
       "writtenOn": "2016-02-16T09:43:00Z",
       "side": 1,
       "message": "if user save the data successfully and come again this page . i thing this message remain exists here .",
+      "range": {
+        "startLine": 42,
+        "startChar": 16,
+        "endLine": 42,
+        "endChar": 37
+      },
+      "revId": "7ef6d8de1c4bfa3233cdbb9b2bb570af3f192fc1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_ddac8b8f",
+        "filename": "app/components/admin/ldap-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-16T10:37:46Z",
+      "side": 1,
+      "message": "No.. the message wont be there. errorMsg won\u0027t have either true or false.",
+      "parentUuid": "da86d52c_3d63e7b2",
       "range": {
         "startLine": 42,
         "startChar": 16,
