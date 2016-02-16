@@ -34,6 +34,24 @@
       "revId": "029dd9b1e5b35b91587e86793becd3cbe5cd565f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_bdf43788",
+        "filename": "app/components/rest/clusters.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-16T10:50:52Z",
+      "side": 1,
+      "message": "This makes the UI tightly bind with graphite specifics which we don\u0027t want.\n\nWe could actually consume graphite APIs directly. But we don\u0027t want do that. We have written wrapper apis around existing graphite api. So in future, if we replace graphite with something else, the UI is not affected.",
+      "parentUuid": "da86d52c_5d997b6d",
+      "revId": "029dd9b1e5b35b91587e86793becd3cbe5cd565f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
