@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "da86d52c_dd756b33",
+        "filename": "app/components/admin/add-ldap-user.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-16T10:30:34Z",
+      "side": 1,
+      "message": "this is a special case. no where else used. so placed inline",
+      "parentUuid": "da86d52c_bd6ef794",
+      "range": {
+        "startLine": 5,
+        "startChar": 5,
+        "endLine": 5,
+        "endChar": 33
+      },
+      "revId": "d494c6c09c1aa8e93f2a599214143476f420c568",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da86d52c_7d147ff5",
         "filename": "app/components/admin/add-ldap-user.html",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2016-02-16T09:48:19Z",
       "side": 1,
       "message": "Can\u0027t use ng-if ?\n\nbecause of ng-show only hide the element but still that element will remain exist in UI.",
+      "range": {
+        "startLine": 26,
+        "startChar": 20,
+        "endLine": 26,
+        "endChar": 28
+      },
+      "revId": "d494c6c09c1aa8e93f2a599214143476f420c568",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_fd722f48",
+        "filename": "app/components/admin/add-ldap-user.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-16T10:30:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da86d52c_7d147ff5",
       "range": {
         "startLine": 26,
         "startChar": 20,
