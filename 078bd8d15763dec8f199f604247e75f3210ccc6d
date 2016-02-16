@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "da86d52c_1d2623bb",
+        "filename": "app/components/admin/ldap-settings.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-16T08:47:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da86d52c_9224c2c7",
+      "revId": "078bd8d15763dec8f199f604247e75f3210ccc6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da86d52c_d22e3aa5",
         "filename": "app/components/router/route-config.ts",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2016-02-16T08:37:25Z",
       "side": 1,
       "message": "fix the alignment",
+      "revId": "078bd8d15763dec8f199f604247e75f3210ccc6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_fd194f7a",
+        "filename": "app/components/router/route-config.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-16T08:47:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da86d52c_d22e3aa5",
       "revId": "078bd8d15763dec8f199f604247e75f3210ccc6d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
