@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_52996a6d",
+        "filename": "app/components/clusters/clusters.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-16T06:02:39Z",
+      "side": 1,
+      "message": "use \"\u003d\u003d\u003d\" here .",
+      "range": {
+        "startLine": 40,
+        "startChar": 115,
+        "endLine": 40,
+        "endChar": 117
+      },
+      "revId": "053559d3c46d82ad8105dd8489a5d1f6ae9fbbd1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_729e6e58",
+        "filename": "app/components/clusters/clusters.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-16T06:02:39Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 41,
+        "startChar": 111,
+        "endLine": 41,
+        "endChar": 113
+      },
+      "revId": "053559d3c46d82ad8105dd8489a5d1f6ae9fbbd1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_92a20299",
+        "filename": "app/components/clusters/clusters.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-16T06:02:39Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 70,
+        "startChar": 65,
+        "endLine": 70,
+        "endChar": 67
+      },
+      "revId": "053559d3c46d82ad8105dd8489a5d1f6ae9fbbd1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
