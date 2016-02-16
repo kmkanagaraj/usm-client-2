@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_bd9fd74f",
+        "filename": "app/components/admin/add-ldap-user.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-16T10:34:45Z",
+      "side": 1,
+      "message": "use css class instead of style",
+      "range": {
+        "startLine": 5,
+        "startChar": 5,
+        "endLine": 5,
+        "endChar": 33
+      },
+      "revId": "5762db9f1025b5ede4998385ead820873372b3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
