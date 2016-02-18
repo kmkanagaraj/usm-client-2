@@ -14,6 +14,10 @@ export class LdapService {
         });
     }
 
+    testLdapConfig(config){
+        return this.restFull.all('ldapauthtest').post(config);
+    }
+
     saveLdapConfig(config){
         return this.restFull.all('ldap').post(config);
     }

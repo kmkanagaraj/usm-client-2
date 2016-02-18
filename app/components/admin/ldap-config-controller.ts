@@ -2,11 +2,14 @@ import {LdapService} from '../rest/ldap';
 
 export class LdapConfigController {
     private errorMsg: boolean;
+    private tstUserErrorMsg: boolean;
     private ldapServer : string;
     private port: string;
     private base: string;
     private domainAdmin: string;
     private password:string;
+    private testUserName: string;
+    private testUserPwd:  string;
 
     static $inject: Array<string> = [
         '$location',
@@ -38,6 +41,29 @@ export class LdapConfigController {
                 this.errorMsg = false;
             }else{
                 this.errorMsg = true;
+            }
+        });
+     }
+
+    public test():void {
+        var config = {
+            ldapserver: this.ldapServer,
+            port: parseInt(this.port),
+            base: this.base,
+            domainadmin: this.testUserName,
+            password: this.testUserPwd,
+            uid: "cn",
+            firstname: "displayName",
+            lastname: "sn",
+            displayname: "",
+            email: "mail"
+        };
+
+        this.LdapService.testLdapConfig(config).then((result) => {
+            if(result.status === 200) {
+                this.tstUserErrorMsg = false;
+            }else{
+                this.tstUserErrorMsg = true;
             }
         });
      }
