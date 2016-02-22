@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a75e904_09b6eddc",
+        "filename": "app/components/storage/object/storage-new-object.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-22T10:12:27Z",
+      "side": 1,
+      "message": "Can not use \u0027ng-if\u0027 ?",
+      "range": {
+        "startLine": 6,
+        "startChar": 58,
+        "endLine": 6,
+        "endChar": 65
+      },
+      "revId": "1719d7d0680c7d8b8db419b5be831fd91e27554e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a75e904_89c9fd5c",
+        "filename": "app/components/storage/object/storage-new-object.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-22T10:12:27Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 182,
+        "startChar": 53,
+        "endLine": 182,
+        "endChar": 60
+      },
+      "revId": "1719d7d0680c7d8b8db419b5be831fd91e27554e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
