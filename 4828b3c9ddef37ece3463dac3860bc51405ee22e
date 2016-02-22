@@ -134,6 +134,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_a5733ee6",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-22T17:33:54Z",
+      "side": 1,
+      "message": "Here , we are not operating with array .\n\u0027summary.storageprofileusage\u0027 -\u003e This is one object and i am iterating through object\u0027s key.",
+      "parentUuid": "5a72e520_a53b3e37",
+      "range": {
+        "startLine": 97,
+        "startChar": 8,
+        "endLine": 97,
+        "endChar": 38
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_c5483acf",
         "filename": "app/components/dashboard/dashboard-controller.ts",
         "patchSetId": 1
