@@ -1,0 +1,199 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_a5cdfe5f",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "Are we still implementing this?\n\nI thought this dropped for now",
+      "range": {
+        "startLine": 38,
+        "startChar": 9,
+        "endLine": 38,
+        "endChar": 34
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_0504127d",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "Removed extra space",
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_25090e96",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "remove space",
+      "range": {
+        "startLine": 67,
+        "startChar": 70,
+        "endLine": 67,
+        "endChar": 71
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_85f7228c",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "Why is this hardcoded?",
+      "range": {
+        "startLine": 77,
+        "startChar": 8,
+        "endLine": 77,
+        "endChar": 44
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_a53b3e37",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "use _.each instead of this.\n\nOr you can even use _.map to transform one array to a different type of array.\n\nhttps://lodash.com/docs#map\nhttp://joelhooks.com/blog/2014/02/06/stop-writing-for-loops-start-using-underscorejs/",
+      "range": {
+        "startLine": 97,
+        "startChar": 8,
+        "endLine": 97,
+        "endChar": 38
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_052b32ec",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "remove space.",
+      "range": {
+        "startLine": 97,
+        "startChar": 39,
+        "endLine": 97,
+        "endChar": 41
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_c5483acf",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "remove space",
+      "range": {
+        "startLine": 114,
+        "startChar": 22,
+        "endLine": 114,
+        "endChar": 23
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_e54536b4",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "remove space",
+      "range": {
+        "startLine": 119,
+        "startChar": 71,
+        "endLine": 119,
+        "endChar": 72
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_25174ea5",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-22T15:31:46Z",
+      "side": 1,
+      "message": "use ClusterStatus enum for better readability",
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
