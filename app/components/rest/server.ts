@@ -15,6 +15,15 @@ export class ServerService {
         });
     }
 
+
+    // **getDashboardSummary**
+    // **@returns** a promise with all details of main dashboard.
+    getDashboardSummary() {
+        return this.rest.one('system/summary').get().then(function(summary) {
+            return summary;
+        });
+    }
+
     // **getEvents**
     // **@returns** a promise with all events.
     getEvents() {
