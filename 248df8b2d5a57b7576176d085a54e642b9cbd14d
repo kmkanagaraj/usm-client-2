@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_6ee20305",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T06:39:32Z",
+      "side": 1,
+      "message": "Why still using mock data? show these pool usage once real data is there.",
+      "revId": "248df8b2d5a57b7576176d085a54e642b9cbd14d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_8ee65f15",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 168,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T06:39:32Z",
+      "side": 1,
+      "message": "same as above.",
+      "revId": "248df8b2d5a57b7576176d085a54e642b9cbd14d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
