@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "5a72e520_0e050fc2",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T08:36:40Z",
+      "side": 1,
+      "message": "This enum is already there in ../rest/clusters, you could just import and use",
+      "revId": "248df8b2d5a57b7576176d085a54e642b9cbd14d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_ee1c33c4",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T08:36:40Z",
+      "side": 1,
+      "message": "We should try to avoid using \u0027any\u0027 as much as possible.",
+      "revId": "248df8b2d5a57b7576176d085a54e642b9cbd14d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_6ee20305",
         "filename": "app/components/dashboard/dashboard-controller.ts",
         "patchSetId": 5
