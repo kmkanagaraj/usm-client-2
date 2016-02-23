@@ -206,6 +206,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_ceb8572d",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T04:57:28Z",
+      "side": 1,
+      "message": "ok.\n\nWe need to show the remaining profiles in a single category \u0027others\u0027 in the graph",
+      "parentUuid": "5a72e520_4ea54703",
+      "range": {
+        "startLine": 97,
+        "startChar": 8,
+        "endLine": 97,
+        "endChar": 38
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_c5483acf",
         "filename": "app/components/dashboard/dashboard-controller.ts",
         "patchSetId": 1
