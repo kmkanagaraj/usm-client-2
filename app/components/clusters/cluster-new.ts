@@ -253,7 +253,7 @@ export class ClusterNewController {
 
     public postAcceptHostCallBack = (host: any) => {
         this.serverService.getByHostname(host.hostname).then((hostFound) => {
-            host.id = hostFound.node_id;
+            host.id = hostFound.nodeid;
             this.selectHost(host, true);    
         });
     }
