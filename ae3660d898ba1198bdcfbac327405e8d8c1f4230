@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_94403237",
+        "filename": "app/app.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T12:30:16Z",
+      "side": 1,
+      "message": "move the service to rest-module",
+      "parentUuid": "5a72e520_99530b6c",
+      "revId": "ae3660d898ba1198bdcfbac327405e8d8c1f4230",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_d9e4a3ae",
         "filename": "app/components/admin/admin.html",
         "patchSetId": 2
