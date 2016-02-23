@@ -182,6 +182,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_4ea54703",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-23T04:47:48Z",
+      "side": 1,
+      "message": "But Here , we are not sure about properties also . because of some time this properties can be one of from this - \u0027general , sas , ssd \u0027 .\n\nso that the reason i am iterating through object\u0027s key . and before doing specific task ,  i am checking properties name \n\nThis properties name can be one of from \u0027general , sas , ssd \u0027.\nor may be this object might have all these 3 properties .",
+      "parentUuid": "5a72e520_a83dd3bd",
+      "range": {
+        "startLine": 97,
+        "startChar": 8,
+        "endLine": 97,
+        "endChar": 38
+      },
+      "revId": "4828b3c9ddef37ece3463dac3860bc51405ee22e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_c5483acf",
         "filename": "app/components/dashboard/dashboard-controller.ts",
         "patchSetId": 1
