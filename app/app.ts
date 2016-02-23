@@ -27,7 +27,7 @@ import {UserEditController} from "./components/admin/user-edit";
 import {LdapUserController} from "./components/admin/ldap-user-controller";
 import {TaskDetailController} from "./components/tasks/task-detail-controller";
 import {LdapConfigController} from "./components/admin/ldap-config-controller";
-
+import {EmailController} from "./components/admin/mail-settings-controller";
 
 import {KTDraggable} from "./components/shared/directives/kt-draggable";
 import {KTDroppable} from "./components/shared/directives/kt-droppable";
@@ -91,6 +91,7 @@ class USMApp {
             .directive('ktDroppable', () => new KTDroppable())
             .controller('TaskDetailController',TaskDetailController)
             .controller('LdapConfigController',LdapConfigController)
+            .controller('EmailController',EmailController)
             .service('MenuService', MenuService)
             .run( function($rootScope, $location) {
                $rootScope.$watch(function() {
