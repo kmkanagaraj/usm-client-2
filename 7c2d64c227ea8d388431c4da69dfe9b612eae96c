@@ -1,0 +1,198 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_7fcf0fb1",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "Rename this to MailSettingsController",
+      "range": {
+        "startLine": 3,
+        "startChar": 13,
+        "endLine": 3,
+        "endChar": 34
+      },
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_df5483cc",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "use parenthesis {}",
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_bf47c71c",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "should this be \u0027else if\u0027 ?",
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_5f41730a",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "We should show the error if the save fails for some reason",
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_ffba1f09",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "rename this to getMailNotificationSettings",
+      "range": {
+        "startLine": 49,
+        "startChar": 13,
+        "endLine": 49,
+        "endChar": 22
+      },
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_bfca676c",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "change this to either \u0027mailSettings.form\u0027 or \u0027mail.form\u0027",
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_bfe34704",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "Subject Prefix should be an optional input",
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_7f5d4fe9",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "This should be \"Test Message Recipient\"",
+      "range": {
+        "startLine": 84,
+        "startChar": 67,
+        "endLine": 84,
+        "endChar": 89
+      },
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_df6ba383",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "Test Message Recipient.\n\nAlso why is this a textarea instead of a regular text input?",
+      "range": {
+        "startLine": 86,
+        "startChar": 109,
+        "endLine": 86,
+        "endChar": 131
+      },
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_5f26d369",
+        "filename": "app/components/rest/mail-setting.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T15:53:22Z",
+      "side": 1,
+      "message": "Rename this file to mail-settings",
+      "revId": "7c2d64c227ea8d388431c4da69dfe9b612eae96c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
