@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_391777a5",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 10
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T11:25:08Z",
+      "side": 1,
+      "message": "othersProfile.total is getting overridden in every iteration",
+      "revId": "700bb4904524090ae25db3d214008db4b0d21852",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
