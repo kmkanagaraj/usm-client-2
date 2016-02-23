@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_795f2f73",
+        "filename": "app/app.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T11:53:42Z",
+      "side": 1,
+      "message": "service not required to be added here",
+      "revId": "ae3660d898ba1198bdcfbac327405e8d8c1f4230",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_99530b6c",
+        "filename": "app/app.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T11:53:42Z",
+      "side": 1,
+      "message": "remove the service",
+      "revId": "ae3660d898ba1198bdcfbac327405e8d8c1f4230",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_d9e4a3ae",
+        "filename": "app/components/admin/admin.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T11:53:42Z",
+      "side": 1,
+      "message": "input cannot nest a span",
+      "revId": "ae3660d898ba1198bdcfbac327405e8d8c1f4230",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_f9e15f9b",
+        "filename": "app/components/admin/admin.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T11:53:42Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "ae3660d898ba1198bdcfbac327405e8d8c1f4230",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
