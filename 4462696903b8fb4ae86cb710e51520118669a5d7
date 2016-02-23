@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_6eeda38b",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T08:57:15Z",
+      "side": 1,
+      "message": "why this isn\u0027t included in the summary?",
+      "revId": "4462696903b8fb4ae86cb710e51520118669a5d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_eee1939b",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T08:57:15Z",
+      "side": 1,
+      "message": "does the backend aggregate the non-system profiles in to \u0027others\u0027?",
+      "revId": "4462696903b8fb4ae86cb710e51520118669a5d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
