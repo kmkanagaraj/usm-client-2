@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_99da2be8",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 12
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T11:50:39Z",
+      "side": 1,
+      "message": "This is wrong.\n\nits a total of all non-system profiles",
+      "revId": "90e9017719916fb209f62f99840a5c53b912bd81",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_19ee3b8c",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 12
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-23T11:50:39Z",
+      "side": 1,
+      "message": "node.status is changed to number in the backend. \n\nyou can refer https://review.gerrithub.io/#/c/264071/1/app/components/rest/server.ts",
+      "revId": "90e9017719916fb209f62f99840a5c53b912bd81",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
