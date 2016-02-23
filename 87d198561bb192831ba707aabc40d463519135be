@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_2ecc8b35",
+        "filename": "app/components/admin/ldap-settings.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "If you are marking this settings page as Mail settings then you should mark the other settings as LDAP settings",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_aed79bbe",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "change all local variables to camel case",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_6ed683c7",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "remove white spaces",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_8edadfe7",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "same as above",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_4ee8e77c",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "try not to use \u003cbr\u003e . it doesnt have a close tag",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_8e01ff3b",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "remove white spaces",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_eef8b34b",
+        "filename": "app/components/rest/mail-setting.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "remove whitespaces",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_2e9acb14",
+        "filename": "app/components/rest/mail-setting.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "remove code comment",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_4e9f0704",
+        "filename": "app/components/router/route-config.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-23T08:58:11Z",
+      "side": 1,
+      "message": "alignment!",
+      "revId": "87d198561bb192831ba707aabc40d463519135be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
