@@ -1,0 +1,101 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_6e0cbe95",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T06:32:05Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "range": {
+        "startLine": 31,
+        "startChar": 9,
+        "endLine": 31,
+        "endChar": 13
+      },
+      "revId": "7615674921d497026fba293711a6ce07d9b00148",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_ae25d60b",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T06:32:05Z",
+      "side": 1,
+      "message": "can ssl and tls be combined?\n\nThe reason i am asking this is, in the UI we are providing checkbox which means both can be selected",
+      "revId": "7615674921d497026fba293711a6ce07d9b00148",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_ee1fceb5",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T06:32:05Z",
+      "side": 1,
+      "message": "what about the remaining details\n\nthis.mailnotification\nthis.subprefix",
+      "revId": "7615674921d497026fba293711a6ce07d9b00148",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_0e1d0abe",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T06:32:05Z",
+      "side": 1,
+      "message": "how does this work when the user is editing an existing settings?",
+      "revId": "7615674921d497026fba293711a6ce07d9b00148",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_4e7e22e6",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T06:32:05Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "range": {
+        "startLine": 94,
+        "startChar": 10,
+        "endLine": 94,
+        "endChar": 12
+      },
+      "revId": "7615674921d497026fba293711a6ce07d9b00148",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
