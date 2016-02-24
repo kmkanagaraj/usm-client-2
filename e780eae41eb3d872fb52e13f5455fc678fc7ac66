@@ -77,6 +77,24 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_07696d8b",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T16:07:21Z",
+      "side": 1,
+      "message": "I would suggest to remove this now, we could add it later once the API is available",
+      "parentUuid": "5a72e520_0ec18a2e",
+      "revId": "e780eae41eb3d872fb52e13f5455fc678fc7ac66",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_3404de14",
         "filename": "app/components/rest/events.ts",
         "patchSetId": 1
