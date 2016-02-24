@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_a7f899c5",
+        "filename": "app/components/events/event-details.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T16:15:34Z",
+      "side": 1,
+      "message": "running icon is not applicable to event",
+      "revId": "c6c01366fbc798b3fe8cccc3ac7f2f172225fcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_47d8c553",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T16:15:34Z",
+      "side": 1,
+      "message": "Removed unused services",
+      "revId": "c6c01366fbc798b3fe8cccc3ac7f2f172225fcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_c7e3d503",
+        "filename": "app/components/rest/events.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T16:15:34Z",
+      "side": 1,
+      "message": "is this being used?",
+      "revId": "c6c01366fbc798b3fe8cccc3ac7f2f172225fcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_e7f0d1cb",
+        "filename": "app/components/tasks/task-list.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T16:15:34Z",
+      "side": 1,
+      "message": "Remove unused services",
+      "revId": "c6c01366fbc798b3fe8cccc3ac7f2f172225fcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
