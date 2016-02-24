@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_eea98e25",
+        "filename": "app/components/events/event-detail-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-24T07:09:22Z",
+      "side": 1,
+      "message": "rename it to \u0027event\u0027",
+      "range": {
+        "startLine": 29,
+        "startChar": 47,
+        "endLine": 29,
+        "endChar": 51
+      },
+      "revId": "a5ef18dabf8f715bc85e7717f97303be4ef105e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
