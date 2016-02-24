@@ -59,6 +59,24 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_0ec18a2e",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-24T16:03:13Z",
+      "side": 1,
+      "message": "will be removed when tasks api is available",
+      "parentUuid": "5a72e520_1979dbfc",
+      "revId": "e780eae41eb3d872fb52e13f5455fc678fc7ac66",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_3404de14",
         "filename": "app/components/rest/events.ts",
         "patchSetId": 1
@@ -82,6 +100,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_4ee2a2d6",
+        "filename": "app/components/rest/events.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-24T16:03:13Z",
+      "side": 1,
+      "message": "this is events service. all calls will be pointed to events once the /events is up",
+      "parentUuid": "5a72e520_3404de14",
+      "range": {
+        "startLine": 3,
+        "startChar": 13,
+        "endLine": 3,
+        "endChar": 25
+      },
+      "revId": "e780eae41eb3d872fb52e13f5455fc678fc7ac66",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_740e5636",
         "filename": "app/styles/tasks.scss",
         "patchSetId": 1
@@ -93,6 +135,24 @@
       "writtenOn": "2016-02-23T12:22:11Z",
       "side": 1,
       "message": "Remove TWS on above lines",
+      "revId": "e780eae41eb3d872fb52e13f5455fc678fc7ac66",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_6ee75ee5",
+        "filename": "app/styles/tasks.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-24T16:03:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_740e5636",
       "revId": "e780eae41eb3d872fb52e13f5455fc678fc7ac66",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
