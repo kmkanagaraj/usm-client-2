@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_ddd726be",
+        "filename": "package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-25T05:45:03Z",
+      "side": 1,
+      "message": "have you tested this . nothing is breaking ?",
+      "range": {
+        "startLine": 26,
+        "startChar": 19,
+        "endLine": 26,
+        "endChar": 25
+      },
+      "revId": "3c8d3b9fc2efa5af7a66836dc8a21175a126c94c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
