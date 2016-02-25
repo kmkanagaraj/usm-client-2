@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_3831280c",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T09:47:20Z",
+      "side": 1,
+      "message": "I assume \u0027profile\u0027 is an object by looking at the way you access the \u0027used\u0027 and \u0027total\u0027 in it. So comparing it with a string is wrong",
+      "revId": "8927594ab5c1c0872492d631d085870e0df88499",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_5836e404",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T09:47:20Z",
+      "side": 1,
+      "message": "This should be shown only if there are any unaccepted hosts",
+      "revId": "8927594ab5c1c0872492d631d085870e0df88499",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_98405c58",
+        "filename": "app/styles/dashboard.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T09:47:20Z",
+      "side": 1,
+      "message": "we should define patternfly specific names in our source.\n\nAlso .card-pf-height is not a meaningful name",
+      "revId": "8927594ab5c1c0872492d631d085870e0df88499",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
