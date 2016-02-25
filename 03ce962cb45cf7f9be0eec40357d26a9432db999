@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_389be8ca",
+        "filename": "app/components/rest/events.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T07:20:10Z",
+      "side": 1,
+      "message": "Remove this comment",
+      "revId": "03ce962cb45cf7f9be0eec40357d26a9432db999",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_98aa1cd3",
+        "filename": "app/components/tasks/task-list.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T07:20:10Z",
+      "side": 1,
+      "message": "RequestTrackingService not being used",
+      "revId": "03ce962cb45cf7f9be0eec40357d26a9432db999",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_d8abb4d4",
+        "filename": "app/components/tasks/task-list.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T07:20:10Z",
+      "side": 1,
+      "message": "$q not being used",
+      "revId": "03ce962cb45cf7f9be0eec40357d26a9432db999",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
