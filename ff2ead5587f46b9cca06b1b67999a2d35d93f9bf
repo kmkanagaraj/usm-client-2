@@ -19,6 +19,63 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_78f3a00a",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T08:27:58Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "revId": "ff2ead5587f46b9cca06b1b67999a2d35d93f9bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_f8acf08e",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T08:27:58Z",
+      "side": 1,
+      "message": "it should be then",
+      "range": {
+        "startLine": 45,
+        "startChar": 60,
+        "endLine": 45,
+        "endChar": 65
+      },
+      "revId": "ff2ead5587f46b9cca06b1b67999a2d35d93f9bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_d89f344f",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T08:27:58Z",
+      "side": 1,
+      "message": "If success, we need to show a message like \"Saved successfully\". We should not navigate to a different page",
+      "revId": "ff2ead5587f46b9cca06b1b67999a2d35d93f9bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_985cdc27",
         "filename": "app/components/rest/rest-module.ts",
         "patchSetId": 5
