@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_f81cf06c",
+        "filename": "app/components/admin/admin.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-25T07:11:02Z",
+      "side": 1,
+      "message": "refractor to Email settings",
+      "revId": "ff2ead5587f46b9cca06b1b67999a2d35d93f9bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_985cdc27",
+        "filename": "app/components/rest/rest-module.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-25T07:11:02Z",
+      "side": 1,
+      "message": "/email is fine",
+      "revId": "ff2ead5587f46b9cca06b1b67999a2d35d93f9bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_78572003",
+        "filename": "app/components/rest/rest-module.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-25T07:11:02Z",
+      "side": 1,
+      "message": "rename to EmailService",
+      "revId": "ff2ead5587f46b9cca06b1b67999a2d35d93f9bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b840b836",
+        "filename": "app/components/router/route-config.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-25T07:11:02Z",
+      "side": 1,
+      "message": "/admin/email",
+      "revId": "ff2ead5587f46b9cca06b1b67999a2d35d93f9bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
