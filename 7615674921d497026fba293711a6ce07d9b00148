@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_84b55bcf",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-02-25T11:28:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_6e0cbe95",
+      "range": {
+        "startLine": 31,
+        "startChar": 9,
+        "endLine": 31,
+        "endChar": 13
+      },
+      "revId": "7615674921d497026fba293711a6ce07d9b00148",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_ae25d60b",
         "filename": "app/components/admin/mail-settings-controller.ts",
         "patchSetId": 4
@@ -53,6 +77,24 @@
       "writtenOn": "2016-02-24T06:32:05Z",
       "side": 1,
       "message": "what about the remaining details\n\nthis.mailnotification\nthis.subprefix",
+      "revId": "7615674921d497026fba293711a6ce07d9b00148",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_44bb63c4",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-02-25T11:28:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_ee1fceb5",
       "revId": "7615674921d497026fba293711a6ce07d9b00148",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
