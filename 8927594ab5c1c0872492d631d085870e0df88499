@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_d30f172d",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-25T10:14:01Z",
+      "side": 1,
+      "message": "here \"profile\" is one object but it has some name like general, sas, ssd or any user defined profile name.\n\nand based on this profile name , we have to defined some color and title so that why here i am using if block to identify the profile name \n\nand here in for loop we are taking one by one each key of object  and again this key (profile object) is the object .\n\nthis is the response for storage profile that i am getting from APi\n\n{\n\n    \"general\":{\n        \"used\":129312,\n        \"total\":3132228\n    },\n    \"sas\":{\n        \"used\":229312,\n        \"total\":3112428\n    },\n    \"ssd\":{\n        \"used\":126312,\n        \"total\":4132228\n    },\n    \"abc\":{\n        \"used\":59312,\n        \"total\":312228\n    },\n    \"def\":{\n        \"used\":69312,\n        \"total\":313258\n    }\n\n}\n\nSo here you can see we don\u0027t have array , we have object and nested object and also we are not sure about any of these profile that we will get surely every time. so that why here i am using if block for each key(which is again object - \"general\":{\n        \"used\":129312,\n        \"total\":3132228\n    })",
+      "parentUuid": "5a72e520_3831280c",
+      "revId": "8927594ab5c1c0872492d631d085870e0df88499",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_5836e404",
         "filename": "app/components/dashboard/dashboard.html",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_b339bbda",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-25T10:14:01Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "5a72e520_5836e404",
+      "revId": "8927594ab5c1c0872492d631d085870e0df88499",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_98405c58",
         "filename": "app/styles/dashboard.scss",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2016-02-25T09:47:20Z",
       "side": 1,
       "message": "we should define patternfly specific names in our source.\n\nAlso .card-pf-height is not a meaningful name",
+      "revId": "8927594ab5c1c0872492d631d085870e0df88499",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_d33d57bd",
+        "filename": "app/styles/dashboard.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-25T10:14:01Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "5a72e520_98405c58",
       "revId": "8927594ab5c1c0872492d631d085870e0df88499",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
