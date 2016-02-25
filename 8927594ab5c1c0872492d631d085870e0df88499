@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_9373dfb0",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-25T10:18:10Z",
+      "side": 1,
+      "message": "ok. You are iterating through the keys of the object.",
+      "parentUuid": "5a72e520_d30f172d",
+      "revId": "8927594ab5c1c0872492d631d085870e0df88499",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_5836e404",
         "filename": "app/components/dashboard/dashboard.html",
         "patchSetId": 1
