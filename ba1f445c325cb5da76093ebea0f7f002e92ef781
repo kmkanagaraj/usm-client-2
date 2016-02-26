@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_19938dfb",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-26T08:59:17Z",
+      "side": 1,
+      "message": "Is this being used?",
+      "revId": "ba1f445c325cb5da76093ebea0f7f002e92ef781",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_d9af352a",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-26T08:59:17Z",
+      "side": 1,
+      "message": "I would suggest to declare the types here.\n\nWe should try to minimize the usage of \u0027any\u0027 type",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 29
+      },
+      "revId": "ba1f445c325cb5da76093ebea0f7f002e92ef781",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_99b69d89",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-26T08:59:17Z",
+      "side": 1,
+      "message": "can we just do \n\n this.hosts \u003d summary.nodescount ?",
+      "range": {
+        "startLine": 58,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 66
+      },
+      "revId": "ba1f445c325cb5da76093ebea0f7f002e92ef781",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b9bb5971",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-26T08:59:17Z",
+      "side": 1,
+      "message": "same here?",
+      "range": {
+        "startLine": 61,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 65
+      },
+      "revId": "ba1f445c325cb5da76093ebea0f7f002e92ef781",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
