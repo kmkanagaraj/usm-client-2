@@ -23,4 +23,14 @@ export class LdapService {
             return config;
         });
     }
+
+    setLdapProvider(config){
+        return this.restFull.all('authprovider').post(config);
+    }
+
+    getLdapProvider() {
+        return this.rest.one('authprovider', "ldapauthprovider").get().then(function(config) {
+            return config;
+        });
+    }
 }
