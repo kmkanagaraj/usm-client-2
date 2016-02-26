@@ -22,6 +22,30 @@
       "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_bcb0a7f5",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-26T11:32:21Z",
+      "side": 1,
+      "message": "here , we are not sure about structure for every sub object of response object , because some of them have this kind structure . like example -\u003e\n\n{\n   \"name\":\"system\",\n   \"usage\":{\n\n      \"used\":134750208,\n      \"total\":3207401472\n\n    },\n   \"storageprofileusage\":{\n\n       \"general\":{\n        \"used\":131592,\n        \"total\":3132228\n       }\n\n    },\n    \"objectcnt\":0,\n    \"storagecount\":{\n\n       \"down\":0,\n       \"total\":4\n\n    },\n    \"slucount\":{\n\n           \"total\":3\n\n     },\n    \"nodescount\":{\n\n        \"error\":0,\n        \"total\":4,\n        \"unaccepted\":0\n\n    }\n}\n\nin above one , we can see we have This kind of structure for only  usage and storageprofileusage\u0027s subObject.",
+      "parentUuid": "5a72e520_dc1f2308",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
