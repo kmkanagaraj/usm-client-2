@@ -94,6 +94,30 @@
       "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_6763f8b1",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-26T13:15:37Z",
+      "side": 1,
+      "message": "API might have 100 properties, but we care about only the 10 properties which we use.\n\nThe type information doesn\u0027t play any role at the runtime and its discarded once the compilation is over.\n\nLets say declare 3 properties and API response has 10 properties(7 extra), its not going to break in the run time.\n\nwhat i am saying, whatever data we use in the controller, we need to define the type for them.\n\nLet me explain how this type information is useful. Take an example of Node resource, it has properties like hostname, management_ip4, extra. Now consider the backend API renamed management_ip4 to mgmt_ip4. How do we know what are controllers are using it. If we would defined the Node type and used everywhere, the moment you modify the type, compiler will throw an error where ever that property is used.\n\nSo the whole point having type information is to catch most of the error at compile time rather than at run time.\n\nIf you are still not clear, we can talk about it in person.",
+      "parentUuid": "5a72e520_3ca75751",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
