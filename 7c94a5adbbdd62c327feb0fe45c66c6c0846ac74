@@ -70,6 +70,30 @@
       "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_3ca75751",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-26T12:06:41Z",
+      "side": 1,
+      "message": "ya . it\u0027s possible . \n\nBut what my thought is ,later this Api will have to many info . how many we can do like this way . and also later if any thing got change in response data . so whole ui stuff will break in service . and won\u0027t get data in controller.\n\nThis structure will be useful when we have some generic data like suppose we have array of object . and each object have \"used\" and \"total\" properties . than only structure type checking will be useful.\n\ni don\u0027t think so , we should do like this way",
+      "parentUuid": "5a72e520_1cfc5b3e",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
