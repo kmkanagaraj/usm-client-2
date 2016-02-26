@@ -46,6 +46,30 @@
       "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_1cfc5b3e",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-26T11:53:18Z",
+      "side": 1,
+      "message": "it is possible to express this type as follows.\n\n export interface SystemSummary {\n     name: string;\n     usage: { used: number, total: number};\n     storageprofileusage: { general: { used: number, total: number} }\n     ...   \n }",
+      "parentUuid": "5a72e520_bcb0a7f5",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
