@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_5f17a0ed",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-29T08:15:31Z",
+      "side": 1,
+      "message": "It should be changed to\n\n\u003cp class\u003d\"text-info\"\u003e\n    \u003clabel class\u003d\"fa fa-exclamation-circle\"\u003e\u003c/label\u003e\n    Automatic cluster expansion will be enabled, whenever new disks or host added to this cluster, it will expand automatically\n\u003c/p\u003e",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 13
+      },
+      "revId": "820797b4067c77c172e6c5684a3e6f6c56c914ca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
