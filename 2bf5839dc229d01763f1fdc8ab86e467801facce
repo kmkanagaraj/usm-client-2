@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_5273174d",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-29T11:10:24Z",
+      "side": 1,
+      "message": "please remove this space",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 5
+      },
+      "revId": "2bf5839dc229d01763f1fdc8ab86e467801facce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_728f3324",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-29T11:10:24Z",
+      "side": 1,
+      "message": "use \"\u003d\u003d\u003d\" operator always for best type checking.",
+      "range": {
+        "startLine": 59,
+        "startChar": 23,
+        "endLine": 59,
+        "endChar": 25
+      },
+      "revId": "2bf5839dc229d01763f1fdc8ab86e467801facce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_9294af38",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-29T11:10:24Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 62,
+        "startChar": 28,
+        "endLine": 62,
+        "endChar": 30
+      },
+      "revId": "2bf5839dc229d01763f1fdc8ab86e467801facce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_329f7b61",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-29T11:10:24Z",
+      "side": 1,
+      "message": "no need to check true specific . you can also do like this way \n\nng-if\u003d\"mail.errorMsgTest\"",
+      "range": {
+        "startLine": 87,
+        "startChar": 18,
+        "endLine": 87,
+        "endChar": 42
+      },
+      "revId": "2bf5839dc229d01763f1fdc8ab86e467801facce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b2828bfe",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-29T11:10:24Z",
+      "side": 1,
+      "message": "here also you can do like this way\n\nng-if\u003d\"!mail.errorMsgTest\"",
+      "range": {
+        "startLine": 88,
+        "startChar": 18,
+        "endLine": 88,
+        "endChar": 43
+      },
+      "revId": "2bf5839dc229d01763f1fdc8ab86e467801facce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_f27b2327",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-29T11:10:24Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 95,
+        "startChar": 17,
+        "endLine": 95,
+        "endChar": 41
+      },
+      "revId": "2bf5839dc229d01763f1fdc8ab86e467801facce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_12799f2f",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-29T11:10:24Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 96,
+        "startChar": 17,
+        "endLine": 96,
+        "endChar": 42
+      },
+      "revId": "2bf5839dc229d01763f1fdc8ab86e467801facce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
