@@ -13,7 +13,9 @@ export class EmailController {
     private subPrefix:string;
     private recipent:any;
     private skipVerify:boolean;
-    private errorMsg:boolean;
+    private errorMsgSave:boolean;
+    private errorMsgTest:boolean;
+    private recipient:string;
 
      static $inject: Array<string> = [
         '$location',
@@ -44,11 +46,40 @@ export class EmailController {
         };
         this.EmailService.saveMailSettings(notifier).then((result) => {
             if(result.status === 200) {
-                this.errorMsg = false;
+                this.errorMsgSave = false;
             }
         }).catch((result)=>{
             if(result.status !=200){
-                this.errorMsg = true;
+                this.errorMsgSave = true;
+            }
+        });
+     }
+
+     public test():void {
+        if(this.useSsl === true){
+            this.encryption='ssl';
+        }
+        else if(this.useTls === true){
+            this.encryption='tls';
+        }
+        var notifier = {
+            mailnotification: this.mailNotification,
+            smtpserver : this.smtpServer,
+            port : this.port,
+            encryption : this.encryption,
+            mailid : this.mailId,
+            password : this.password,
+            subprefix : this.subPrefix,
+            skipverify :this.skipVerify,
+            recipient :this.recipient
+        };
+        this.EmailService.testMailSettings(notifier).then((result) => {
+            if(result.status === 200) {
+                this.errorMsgTest = false;
+            }
+        }).catch((result)=>{
+            if(result.status !=200){
+                this.errorMsgTest = true;
             }
         });
      }
