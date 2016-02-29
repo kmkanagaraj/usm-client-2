@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_df7390af",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-29T06:34:11Z",
+      "side": 1,
+      "message": "Currently the pool used information not available from the backend.\n\nI will put the title once i have the usage information",
+      "parentUuid": "5a72e520_df0e3034",
+      "range": {
+        "startLine": 83,
+        "startChar": 72,
+        "endLine": 83,
+        "endChar": 74
+      },
+      "revId": "3c6c6e1eeb0fa45ac695ad4cd6284cce48cf6258",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_bf20949c",
         "filename": "app/components/storage/blockdevice/blockdevice-new.ts",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2016-02-29T06:21:37Z",
       "side": 1,
       "message": "can\u0027t use each here instead of for loop",
+      "range": {
+        "startLine": 131,
+        "startChar": 12,
+        "endLine": 131,
+        "endChar": 37
+      },
+      "revId": "3c6c6e1eeb0fa45ac695ad4cd6284cce48cf6258",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_1f6528e1",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-29T06:34:11Z",
+      "side": 1,
+      "message": "This is an ES6 for-loop\nref: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/for...of\n\ndo you want me to change it to _.each?",
+      "parentUuid": "5a72e520_bf20949c",
       "range": {
         "startLine": 131,
         "startChar": 12,
