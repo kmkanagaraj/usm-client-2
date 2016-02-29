@@ -8,7 +8,12 @@
       <div ng-show="form.clusterName.$touched">
         <div ng-show="form.clusterName.$error.required" class="error-validation-msg">Cluster name is required!</div>
       </div>
-    </div>
+      </div>
+       <div class="col-md-11 col-md-offset-2">
+         <p class="text-info">
+            <label class="col-md-4 fa fa-exclamation-circle">Automatic cluster expansion will be enabled,
+                 whenever new disks or host added to this cluster, it will expand automatically.</label></p>
+      </div>
     <div class="form-group">
       <label class="col-md-2 control-label" for="textInput">OpenStack Services</label>
       <div class="col-md-4">
