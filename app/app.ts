@@ -64,6 +64,8 @@ class USMApp {
             'gridshore.c3js.chart',
             'restangular',
             'patternfly.charts',
+            'patternfly.notification',
+            'patternfly.form',
             RequestsModule,
             RestModule,
             HostModule,
