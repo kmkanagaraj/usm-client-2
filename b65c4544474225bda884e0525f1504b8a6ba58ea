@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_1fda8878",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-29T06:49:39Z",
+      "side": 1,
+      "message": "why the label has col-md?\n\nit could be simple as following\n\n\u003cdiv class\u003d\"col-md-4 col-md-offset-2\"\u003e\n    \u003cp class\u003d\"text-info\"\u003e\n        \u003clabel class\u003d\"fa fa-exclamation-circle\"\u003e\u003c/label\u003e\n        Automatic cluster expansion will be enabled,            whenever new disks or host added to this cluster, it will expand automatically.\n    \u003c/p\u003e\n\u003c/div\u003e\n\ndon\u0027t worry about Openstack Services, i will be removing them",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 12
+      },
+      "revId": "b65c4544474225bda884e0525f1504b8a6ba58ea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
