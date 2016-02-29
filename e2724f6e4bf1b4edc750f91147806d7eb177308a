@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_bc3b42ea",
+        "filename": "app/components/admin/ldap-config-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-02-29T06:09:20Z",
+      "side": 1,
+      "message": "remove the alert",
+      "revId": "e2724f6e4bf1b4edc750f91147806d7eb177308a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
