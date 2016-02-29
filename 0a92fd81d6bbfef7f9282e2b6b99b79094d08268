@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_5f1de0bc",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-29T09:33:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_df3ab035",
+      "range": {
+        "startLine": 14,
+        "startChar": 78,
+        "endLine": 14,
+        "endChar": 79
+      },
+      "revId": "0a92fd81d6bbfef7f9282e2b6b99b79094d08268",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_ff3e8c28",
         "filename": "app/components/clusters/clusters-new-summary.html",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2016-02-29T09:28:01Z",
       "side": 1,
       "message": "please remove this space",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 2
+      },
+      "revId": "0a92fd81d6bbfef7f9282e2b6b99b79094d08268",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_9f7e78e3",
+        "filename": "app/components/clusters/clusters-new-summary.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-29T09:33:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_ff3e8c28",
       "range": {
         "startLine": 15,
         "startChar": 0,
