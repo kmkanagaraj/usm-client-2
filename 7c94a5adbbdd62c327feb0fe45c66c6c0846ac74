@@ -118,6 +118,30 @@
       "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_bc442275",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-02-29T06:09:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_6763f8b1",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "7c94a5adbbdd62c327feb0fe45c66c6c0846ac74",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
