@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_3f34a4dd",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-02-29T06:23:13Z",
+      "side": 1,
+      "message": "\u0027any\u0027 should be replaced with \u0027DashboardSummaryData\u0027",
+      "range": {
+        "startLine": 45,
+        "startChar": 38,
+        "endLine": 45,
+        "endChar": 41
+      },
+      "revId": "320a654fbfe500b8dfc8f82a4a34ce905bea542a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
