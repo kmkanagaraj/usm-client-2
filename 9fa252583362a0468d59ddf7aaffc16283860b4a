@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_e9a5f104",
+        "filename": "app/components/events/event-details.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T11:38:28Z",
+      "side": 1,
+      "message": "should be \"\u003d\u003d\u003d\" operator",
+      "range": {
+        "startLine": 3,
+        "startChar": 69,
+        "endLine": 3,
+        "endChar": 71
+      },
+      "revId": "9fa252583362a0468d59ddf7aaffc16283860b4a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_09ab2dd9",
+        "filename": "app/components/events/event-details.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T11:38:28Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 5,
+        "startChar": 109,
+        "endLine": 5,
+        "endChar": 112
+      },
+      "revId": "9fa252583362a0468d59ddf7aaffc16283860b4a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_895f1d0e",
+        "filename": "app/components/events/event-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T11:38:28Z",
+      "side": 1,
+      "message": "can we use \"\u003d\u003d\u003d\" operator here",
+      "range": {
+        "startLine": 105,
+        "startChar": 89,
+        "endLine": 105,
+        "endChar": 91
+      },
+      "revId": "9fa252583362a0468d59ddf7aaffc16283860b4a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_2968e9b9",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T11:38:28Z",
+      "side": 1,
+      "message": "i think this should be enum",
+      "range": {
+        "startLine": 15,
+        "startChar": 12,
+        "endLine": 15,
+        "endChar": 23
+      },
+      "revId": "9fa252583362a0468d59ddf7aaffc16283860b4a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
