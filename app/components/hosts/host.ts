@@ -24,6 +24,7 @@ export class HostController {
         'RequestService'
     ];
     private timer;
+    private action:string;
 
     constructor(
         private $scope: ng.IScope,
@@ -113,6 +114,17 @@ export class HostController {
         this.serverService.remove(node_id).then(function(result) {
             this.reloadData();
             console.log(result);
+        });
+    }
+
+    public reinitialize(host):void{
+        var reinit = {
+            action : "reinitialize"
+        };
+        this.serverService.reinitialize(reinit, host.hostname).then((result) => {
+            if(result.status === 200){
+                this.$location.path('/hosts');
+            }
         });
     }
 }
