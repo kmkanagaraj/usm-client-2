@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_81d8d754",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T09:59:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_e14a6b26",
+      "range": {
+        "startLine": 30,
+        "startChar": 12,
+        "endLine": 30,
+        "endChar": 20
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_215563c6",
         "filename": "app/components/clusters/cluster-detail.ts",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-01T09:37:41Z",
       "side": 1,
       "message": "rename it to memoryTimeSlot since its for memory",
+      "range": {
+        "startLine": 31,
+        "startChar": 12,
+        "endLine": 31,
+        "endChar": 28
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_2103a3b9",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T09:59:32Z",
+      "side": 1,
+      "message": "it\u0027s overall time slot means including memory, cpu , latency etc.\n\nmeans when we will change this time slot , than it will effect for memory, cpu , latency etc.",
+      "parentUuid": "5a72e520_215563c6",
       "range": {
         "startLine": 31,
         "startChar": 12,
@@ -94,6 +142,54 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_41009faa",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T09:59:32Z",
+      "side": 1,
+      "message": "usageDataArray is one array that is holding sub-array as a element \u003d\u003d\u003e \n\nlike example \u003d\u003d\u003e \n\nusageDataArray \u003d \n[\n\n    [\n        79.29972627737226,\n        1.45677342e+09\n    ],\n    [\n        79.32112142710496,\n        1.45677348e+09\n    ]\n]",
+      "parentUuid": "5a72e520_a15873fb",
+      "range": {
+        "startLine": 115,
+        "startChar": 30,
+        "endLine": 115,
+        "endChar": 44
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_612cbb4b",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T09:59:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_a141530d",
+      "range": {
+        "startLine": 115,
+        "startChar": 47,
+        "endLine": 115,
+        "endChar": 50
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_61059bc1",
         "filename": "app/styles/cluster-detail.scss",
         "patchSetId": 1
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_8131b7a4",
+        "filename": "app/styles/cluster-detail.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T09:59:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_61059bc1",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 21
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_810a97d0",
         "filename": "app/styles/cluster-detail.scss",
         "patchSetId": 1
@@ -128,6 +248,30 @@
       "writtenOn": "2016-03-01T09:37:41Z",
       "side": 1,
       "message": "same here",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 21
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_a126b366",
+        "filename": "app/styles/cluster-detail.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T09:59:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_810a97d0",
       "range": {
         "startLine": 53,
         "startChar": 0,
