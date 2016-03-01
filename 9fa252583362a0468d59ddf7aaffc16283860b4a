@@ -91,6 +91,30 @@
       "revId": "9fa252583362a0468d59ddf7aaffc16283860b4a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_89171ded",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-01T12:24:47Z",
+      "side": 1,
+      "message": "No, here i want a string value",
+      "parentUuid": "5a72e520_2968e9b9",
+      "range": {
+        "startLine": 15,
+        "startChar": 12,
+        "endLine": 15,
+        "endChar": 23
+      },
+      "revId": "9fa252583362a0468d59ddf7aaffc16283860b4a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
