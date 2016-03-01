@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_e14a6b26",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-01T09:37:41Z",
+      "side": 1,
+      "message": "rename it to timeSlots. also you declare with type, something like\n\nprivate timeSlots: [{name:string, value:string}]",
+      "range": {
+        "startLine": 30,
+        "startChar": 12,
+        "endLine": 30,
+        "endChar": 20
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_215563c6",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-01T09:37:41Z",
+      "side": 1,
+      "message": "rename it to memoryTimeSlot since its for memory",
+      "range": {
+        "startLine": 31,
+        "startChar": 12,
+        "endLine": 31,
+        "endChar": 28
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_a141530d",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-01T09:37:41Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "range": {
+        "startLine": 115,
+        "startChar": 47,
+        "endLine": 115,
+        "endChar": 50
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_a15873fb",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-01T09:37:41Z",
+      "side": 1,
+      "message": "usageDataArray is an object or array? can you give me a example structure?",
+      "range": {
+        "startLine": 115,
+        "startChar": 30,
+        "endLine": 115,
+        "endChar": 44
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_61059bc1",
+        "filename": "app/styles/cluster-detail.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-01T09:37:41Z",
+      "side": 1,
+      "message": "why this needs to be explicit?\n\nwhats the default color?",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 21
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_810a97d0",
+        "filename": "app/styles/cluster-detail.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-01T09:37:41Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 21
+      },
+      "revId": "c27cc23514cead4b070d916432d6dbdc9dc4ad05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
