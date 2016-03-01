@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_c9d59544",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-01T11:57:55Z",
+      "side": 1,
+      "message": "here you are converting into string and than again in int .\nin which format , you are getting this data",
+      "range": {
+        "startLine": 41,
+        "startChar": 28,
+        "endLine": 41,
+        "endChar": 48
+      },
+      "revId": "5532ff64fb543a5fd8f4873d2bda7958ea37f507",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
