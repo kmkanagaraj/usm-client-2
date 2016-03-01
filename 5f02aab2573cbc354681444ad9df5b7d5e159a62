@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_c952f512",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-01T11:29:16Z",
+      "side": 1,
+      "message": "Is this required?",
+      "revId": "5f02aab2573cbc354681444ad9df5b7d5e159a62",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_8931ddee",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-01T11:29:16Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "revId": "5f02aab2573cbc354681444ad9df5b7d5e159a62",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
