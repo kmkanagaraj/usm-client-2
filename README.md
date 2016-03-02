@@ -29,7 +29,7 @@ Graphical user interface for [SkyRing] (https://github.com/skyrings/skyring), a 
 
 ### Building rpm package
 1. install latest versions of nodejs and rpm-build `yum install nodejs npm rpm-build`
-2. clone the repository `git clone git@github.com:skyrings/kitoon.git`
+2. clone the repository `git clone https://review.gerrithub.io/skyrings/kitoon`
 3. `cd kitoon`
 4. run `make build-setup`
 5. run `make rpm`
@@ -38,7 +38,7 @@ Graphical user interface for [SkyRing] (https://github.com/skyrings/skyring), a 
 ### Development setup in Fedora 21/22/23
 1. install latest version of nodejs `yum install nodejs npm`
 2. install `gulp` and `tsd` gloabally - `npm install -g gulp tsd`
-3. clone the repository `git clone git@github.com:skyrings/kitoon.git`
+3. clone the repository `git clone https://review.gerrithub.io/skyrings/kitoon`. If u are planning to send patch then its better to clone with ssh `git clone ssh://<githubname>@review.gerrithub.io:29418/skyrings/kitoon`
 4. `cd kitoon`
 5. install node modules `npm install`
 6. install typescript definition files `tsd install`
