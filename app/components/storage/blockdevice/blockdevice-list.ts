@@ -75,6 +75,10 @@ export class BlockDeviceListController {
         rbd['targetSize'] = size;
     }
 
+    public updateSize(rbd: BlockDevice, newSize) {
+        rbd['targetSize'] = newSize;
+    }
+
     public resize(rbd: BlockDevice) {
         var targetSize = rbd['targetSize'];
         var size = { size: targetSize.value.toString() + targetSize.unit };
