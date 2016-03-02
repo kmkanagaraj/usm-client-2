@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_d2cc5e38",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-02T04:49:19Z",
+      "side": 1,
+      "message": "The error message returned from the backend also should be shown here",
+      "revId": "11615a0ab2b497cb6dc0b1d1d196ea0c10952d36",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
