@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_61c82d75",
+        "filename": "app/components/shared/directives/storage-size-selector.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-04T06:22:57Z",
+      "side": 1,
+      "message": "i think this should be only for E- element . because of , only we will use it as element not as attribute.",
+      "range": {
+        "startLine": 21,
+        "startChar": 16,
+        "endLine": 21,
+        "endChar": 18
+      },
+      "revId": "d154f6b7393fe5d780f4da22a1cb1f3529128fe8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_81c5295d",
+        "filename": "app/components/shared/directives/storage-size-selector.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-04T06:22:57Z",
+      "side": 1,
+      "message": "this is two way binding b/w controller and this directive .\nit might be cause to parent controller scope variable.",
+      "range": {
+        "startLine": 23,
+        "startChar": 22,
+        "endLine": 23,
+        "endChar": 23
+      },
+      "revId": "d154f6b7393fe5d780f4da22a1cb1f3529128fe8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_21ce3584",
+        "filename": "app/components/storage/blockdevice/blockdevice-list.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-04T06:22:57Z",
+      "side": 1,
+      "message": "i thing , we should also defined the type for this",
+      "range": {
+        "startLine": 78,
+        "startChar": 40,
+        "endLine": 78,
+        "endChar": 47
+      },
+      "revId": "d154f6b7393fe5d780f4da22a1cb1f3529128fe8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
