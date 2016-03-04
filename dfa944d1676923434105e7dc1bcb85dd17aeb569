@@ -22,6 +22,30 @@
       "revId": "dfa944d1676923434105e7dc1bcb85dd17aeb569",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_415b3154",
+        "filename": "app/components/shared/directives/storage-size-selector.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-04T09:04:41Z",
+      "side": 1,
+      "message": "Not required, will remove it",
+      "parentUuid": "5a72e520_014a1980",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 5
+      },
+      "revId": "dfa944d1676923434105e7dc1bcb85dd17aeb569",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
