@@ -94,6 +94,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_e6f7e18a",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-03-04T11:49:56Z",
+      "side": 1,
+      "message": "ng-if \u003d \"mail.errorMsgTest\" or ng-if \u003d \"!mail.errorMsgTest\"\nBy default it shows success message when page loads. Since in the beginning the errorMsg doesn\u0027t have any value, it considers that errMsgTest is false. So here is the place type checking is needed.",
+      "parentUuid": "5a72e520_329f7b61",
+      "range": {
+        "startLine": 87,
+        "startChar": 18,
+        "endLine": 87,
+        "endChar": 42
+      },
+      "revId": "2bf5839dc229d01763f1fdc8ab86e467801facce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_b2828bfe",
         "filename": "app/components/admin/mail-settings.html",
         "patchSetId": 1
