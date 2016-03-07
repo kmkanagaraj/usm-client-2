@@ -101,7 +101,7 @@
                                         <span>{{clusterdetail.monitors.warning}}</span></a>
                                     </span>
                                     <span ng-if="clusterdetail.monitors.critical===0 && clusterdetail.monitors.warning===0" class="card-pf-aggregate-status-notification"><a href="">
-                                        <span class="pficon pficon-ok"></span>
+                                        <span class="pficon pficon-ok"></span></a>
                                     </span>
                                 </p>
                             </div>
@@ -123,7 +123,7 @@
                                         <span>{{clusterdetail.pgs.warning}}</span></a>
                                     </span>
                                     <span ng-if="clusterdetail.pgs.critical===0 && clusterdetail.pgs.warning===0" class="card-pf-aggregate-status-notification"><a href="">
-                                        <span class="pficon pficon-ok"></span>
+                                        <span class="pficon pficon-ok"></span></a>
                                     </span>
                                 </p>
                             </div>
@@ -149,7 +149,7 @@
                                         <span>{{clusterdetail.pools.warning}}</span></a>
                                     </span>
                                     <span ng-if="clusterdetail.pools.critical===0 && clusterdetail.pools.warning===0" class="card-pf-aggregate-status-notification"><a href="">
-                                        <span class="pficon pficon-ok"></span>
+                                        <span class="pficon pficon-ok"></span></a>
                                     </span>
                                     <span class="card-pf-aggregate-status-notification"><a href="">1 
                                     </a><small class="status-notification">Near Full</small></span>
@@ -173,7 +173,7 @@
                                         <span>{{clusterdetail.osds.warning}}</span></a>
                                     </span>
                                     <span ng-if="clusterdetail.osds.critical===0 && clusterdetail.osds.warning===0" class="card-pf-aggregate-status-notification"><a href="">
-                                        <span class="pficon pficon-ok"></span>
+                                        <span class="pficon pficon-ok"></span></a>
                                     </span>
                                 </p>
                             </div>
@@ -195,7 +195,7 @@
                                         <span>{{clusterdetail.objects.warning}}</span></a>
                                     </span>
                                     <span ng-if="clusterdetail.objects.critical===0 && clusterdetail.objects.warning===0" class="card-pf-aggregate-status-notification"><a href="">
-                                        <span class="pficon pficon-ok"></span>
+                                        <span class="pficon pficon-ok"></span></a>
                                     </span>
                                 </p>
                             </div>
@@ -269,7 +269,6 @@
         </div><!-- End of Fisrt Big row -->
     </div>
 
-    <!-- TODO -->
     <!-- SECOND TAB CONTENT -->
     <div ng-show="clusterdetail.isSet(1)">
         Second tab
@@ -282,7 +281,41 @@
 
     <!-- FOURTH TAB CONTENT -->
     <div ng-show="clusterdetail.isSet(3)">
-        Fourth tab
+        <div class="container-fluid blockdevice-list">
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Search" ng-model="search">
+                </div>
+                <div class="col-md-offset-6 col-md-3">
+                    <span class="pull-right">
+                        <button class="btn btn-primary btn-lg" ng-click="clusterdetail.createRBD()">Add</button>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="list-group list-view-pf">
+                        <div ng-repeat="rbd in clusterdetail.rbds | filter:search">
+                            <block-device-item details="rbd" remove="clusterdetail.removeRBD(rbd)" resize="clusterdetail.showRBDResizeForm(rbd)"></block-device-item>
+                            <div class="list-group-item list-item-resize" ng-if="rbd.resize">
+                                <form name="form" class="form-horizontal resize-form">
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label" for="type">Target Size</label>
+                                        <div class="col-md-2">
+                                            <storage-size-selector default="rbd.targetSize" on-change="clusterdetail.updateRBDSize(rbd, newSize)"></storage-size-selector>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button class="btn btn-primary" ng-click="clusterdetail.resizeRBD(rbd)">Save</button>
+                                            <button class="btn btn-default" ng-click="clusterdetail.cancelRBDResize(rbd)">Cancel</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
