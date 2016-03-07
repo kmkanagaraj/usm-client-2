@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_dd73814b",
+        "filename": "app/components/shared/directives/storage-size-selector.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-07T05:02:27Z",
+      "side": 1,
+      "message": "Is TB enough?. Do we need to support PB and more?.",
+      "range": {
+        "startLine": 28,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 34
+      },
+      "revId": "ac0bc9b3ca5b3932a36693fe7e8e2ba9beb53bb7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
