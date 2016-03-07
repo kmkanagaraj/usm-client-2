@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_913e52b7",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-07T11:46:41Z",
+      "side": 1,
+      "message": "we should define type for this also.",
+      "range": {
+        "startLine": 38,
+        "startChar": 12,
+        "endLine": 38,
+        "endChar": 17
+      },
+      "revId": "8dae30dbd99e5e8ec90c2953b18d8c3335207fd5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b14b4e58",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-07T11:46:41Z",
+      "side": 1,
+      "message": "Is not necessary to pass dependency injection for this?",
+      "range": {
+        "startLine": 64,
+        "startChar": 16,
+        "endLine": 64,
+        "endChar": 24
+      },
+      "revId": "8dae30dbd99e5e8ec90c2953b18d8c3335207fd5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_5174da98",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 327,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-07T11:46:41Z",
+      "side": 1,
+      "message": "i think no need to parse in string , if  targetSize.unit is string . than automatically it will be string after concatenation.",
+      "range": {
+        "startLine": 327,
+        "startChar": 44,
+        "endLine": 327,
+        "endChar": 54
+      },
+      "revId": "8dae30dbd99e5e8ec90c2953b18d8c3335207fd5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_7141d638",
+        "filename": "app/components/clusters/clusters-detail-rbds.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-07T11:46:41Z",
+      "side": 1,
+      "message": "you have not taken any id\u003d\"type\" . i think , we can remove this.",
+      "range": {
+        "startLine": 20,
+        "startChar": 70,
+        "endLine": 20,
+        "endChar": 80
+      },
+      "revId": "8dae30dbd99e5e8ec90c2953b18d8c3335207fd5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
