@@ -33,6 +33,14 @@ export class BlockDeviceService {
             return blockdevices;
         });
     }
+    
+    // **getListByCluster**
+    // **@returns** a promise with all Block devices for the given cluster.
+    getListByCluster(clusterid: string) {
+        return this.rest.one('clusters', clusterid).all('blockdevices').getList<BlockDevice>().then(function(blockdevices: Array<BlockDevice>) {
+            return blockdevices;
+        });
+    }
 
     // **Add**
     // **@returns** add a new block device
