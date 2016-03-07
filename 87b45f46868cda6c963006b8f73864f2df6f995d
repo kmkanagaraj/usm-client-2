@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_4b88a71f",
+        "filename": "app/components/storage/blockdevice/blockdevice-item.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-07T06:29:58Z",
+      "side": 1,
+      "message": "should be element only",
+      "range": {
+        "startLine": 21,
+        "startChar": 16,
+        "endLine": 21,
+        "endChar": 18
+      },
+      "revId": "87b45f46868cda6c963006b8f73864f2df6f995d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
