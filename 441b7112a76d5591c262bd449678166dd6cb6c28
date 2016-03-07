@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_91dad276",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-07T12:01:34Z",
+      "side": 1,
+      "message": "/s/Optmized/Optimized",
+      "range": {
+        "startLine": 12,
+        "startChar": 33,
+        "endLine": 12,
+        "endChar": 41
+      },
+      "revId": "441b7112a76d5591c262bd449678166dd6cb6c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b1e7ce3f",
+        "filename": "app/components/storage/object/objectstorage-new.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-07T12:01:34Z",
+      "side": 1,
+      "message": "/s/Optmized/Optimized",
+      "range": {
+        "startLine": 225,
+        "startChar": 52,
+        "endLine": 225,
+        "endChar": 60
+      },
+      "revId": "441b7112a76d5591c262bd449678166dd6cb6c28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
