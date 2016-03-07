@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_d18d2a7d",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-07T12:05:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_913e52b7",
+      "range": {
+        "startLine": 38,
+        "startChar": 12,
+        "endLine": 38,
+        "endChar": 17
+      },
+      "revId": "8dae30dbd99e5e8ec90c2953b18d8c3335207fd5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_b14b4e58",
         "filename": "app/components/clusters/cluster-detail.ts",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-07T11:46:41Z",
       "side": 1,
       "message": "Is not necessary to pass dependency injection for this?",
+      "range": {
+        "startLine": 64,
+        "startChar": 16,
+        "endLine": 64,
+        "endChar": 24
+      },
+      "revId": "8dae30dbd99e5e8ec90c2953b18d8c3335207fd5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_f1e9461b",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-07T12:05:34Z",
+      "side": 1,
+      "message": "the name is \u0027$modal\u0027. i have added that above already",
+      "parentUuid": "5a72e520_b14b4e58",
       "range": {
         "startLine": 64,
         "startChar": 16,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_31f4bef1",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 327,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-07T12:05:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_5174da98",
+      "range": {
+        "startLine": 327,
+        "startChar": 44,
+        "endLine": 327,
+        "endChar": 54
+      },
+      "revId": "8dae30dbd99e5e8ec90c2953b18d8c3335207fd5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_7141d638",
         "filename": "app/components/clusters/clusters-detail-rbds.html",
         "patchSetId": 3
@@ -82,6 +154,30 @@
       "writtenOn": "2016-03-07T11:46:41Z",
       "side": 1,
       "message": "you have not taken any id\u003d\"type\" . i think , we can remove this.",
+      "range": {
+        "startLine": 20,
+        "startChar": 70,
+        "endLine": 20,
+        "endChar": 80
+      },
+      "revId": "8dae30dbd99e5e8ec90c2953b18d8c3335207fd5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_51f93ae8",
+        "filename": "app/components/clusters/clusters-detail-rbds.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-07T12:05:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_7141d638",
       "range": {
         "startLine": 20,
         "startChar": 70,
