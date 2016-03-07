@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_d11a8a6d",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-07T11:27:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a72e520_c6556e1e",
+      "range": {
+        "startLine": 154,
+        "startChar": 100,
+        "endLine": 154,
+        "endChar": 101
+      },
+      "revId": "7cbf31c4f72340a5cb00efbc596a2ed17e82ed3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_061ea670",
         "filename": "app/components/clusters/clusters-detail.html",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-07T11:20:13Z",
       "side": 1,
       "message": "i think , we should have different page for each tab section. \nand we can add that page using \u0027ng-include\u0027. because later , we will have every tab contain . and if we will put all tab data in this html page .so i think it will look to heavy .",
+      "range": {
+        "startLine": 284,
+        "startChar": 8,
+        "endLine": 318,
+        "endChar": 14
+      },
+      "revId": "7cbf31c4f72340a5cb00efbc596a2ed17e82ed3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b11d0e69",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 318,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-07T11:27:43Z",
+      "side": 1,
+      "message": "i will move this to a separate html page.",
+      "parentUuid": "5a72e520_061ea670",
       "range": {
         "startLine": 284,
         "startChar": 8,
