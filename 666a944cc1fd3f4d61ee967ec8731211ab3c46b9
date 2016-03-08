@@ -1,0 +1,257 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_74e45f0d",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "why you haven\u0027t defined any value for this in constructor",
+      "range": {
+        "startLine": 21,
+        "startChar": 12,
+        "endLine": 21,
+        "endChar": 22
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_94f1dbcf",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "should be \"\u003d\u003d\u003d\" operator",
+      "range": {
+        "startLine": 37,
+        "startChar": 24,
+        "endLine": 37,
+        "endChar": 26
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b4eed7ea",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 40,
+        "startChar": 28,
+        "endLine": 40,
+        "endChar": 31
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_f4bf6fce",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "should be  !\u003d\u003d",
+      "range": {
+        "startLine": 63,
+        "startChar": 30,
+        "endLine": 63,
+        "endChar": 32
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_34bae7de",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 104,
+        "startChar": 30,
+        "endLine": 104,
+        "endChar": 32
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_94039bb7",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "we can use ng-if here",
+      "range": {
+        "startLine": 24,
+        "startChar": 40,
+        "endLine": 24,
+        "endChar": 47
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b417b7ec",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "and here i thing not necessary to give ng-if . in parent element already there .",
+      "range": {
+        "startLine": 25,
+        "startChar": 18,
+        "endLine": 25,
+        "endChar": 23
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_d4d35336",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 54,
+        "startChar": 37,
+        "endLine": 55,
+        "endChar": 19
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_f4d84f55",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 66,
+        "startChar": 38,
+        "endLine": 67,
+        "endChar": 19
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_14decb3f",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "use ng-if",
+      "range": {
+        "startLine": 92,
+        "startChar": 40,
+        "endLine": 92,
+        "endChar": 47
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_34e3c708",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-08T12:08:57Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 109,
+        "startChar": 40,
+        "endLine": 109,
+        "endChar": 47
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
