@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_14596bfe",
+        "filename": "app/components/first/first.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-08T11:52:15Z",
+      "side": 1,
+      "message": "This text can be removed as well",
+      "range": {
+        "startLine": 41,
+        "startChar": 5,
+        "endLine": 41,
+        "endChar": 64
+      },
+      "revId": "586bd65fc77628306571b91706c9375fe111c78f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
