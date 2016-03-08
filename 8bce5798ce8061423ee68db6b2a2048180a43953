@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_f965a845",
+        "filename": "app/components/tasks/task-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-08T11:31:51Z",
+      "side": 1,
+      "message": "You can delay the filtering using angular debounce,\nhttps://docs.angularjs.org/api/ng/directive/ngModelOptions",
+      "range": {
+        "startLine": 10,
+        "startChar": 85,
+        "endLine": 10,
+        "endChar": 142
+      },
+      "revId": "8bce5798ce8061423ee68db6b2a2048180a43953",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_99e594aa",
+        "filename": "app/components/tasks/task-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-08T11:31:51Z",
+      "side": 1,
+      "message": "Rename this function to clearFilter()",
+      "range": {
+        "startLine": 54,
+        "startChar": 49,
+        "endLine": 54,
+        "endChar": 58
+      },
+      "revId": "8bce5798ce8061423ee68db6b2a2048180a43953",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_d4e9931b",
+        "filename": "app/components/tasks/task-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-08T11:31:51Z",
+      "side": 1,
+      "message": "Do you need to call refresh() here?",
+      "revId": "8bce5798ce8061423ee68db6b2a2048180a43953",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_b48df77d",
+        "filename": "app/components/tasks/task-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-08T11:31:51Z",
+      "side": 1,
+      "message": "Do you need to call refresh() here?",
+      "revId": "8bce5798ce8061423ee68db6b2a2048180a43953",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
