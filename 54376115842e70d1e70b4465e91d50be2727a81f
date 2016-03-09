@@ -2,6 +2,46 @@
   "comments": [
     {
       "key": {
+        "uuid": "5a72e520_8d58e933",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-09T04:17:11Z",
+      "side": 1,
+      "message": "This might override the previous selection.\n\nLets consider the following flow.\n\n- Choose Mon\n- Select host",
+      "range": {
+        "startLine": 230,
+        "startChar": 0,
+        "endLine": 234,
+        "endChar": 13
+      },
+      "revId": "54376115842e70d1e70b4465e91d50be2727a81f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_ad5be52c",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 336,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-09T04:17:11Z",
+      "side": 1,
+      "message": "we should consider empty case as well",
+      "revId": "54376115842e70d1e70b4465e91d50be2727a81f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_aa690c8d",
         "filename": "app/components/clusters/cluster-new.ts",
         "patchSetId": 2
