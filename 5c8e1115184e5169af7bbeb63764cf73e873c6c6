@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_ad9da55b",
+        "filename": "app/components/hosts/host-menu-dropdown.tpl.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-09T08:52:14Z",
+      "side": 1,
+      "message": "Forget action should come after Reinitialize",
+      "revId": "5c8e1115184e5169af7bbeb63764cf73e873c6c6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
