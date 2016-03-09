@@ -84,6 +84,24 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_6dd48d47",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 336,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-09T05:17:32Z",
+      "side": 1,
+      "message": "I am not get empty value here. Always it is undefined if its  empty or just spaces.",
+      "parentUuid": "5a72e520_ad5be52c",
+      "revId": "54376115842e70d1e70b4465e91d50be2727a81f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_aa690c8d",
         "filename": "app/components/clusters/cluster-new.ts",
         "patchSetId": 2
