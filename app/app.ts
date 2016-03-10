@@ -119,6 +119,10 @@ class USMApp {
                         _.each(data, (node: any) => {
                             node.options1 = node.options;
                         });
+                    }else if (operation === 'getList' && what === 'slus') {
+                        _.each(data, (slus: any) => {
+                            slus.options1 = slus.options;
+                        });
                     }
                     return data;
                 });
