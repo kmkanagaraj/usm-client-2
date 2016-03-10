@@ -51,6 +51,7 @@ var jquery = $ = require("jquery");
 var patternfly = require("patternfly");
 var angularPatternfly = require("angular-patternfly");
 var angularSlider = require("angularjs-slider");
+var vAccordion = require("v-accordion");
 /* tslint:enable */
 
 class USMApp {
@@ -66,6 +67,7 @@ class USMApp {
             'gridshore.c3js.chart',
             'restangular',
             'patternfly.charts',
+            'vAccordion',
             RequestsModule,
             RestModule,
             HostModule,
