@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5a72e520_2dfff5ab",
+        "filename": "app/components/admin/mail-settings-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-03-10T04:58:42Z",
+      "side": 1,
+      "message": "I think no need assign any value to onloaddone in constructor. Since once the response is given back then only need to make this flag as ture.",
+      "parentUuid": "5a72e520_74e45f0d",
+      "range": {
+        "startLine": 21,
+        "startChar": 12,
+        "endLine": 21,
+        "endChar": 22
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a72e520_94f1dbcf",
         "filename": "app/components/admin/mail-settings-controller.ts",
         "patchSetId": 3
@@ -128,6 +152,30 @@
       "writtenOn": "2016-03-08T12:08:57Z",
       "side": 1,
       "message": "we can use ng-if here",
+      "range": {
+        "startLine": 24,
+        "startChar": 40,
+        "endLine": 24,
+        "endChar": 47
+      },
+      "revId": "666a944cc1fd3f4d61ee967ec8731211ab3c46b9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_ad2a052a",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-03-10T04:58:42Z",
+      "side": 1,
+      "message": "If change like this even the field is filled it shows error msg. \nOnly if the field touched and nothing filled then only the msg should be shown.",
+      "parentUuid": "5a72e520_94039bb7",
       "range": {
         "startLine": 24,
         "startChar": 40,
