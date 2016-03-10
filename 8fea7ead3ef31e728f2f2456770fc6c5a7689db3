@@ -22,6 +22,30 @@
       "revId": "8fea7ead3ef31e728f2f2456770fc6c5a7689db3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_e79b7c70",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-03-10T09:56:29Z",
+      "side": 1,
+      "message": "It\u0027s form validation and can\u0027t initialize these variable inside constructor for by default false value . but if i use ng-if, the page shows validation error msg at the time of page loading itself",
+      "parentUuid": "3a6ff13c_e719bc7a",
+      "range": {
+        "startLine": 23,
+        "startChar": 43,
+        "endLine": 23,
+        "endChar": 47
+      },
+      "revId": "8fea7ead3ef31e728f2f2456770fc6c5a7689db3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
