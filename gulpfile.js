@@ -48,8 +48,10 @@ var config = {
         vendor: {
             src: [
                 './node_modules/patternfly/dist/css/patternfly.css',
-                './node_modules/patternfly/dist/css/patternfly-additions.css', './node_modules/angular-patternfly/styles/angular-patternfly.css',
-                './node_modules/angularjs-slider/dist/rzslider.css'
+                './node_modules/patternfly/dist/css/patternfly-additions.css',
+                './node_modules/angular-patternfly/styles/angular-patternfly.css',
+                './node_modules/angularjs-slider/dist/rzslider.css',
+                './node_modules/v-accordion/dist/v-accordion.css'
             ],
             dest: 'dist/css'
         }
