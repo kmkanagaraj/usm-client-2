@@ -95,7 +95,6 @@ export class ClusterDetailController {
                          { name: "Last 2 hours", value: "-2h" },
                          { name: "Last 24 weeks", value: "" }];
         this.selectedTimeSlot = this.timeSlots[0];
-
         this.getUtilizationByType();
         this.getOpenStackPools();
         this.getMostUsedPools();
@@ -351,4 +350,5 @@ export class ClusterDetailController {
             $hide();
         });
     }
+
 }
