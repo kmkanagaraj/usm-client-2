@@ -12,6 +12,7 @@ import {numeral} from '../base/libs';
 import {RequestService} from '../rest/request';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
 
+
 export class ClusterDetailController {
     private clusterHelpers: ClusterHelper;
     private clusterList: Array<any>;
