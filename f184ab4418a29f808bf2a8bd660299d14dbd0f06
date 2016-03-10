@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_0726d8ba",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-10T07:17:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_e4029a0a",
+      "range": {
+        "startLine": 217,
+        "startChar": 85,
+        "endLine": 217,
+        "endChar": 88
+      },
+      "revId": "f184ab4418a29f808bf2a8bd660299d14dbd0f06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_07ffb802",
         "filename": "app/components/clusters/cluster-new.ts",
         "patchSetId": 4
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_272bd483",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-10T07:17:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_07ffb802",
+      "range": {
+        "startLine": 230,
+        "startChar": 50,
+        "endLine": 230,
+        "endChar": 52
+      },
+      "revId": "f184ab4418a29f808bf2a8bd660299d14dbd0f06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_c4059e15",
         "filename": "app/components/clusters/clusters-new-hosts.html",
         "patchSetId": 4
@@ -59,6 +107,30 @@
       "writtenOn": "2016-03-10T07:12:39Z",
       "side": 1,
       "message": "remove this white space",
+      "range": {
+        "startLine": 95,
+        "startChar": 0,
+        "endLine": 95,
+        "endChar": 2
+      },
+      "revId": "f184ab4418a29f808bf2a8bd660299d14dbd0f06",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_4720d09b",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-10T07:17:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_c4059e15",
       "range": {
         "startLine": 95,
         "startChar": 0,
