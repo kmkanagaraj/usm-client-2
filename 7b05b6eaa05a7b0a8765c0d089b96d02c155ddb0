@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_6a0e7336",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-10T12:04:03Z",
+      "side": 1,
+      "message": "use \"\u003d\u003d\u003d\" here",
+      "range": {
+        "startLine": 107,
+        "startChar": 57,
+        "endLine": 107,
+        "endChar": 59
+      },
+      "revId": "7b05b6eaa05a7b0a8765c0d089b96d02c155ddb0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_ea19837a",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-10T12:04:03Z",
+      "side": 1,
+      "message": "use \u0027!\u003d\u003d\u0027 here",
+      "range": {
+        "startLine": 207,
+        "startChar": 25,
+        "endLine": 207,
+        "endChar": 27
+      },
+      "revId": "7b05b6eaa05a7b0a8765c0d089b96d02c155ddb0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
