@@ -1,0 +1,188 @@
+<div class="cluster-detail-osd">
+  <div class="row">
+    <div class="col-md-3">
+      <span class="pull-left">
+        <i class="filter-icon" ng-class="clusterdetail.isLeftSidebarShow?'fa fa-chevron-circle-left':'fa fa-chevron-circle-right'" ng-click="clusterdetail.isLeftSidebarShow=!clusterdetail.isLeftSidebarShow"></i>
+      </span>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-4">
+          <span>
+            <label>Filter By:</label>
+            <select class="form-control" id="filter_by" ng-model="clusterdetail.filter_by">
+              <option label="Host" value="Host" selected>Host</option>
+              <option label="OSD_Name" value="OSD_Name">OSD Name</option>
+              <option label="Storage_Profile" value="Storage_Profile">Storage Profile</option>
+            </select>
+          </span>
+        </div>
+        <div class="col-md-8">
+          <span>
+            <label>Search By Host:</label>
+            <form class="search-pf has-button" role="form">
+              <div class="form-group has-clear">
+                <div class="search-pf-input-group">
+                  <label class="sr-only" for="search1">Search</label>
+                  <input type="search" placeholder="Filter by host..." class="form-control" ng-model="clusterdetail.searchText" id="search1">
+                  <button style="display: none;" aria-hidden="true" class="clear" type="button"><span class="pficon pficon-close"></span></button>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+              </div>
+            </form>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <span>
+        <div>
+          <label>Show:</label>
+        </div>
+        <div>
+          <form>
+            <span>
+               <input type="radio" id="utilization" ng-change="clusterdetail.isUtilizationShow=true" ng-model="clusterdetail.showValueForOsd" value="utilization">
+               <label for="utilization">Utilization</label>
+            </span>
+            <span class="radio-button-separator">
+               <input type="radio" id="weight" ng-change="clusterdetail.isUtilizationShow=false" ng-model="clusterdetail.showValueForOsd" value="weight">
+               <label for="weight">Weight</label>
+            </span>
+          </form>
+        </div>
+      </span>
+    </div>
+  </div>
+  <hr>
+  <!-- Left side filter bar -->
+  <nav class="left-sidebar" ng-class="clusterdetail.isLeftSidebarShow?'left-sidebar-expand':'left-sidebar-collapse'">
+      <v-accordion class="vAccordion--default">
+        <v-pane>
+          <v-pane-header class="v-panel">
+            Filter by OSD Status
+          </v-pane-header>
+          <v-pane-content class="pane-padding">
+            <div class="checkbox" ng-repeat="data in clusterdetail.getFiltersByOSDStatus()">
+              <label>
+                <input type="checkbox" ng-model="clusterdetail.filter[data]"/><i class="{{clusterdetail.filterList.OSDStatus[data].icon}}"></i> {{clusterdetail.filterList.OSDStatus[data].name}}
+              </label>
+            </div>
+          </v-pane-content>
+        </v-pane>
+        <v-pane>
+          <v-pane-header class="v-panel">
+            Filter by PG Status
+          </v-pane-header>
+          <v-pane-content class="pane-padding">
+            <div class="checkbox" ng-repeat="filter in clusterdetail.filterList.PGStatus" ng-class="filter.subdata?'separator':''">
+              <label>
+                <input type="checkbox">{{filter.name}}
+              </label>
+               <div ng-if="filter.subdata" class="nested-checkbox">
+                <div class="checkbox" ng-repeat="subfilter in filter.subdata">
+                  <label>
+                    <input type="checkbox">{{subfilter.name}}
+                  </label>
+                </div>
+              </div>
+            </div>
+          </v-pane-content>
+        </v-pane>
+        <v-pane>
+          <v-pane-header class="v-panel">
+            Filter by Utilization
+          </v-pane-header>
+          <v-pane-content class="pane-padding">
+            <div class="checkbox" ng-repeat="filter in clusterdetail.filterList.Utilization">
+              <label>
+                <input type="checkbox">{{filter.name}}
+              </label>
+            </div>
+          </v-pane-content>
+        </v-pane>
+      </v-accordion>
+  </nav>
+  <!-- End of filter bar -->
+
+  <div class="row">
+    <div ng-class="clusterdetail.isLeftSidebarShow?'col-md-offset-2 col-md-7':'col-md-offset-1 col-md-8'">
+      <div class="row">
+        <div class="pull-right">
+          <span class="selected-osd-separator"><label> {{clusterdetail.utils.keys(clusterdetail.selection.allSelectedOsds).length}} OSD Selected</label></span>
+          <span>
+            <select ng-init="clusterdetail.osdAction = 'action'" ng-model="clusterdetail.osdAction" ng-change="clusterdetail.osdActionChange()">
+              <option value='action'>Action</option>
+              <option value='{"up":true}'>Mark UP</option>
+              <option value='{"in":true}'>Mark IN</option>
+              <option value='{"in":false}'>Mark OUT</option>
+            </select>
+          </span>
+        </div>
+      </div>
+      <hr>
+      <div ng-class="clusterdetail.osdList.length > 12 ? 'div-with-scroll': ''" ng-init="clusterdetail.selection.activeOsd = clusterdetail.osdList[0]">
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="osd in filteredOSD=(clusterdetail.osdList | filter:clusterdetail.applyFilter)">
+                <div class="databox" ng-click="clusterdetail.selection.activeOsd=osd" ng-class="clusterdetail.selection.activeOsd===osd?'selected-osd':''">
+                  <div class="databox-right">
+                    <span class="databox-osd-name">
+                      <div class="pull-right">
+                        <i class="fa fa-circle" ng-class="osd.status===0?'up-in':osd.status===1?'up-out':osd.status===2?'down-in':'down-out'"></i>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" ng-change="clusterdetail.filterSelectedOsd(clusterdetail.selection.allSelectedOsds)" ng-model="clusterdetail.selection.allSelectedOsds[osd.sluid]"> {{osd.name}}
+                        </label>
+                      </div>
+                    </span>
+                    <div class="progress" ng-if="clusterdetail.isUtilizationShow">
+                      <div class="progress-bar" ng-class="osd.utilization>=95?'progress-bar-full':osd.utilization>=85?'progress-bar-near-full':'progress-bar-normal'" role="progressbar" aria-valuemin="0" aria-valuemax="100" ng-style="{width:osd.utilization+'%'}">
+                      </div>
+                    </div>
+                    <div ng-if="!clusterdetail.isUtilizationShow">
+                      <span class="databox-osd-weight">
+                        <center>{{osd.weight}}</center>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="sidebar-nav-fixed pull-right affix right-sidebar">
+          <div class="right-sidebar-contain">
+            <h2>
+              <i class="fa fa-circle" ng-class="clusterdetail.selection.activeOsd.status===0?'up-in':clusterdetail.selection.activeOsd.status===1?'up-out':clusterdetail.selection.activeOsd.status===2?'down-in':'down-out'"></i>
+              <label ng-bind="clusterdetail.selection.activeOsd.name"></label>
+              <span>
+                <button ng-if="clusterdetail.selection.activeOsd.type === 1" class="btn btn-success">Data</button>
+                <button ng-if="clusterdetail.selection.activeOsd.type === 2" class="btn btn-success">Journal</button>
+              </span>
+            </h2>
+            <hr>
+            <div class="selected-osd-detail">
+              <label>Device Path:</label>
+              <div class="detail-content"><small ng-bind="clusterdetail.selection.activeOsd.options.device"></small></div>
+            </div>
+            <div class="selected-osd-detail">
+              <label>Utilization:</label>
+              <div class="detail-content"><small>16 GB used of 200GB Total</small></div>
+            </div>
+            <div class="selected-osd-detail">
+              <label>OSD weight:</label>
+              <div class="detail-content"><small>1,000</small></div>
+            </div>
+            <div class="selected-osd-detail">
+              <label>Storage Profile:</label>
+              <div class="detail-content"><small ng-bind="clusterdetail.selection.activeOsd.storageprofile"></small></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
