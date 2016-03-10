@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_e719bc7a",
+        "filename": "app/components/admin/mail-settings.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-10T07:17:25Z",
+      "side": 1,
+      "message": "use ng-if instead of ng-show",
+      "range": {
+        "startLine": 23,
+        "startChar": 43,
+        "endLine": 23,
+        "endChar": 47
+      },
+      "revId": "8fea7ead3ef31e728f2f2456770fc6c5a7689db3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
