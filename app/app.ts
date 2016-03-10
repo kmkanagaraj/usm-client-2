@@ -16,6 +16,7 @@ import {ClustersController} from "./components/clusters/clusters-controller";
 import {ClusterExpandController} from "./components/clusters/cluster-expand";
 import {ClusterNewController} from "./components/clusters/cluster-new";
 import {ClusterDetailController} from "./components/clusters/cluster-detail";
+import {OsdDetailController} from "./components/clusters/osdsdetail/osd-detail";
 import {StorageProfileDisksController} from './components/clusters/storageprofile/storage-profile-disks';
 import {UserController} from "./components/admin/user-controller";
 import {UserNewController} from "./components/admin/user-new";
@@ -80,6 +81,7 @@ class USMApp {
             .controller('ClusterExpandController', ClusterExpandController)
             .controller('ClusterNewController', ClusterNewController)
             .controller('ClusterDetailController', ClusterDetailController)
+            .controller('OsdDetailController', OsdDetailController)
             .controller('StorageProfileDisksController', StorageProfileDisksController)
             .controller('UserController',UserController)
             .controller('UserNewController',UserNewController)
@@ -118,6 +120,10 @@ class USMApp {
                     if (operation === 'getList' && what === 'nodes') {
                         _.each(data, (node: any) => {
                             node.options1 = node.options;
+                        });
+                    }else if (operation === 'getList' && what === 'slus') {
+                        _.each(data, (slus: any) => {
+                            slus.options1 = slus.options;
                         });
                     }
                     return data;
