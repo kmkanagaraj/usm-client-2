@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_2abf1bd2",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 552,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-10T13:10:48Z",
+      "side": 1,
+      "message": "actually its not part of the patch. Let me fix this anyway.",
+      "parentUuid": "3a6ff13c_ca4a0755",
+      "range": {
+        "startLine": 552,
+        "startChar": 62,
+        "endLine": 552,
+        "endChar": 64
+      },
+      "revId": "bb441c6bad57c4b8c8b1f669bade3914f1f332d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_4a57f702",
         "filename": "app/styles/cluster-new.scss",
         "patchSetId": 5
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-10T12:09:22Z",
       "side": 1,
       "message": "this should not be camel case in css\nthis will be fine - host-col-host-type",
+      "range": {
+        "startLine": 48,
+        "startChar": 18,
+        "endLine": 48,
+        "endChar": 22
+      },
+      "revId": "bb441c6bad57c4b8c8b1f669bade3914f1f332d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_0aba5fe1",
+        "filename": "app/styles/cluster-new.scss",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-10T13:10:48Z",
+      "side": 1,
+      "message": "will do that.",
+      "parentUuid": "3a6ff13c_4a57f702",
       "range": {
         "startLine": 48,
         "startChar": 18,
