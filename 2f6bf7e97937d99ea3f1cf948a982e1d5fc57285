@@ -213,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_3f63d01b",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-14T06:28:34Z",
+      "side": 1,
+      "message": "Sorry for the confusion. Its a list of selected OSDs. So its better to name as \u0027selectedOSDs\u0027(plural form).",
+      "parentUuid": "3a6ff13c_1f4b74b1",
+      "range": {
+        "startLine": 433,
+        "startChar": 29,
+        "endLine": 433,
+        "endChar": 40
+      },
+      "revId": "2f6bf7e97937d99ea3f1cf948a982e1d5fc57285",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_64f3ff0a",
         "filename": "app/components/clusters/clusters-detail-osds.html",
         "patchSetId": 9
@@ -248,6 +272,30 @@
       "side": 1,
       "message": "How we can do like this way . actually in upper div we have this array for ng-repeat - \"clusterdetail.getFiltersByOSDStatus()\" - actually it will return array\n\nand lower div we have another array for ng-repeat \"filterList.OSDStatus\"\n\ni don\u0027t think so we can mess up both in same ng-repeat",
       "parentUuid": "3a6ff13c_64f3ff0a",
+      "range": {
+        "startLine": 74,
+        "startChar": 52,
+        "endLine": 74,
+        "endChar": 57
+      },
+      "revId": "2f6bf7e97937d99ea3f1cf948a982e1d5fc57285",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_9f7204e4",
+        "filename": "app/components/clusters/clusters-detail-osds.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-14T06:28:34Z",
+      "side": 1,
+      "message": "U can move the ng-if condition to ng-disabled.That should solve all the issues. \n\"ng-disabled\u003dclusterdetail.getFiltersByOSDStatus().indexOf($index) \u003d\u003d\u003d -1\"",
+      "parentUuid": "3a6ff13c_7fd1c8cc",
       "range": {
         "startLine": 74,
         "startChar": 52,
