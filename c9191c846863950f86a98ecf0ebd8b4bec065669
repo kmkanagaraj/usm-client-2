@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_3f9590e4",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-14T05:39:57Z",
+      "side": 1,
+      "message": "use \"\u003d\u003d\u003d\" operator here",
+      "range": {
+        "startLine": 234,
+        "startChar": 66,
+        "endLine": 234,
+        "endChar": 69
+      },
+      "revId": "c9191c846863950f86a98ecf0ebd8b4bec065669",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
