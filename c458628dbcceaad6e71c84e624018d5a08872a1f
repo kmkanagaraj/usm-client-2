@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_9fa4c458",
+        "filename": "package.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-14T05:41:16Z",
+      "side": 1,
+      "message": "Can we use angular-strap collapse instead of this?\n\nhttp://mgcrea.github.io/angular-strap/#/collapses",
+      "revId": "c458628dbcceaad6e71c84e624018d5a08872a1f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
