@@ -22,6 +22,30 @@
       "revId": "549a73442551935df429043bb31a72d68fe0bd41",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_df739ce5",
+        "filename": "app/components/tasks/task-list.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-14T06:37:34Z",
+      "side": 1,
+      "message": "This stops ng-change being invoked for every keypress. It invokes after user type the data.",
+      "parentUuid": "3a6ff13c_df855cae",
+      "range": {
+        "startLine": 10,
+        "startChar": 85,
+        "endLine": 10,
+        "endChar": 101
+      },
+      "revId": "549a73442551935df429043bb31a72d68fe0bd41",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
