@@ -24,7 +24,7 @@ import {numeral} from '../base/libs';
 
 export class ClusterNewController {
     private step: number;
-    private minMonsRequired = 3;
+    private minMonsRequired = 1;
     private errorMessage: string;
     private summaryHostsSortOrder: any;
 
