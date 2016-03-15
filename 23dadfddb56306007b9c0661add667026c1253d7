@@ -270,6 +270,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_6a3101a2",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 16
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T12:45:56Z",
+      "side": 1,
+      "message": "If you use arrow function while calling, you will not face this error",
+      "parentUuid": "3a6ff13c_2a69c98b",
+      "range": {
+        "startLine": 139,
+        "startChar": 4,
+        "endLine": 139,
+        "endChar": 34
+      },
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_cadcb577",
         "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
         "patchSetId": 16
