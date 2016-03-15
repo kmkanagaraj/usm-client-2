@@ -187,6 +187,30 @@
       "revId": "d98f8f5adbafadf211f4fd2834b36d66bfd6e43d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_fc9f7f4e",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T07:24:23Z",
+      "side": 1,
+      "message": "but the structure would be different i think.\n\nyou can use _.map to do the convertion",
+      "parentUuid": "3a6ff13c_dc948346",
+      "range": {
+        "startLine": 237,
+        "startChar": 28,
+        "endLine": 237,
+        "endChar": 52
+      },
+      "revId": "d98f8f5adbafadf211f4fd2834b36d66bfd6e43d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
