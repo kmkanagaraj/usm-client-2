@@ -103,6 +103,9 @@ export class ClusterExpandController {
                 selected: false,
                 isMon: false
             };
+            host.disks = _.filter(freeHost.storage_disks, (disk: any) => {
+                return disk.Type === 'disk' && disk.Used == false;
+            });
             this.hosts.push(host);
             this.updateFingerPrint(host);
         });
