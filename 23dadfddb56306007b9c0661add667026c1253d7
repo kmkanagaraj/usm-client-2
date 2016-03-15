@@ -246,6 +246,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_2a69c98b",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 16
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-15T12:44:21Z",
+      "side": 1,
+      "message": "can\u0027t change here , getting error in console this.filter is not defined",
+      "parentUuid": "3a6ff13c_6aee6124",
+      "range": {
+        "startLine": 139,
+        "startChar": 4,
+        "endLine": 139,
+        "endChar": 34
+      },
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_cadcb577",
         "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
         "patchSetId": 16
