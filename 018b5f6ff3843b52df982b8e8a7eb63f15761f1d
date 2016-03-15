@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_4a5e05eb",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 18
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-15T12:48:10Z",
+      "side": 1,
+      "message": "Remove TWS.",
+      "range": {
+        "startLine": 129,
+        "startChar": 69,
+        "endLine": 129,
+        "endChar": 79
+      },
+      "revId": "018b5f6ff3843b52df982b8e8a7eb63f15761f1d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_ea6ed195",
+        "filename": "app/components/modal/modal-helpers.ts",
+        "patchSetId": 18
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-15T12:48:10Z",
+      "side": 1,
+      "message": "Make it OsdActionConfirmation so that its more specific.",
+      "range": {
+        "startLine": 47,
+        "startChar": 16,
+        "endLine": 47,
+        "endChar": 34
+      },
+      "revId": "018b5f6ff3843b52df982b8e8a7eb63f15761f1d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_0a032db9",
+        "filename": "app/components/modal/modal-helpers.ts",
+        "patchSetId": 18
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-15T12:48:10Z",
+      "side": 1,
+      "message": "May be its worth to put the action name also in the confirmation like \"Are you sure you want to move the selected OSDs to Down?\"",
+      "range": {
+        "startLine": 51,
+        "startChar": 17,
+        "endLine": 51,
+        "endChar": 65
+      },
+      "revId": "018b5f6ff3843b52df982b8e8a7eb63f15761f1d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
