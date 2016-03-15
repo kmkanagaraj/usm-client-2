@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_dcf7238b",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-15T08:29:50Z",
+      "side": 0,
+      "message": "Why are u removing this?",
+      "range": {
+        "startLine": 104,
+        "startChar": 78,
+        "endLine": 104,
+        "endChar": 82
+      },
+      "revId": "43638c460ba36ef5fb37c05dc53e70c67a12cef4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
