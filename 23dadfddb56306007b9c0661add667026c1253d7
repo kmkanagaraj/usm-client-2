@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_df4ab526",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 16
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-15T10:26:24Z",
+      "side": 1,
+      "message": "This can be removed.",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 76,
+        "endChar": 18
+      },
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_ff47711b",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 16
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-15T10:26:24Z",
+      "side": 1,
+      "message": "this can be removed.",
+      "range": {
+        "startLine": 77,
+        "startChar": 87,
+        "endLine": 77,
+        "endChar": 151
+      },
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_9f0f5de1",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 16
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-15T10:26:24Z",
+      "side": 1,
+      "message": "Do we need a confirmation before any destructive action like UP-OUT, DOWN ?",
+      "range": {
+        "startLine": 101,
+        "startChar": 7,
+        "endLine": 101,
+        "endChar": 41
+      },
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
