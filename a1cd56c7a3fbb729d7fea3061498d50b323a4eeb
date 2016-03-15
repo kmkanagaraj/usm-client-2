@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_90e82a7e",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 21
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T19:22:57Z",
+      "side": 1,
+      "message": "This can be changed to\n\nng-class\u003d\"{\u0027separator\u0027: filter.subdata}\"",
+      "range": {
+        "startLine": 90,
+        "startChar": 86,
+        "endLine": 90,
+        "endChar": 126
+      },
+      "revId": "a1cd56c7a3fbb729d7fea3061498d50b323a4eeb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_b05fe671",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 21
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T19:22:57Z",
+      "side": 1,
+      "message": "clusterId passed to the directive should be used here",
+      "range": {
+        "startLine": 43,
+        "startChar": 8,
+        "endLine": 43,
+        "endChar": 44
+      },
+      "revId": "a1cd56c7a3fbb729d7fea3061498d50b323a4eeb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_50c79212",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 21
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T19:22:57Z",
+      "side": 1,
+      "message": "Needs Attention",
+      "range": {
+        "startLine": 76,
+        "startChar": 20,
+        "endLine": 76,
+        "endChar": 35
+      },
+      "revId": "a1cd56c7a3fbb729d7fea3061498d50b323a4eeb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_90d10ad0",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 21
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T19:22:57Z",
+      "side": 1,
+      "message": "Parenthesis missing",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 69
+      },
+      "revId": "a1cd56c7a3fbb729d7fea3061498d50b323a4eeb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
