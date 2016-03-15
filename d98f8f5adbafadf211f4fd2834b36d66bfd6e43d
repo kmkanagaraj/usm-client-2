@@ -163,6 +163,30 @@
       "revId": "d98f8f5adbafadf211f4fd2834b36d66bfd6e43d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_dc948346",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-15T07:20:17Z",
+      "side": 1,
+      "message": "this also not require. host.disks is anyway free disks only",
+      "parentUuid": "3a6ff13c_7c31cfa1",
+      "range": {
+        "startLine": 237,
+        "startChar": 28,
+        "endLine": 237,
+        "endChar": 52
+      },
+      "revId": "d98f8f5adbafadf211f4fd2834b36d66bfd6e43d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
