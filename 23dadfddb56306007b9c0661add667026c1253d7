@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_4a37e5b0",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-15T12:38:07Z",
+      "side": 1,
+      "message": "i think it will take more time to do this",
+      "parentUuid": "3a6ff13c_4a74459c",
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_df4ab526",
         "filename": "app/components/clusters/osdsdetail/osd-detail.html",
         "patchSetId": 16
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_4affe501",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 16
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-15T12:38:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_df4ab526",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 76,
+        "endChar": 18
+      },
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_ff47711b",
         "filename": "app/components/clusters/osdsdetail/osd-detail.html",
         "patchSetId": 16
@@ -53,6 +95,30 @@
       "writtenOn": "2016-03-15T10:26:24Z",
       "side": 1,
       "message": "this can be removed.",
+      "range": {
+        "startLine": 77,
+        "startChar": 87,
+        "endLine": 77,
+        "endChar": 151
+      },
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_6a04a115",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 16
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-15T12:38:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_ff47711b",
       "range": {
         "startLine": 77,
         "startChar": 87,
