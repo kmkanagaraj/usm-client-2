@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_9c268b67",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T06:03:44Z",
+      "side": 1,
+      "message": "this can be changed to\n\nthis.Osd(host.hostType) \u0026\u0026 host.disks.length \u003e 0",
+      "range": {
+        "startLine": 232,
+        "startChar": 20,
+        "endLine": 232,
+        "endChar": 52
+      },
+      "revId": "d98f8f5adbafadf211f4fd2834b36d66bfd6e43d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_5c2c134b",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T06:03:44Z",
+      "side": 1,
+      "message": "This check is already performed in line 106",
+      "range": {
+        "startLine": 234,
+        "startChar": 0,
+        "endLine": 234,
+        "endChar": 78
+      },
+      "revId": "d98f8f5adbafadf211f4fd2834b36d66bfd6e43d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_7c31cfa1",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T06:03:44Z",
+      "side": 1,
+      "message": "you would need to place this outside of the loop",
+      "range": {
+        "startLine": 237,
+        "startChar": 28,
+        "endLine": 237,
+        "endChar": 52
+      },
+      "revId": "d98f8f5adbafadf211f4fd2834b36d66bfd6e43d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
