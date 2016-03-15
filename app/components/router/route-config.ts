@@ -127,7 +127,11 @@ export class RouteConfig {
 			templateUrl: 'views/tasks/task-details.html',
 			controller: 'TaskDetailController',
 			controllerAs: 'task'
-		}).otherwise({
+		}).when('/accept-hosts', {
+            templateUrl: 'views/first/accept-hosts.html',
+            controller: 'AcceptHostsController',
+            controllerAs: 'acceptHosts'
+        }).otherwise({
 			redirectTo: '/'
 		});
 	}

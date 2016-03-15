@@ -11,6 +11,7 @@ import {LoginController} from "./components/login/login";
 import {ApplicationController} from "./components/base/application-controller";
 import {MenuController} from "./components/base/menu-controller";
 import {FirstController} from "./components/first/first-controller";
+import {AcceptHostsController} from "./components/first/accept-hosts-controller";
 import {DashboardController} from "./components/dashboard/dashboard-controller";
 import {ClustersController} from "./components/clusters/clusters-controller";
 import {ClusterExpandController} from "./components/clusters/cluster-expand";
@@ -89,6 +90,7 @@ class USMApp {
             .controller('UserController',UserController)
             .controller('UserNewController',UserNewController)
             .controller('UserEditController',UserEditController)
+            .controller('AcceptHostsController',AcceptHostsController)
             .controller('LdapUserController',LdapUserController)
             .directive('ktDraggable', () => new KTDraggable())
             .directive('ktDroppable', () => new KTDroppable())
