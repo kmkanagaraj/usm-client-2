@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_cae67516",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-15T12:50:08Z",
+      "side": 1,
+      "message": "Using ng-controller directly in html is considered as bad pattern. We should avoid this.\n\nCreating a simple directive would be easier.",
+      "parentUuid": "3a6ff13c_4a37e5b0",
+      "revId": "23dadfddb56306007b9c0661add667026c1253d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_df4ab526",
         "filename": "app/components/clusters/osdsdetail/osd-detail.html",
         "patchSetId": 16
