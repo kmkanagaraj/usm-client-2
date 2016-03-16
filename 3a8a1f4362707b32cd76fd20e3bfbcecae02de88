@@ -48,6 +48,46 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_9d94c238",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 25
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T07:31:06Z",
+      "side": 1,
+      "message": "This should be a \u0027div\u0027 instead of \u0027span\u0027\n\n\u0027span\u0027 should be only used to wrap small portions of text, images, etc.",
+      "range": {
+        "startLine": 148,
+        "startChar": 20,
+        "endLine": 148,
+        "endChar": 25
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_dd871a0e",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 25
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T07:31:06Z",
+      "side": 1,
+      "message": "Is it possible to reuse this.filterList.OSDStatus for icons?",
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_1df612d8",
         "filename": "app/styles/cluster-osd-detail.scss",
         "patchSetId": 25
@@ -76,6 +116,75 @@
       "writtenOn": "2016-03-16T06:54:13Z",
       "side": 1,
       "message": "remove TWS",
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_5d732a4d",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 25
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T07:31:06Z",
+      "side": 1,
+      "message": "the name should be meaningful.\n\nyou could rename this to something like osd-box-content",
+      "range": {
+        "startLine": 122,
+        "startChar": 14,
+        "endLine": 122,
+        "endChar": 27
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_7d8f0624",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 25
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T07:31:06Z",
+      "side": 1,
+      "message": "Except padding, i don\u0027t see any styles having any effect on the UI. \n\nCan you verify this once?",
+      "range": {
+        "startLine": 123,
+        "startChar": 0,
+        "endLine": 129,
+        "endChar": 27
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_bd997e70",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 25
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T07:31:06Z",
+      "side": 1,
+      "message": "some the styles may not be required if the element is \nchanged from \u0027span\u0027 to \u0027div\u0027\n\npls check once",
+      "range": {
+        "startLine": 133,
+        "startChar": 0,
+        "endLine": 144,
+        "endChar": 22
+      },
       "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
