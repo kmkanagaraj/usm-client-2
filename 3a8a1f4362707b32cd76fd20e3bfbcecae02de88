@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_bdd17ecf",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 25
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_7d2c664b",
+      "range": {
+        "startLine": 133,
+        "startChar": 0,
+        "endLine": 138,
+        "endChar": 21
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_3d1aee17",
         "filename": "app/components/clusters/osdsdetail/osd-detail.html",
         "patchSetId": 25
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-16T06:54:13Z",
       "side": 1,
       "message": "The scroll should be automatic instead of based on length",
+      "range": {
+        "startLine": 143,
+        "startChar": 6,
+        "endLine": 143,
+        "endChar": 76
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_9dccc237",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 25
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "how to take auto scroll , we should need to defined height",
+      "parentUuid": "3a6ff13c_3d1aee17",
       "range": {
         "startLine": 143,
         "startChar": 6,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_5d4b2ab0",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 25
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_9d94c238",
+      "range": {
+        "startLine": 148,
+        "startChar": 20,
+        "endLine": 148,
+        "endChar": 25
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_dd871a0e",
         "filename": "app/components/clusters/osdsdetail/osd-detail.html",
         "patchSetId": 25
@@ -82,6 +154,24 @@
       "writtenOn": "2016-03-16T07:31:06Z",
       "side": 1,
       "message": "Is it possible to reuse this.filterList.OSDStatus for icons?",
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_3d4e6ec2",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 25
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_dd871a0e",
       "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -105,6 +195,24 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_7dee268d",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 25
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_1df612d8",
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_3d03ceb9",
         "filename": "app/styles/cluster-osd-detail.scss",
         "patchSetId": 25
@@ -122,6 +230,24 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_5de24aa0",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 25
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_3d03ceb9",
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_5d732a4d",
         "filename": "app/styles/cluster-osd-detail.scss",
         "patchSetId": 25
@@ -133,6 +259,30 @@
       "writtenOn": "2016-03-16T07:31:06Z",
       "side": 1,
       "message": "the name should be meaningful.\n\nyou could rename this to something like osd-box-content",
+      "range": {
+        "startLine": 122,
+        "startChar": 14,
+        "endLine": 122,
+        "endChar": 27
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_3de58ea8",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 25
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_5d732a4d",
       "range": {
         "startLine": 122,
         "startChar": 14,
@@ -168,6 +318,30 @@
     },
     {
       "key": {
+        "uuid": "3a6ff13c_1dd8d2ee",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 25
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_7d8f0624",
+      "range": {
+        "startLine": 123,
+        "startChar": 0,
+        "endLine": 129,
+        "endChar": 27
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_bd997e70",
         "filename": "app/styles/cluster-osd-detail.scss",
         "patchSetId": 25
@@ -179,6 +353,30 @@
       "writtenOn": "2016-03-16T07:31:06Z",
       "side": 1,
       "message": "some the styles may not be required if the element is \nchanged from \u0027span\u0027 to \u0027div\u0027\n\npls check once",
+      "range": {
+        "startLine": 133,
+        "startChar": 0,
+        "endLine": 144,
+        "endChar": 22
+      },
+      "revId": "3a8a1f4362707b32cd76fd20e3bfbcecae02de88",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_fdda16e8",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 25
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:13:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_bd997e70",
       "range": {
         "startLine": 133,
         "startChar": 0,
