@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_fd01363a",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:23:49Z",
+      "side": 1,
+      "message": "can you defined type as number for both",
+      "range": {
+        "startLine": 19,
+        "startChar": 12,
+        "endLine": 20,
+        "endChar": 25
+      },
+      "revId": "cb576d340b107609f547122c0f9eb65bb788046a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_1dfff235",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:23:49Z",
+      "side": 1,
+      "message": "instead of this , you can use conditional operator in one line",
+      "range": {
+        "startLine": 51,
+        "startChar": 8,
+        "endLine": 57,
+        "endChar": 9
+      },
+      "revId": "cb576d340b107609f547122c0f9eb65bb788046a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_5df96a4c",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:23:49Z",
+      "side": 1,
+      "message": "instead of doing this . i think you can do like : \nthis.filterObject \u003d {};\ncan you try this",
+      "range": {
+        "startLine": 101,
+        "startChar": 8,
+        "endLine": 104,
+        "endChar": 45
+      },
+      "revId": "cb576d340b107609f547122c0f9eb65bb788046a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_bd9fbe02",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-16T09:23:49Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 132,
+        "startChar": 8,
+        "endLine": 134,
+        "endChar": 48
+      },
+      "revId": "cb576d340b107609f547122c0f9eb65bb788046a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
