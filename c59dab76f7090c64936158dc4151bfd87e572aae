@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_bd57be01",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 23
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T04:36:54Z",
+      "side": 1,
+      "message": "Can we use Object.keys directly here?",
+      "range": {
+        "startLine": 122,
+        "startChar": 11,
+        "endLine": 122,
+        "endChar": 26
+      },
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
