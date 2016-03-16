@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_800539c4",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 27
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-16T10:45:16Z",
+      "side": 1,
+      "message": "We are only moving the OSD out of the cluster. So please change the message accordingly.",
+      "range": {
+        "startLine": 107,
+        "startChar": 124,
+        "endLine": 107,
+        "endChar": 132
+      },
+      "revId": "d1af926071aeebbdc7a9ba42b6faf96a14ab8a32",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
