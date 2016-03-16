@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_fd0bf628",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 26
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T10:07:32Z",
+      "side": 1,
+      "message": "div should be used instead of span",
+      "range": {
+        "startLine": 45,
+        "startChar": 13,
+        "endLine": 45,
+        "endChar": 17
+      },
+      "revId": "bc7d2642952c0fc5928e6018b5d93ca3651b4ce8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_1d09b231",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 26
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T10:07:32Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 49,
+        "startChar": 13,
+        "endLine": 49,
+        "endChar": 17
+      },
+      "revId": "bc7d2642952c0fc5928e6018b5d93ca3651b4ce8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_1d2292b9",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 26
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T10:07:32Z",
+      "side": 1,
+      "message": "is this being used?",
+      "range": {
+        "startLine": 90,
+        "startChar": 0,
+        "endLine": 92,
+        "endChar": 5
+      },
+      "revId": "bc7d2642952c0fc5928e6018b5d93ca3651b4ce8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_601afd6f",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 26
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T10:07:32Z",
+      "side": 1,
+      "message": "this doesn\u0027t have any effect",
+      "range": {
+        "startLine": 113,
+        "startChar": 8,
+        "endLine": 113,
+        "endChar": 28
+      },
+      "revId": "bc7d2642952c0fc5928e6018b5d93ca3651b4ce8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_802619b9",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 26
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T10:07:32Z",
+      "side": 1,
+      "message": "this is not required. by default the background is white",
+      "revId": "bc7d2642952c0fc5928e6018b5d93ca3651b4ce8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_203e45b9",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 26
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T10:07:32Z",
+      "side": 1,
+      "message": "border should be 3px\n\nand the color should be #199dde",
+      "range": {
+        "startLine": 160,
+        "startChar": 7,
+        "endLine": 160,
+        "endChar": 34
+      },
+      "revId": "bc7d2642952c0fc5928e6018b5d93ca3651b4ce8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
