@@ -22,6 +22,188 @@
       "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_fdae96e6",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "Lot similar styles in this. can we try to make them generic like\n\n.left-sidebar {\n}\n\n.left-sidebar .expanded {\n\n}\n\n.left-sidebar .collapsed {\n\n}",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 5
+      },
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_1dac52ed",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 65,
+        "startChar": 4,
+        "endLine": 118,
+        "endChar": 9
+      },
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_7d82a653",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "why do we need to set it to 0 ?",
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_9d876261",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "isn\u0027t the default padding is 0?",
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_5db6ca3e",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "we should avoid using !important",
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_bd7c1e74",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "We should set color for the whole div. if required should be done only for the text",
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_dd81da4b",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "isn\u0027t this by default 0?",
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_fd95b688",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "this will not work in chrome",
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_1d9372a4",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "won\u0027t work in chrome",
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_bda5fe05",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 23
+      },
+      "lineNbr": 228,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-16T05:04:54Z",
+      "side": 1,
+      "message": "the border should be very light\n\nand the color should something similar to\nhttp://angular-patternfly.rhcloud.com/#/api/patternfly.views.directive:pfCardView",
+      "revId": "c59dab76f7090c64936158dc4151bfd87e572aae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
