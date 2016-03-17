@@ -53,7 +53,7 @@
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="profile">Storage Profile</label>
                             <div class="col-md-2">
-                                <select pf-select ng-model="storage.profile" id="profile" class="form-control" ng-options="profile.name for profile in storage.profiles"></select>
+                                <select pf-select ng-model="storage.profile" id="profile" class="form-control" ng-options="profile.name for profile in storage.profiles" ng-change="storage.changeStorageProfile(storage.profile)"></select>
                             </div>
                             <div class="col-md-8">
                                 <p class="form-control-static">{{storage.slus.length}} OSDs</p>

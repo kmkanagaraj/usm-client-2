@@ -2,6 +2,7 @@
 
 import {Cluster} from '../../rest/clusters';
 import {StorageProfile} from '../../rest/storage-profile';
+import {SLU} from '../../rest/clusters';
 
 import {ClusterService} from '../../rest/clusters';
 import {StorageProfileService} from '../../rest/storage-profile';
@@ -59,8 +60,16 @@ export class ObjectStorageController {
         this.clusterSvc.get(clusterId).then(cluster => {
             this.cluster = cluster;
         });
+        this.storageProfileSvc.getList().then((profiles) => {
+            this.profiles = profiles;
+            this.profile = profiles[0];
+            this.fetchOSDs(clusterId, this.profile.name);
+        });
+    }
+
+    public fetchOSDs(clusterId: string, storageprofile: string) {
         this.clusterSvc.getSlus(clusterId).then(slus => {
-            this.slus = slus;
+            this.slus = _.filter(slus, (osd: SLU) => osd.storageprofile === storageprofile);
             this.PGsFixed = this.slus.length <= 50;
             if (this.PGsFixed) {
                 this.pgs = GetCephPGsForOSD(this.slus, null, null);
@@ -69,10 +78,6 @@ export class ObjectStorageController {
             else {
                 this.preparePGSlider();
             }
-        });
-        this.storageProfileSvc.getList().then((profiles) => {
-            this.profiles = profiles;
-            this.profile = profiles[0];
         });
     }
 
@@ -125,10 +130,7 @@ export class ObjectStorageController {
     }
 
     public changeStorageProfile(selectedProfile: StorageProfile) {
-        this.clusterSvc.getSlus(this.cluster.clusterid).then(slus => {
-            this.slus = slus;
-            this.pgs = GetCephPGsForOSD(slus, 100, 3);
-        });
+        this.fetchOSDs(this.cluster.clusterid, selectedProfile.name);
     }
 
     public getQuotaPercentageSize(percent: string): string {
