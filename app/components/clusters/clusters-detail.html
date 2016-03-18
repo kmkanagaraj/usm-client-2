@@ -269,6 +269,11 @@
         </div><!-- End of Fisrt Big row -->
     </div>
 
+     <!-- SECOND TAB CONTENT -->
+    <div ng-show="clusterdetail.isSet(1)">
+        <cluster-host-detail cluster-id="clusterdetail.id"></cluster-host-detail>
+    </div>
+
     <!-- FOURTH TAB CONTENT -->
     <div ng-show="clusterdetail.isSet(3)" ng-include src="'views/clusters/clusters-detail-rbds.html'">
     </div>
