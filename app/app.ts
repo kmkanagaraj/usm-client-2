@@ -32,6 +32,7 @@ import {KTDraggable} from "./components/shared/directives/kt-draggable";
 import {KTDroppable} from "./components/shared/directives/kt-droppable";
 import {StorageSizeSelector} from "./components/shared/directives/storage-size-selector";
 import {OsdDetail} from "./components/clusters/osdsdetail/osd-detail-directive";
+import {ClusterHostDetail} from "./components/clusters/hostdetail/host-detail-directive";
 
 /* tslint:disable */
 var es6shim = require("es6-shim");
@@ -94,6 +95,7 @@ class USMApp {
             .directive('ktDroppable', () => new KTDroppable())
             .directive('storageSizeSelector', () => new StorageSizeSelector())
             .directive('osdDetail', () => new OsdDetail())
+            .directive('clusterHostDetail', () => new ClusterHostDetail())
             .controller('LdapConfigController',LdapConfigController)
             .controller('EventListController',EventListController)
             .controller('EventDetailController',EventDetailController)

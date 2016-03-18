@@ -74,7 +74,7 @@ export class ClusterDetailController {
         this.mostUsedPools = [];
         this.clusterList = [];
         this.tabList = [
-            { tabName: "Overview" },{ tabName: "CRUSH map" },{ tabName: "Pools" },{ tabName: "RBDs" },
+            { tabName: "Overview" },{ tabName: "Hosts" },{ tabName: "Pools" },{ tabName: "RBDs" },
             { tabName: "OSDs" },{ tabName: "Storage Profiles" },{ tabName: "Configuration" }
         ];
         this.tabIndex = 0;
