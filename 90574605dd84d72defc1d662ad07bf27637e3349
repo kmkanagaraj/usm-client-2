@@ -22,6 +22,30 @@
       "revId": "90574605dd84d72defc1d662ad07bf27637e3349",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_8eb6433c",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-18T11:29:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a6ff13c_cb1d8d75",
+      "range": {
+        "startLine": 89,
+        "startChar": 41,
+        "endLine": 89,
+        "endChar": 96
+      },
+      "revId": "90574605dd84d72defc1d662ad07bf27637e3349",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
