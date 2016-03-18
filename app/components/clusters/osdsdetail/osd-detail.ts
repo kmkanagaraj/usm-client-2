@@ -4,17 +4,18 @@ import {ClusterService} from '../../rest/clusters';
 import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import * as ModalHelpers from '../../modal/modal-helpers';
+import {numeral} from '../../base/libs';
 
 export class OsdDetailController {
     private id: any;
     private osdList: Array<any>;
-    private isUtilizationShow: boolean;
-    private showValueForOsd: string;
+    private osdListGroupBy: any;
     private filterList: any;
     private selection: any;
-    private filter: any;
+    private filterBy: any;
     private utils: any;
-    private isLeftSidebarShow; boolean;
+    private isLeftSidebarShow: boolean;
+    private groupBy: string;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -38,11 +39,10 @@ export class OsdDetailController {
         private requestTrackingSvc: RequestTrackingService) {
 
         this.isLeftSidebarShow = true;
+        this.groupBy = "options1['node']";
         this.selection = { activeOsd: {} ,allSelectedOsds: {} };
-        this.filter = {};
-        this.utils = { keys : Object.keys };
-        this.isUtilizationShow = true;
-        this.showValueForOsd = "utilization";
+        this.filterBy = { osdStatus: {} ,utilization: {}, active: 'osd_status' };
+        this.utils = { keys: Object.keys, numeral: numeral};
         this.filterList = {};
         this.filterList.OSDStatus = [
             {name: "Up-In", icon: "pficon pficon-ok", enable: false},
@@ -79,10 +79,10 @@ export class OsdDetailController {
             }
         ];
         this.filterList.Utilization = [
-            {name: "Full (95% or more)"},
-            {name: "Near Full (85% or more)"},
-            {name: "50% - 85%"},
-            {name: "Less than 50%"}
+            {name: "Full (95% or more)", icon: "progress-bar-full", enable: false},
+            {name: "Near Full (85% or more)", icon: "progress-bar-near-full", enable: false},
+            {name: "50% - 85%", icon: "progress-bar-average", enable: false},
+            {name: "Less than 50%", icon: "progress-bar-normal", enable: false}
         ];
         this.getOSDs();
     }
@@ -90,15 +90,39 @@ export class OsdDetailController {
     public getOSDs() {
         this.clusterService.getSlus(this.id).then((slus: Array<any>) => {
             this.osdList = slus;
-            (this.osdList || []).map( (osd) => {
+            this.performGroupBy();
+            this.openAccordion(this.osdListGroupBy[0].value);
+        });
+    }
+
+    public resetFilterList() {
+        _.forOwn(this.filterList, function(value, key) {
+            _.each(value, (data: any) => {
+                data.enable = false;
+            });
+        });
+    }
+
+    public performGroupBy() {
+        this.osdListGroupBy = _.chain(this.osdList).groupBy(this.groupBy).pairs().map(function(currentItem) {
+                                    return _.object(_.zip(["name", "value"], currentItem));
+                                }).value();
+    }
+
+    public openAccordion(osdList) {
+        if(osdList.length > 0) {
+            this.selection.activeOsd = osdList[0];
+            this.resetFilterList();
+            (osdList || []).map( (osd) => {
+                osd.usage.status = (osd.usage.percentused>=95? 0 :(osd.usage.percentused>=85? 1 :(osd.usage.percentused>=50? 2 : 3 )));
                 if(!this.filterList.OSDStatus[osd.status].enable) {
                     this.filterList.OSDStatus[osd.status].enable = true;
                 }
+                if(!this.filterList.Utilization[osd.usage.status].enable) {
+                    this.filterList.Utilization[osd.usage.status].enable = true;
+                }
             });
-            if(this.osdList.length > 0) {
-                this.selection.activeOsd = this.osdList[0];
-            }
-        });
+        }
     }
 
     public osdActionChange(osdAction) {
@@ -144,8 +168,12 @@ export class OsdDetailController {
         });
     }
 
-    public applyFilter =  (osd) => {
-        return this.filter[osd.status] || this.noFilter(this.filter);
+    public applyFilter = (osd) => {
+        if(this.filterBy.active === 'osd_status') {
+            return this.filterBy.osdStatus[osd.status] || this.noFilter(this.filterBy.osdStatus);
+        }else if(this.filterBy.active === 'utilization') {
+            return this.filterBy.utilization[osd.usage.status] || this.noFilter(this.filterBy.utilization);
+        }
     }
 
     public noFilter(filterObj) {
