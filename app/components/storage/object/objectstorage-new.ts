@@ -131,13 +131,13 @@ export class ObjectStorageController {
         });
     }
 
-    public getQuotaPercentageSize(percent: string): string {
+    public getQuotaPercentageSize(percent: string): number {
         var val = parseInt(percent) || 0;
-        return numeral((val / 100) * this.targetSize).format('0.0 b');
+        return (val / 100) * this.targetSize;
     }
 
-    public getQuotaTotalSize(): string {
-        return numeral(this.targetSize).format('0.0 b');
+    public getQuotaTotalSize(): number {
+        return this.targetSize;
     }
 
     public prepareSummary(): void {
@@ -155,7 +155,6 @@ export class ObjectStorageController {
                 replicas: this.replicas,
                 ecprofile: this.ecprofile,
                 capacity: this.targetSize,
-                capacityFormated: numeral(this.targetSize).format('0b'),
                 quota: this.quota
             }
             this.pools.push(angular.copy(pool));
@@ -171,7 +170,7 @@ export class ObjectStorageController {
         for (let pool of this.pools) {
             let storage = {
                 name: pool.name,
-                size: pool.capacityFormated,
+                size: numeral(pool.capacity).format('0b'),
                 options: {}
             };
 
