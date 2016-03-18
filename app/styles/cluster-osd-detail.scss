@@ -7,6 +7,7 @@
         overflow: scroll;
         overflow-x: hidden;
         padding: 15px;
+        margin-top: 15px;
     }
 
     .filter-icon {
@@ -113,7 +114,8 @@
         width: 100%;
         border-radius: 2px;
         box-shadow: 3px 3px 11px black;
-        margin-top: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .osd-box .osd-box-content {
@@ -135,6 +137,10 @@
         height: 38px;
     }
 
+    .osd-box .custom-progress {
+        margin-bottom: 0px;
+    }
+
     .osd-box .progress-bar-full {
         background-color: #cc0000;
     }
@@ -143,17 +149,25 @@
         background-color: #ec7a08;
     }
 
+    .osd-box .progress-bar-average {
+        background-color: #00659c;
+    }
+
     .osd-box .progress-bar-normal {
-        background-color: #39a5dc;
+        background-color: #7dc3e8;
     }
 
     .selected-osd {
         border: 3px solid #199dde;
-        height: 106px;
+        height: 85px;
     }
 
     .show-inline {
         display: flex;
+    }
+
+    .custom-panel-heading {
+        margin-top: 10px;
     }
 
 }
