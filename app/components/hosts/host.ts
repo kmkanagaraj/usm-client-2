@@ -5,6 +5,7 @@ import {ClusterService} from '../rest/clusters';
 import {ServerService} from '../rest/server';
 import {UtilService} from '../rest/util';
 import {RequestService} from '../rest/request';
+import * as ModalHelpers from '../modal/modal-helpers';
 
 export class HostController {
     public list: Array<any>;
@@ -17,6 +18,7 @@ export class HostController {
         '$interval',
         '$location',
         '$log',
+        '$modal',
         '$timeout',
         'ClusterService',
         'ServerService',
@@ -30,6 +32,7 @@ export class HostController {
         private $interval: ng.IIntervalService,
         private $location: ng.ILocationService,
         private $log: ng.ILogService,
+        private $modal: any,
         private $timeout: ng.ITimeoutService,
         private clusterSvc: ClusterService,
         private serverService: ServerService,
@@ -75,9 +78,9 @@ export class HostController {
                     host.cluster_name = self.clusters[host.clusterid].name;
                 }
             }
-            else{
-                host.cluster_type="Free";
-                host.cluster_name="Unassigned";
+            else {
+                host.cluster_type = "Free";
+                host.cluster_name = "Unassigned";
             }
             self.serverService.getMemoryUtilization(host.nodeid).then((results) => {
                 if (results != null && results !== 'null\n') {
@@ -109,21 +112,26 @@ export class HostController {
         else return '#4AD170';
     }
 
-    public remove(node_id) {
-        this.serverService.remove(node_id).then(function(result) {
-            this.reloadData();
-            console.log(result);
+    public removeHost(host): void {
+        var modal = ModalHelpers.RemoveConfirmation(this.$modal, {
+        });
+        modal.$scope.$hide = _.wrap(modal.$scope.$hide, ($hide, confirmed: boolean) => {
+            if(confirmed) {
+                var deleteHost = {
+                    action: "delete"
+                };
+                this.serverService.delete(deleteHost, host.hostname).then((result) => {
+                });
+            }
+            $hide();
         });
     }
 
-    public reinitialize(host):void{
+    public reinitialize(host): void {
         var reinit = {
-            action : "reinitialize"
+            action: "reinitialize"
         };
         this.serverService.reinitialize(reinit, host.hostname).then((result) => {
-            if(result.status === 200){
-                this.$location.path('/hosts');
-            }
         });
     }
 }
