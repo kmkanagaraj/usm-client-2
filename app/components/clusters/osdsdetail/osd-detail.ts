@@ -4,17 +4,18 @@ import {ClusterService} from '../../rest/clusters';
 import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import * as ModalHelpers from '../../modal/modal-helpers';
+import {numeral} from '../../base/libs';
 
 export class OsdDetailController {
     private id: any;
     private osdList: Array<any>;
-    private isUtilizationShow: boolean;
-    private showValueForOsd: string;
+    private osdListGroupBy: any;
     private filterList: any;
     private selection: any;
-    private filter: any;
+    private filterBy: any;
     private utils: any;
-    private isLeftSidebarShow; boolean;
+    private isLeftSidebarShow: boolean;
+    private showAll: boolean;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -39,11 +40,10 @@ export class OsdDetailController {
 
         this.isLeftSidebarShow = true;
         this.selection = { activeOsd: {} ,allSelectedOsds: {} };
-        this.filter = {};
-        this.utils = { keys : Object.keys };
-        this.isUtilizationShow = true;
-        this.showValueForOsd = "utilization";
+        this.filterBy = { osdStatus: {} ,utilization: {}, active: 'osd_status' };
+        this.utils = { keys: Object.keys, numeral: numeral};
         this.filterList = {};
+        this.showAll = false;
         this.filterList.OSDStatus = [
             {name: "Up-In", icon: "pficon pficon-ok", enable: false},
             {name: "Up-Out", icon: "pficon pficon-warning-triangle-o", enable: false},
@@ -51,38 +51,29 @@ export class OsdDetailController {
             {name: "Down", icon: "fa fa-arrow-circle-o-down down-color", enable: false}
         ];
         this.filterList.PGStatus = [
-            {name: "OK", subdata: [
-                        {name: "Active"},
-                        {name: "Clean"}
-                    ]
-            },
-            {name: "Degraded", subdata: [
-                        {name: "Creating"},
-                        {name: "Replay"},
-                        {name: "Splitting"},
-                        {name: "Scrubbing"},
-                        {name: "Degraded"},
-                        {name: "Repair"},
-                        {name: "Recovery"},
-                        {name: "Backfill"},
-                        {name: "Wait_Backfill"},
-                        {name: "Remapped"}
-                    ]
-            },
-            {name: "Needs Attention", subdata: [
-                        {name: "Down"},
-                        {name: "Inconsistent"},
-                        {name: "Peering"},
-                        {name: "Incomplete"},
-                        {name: "Stale"}
-                    ]
-            }
+            {name: "active", enable: false},
+            {name: "clean", enable: false},
+            {name: "creating", enable: false},
+            {name: "replay", enable: false},
+            {name: "splitting", enable: false},
+            {name: "scrubbing", enable: false},
+            {name: "degraded", enable: false},
+            {name: "undersized", enable: false},
+            {name: "repair", enable: false},
+            {name: "recovery", enable: false},
+            {name: "backfill", enable: false},
+            {name: "remapped", enable: false},
+            {name: "down", enable: false},
+            {name: "inconsistent", enable: false},
+            {name: "peering", enable: false},
+            {name: "incomplete", enable: false},
+            {name: "stale", enable: false},
         ];
         this.filterList.Utilization = [
-            {name: "Full (95% or more)"},
-            {name: "Near Full (85% or more)"},
-            {name: "50% - 85%"},
-            {name: "Less than 50%"}
+            {name: "Full (95% or more)", icon: "progress-bar-full", enable: false},
+            {name: "Near Full (85% or more)", icon: "progress-bar-near-full", enable: false},
+            {name: "50% - 85%", icon: "progress-bar-average", enable: false},
+            {name: "Less than 50%", icon: "progress-bar-normal", enable: false}
         ];
         this.getOSDs();
     }
@@ -91,14 +82,31 @@ export class OsdDetailController {
         this.clusterService.getSlus(this.id).then((slus: Array<any>) => {
             this.osdList = slus;
             (this.osdList || []).map( (osd) => {
+                var pgArray = [];
+                osd.usage.status = (osd.usage.percentused>=95? 0 :(osd.usage.percentused>=85? 1 :(osd.usage.percentused>=50? 2 : 3 )));
                 if(!this.filterList.OSDStatus[osd.status].enable) {
                     this.filterList.OSDStatus[osd.status].enable = true;
                 }
+                if(!this.filterList.Utilization[osd.usage.status].enable) {
+                    this.filterList.Utilization[osd.usage.status].enable = true;
+                }
+                Object.keys(osd.options1.pgsummary).forEach((element) => {
+                    pgArray = pgArray.concat(element.split("+"));
+                });
+                osd.options1.pgsummary.pgarray = pgArray;  
             });
-            if(this.osdList.length > 0) {
-                this.selection.activeOsd = this.osdList[0];
-            }
+            this.selection.activeOsd = this.osdList[0];
+            this.pgStatusFilterChange();
+            this.performGroupBy('node');
         });
+    }
+
+    public performGroupBy(group_by) {
+        if(group_by === 'node') {
+            this.osdListGroupBy = _.groupBy(this.osdList, function(osd){ return osd.options1.node });
+        }else {
+            this.osdListGroupBy = _.groupBy(this.osdList, function(osd){ return osd.storageprofile });
+        }
     }
 
     public osdActionChange(osdAction) {
@@ -144,9 +152,36 @@ export class OsdDetailController {
         });
     }
 
-    public applyFilter =  (osd) => {
-        return this.filter[osd.status] || this.noFilter(this.filter);
+    public applyFilter = (osd) => {
+        if(this.filterBy.active === 'osd_status') {
+            return this.filterBy.osdStatus[osd.status] || this.noFilter(this.filterBy.osdStatus);
+        }else if(this.filterBy.active === 'utilization') {
+            return this.filterBy.utilization[osd.usage.status] || this.noFilter(this.filterBy.utilization);
+        }else if(this.filterBy.active === 'pg_status') {
+            if(this.showAll) { return true; }
+            var result = false;
+            _.each(this.filterList.PGStatus, (element: any) => {
+                if(element.enable){
+                    if(osd.options1.pgsummary.pgarray.indexOf(element.name) === -1){
+                        return false;
+                    }else{
+                        result = true;
+                    }
+                }
+            });
+            return result;
+        }
     }
+
+    public pgStatusFilterChange() {
+        for(var index in this.filterList.PGStatus){
+            if(this.filterList.PGStatus[index].enable){
+                this.showAll = false;
+                return;
+            }
+        }
+        this.showAll = true;
+    };
 
     public noFilter(filterObj) {
         for (var key in filterObj) {
