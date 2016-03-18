@@ -113,7 +113,7 @@
         width: 100%;
         border-radius: 2px;
         box-shadow: 3px 3px 11px black;
-        margin-top: 12px;
+        margin-top: 30px;
     }
 
     .osd-box .osd-box-content {
@@ -143,17 +143,25 @@
         background-color: #ec7a08;
     }
 
+    .osd-box .progress-bar-average {
+        background-color: #00659c;
+    }
+
     .osd-box .progress-bar-normal {
-        background-color: #39a5dc;
+        background-color: #7dc3e8;
     }
 
     .selected-osd {
         border: 3px solid #199dde;
-        height: 106px;
+        height: 105px;
     }
 
     .show-inline {
         display: flex;
+    }
+
+    .custom-panel-heading {
+        background-image: none !important; /* hiding by default panel-heading background-image */
     }
 
 }
