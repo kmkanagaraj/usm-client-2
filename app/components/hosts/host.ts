@@ -75,9 +75,9 @@ export class HostController {
                     host.cluster_name = self.clusters[host.clusterid].name;
                 }
             }
-            else{
-                host.cluster_type="Free";
-                host.cluster_name="Unassigned";
+            else {
+                host.cluster_type = "Free";
+                host.cluster_name = "Unassigned";
             }
             self.serverService.getMemoryUtilization(host.nodeid).then((results) => {
                 if (results != null && results !== 'null\n') {
@@ -109,21 +109,18 @@ export class HostController {
         else return '#4AD170';
     }
 
-    public remove(node_id) {
-        this.serverService.remove(node_id).then(function(result) {
-            this.reloadData();
-            console.log(result);
+    public removeHost(host): void {
+        var deleteHost = {
+            action: "delete"
+        };
+        this.serverService.delete(deleteHost, host.hostname).then((result) => {
         });
     }
-
-    public reinitialize(host):void{
+    public reinitialize(host): void {
         var reinit = {
-            action : "reinitialize"
+            action: "reinitialize"
         };
         this.serverService.reinitialize(reinit, host.hostname).then((result) => {
-            if(result.status === 200){
-                this.$location.path('/hosts');
-            }
         });
     }
 }
