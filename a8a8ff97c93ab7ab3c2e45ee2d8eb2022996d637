@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_971d72c0",
+        "filename": "app/components/clusters/hostdetail/host-detail-directive.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-20T07:40:35Z",
+      "side": 1,
+      "message": "This file can be renamed to host-list-directive.ts",
+      "revId": "a8a8ff97c93ab7ab3c2e45ee2d8eb2022996d637",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_b7798efe",
+        "filename": "app/components/clusters/hostdetail/host-detail-directive.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-20T07:40:35Z",
+      "side": 1,
+      "message": "list of hosts in cluster",
+      "range": {
+        "startLine": 10,
+        "startChar": 42,
+        "endLine": 10,
+        "endChar": 58
+      },
+      "revId": "a8a8ff97c93ab7ab3c2e45ee2d8eb2022996d637",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_5723fa04",
+        "filename": "app/components/clusters/hostdetail/host-detail-directive.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-20T07:40:35Z",
+      "side": 1,
+      "message": "This should be renamed to HostListDirective",
+      "range": {
+        "startLine": 19,
+        "startChar": 13,
+        "endLine": 19,
+        "endChar": 30
+      },
+      "revId": "a8a8ff97c93ab7ab3c2e45ee2d8eb2022996d637",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_37267e17",
+        "filename": "app/components/clusters/hostdetail/host-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-20T07:40:35Z",
+      "side": 1,
+      "message": "Why do we need a new controller?\n\nCan we reuse the HostController here?",
+      "range": {
+        "startLine": 10,
+        "startChar": 13,
+        "endLine": 10,
+        "endChar": 40
+      },
+      "revId": "a8a8ff97c93ab7ab3c2e45ee2d8eb2022996d637",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_7720f6f7",
+        "filename": "app/components/hosts/hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-20T07:40:35Z",
+      "side": 1,
+      "message": "This file can be renamed to host-list.html to make the list templates uniform across the application",
+      "revId": "a8a8ff97c93ab7ab3c2e45ee2d8eb2022996d637",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
