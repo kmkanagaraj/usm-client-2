@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a6ff13c_3702fe3e",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-20T09:50:10Z",
+      "side": 1,
+      "message": "Does this return a taskid?\n\nIf you are not worried about the response, you can remove the \u0027then\u0027 callback.\n\nthis.serverService.delete(deleteHost, host.hostname);\n\nis enough",
+      "range": {
+        "startLine": 123,
+        "startChar": 0,
+        "endLine": 124,
+        "endChar": 19
+      },
+      "revId": "2b58d59e4367de86b1f242bf2988bd00adad0905",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a6ff13c_17eee288",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-20T09:50:10Z",
+      "side": 1,
+      "message": "Does this return a taskid?\n\nIf you are not worried about the response, you can remove the \u0027then\u0027 callback.\n\nthis.serverService.reinitialize(reinit, host.hostname);\n\nis enough",
+      "range": {
+        "startLine": 134,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 11
+      },
+      "revId": "2b58d59e4367de86b1f242bf2988bd00adad0905",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
