@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "1a6ced46_a3789a2c",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-21T12:26:48Z",
+      "side": 1,
+      "message": "this delete method is only for deleting the host. so, remove the deleteHost argument and move it to serverservice.",
+      "revId": "2b58d59e4367de86b1f242bf2988bd00adad0905",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_3702fe3e",
         "filename": "app/components/hosts/host.ts",
         "patchSetId": 2
