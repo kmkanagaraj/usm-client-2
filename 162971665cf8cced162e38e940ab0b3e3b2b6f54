@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a6ced46_f7724848",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 7
+      },
+      "lineNbr": 273,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-22T11:14:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a6ced46_f78c0882",
+      "revId": "162971665cf8cced162e38e940ab0b3e3b2b6f54",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a6ced46_17d0c452",
         "filename": "app/components/clusters/hostdetail/host-list-directive.ts",
         "patchSetId": 7
@@ -47,6 +65,24 @@
       "writtenOn": "2016-03-22T10:15:05Z",
       "side": 1,
       "message": "this search is working? did u test this?",
+      "revId": "162971665cf8cced162e38e940ab0b3e3b2b6f54",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_d7bd4c04",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 7
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-22T11:14:50Z",
+      "side": 1,
+      "message": "yes , i have test this , working fine",
+      "parentUuid": "1a6ced46_d78f0c74",
       "revId": "162971665cf8cced162e38e940ab0b3e3b2b6f54",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
