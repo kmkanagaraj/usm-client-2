@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a6ced46_6c720fe7",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-22T08:27:41Z",
+      "side": 1,
+      "message": "This can be renamed to HostListController",
+      "range": {
+        "startLine": 9,
+        "startChar": 13,
+        "endLine": 9,
+        "endChar": 27
+      },
+      "revId": "31ab6aa5298fa05588545594420466fd0e5caf89",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
