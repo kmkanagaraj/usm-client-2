@@ -202,6 +202,30 @@
     },
     {
       "key": {
+        "uuid": "1a6ced46_6c5f6f73",
+        "filename": "app/components/clusters/hostdetail/host-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-22T05:51:25Z",
+      "side": 1,
+      "message": "we can use same controller , but there should be some identifier so that we can get to know for which reason we want to use this controller\n\nso my suggestion is , we should have some params value in route , and depend on params value , controller will work depend on request \n\n\nwhat you say ?",
+      "parentUuid": "1a6ced46_accde75f",
+      "range": {
+        "startLine": 10,
+        "startChar": 13,
+        "endLine": 10,
+        "endChar": 40
+      },
+      "revId": "a8a8ff97c93ab7ab3c2e45ee2d8eb2022996d637",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a6ff13c_7720f6f7",
         "filename": "app/components/hosts/hosts.html",
         "patchSetId": 2
