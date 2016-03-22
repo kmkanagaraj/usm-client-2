@@ -548,14 +548,12 @@ export class ClusterNewController {
                 };
                 var disks = [];
                 if (this.isOsd(host.hostType)) {
+                    localHost.nodetype.push('OSD');
                     _.each(host.disks, (disk: any) => {
                         if (disk.Type === 'disk' && disk.Used === false) {
                             disks.push({ name: disk.DevName, fstype: 'xfs' });
                         }
                         localHost.disks = disks;
-                        if (disks.length > 0) {
-                            localHost.nodetype.push('OSD');
-                        }
                     });
                 }
                 if (this.isMon(host.hostType)) {
