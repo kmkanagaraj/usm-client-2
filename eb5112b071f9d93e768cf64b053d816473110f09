@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1a6ced46_4c9f1304",
+        "filename": "app/app.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-22T07:00:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a6ced46_acd7a7be",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 35,
+        "endChar": 25
+      },
+      "revId": "eb5112b071f9d93e768cf64b053d816473110f09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a6ced46_cce4e3ae",
         "filename": "app/app.ts",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-22T06:31:00Z",
       "side": 1,
       "message": "hostList should be fine",
+      "range": {
+        "startLine": 98,
+        "startChar": 24,
+        "endLine": 98,
+        "endChar": 41
+      },
+      "revId": "eb5112b071f9d93e768cf64b053d816473110f09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_6ca4cf57",
+        "filename": "app/app.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-22T07:00:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a6ced46_cce4e3ae",
       "range": {
         "startLine": 98,
         "startChar": 24,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "1a6ced46_2c9ad714",
+        "filename": "app/components/clusters/hostdetail/host-list-directive.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-22T07:00:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a6ced46_ece19f9b",
+      "range": {
+        "startLine": 13,
+        "startChar": 3,
+        "endLine": 13,
+        "endChar": 69
+      },
+      "revId": "eb5112b071f9d93e768cf64b053d816473110f09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a6ced46_0ceefb8b",
         "filename": "app/components/hosts/host.ts",
         "patchSetId": 4
@@ -82,6 +154,30 @@
       "writtenOn": "2016-03-22T06:31:00Z",
       "side": 1,
       "message": "rename this to clusterId",
+      "range": {
+        "startLine": 50,
+        "startChar": 16,
+        "endLine": 50,
+        "endChar": 18
+      },
+      "revId": "eb5112b071f9d93e768cf64b053d816473110f09",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_0c951be4",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-22T07:00:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a6ced46_0ceefb8b",
       "range": {
         "startLine": 50,
         "startChar": 16,
