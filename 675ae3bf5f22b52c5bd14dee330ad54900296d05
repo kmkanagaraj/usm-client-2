@@ -46,6 +46,30 @@
       "revId": "675ae3bf5f22b52c5bd14dee330ad54900296d05",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_d0114a5f",
+        "filename": "app/components/clusters/accept-hosts.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-23T19:04:05Z",
+      "side": 1,
+      "message": "Its better extract out if the styles are not being used by the other components.",
+      "parentUuid": "da9b358b_10ba12e2",
+      "range": {
+        "startLine": 27,
+        "startChar": 47,
+        "endLine": 27,
+        "endChar": 67
+      },
+      "revId": "675ae3bf5f22b52c5bd14dee330ad54900296d05",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
