@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_d0402a0a",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-23T18:28:47Z",
+      "side": 1,
+      "message": "Can we make this configurable in the backend?.",
+      "range": {
+        "startLine": 27,
+        "startChar": 30,
+        "endLine": 27,
+        "endChar": 32
+      },
+      "revId": "5ffc9c3e02bb64f85d496f1c75063290d98d3dae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_b0e12601",
+        "filename": "app/components/clusters/storageprofile/storageprofile-disks-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-23T18:28:47Z",
+      "side": 1,
+      "message": "Do we need this request. Hosts from cluster-new controller may have all the info. We may need to fill the storageProfile in the cluster-new controller.",
+      "range": {
+        "startLine": 43,
+        "startChar": 15,
+        "endLine": 43,
+        "endChar": 58
+      },
+      "revId": "5ffc9c3e02bb64f85d496f1c75063290d98d3dae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_70f6fed8",
+        "filename": "app/components/clusters/storageprofile/storageprofile-disks-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-23T18:28:47Z",
+      "side": 1,
+      "message": "Do we need to send backend request for ever change immediately?.\n\nWhat if the backend request fails for some reason?.",
+      "range": {
+        "startLine": 77,
+        "startChar": 11,
+        "endLine": 77,
+        "endChar": 40
+      },
+      "revId": "5ffc9c3e02bb64f85d496f1c75063290d98d3dae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_102c5249",
+        "filename": "app/components/clusters/storageprofile/storageprofile-disks.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-23T18:28:47Z",
+      "side": 1,
+      "message": "This maps to which \u0027disks\u0027?",
+      "range": {
+        "startLine": 38,
+        "startChar": 25,
+        "endLine": 38,
+        "endChar": 30
+      },
+      "revId": "5ffc9c3e02bb64f85d496f1c75063290d98d3dae",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
