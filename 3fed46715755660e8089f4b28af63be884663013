@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_c73ab2e7",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-23T09:23:45Z",
+      "side": 0,
+      "message": "Why Mock data?",
+      "revId": "3fed46715755660e8089f4b28af63be884663013",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
