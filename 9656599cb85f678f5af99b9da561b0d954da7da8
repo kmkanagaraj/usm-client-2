@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_f6be86d3",
+        "filename": "app/components/clusters/accept-hosts-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-24T04:33:34Z",
+      "side": 1,
+      "message": "Is this being used?",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 32
+      },
+      "revId": "9656599cb85f678f5af99b9da561b0d954da7da8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_16d32a3a",
+        "filename": "app/components/clusters/accept-hosts-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-24T04:33:34Z",
+      "side": 1,
+      "message": "There could be more tasks if the initialization of the same has was happened earlier.",
+      "range": {
+        "startLine": 54,
+        "startChar": 27,
+        "endLine": 54,
+        "endChar": 56
+      },
+      "revId": "9656599cb85f678f5af99b9da561b0d954da7da8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_96e73a12",
+        "filename": "app/components/clusters/accept-hosts-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-24T04:33:34Z",
+      "side": 1,
+      "message": "initialize",
+      "range": {
+        "startLine": 78,
+        "startChar": 50,
+        "endLine": 78,
+        "endChar": 56
+      },
+      "revId": "9656599cb85f678f5af99b9da561b0d954da7da8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_16ba0ae2",
+        "filename": "app/components/clusters/accept-hosts.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-24T04:33:34Z",
+      "side": 1,
+      "message": "We should still allow the user to continue even if the initialization fails for some hosts",
+      "range": {
+        "startLine": 65,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 53
+      },
+      "revId": "9656599cb85f678f5af99b9da561b0d954da7da8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
