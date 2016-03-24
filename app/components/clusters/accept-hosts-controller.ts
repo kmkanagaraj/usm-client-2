@@ -9,13 +9,14 @@ export class AcceptHostsController {
     private discoveredHosts: Array<any>;
     private hostsBeingAccepted: Array<any>;
     private timer;
-    static $inject: Array<string> = ['$location', '$scope', '$interval', '$log', '$timeout', 'ServerService', 'RequestService', 'UtilService', 'RequestTrackingService'];
+    static $inject: Array<string> = ['$location', '$scope', '$interval', '$log', '$timeout', '$modal', 'ServerService', 'RequestService', 'UtilService', 'RequestTrackingService'];
     constructor(
         private $location: ng.ILocationService,
         private $scope: ng.IScope,
         private $interval: ng.IIntervalService,
         private $log: ng.ILogService,
         private $timeout: ng.ITimeoutService,
+        private $modal,
         private serverSvc: ServerService,
         private requestSvc: RequestService,
         private utilSvc: UtilService,
@@ -103,7 +104,21 @@ export class AcceptHostsController {
     }
 
     public showAcceptTaskDetails(host) {
-        this.$location.path('/tasks/' + host.taskid);
+        this.requestSvc.get(host.taskid).then((task) => {
+            this.showTaskDetailsModal(task);
+        });
+    }
+
+    private showTaskDetailsModal(task) {
+        return this.$modal({
+            template: 'views/modal/task-details-popup.html',
+            backdrop: 'static', // disable mouse clicks for now since I can't wrap them or supply a callback
+            keyboard: false,
+            controller: function(){
+                  this.taskId = task.id;
+            },
+            controllerAs: 'tasks'
+        });
     }
 
     public reinitialize(host) {
