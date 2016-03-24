@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_8d23a405",
+        "filename": "app/components/hosts/hosts.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-03-24T14:19:29Z",
+      "side": 1,
+      "message": "Any particular reason for changing the icon?\nThe previous one looks okay for a \"not-found\" display.",
+      "range": {
+        "startLine": 13,
+        "startChar": 26,
+        "endLine": 13,
+        "endChar": 46
+      },
+      "revId": "4a972465bffc1f28263deaa891a48d22b4a02a48",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_ad266814",
+        "filename": "app/components/hosts/hosts.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-03-24T14:19:29Z",
+      "side": 1,
+      "message": "Possibly avoid unnecessary capitalization in the sentence (Accept, Create).",
+      "revId": "4a972465bffc1f28263deaa891a48d22b4a02a48",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
