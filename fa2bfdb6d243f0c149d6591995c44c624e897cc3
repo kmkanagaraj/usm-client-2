@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_4d4b5cb1",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-03-24T14:31:52Z",
+      "side": 1,
+      "message": "Looks very non-DRY. Can we not use interface here?",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 53
+      },
+      "revId": "fa2bfdb6d243f0c149d6591995c44c624e897cc3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
