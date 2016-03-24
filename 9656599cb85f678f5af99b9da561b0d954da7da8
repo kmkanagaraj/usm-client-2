@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_36c50e5b",
+        "filename": "app/components/clusters/accept-hosts-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-24T04:51:44Z",
+      "side": 1,
+      "message": "should be removed.",
+      "parentUuid": "da9b358b_f6be86d3",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 32
+      },
+      "revId": "9656599cb85f678f5af99b9da561b0d954da7da8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da9b358b_16d32a3a",
         "filename": "app/components/clusters/accept-hosts-controller.ts",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-24T04:33:34Z",
       "side": 1,
       "message": "There could be more tasks if the initialization of the same has was happened earlier.",
+      "range": {
+        "startLine": 54,
+        "startChar": 27,
+        "endLine": 54,
+        "endChar": 56
+      },
+      "revId": "9656599cb85f678f5af99b9da561b0d954da7da8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_d6aa6285",
+        "filename": "app/components/clusters/accept-hosts-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-24T04:51:44Z",
+      "side": 1,
+      "message": "Correct. We should look for the first one in the list.",
+      "parentUuid": "da9b358b_16d32a3a",
       "range": {
         "startLine": 54,
         "startChar": 27,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_b6afde93",
+        "filename": "app/components/clusters/accept-hosts-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-24T04:51:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da9b358b_96e73a12",
+      "range": {
+        "startLine": 78,
+        "startChar": 50,
+        "endLine": 78,
+        "endChar": 56
+      },
+      "revId": "9656599cb85f678f5af99b9da561b0d954da7da8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da9b358b_16ba0ae2",
         "filename": "app/components/clusters/accept-hosts.html",
         "patchSetId": 4
@@ -82,6 +154,30 @@
       "writtenOn": "2016-03-24T04:33:34Z",
       "side": 1,
       "message": "We should still allow the user to continue even if the initialization fails for some hosts",
+      "range": {
+        "startLine": 65,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 53
+      },
+      "revId": "9656599cb85f678f5af99b9da561b0d954da7da8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_3673ce4f",
+        "filename": "app/components/clusters/accept-hosts.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-24T04:51:44Z",
+      "side": 1,
+      "message": "It is covered in the if condition. \n(hostsBeingAccepted.lenght - initialized - failed) should give the in progress count. Let me extract this to a method.",
+      "parentUuid": "da9b358b_16ba0ae2",
       "range": {
         "startLine": 65,
         "startChar": 0,
