@@ -16,6 +16,24 @@
       "revId": "3fed46715755660e8089f4b28af63be884663013",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_16c7aa13",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 207,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-24T06:15:26Z",
+      "side": 0,
+      "message": "this is mock data . and now onward , not going to use any mock data here . also this openstackpools is not being used in ui",
+      "parentUuid": "da9b358b_c73ab2e7",
+      "revId": "3fed46715755660e8089f4b28af63be884663013",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
