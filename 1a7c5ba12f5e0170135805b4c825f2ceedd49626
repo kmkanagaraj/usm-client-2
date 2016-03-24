@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_cab872e8",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-24T09:50:36Z",
+      "side": 1,
+      "message": "this check is not required, since mostUsedPools is initialized in the constructor",
+      "revId": "1a7c5ba12f5e0170135805b4c825f2ceedd49626",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_0aa65ac1",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 279,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-24T09:50:36Z",
+      "side": 1,
+      "message": "this should be named as \u0027pool\u0027",
+      "range": {
+        "startLine": 279,
+        "startChar": 35,
+        "endLine": 279,
+        "endChar": 40
+      },
+      "revId": "1a7c5ba12f5e0170135805b4c825f2ceedd49626",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
