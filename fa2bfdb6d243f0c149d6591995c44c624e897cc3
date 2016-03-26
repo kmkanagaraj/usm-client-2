@@ -22,6 +22,30 @@
       "revId": "fa2bfdb6d243f0c149d6591995c44c624e897cc3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_eff7bff3",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-26T10:01:56Z",
+      "side": 1,
+      "message": "interface is defining the type and checking the type in typescript , But here i am initializing the trendsCharts varibale with some object.",
+      "parentUuid": "da9b358b_4d4b5cb1",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 53
+      },
+      "revId": "fa2bfdb6d243f0c149d6591995c44c624e897cc3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
