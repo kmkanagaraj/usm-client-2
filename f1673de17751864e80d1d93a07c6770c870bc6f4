@@ -22,6 +22,30 @@
       "revId": "f1673de17751864e80d1d93a07c6770c870bc6f4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_2917dfa4",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-28T09:56:35Z",
+      "side": 1,
+      "message": "This is done as per the UXD recommendations, please have look at https://docs.google.com/presentation/d/1B3U1Ek1UFaa1savhxkTc4taTEI215uvTbsflCKlE_5U/edit#slide\u003did.g10214aadf4_0_61",
+      "parentUuid": "da9b358b_49dd8313",
+      "range": {
+        "startLine": 13,
+        "startChar": 26,
+        "endLine": 13,
+        "endChar": 46
+      },
+      "revId": "f1673de17751864e80d1d93a07c6770c870bc6f4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
