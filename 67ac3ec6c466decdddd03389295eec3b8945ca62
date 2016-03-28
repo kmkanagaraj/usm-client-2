@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_583c2e93",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-28T15:13:35Z",
+      "side": 1,
+      "message": "This should be placed in a separate scss file",
+      "range": {
+        "startLine": 162,
+        "startChar": 0,
+        "endLine": 188,
+        "endChar": 1
+      },
+      "revId": "67ac3ec6c466decdddd03389295eec3b8945ca62",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
