@@ -1,19 +1,20 @@
 // <reference path="../typings/tsd.d.ts" />
 declare function require(name: string);
 
-import {RequestTrackingService} from './request-tracking-svc';
-import {RequestsController} from './requests-controller';
+import {EventListController} from './event-list';
+import {EventDetailController} from './event-detail-controller'
 
 var angular: ng.IAngularStatic = require('angular');
 var angularGrowl = require('angular-growl');
 
-var moduleName = 'usm-client.events';
+var moduleName = 'usm-client.eventModule';
 
 angular.module(moduleName, ['angular-growl'])
-    .service('RequestTrackingService', RequestTrackingService)
-    .controller('RequestsController', RequestsController)
+    .controller('EventListController', EventListController)
+    .controller('EventDetailController',EventDetailController)
     .config(['growlProvider', function(growlProvider) {
         growlProvider.globalTimeToLive(7000);
+        growlProvider.globalDisableCountDown(true);
     }]);
 
 export default moduleName;

@@ -2,22 +2,24 @@
 
 import {UtilService} from '../rest/util';
 import {EventService} from '../rest/events';
+import * as ModalHelpers from '../modal/modal-helpers';
 
 export class EventListController {
     private list: Array<any>;
     private timer;
-    private pageNo:number = 1;
-    private pageSize:number = 10;
-    private totalPages:number = 1;
-    private totalCount:number = 0;
+    private pageNo: number = 1;
+    private pageSize: number = 10;
+    private totalPages: number = 1;
+    private totalCount: number = 0;
     private fromDateTimeFilter: string;
     private toDateTimeFilter: string;
     private filterObject = {};
     private requestObject = {};
     private searchQuery: string;
     private searchEntity: string = "Description";
-    private warningCount:number = 0;
-    private criticalCount:number = 0;
+    private warningCount: number = 0;
+    private criticalCount: number = 0;
+    private errorMessage: string = "";
     private severity: string;
     private severityLevel = [];
     private alarmStatus = ["indeterminate",
@@ -32,14 +34,17 @@ export class EventListController {
         '$scope',
         '$interval',
         '$location',
+        '$modal',
         'EventService',
-        'RequestService'
+        'growl'
     ];
     constructor(
         private $scope: ng.IScope,
         private $interval: ng.IIntervalService,
         private $location: ng.ILocationService,
-        private eventSvc: EventService) {
+        private modalSvc,
+        private eventSvc: EventService,
+        private growl: any) {
         this.timer = this.$interval(() => this.refresh(), 5000);
         this.$scope.$on('$destroy', () => {
             this.$interval.cancel(this.timer);
@@ -130,4 +135,26 @@ export class EventListController {
         delete this.filterObject['Host'];
         delete this.filterObject['Description'];
     }
+
+    public dismiss(eventId) {
+        var modalInstance = this.modalSvc({
+            templateUrl: 'views/events/event-dismiss.tpl.html',
+            controllerAs: 'event',
+            controller: ['EventService', 'growl', function(eventSvc: EventService, growl: any) {
+                this.dismissMessage = "";
+                this.errorMessage = "";
+                this.dismiss = function() {
+                    eventSvc.dismiss(eventId, this.dismissMessage).then(status => {
+                        modalInstance.$scope.$hide();
+                        growl.success("Event Dismissed");
+                    }).catch(status => {
+                        this.errorMessage = status.data;
+                        growl.error(status.data);
+                    });
+                }
+            }]
+        });
+    }
+
+
 }
