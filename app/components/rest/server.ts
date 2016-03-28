@@ -214,4 +214,10 @@ export class ServerService {
     public delete(deleteHost, hostname){
         return this.restFull.one('nodes',hostname).all('actions').post(deleteHost);
     }
+
+    public getAboutDetails(){
+        return this.rest.one('about').get().then(function(about){
+            return about;
+        });
+    }
 }
