@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_e4b8fee7",
+        "filename": "app/components/modal/task-details-popup.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T12:47:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da9b358b_a93c0f30",
+      "range": {
+        "startLine": 4,
+        "startChar": 38,
+        "endLine": 4,
+        "endChar": 45
+      },
+      "revId": "97bf3a5c133cf3df5fda75e8a6e4dfcadd9fb391",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da9b358b_c9263316",
         "filename": "app/components/modal/task-details-popup.html",
         "patchSetId": 3
@@ -59,6 +83,24 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_c4ce1a83",
+        "filename": "app/components/modal/task-details-popup.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T12:47:36Z",
+      "side": 1,
+      "message": "Not required. I will remove this.",
+      "parentUuid": "da9b358b_c9263316",
+      "revId": "97bf3a5c133cf3df5fda75e8a6e4dfcadd9fb391",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da9b358b_c93f5324",
         "filename": "app/components/tasks/task-detail.ts",
         "patchSetId": 3
@@ -70,6 +112,30 @@
       "writtenOn": "2016-03-28T10:05:45Z",
       "side": 1,
       "message": "we can defined type as well for all - \nlike restrict: string \u003d \u0027E\u0027;\n     bindToController: boolean \u003d true;",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 12
+      },
+      "revId": "97bf3a5c133cf3df5fda75e8a6e4dfcadd9fb391",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_44a1eaa8",
+        "filename": "app/components/tasks/task-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T12:47:36Z",
+      "side": 1,
+      "message": "It will be inferred automatically by TypeScript. https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Type%20Inference.md",
+      "parentUuid": "da9b358b_c93f5324",
       "range": {
         "startLine": 19,
         "startChar": 4,
