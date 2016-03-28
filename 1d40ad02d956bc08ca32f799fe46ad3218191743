@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_09b65b8a",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T10:47:35Z",
+      "side": 1,
+      "message": "Adding a sample response like \"\"target\": \"collectd.system.cpu-user Current:1.01    Max:17.30    Min:0.20    \" will be better for understanding.",
+      "range": {
+        "startLine": 161,
+        "startChar": 8,
+        "endLine": 161,
+        "endChar": 227
+      },
+      "revId": "1d40ad02d956bc08ca32f799fe46ad3218191743",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
