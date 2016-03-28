@@ -12,10 +12,11 @@ import * as ModalHelpers from '../modal/modal-helpers';
 import {EventService} from '../rest/events';
 
 export class RequestsController {
-   private tasks;
-   private events : Array<any>;
-   private discoveredHosts : Array<any>;
-   private discoveredHostsLength: number;
+    private tasks;
+    private events: Array<any>;
+    private about: Array<any>;
+    private discoveredHosts: Array<any>;
+    private discoveredHostsLength: number;
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -42,6 +43,7 @@ export class RequestsController {
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService,
         private userSvc: UserService) {
+        this.getAbout();
         this.events = [];
         this.tasks = {};
         this.discoveredHostsLength = 0;
@@ -166,11 +168,15 @@ export class RequestsController {
     }
 
     public openDiscoveredHostsModel() {
-        this.$modal({scope: this.$scope, template: 'views/hosts/discovered-hosts.html', show: true});
+        this.$modal({ scope: this.$scope, template: 'views/hosts/discovered-hosts.html', show: true });
     }
 
-    public mySettings(){
-        this.$modal({scope: this.$scope, template: 'views/admin/my-settings.html', show: true});
+    public mySettings() {
+        this.$modal({ scope: this.$scope, template: 'views/admin/my-settings.html', show: true });
+    }
+
+    public getAboutModal() {
+        this.$modal({ scope: this.$scope, template: 'views/base/about-modal.html', show: true });
     }
 
     public acceptAllHosts() {
@@ -178,6 +184,11 @@ export class RequestsController {
             if (host.state === "UNACCEPTED") {
                 this.acceptHost(host);
             }
+        });
+    }
+    public getAbout() {
+        this.serverSvc.getAboutDetails().then((about) => {
+            this.about = about;
         });
     }
 }
