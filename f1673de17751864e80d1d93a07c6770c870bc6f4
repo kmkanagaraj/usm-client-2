@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_49dd8313",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-03-28T09:28:02Z",
+      "side": 1,
+      "message": "Please check the USM design doc: https://docs.google.com/presentation/d/1E7ZHHMYufugMjuVceluP7FCfUM9CQNsN5QWmGruRth0/edit#slide\u003did.g10e41be1c6_0_28 (Slide 46)\n\nThis looks like a case where \"pficon-info\" should be used. This nitpick is just to abide by the design consistency sought by the UXD.",
+      "range": {
+        "startLine": 13,
+        "startChar": 26,
+        "endLine": 13,
+        "endChar": 46
+      },
+      "revId": "f1673de17751864e80d1d93a07c6770c870bc6f4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
