@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_44056ac0",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 7
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T12:25:13Z",
+      "side": 1,
+      "message": "Do we need to clean this before adding new values to the array. Same values may be added repeatedly as we keep refreshing the dashboard page.",
+      "range": {
+        "startLine": 152,
+        "startChar": 12,
+        "endLine": 152,
+        "endChar": 35
+      },
+      "revId": "ba2b3fcae84fd7b0231f48681458e644fb3df712",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_c4729a7c",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 7
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T12:25:13Z",
+      "side": 1,
+      "message": "Remove TWS",
+      "range": {
+        "startLine": 237,
+        "startChar": 77,
+        "endLine": 237,
+        "endChar": 78
+      },
+      "revId": "ba2b3fcae84fd7b0231f48681458e644fb3df712",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
