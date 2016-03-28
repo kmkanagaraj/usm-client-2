@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_e4135e0c",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 7
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-28T12:31:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da9b358b_44056ac0",
+      "range": {
+        "startLine": 152,
+        "startChar": 12,
+        "endLine": 152,
+        "endChar": 35
+      },
+      "revId": "ba2b3fcae84fd7b0231f48681458e644fb3df712",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da9b358b_c4729a7c",
         "filename": "app/components/dashboard/dashboard-controller.ts",
         "patchSetId": 7
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-28T12:25:13Z",
       "side": 1,
       "message": "Remove TWS",
+      "range": {
+        "startLine": 237,
+        "startChar": 77,
+        "endLine": 237,
+        "endChar": 78
+      },
+      "revId": "ba2b3fcae84fd7b0231f48681458e644fb3df712",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_840372b8",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 7
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-28T12:31:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da9b358b_c4729a7c",
       "range": {
         "startLine": 237,
         "startChar": 77,
