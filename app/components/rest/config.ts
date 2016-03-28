@@ -2,6 +2,7 @@
 
 interface AppConfig {
     ceph_min_monitors?: number;
+    copyright?: string;
 }
 
 export class ConfigService {
