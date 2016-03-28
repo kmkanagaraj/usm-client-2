@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_24094696",
+        "filename": "app/components/modal/task-details-popup.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T13:21:34Z",
+      "side": 1,
+      "message": "I don\u0027t need this. I will remove it.",
+      "parentUuid": "da9b358b_24bb86c6",
+      "range": {
+        "startLine": 4,
+        "startChar": 38,
+        "endLine": 4,
+        "endChar": 53
+      },
+      "revId": "1f0bd301c9576975f22f4f1d6cb26ffcd17fe576",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da9b358b_04b082dc",
         "filename": "app/components/modal/task-details-popup.html",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2016-03-28T13:10:40Z",
       "side": 1,
       "message": "here ,also it should be tasks.title ?",
+      "range": {
+        "startLine": 6,
+        "startChar": 49,
+        "endLine": 6,
+        "endChar": 54
+      },
+      "revId": "1f0bd301c9576975f22f4f1d6cb26ffcd17fe576",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_04fe426b",
+        "filename": "app/components/modal/task-details-popup.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T13:21:34Z",
+      "side": 1,
+      "message": "I don\u0027t need this. I will remove it.",
+      "parentUuid": "da9b358b_04b082dc",
       "range": {
         "startLine": 6,
         "startChar": 49,
