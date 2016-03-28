@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_699047ed",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 205,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T10:47:35Z",
+      "side": 1,
+      "message": "Average CPU Utilization across all the nodes in system?",
+      "range": {
+        "startLine": 205,
+        "startChar": 35,
+        "endLine": 205,
+        "endChar": 46
+      },
+      "revId": "ecfec7b013f7bd5f6972d3255eb6f75a0ab9f34b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_49bc636c",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-28T10:47:35Z",
+      "side": 1,
+      "message": "Similar to previous one.",
+      "range": {
+        "startLine": 213,
+        "startChar": 30,
+        "endLine": 213,
+        "endChar": 66
+      },
+      "revId": "ecfec7b013f7bd5f6972d3255eb6f75a0ab9f34b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
