@@ -1,0 +1,37 @@
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="$hide()">&times;</button>
+                <h4 class="fa fa-exclamation-circle modal-title"> About</h4>
+            </div>
+            <div class="modal-body">
+                <h2><label ng-bind= "request.about.ProductName"></label></h2>
+                <div class="row">
+                    <div>
+                        <label for="product" class="col-md-5">Version</label>
+                        <span class="col-md-5 col-md-push-1">
+                            <label for="productVer" ng-bind= "request.about.ProductVersion"></label>
+                        </span>
+                    </div>
+                    <div ng-repeat="(key, value) in request.about.StorageProviderDetails">
+                        <label for="provider" class="col-md-5"> {{key}} Provider Version</label>
+                        <span class="col-md-5 col-md-push-1">
+                           <label for="productVer" ng-bind="value"> </label>
+                        </span>
+                    </div>
+                    <div>
+                        <label for="db" class="col-md-5">Database</label>
+                        <span class="col-md-5 col-md-push-1">
+                            <label for="dbName" ng-bind="request.about.DbSoftware"></label>
+                            <label for="dbVersion" ng-bind="request.about.DbSoftwareVersion"></label>
+                        </span>
+                    </div>
+                 </div>
+            </div>
+            <div class="modal-footer">
+                <label for="copyright"></label>
+            </div>
+        </div>
+    </div>
+</div>
