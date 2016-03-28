@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_491223b6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-28T09:58:24Z",
+      "side": 1,
+      "message": "*existing",
+      "revId": "97bf3a5c133cf3df5fda75e8a6e4dfcadd9fb391",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_c9263316",
+        "filename": "app/components/modal/task-details-popup.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-28T09:58:24Z",
+      "side": 1,
+      "message": "why false passed inside $hide() ?",
+      "revId": "97bf3a5c133cf3df5fda75e8a6e4dfcadd9fb391",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
