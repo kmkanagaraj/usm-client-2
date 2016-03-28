@@ -10,12 +10,15 @@ import {UtilService} from '../rest/util';
 import {RequestService} from '../rest/request';
 import * as ModalHelpers from '../modal/modal-helpers';
 import {EventService} from '../rest/events';
-
+import {SystemService} from '../rest/system';
+import {ConfigService} from '../rest/config';
 export class RequestsController {
-   private tasks;
-   private events : Array<any>;
-   private discoveredHosts : Array<any>;
-   private discoveredHostsLength: number;
+    private tasks;
+    private events: Array<any>;
+    private about: Array<any>;
+    private copyright: string;
+    private discoveredHosts: Array<any>;
+    private discoveredHostsLength: number;
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -27,6 +30,8 @@ export class RequestsController {
         'UtilService',
         'EventService',
         'RequestService',
+        'SystemService',
+        'ConfigService',
         'RequestTrackingService',
         'UserService'];
 
@@ -40,8 +45,11 @@ export class RequestsController {
         private utilSvc: UtilService,
         private eventsvc: EventService,
         private requestSvc: RequestService,
+        private sysSvc: SystemService,
+        private configSvc: ConfigService,
         private requestTrackingSvc: RequestTrackingService,
         private userSvc: UserService) {
+        this.getAbout();
         this.events = [];
         this.tasks = {};
         this.discoveredHostsLength = 0;
@@ -50,6 +58,11 @@ export class RequestsController {
         this.loadEvents();
         this.$interval(() => this.reloadDiscoveredHosts(), 12000);
         this.$interval(() => this.reloadTasks(), 5000);
+        this.configSvc.getConfig().then((config) => {
+            if (config.copyright) {
+                this.copyright = config.copyright;
+            }
+        });
     }
 
     //Open WebSocket connection 
@@ -166,11 +179,15 @@ export class RequestsController {
     }
 
     public openDiscoveredHostsModel() {
-        this.$modal({scope: this.$scope, template: 'views/hosts/discovered-hosts.html', show: true});
+        this.$modal({ scope: this.$scope, template: 'views/hosts/discovered-hosts.html', show: true });
     }
 
-    public mySettings(){
-        this.$modal({scope: this.$scope, template: 'views/admin/my-settings.html', show: true});
+    public mySettings() {
+        this.$modal({ scope: this.$scope, template: 'views/admin/my-settings.html', show: true });
+    }
+
+    public openAboutModal() {
+        this.$modal({ scope: this.$scope, template: 'views/base/about-modal.html', show: true });
     }
 
     public acceptAllHosts() {
@@ -178,6 +195,11 @@ export class RequestsController {
             if (host.state === "UNACCEPTED") {
                 this.acceptHost(host);
             }
+        });
+    }
+    public getAbout() {
+        this.sysSvc.getAboutDetails().then((about) => {
+            this.about = about;
         });
     }
 }

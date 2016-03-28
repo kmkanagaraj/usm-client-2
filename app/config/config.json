@@ -1,3 +1,4 @@
 {
-    "ceph_min_monitors": 3
+    "ceph_min_monitors": 3,
+    "copyright": "Copyright @ 2016 Red Hat, Inc."
 }
