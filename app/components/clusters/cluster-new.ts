@@ -16,6 +16,7 @@ import {ServerService} from '../rest/server';
 import {VolumeService} from '../rest/volume';
 import {RequestService} from '../rest/request';
 import {ClusterService} from '../rest/clusters';
+import {ConfigService} from '../rest/config';
 import {ClusterHelper} from './cluster-helpers';
 import * as ModalHelpers from '../modal/modal-helpers';
 import {VolumeHelpers} from '../volumes/volume-helpers';
@@ -24,7 +25,7 @@ import {numeral} from '../base/libs';
 
 export class ClusterNewController {
     private step: number;
-    private minMonsRequired = 3;
+    private minMonsRequired = 1;
     private errorMessage: string;
     private summaryHostsSortOrder: any;
 
@@ -64,6 +65,7 @@ export class ClusterNewController {
         'UtilService',
         'RequestService',
         'RequestTrackingService',
+        'ConfigService'
     ];
     /**
      * Initializing the properties of the class ClusterNewController.
@@ -81,7 +83,8 @@ export class ClusterNewController {
         private poolService: PoolService,
         private utilService: UtilService,
         private requestService: RequestService,
-        private requestTrackingService: any) {
+        private requestTrackingService: any,
+        private configSvc: ConfigService) {
 
         this.step = 1;
         this.clusterHelper = new ClusterHelper(utilService, requestService, logService, timeoutService);
@@ -109,6 +112,11 @@ export class ClusterNewController {
         this.newPool.copyCountList = VolumeHelpers.getCopiesList();
         this.newPool.copyCount = VolumeHelpers.getRecomendedCopyCount();
 
+        this.configSvc.getValue('ceph_min_monitors').then((configValue: number) => {
+            if (configValue) {
+                this.minMonsRequired = configValue;
+            }
+        });
         this.fetchFreeHosts();
     }
 
@@ -203,7 +211,7 @@ export class ClusterNewController {
         return freeDisks;
     }
 
-    public hostTypeChanged(host: any){
+    public hostTypeChanged(host: any) {
         this.validateHost(host);
         this.countDisks()
     }
@@ -226,10 +234,10 @@ export class ClusterNewController {
 
     public selectHost(host: any, selection: boolean) {
         host.selected = selection;
-        if(selection && host.hostType === undefined) {
-            if(this.getHostFreeDisks(host).length === 0){
+        if (selection && host.hostType === undefined) {
+            if (this.getHostFreeDisks(host).length === 0) {
                 host.hostType = this.hostTypes[0];  //No Disk available so make this a Mon
-            }else{
+            } else {
                 host.hostType = this.hostTypes[1];  //There are some disks so it can be an OSD
             }
         }
@@ -297,7 +305,7 @@ export class ClusterNewController {
         var freeDisks: any = _.filter(this.disks, (disk: any) => {
             return !disk.used;
         });
-        
+
         var devicesMap: any = _.groupBy(freeDisks, (disk: any) => {
             return disk.node;
         });
@@ -305,15 +313,15 @@ export class ClusterNewController {
         var devicesList: any = _.map(devicesMap, (disks: any) => {
             return disks;
         });
-        
+
         var selectedDisks = VolumeHelpers.getStorageDevicesForVolumeBasic(newVolume.size, newVolume.copyCount, devicesList);
         _.each(selectedDisks, (selectedDisk: any) => {
             selectedDisk.used = true;
         })
-        
+
         newVolume.disks = selectedDisks;
         this.volumes.push(newVolume);
-        this.newVolume = {};    
+        this.newVolume = {};
         this.newVolume = {
             copyCountList: VolumeHelpers.getCopiesList(),
             copyCount: VolumeHelpers.getRecomendedCopyCount(),
@@ -334,20 +342,20 @@ export class ClusterNewController {
         this.errorMessage = "";
         var configValid = true;
         var monCount = 0;
-        if(this.step ===1){
+        if (this.step === 1) {
             configValid = this.clusterName !== undefined && this.clusterName.trim().length > 0;
         }
-        else if(this.step === 2 && nextStep === 1){
+        else if (this.step === 2 && nextStep === 1) {
             monCount = this.getMonCount();
-            if(monCount < this.minMonsRequired){
+            if (monCount < this.minMonsRequired) {
                 this.errorMessage = " Choose at least " + this.minMonsRequired + " monitors to continue";
                 configValid = false;
             }
-            else if(monCount%2 === 0){
+            else if (monCount % 2 === 0) {
                 this.errorMessage = " Number of Monitors cannot be even";
                 configValid = false;
             }
-            else{
+            else {
                 configValid = _.every(this.hosts, host => this.validateHost(host));
             }
         }
@@ -424,7 +432,7 @@ export class ClusterNewController {
                 pool_name: pool.name,
                 pg_num: parseInt(pool.pgNum)
             });
-            
+
             if (poolsRequest.pools.length > 0) {
                 this.createCephPoolsCallBack(cluster, poolsRequest);
             }
@@ -438,11 +446,11 @@ export class ClusterNewController {
                 this.logService.info('Adding OSDs to cluster\'' + this.clusterName + '\'  is failed');
             } else if (request.status === 'SUCCESS') {
                 this.logService.info('Adding OSDs to cluster \'' + this.clusterName + '\' is completed successfully');
-                this.createCephPools(cluster, disks, pools);    
+                this.createCephPools(cluster, disks, pools);
             } else {
                 this.logService.info('Waiting for OSDs to be added to cluster \'' + this.clusterName + '\'');
                 this.timeoutService(() => this.addingOSDsCallBack(result, cluster, disks, pools), 5000);
-            }   
+            }
         });
     }
 
@@ -532,9 +540,9 @@ export class ClusterNewController {
         return _.filter(this.hosts, host => host.selected && this.isOsd(host.hostType));
     }
 
-    public getMonCount(){
-            var count: number=0;
-            _.each(this.hosts, (host: any) => {
+    public getMonCount() {
+        var count: number = 0;
+        _.each(this.hosts, (host: any) => {
             if (host.selected && this.isMon(host.hostType)) {
                 count++;
             }
