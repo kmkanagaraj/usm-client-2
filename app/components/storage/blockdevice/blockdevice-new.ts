@@ -92,7 +92,7 @@ export class BlockDeviceController {
 
     public getBlockDeviceNames(deviceName: string, count: number) {
         var list = [];
-        if (count > 1) {
+        if (deviceName && deviceName.trim().length > 0 && count > 1) {
             for (var index = 1; index <= count; index++) {
                 list.push(deviceName + index);
             }
@@ -101,9 +101,10 @@ export class BlockDeviceController {
     }
 
     public prepareSummary(): void {
-        for (let index = 0; index < this.devicesToCreate; index++) {
+        for (let index = 1; index <= this.devicesToCreate; index++) {
+            var suffix = this.devicesToCreate > 1 ? index : '';
             let rbd = {
-                name: this.deviceName + index,
+                name: this.deviceName + suffix,
                 size: this.targetSize
             }
             this.rbdList.push(angular.copy(rbd));
