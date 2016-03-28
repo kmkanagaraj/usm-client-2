@@ -19,6 +19,29 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_a93c0f30",
+        "filename": "app/components/modal/task-details-popup.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-28T10:05:45Z",
+      "side": 1,
+      "message": "use ng-if here",
+      "range": {
+        "startLine": 4,
+        "startChar": 38,
+        "endLine": 4,
+        "endChar": 45
+      },
+      "revId": "97bf3a5c133cf3df5fda75e8a6e4dfcadd9fb391",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da9b358b_c9263316",
         "filename": "app/components/modal/task-details-popup.html",
         "patchSetId": 3
@@ -30,6 +53,29 @@
       "writtenOn": "2016-03-28T09:58:24Z",
       "side": 1,
       "message": "why false passed inside $hide() ?",
+      "revId": "97bf3a5c133cf3df5fda75e8a6e4dfcadd9fb391",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_c93f5324",
+        "filename": "app/components/tasks/task-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-03-28T10:05:45Z",
+      "side": 1,
+      "message": "we can defined type as well for all - \nlike restrict: string \u003d \u0027E\u0027;\n     bindToController: boolean \u003d true;",
+      "range": {
+        "startLine": 19,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 12
+      },
       "revId": "97bf3a5c133cf3df5fda75e8a6e4dfcadd9fb391",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
