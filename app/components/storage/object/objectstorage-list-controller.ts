@@ -83,6 +83,12 @@ export class ObjectStorageListController {
         this.$location.path('/storage/new');
     }
 
+   public getPoolUsageDonutColor(donut_value) {
+        if (donut_value >= 90) return '#E35C5C';
+        if (donut_value >= 80) return '#FF8C1B';
+        else return '#4AD170';
+    }
+
     public remove(storage) {
         var modal = ModalHelpers.RemoveConfirmation(this.$modal, {
         });
