@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_11b0c1f3",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-29T12:26:31Z",
+      "side": 1,
+      "message": "This is not being used",
+      "revId": "191005990b72448954dcdc5aa23841d843246ee1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_51a649c2",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-29T12:26:31Z",
+      "side": 1,
+      "message": "growl is not being used",
+      "revId": "191005990b72448954dcdc5aa23841d843246ee1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_b19fd55e",
+        "filename": "app/components/events/event-module.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-29T12:26:31Z",
+      "side": 1,
+      "message": "change this to \u0027kitoon.events\u0027",
+      "range": {
+        "startLine": 10,
+        "startChar": 18,
+        "endLine": 10,
+        "endChar": 40
+      },
+      "revId": "191005990b72448954dcdc5aa23841d843246ee1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
