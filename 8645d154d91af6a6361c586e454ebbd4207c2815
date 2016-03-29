@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_71b6eddd",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-29T12:50:46Z",
+      "side": 1,
+      "message": "Not used anymore?",
+      "range": {
+        "startLine": 82,
+        "startChar": 11,
+        "endLine": 82,
+        "endChar": 26
+      },
+      "revId": "8645d154d91af6a6361c586e454ebbd4207c2815",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_51bbe9c4",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-29T12:50:46Z",
+      "side": 1,
+      "message": "Do we need add bytes directive here to show the size in appropriate unit?.",
+      "range": {
+        "startLine": 42,
+        "startChar": 38,
+        "endLine": 42,
+        "endChar": 54
+      },
+      "revId": "8645d154d91af6a6361c586e454ebbd4207c2815",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_31b065dd",
+        "filename": "app/components/storage/storage-module.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-29T12:50:46Z",
+      "side": 1,
+      "message": "ObjectStorageList?",
+      "range": {
+        "startLine": 18,
+        "startChar": 16,
+        "endLine": 18,
+        "endChar": 33
+      },
+      "revId": "8645d154d91af6a6361c586e454ebbd4207c2815",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
