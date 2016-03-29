@@ -1,0 +1,160 @@
+<div class="cluster-config-detail">
+  <div class="row">
+    <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12">
+      <div>
+        <label>Ceph Cluster Configuration</label>
+        <small class="sub-config-header">General Cluster setting and defaults</small>
+      </div>
+      <table class="table table-striped table-bordered">
+        <tbody>
+          <tr>
+            <td>Red Hat Ceph Storage</td>
+            <td ng-bind=""></td>
+          </tr>
+          <tr>
+            <td>Provider Version</td>
+            <td ng-bind=""></td>
+          </tr>
+          <tr>
+            <td>Remote Execution Agent</td>
+            <td ng-bind=""></td>
+          </tr>
+          <tr>
+            <td>SE Linux Mode</td>
+            <td ng-bind=""></td>
+          </tr>
+          <tr>
+            <td>Default Authentication</td>
+            <td ng-bind="configdetail.configData.auth_client_required"></td>
+          </tr>
+          <tr>
+            <td>Monitors Required for Quorum</td>
+            <td ng-bind=""></td>
+          </tr>
+          <tr>
+            <td>Default Replicas</td>
+            <td ng-bind="configdetail.configData.filestore_replica_fadvise"></td>
+          </tr>
+          <tr>
+            <td>Keyring file Path</td>
+            <td ng-bind="(configdetail.configData.keyring).split(',')[0]"></td>
+          </tr>
+          <tr>
+            <td>Bind to IPv6</td>
+            <td ng-bind="configdetail.configData.ms_bind_ipv6"></td>
+          </tr>
+          <tr>
+            <td>Default Log File</td>
+            <td ng-bind="configdetail.configData.log_file"></td>
+          </tr>
+          <tr>
+            <td>OSD down-Out interval</td>
+            <td ng-bind="configdetail.configData.mon_osd_down_out_interval"></td>
+          </tr>
+          <tr>
+            <td>OSD Report Timeout</td>
+            <td ng-bind="configdetail.configData.mon_osd_report_timeout"></td>
+          </tr>
+          <tr>
+            <td>Default Journal Size</td>
+            <td ng-bind="configdetail.configData.osd_journal_size"></td>
+          </tr>
+          <tr>
+            <td>Default Journal Path</td>
+            <td ng-bind="configdetail.configData.osd_journal"></td>
+          </tr>
+          <tr>
+            <td>Default OSD Data Path</td>
+            <td ng-bind="configdetail.configData.osd_data"></td>
+          </tr>
+          <tr>
+            <td>OSD Max Backfills</td>
+            <td ng-bind="configdetail.configData.osd_max_backfills"></td>
+          </tr>
+          <tr>
+            <td>OSD Max Scrubs</td>
+            <td ng-bind="configdetail.configData.osd_max_scrubs"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12">
+      <div>
+        <label>Notifications</label>
+        <small class="sub-config-header">Generate notifications for the following events</small>
+      </div>
+      <table class="table table-striped table-bordered">
+        <tbody>
+          <tr>
+            <td>Cluster Availability</td>
+            <td ng-bind="configdetail.configData.cluster_status"></td>
+          </tr>
+          <tr>
+            <td>Monitor Availability</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Loss of Quorum</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Host Availability</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>OSD Availability</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <label>Utilization</label>
+        <small class="sub-config-header">Alert user when the following utilization thresolds have been breached</small>
+      </div>
+      <table class="table table-striped table-bordered">
+        <tbody>
+          <tr>
+            <th></th>
+            <th>Warning(near full)</th>
+            <th>Critical(full)</th>
+          </tr>
+          <tr>
+            <td>Cluster</td>
+            <td>75%</td>
+            <td>90%</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>80%</td>
+            <td>90%</td>
+          </tr>
+          <tr>
+            <td>Memory</td>
+            <td>80%</td>
+            <td>90%</td>
+          </tr>
+          <tr>
+            <td>Network</td>
+            <td>65%</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Swap Utilization</td>
+            <td>50%</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>OSD</td>
+            <td>85%</td>
+            <td>95%</td>
+          </tr>
+          <tr>
+            <td>Storage Profile</td>
+            <td>70%</td>
+            <td>85%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
