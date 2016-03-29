@@ -1,0 +1,13 @@
+.cluster-config-detail {
+    margin-top: 40px;
+    font-size: 18px;
+    .sub-config-header {
+        display: block;
+    }
+    .capitalize {
+        display: inline-block;
+    }
+    .capitalize::first-letter {
+        text-transform: uppercase;
+    }
+}
