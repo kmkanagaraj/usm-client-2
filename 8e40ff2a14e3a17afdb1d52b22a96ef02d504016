@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_4e36a404",
+        "filename": "app/components/base/about-modal.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-29T10:30:44Z",
+      "side": 1,
+      "message": "no \u003cli\u003e found inside \u003cul\u003e",
+      "revId": "8e40ff2a14e3a17afdb1d52b22a96ef02d504016",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_2e3b60ed",
+        "filename": "app/components/base/about-modal.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-29T10:30:44Z",
+      "side": 1,
+      "message": "align using row col",
+      "revId": "8e40ff2a14e3a17afdb1d52b22a96ef02d504016",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_ce8634b9",
+        "filename": "app/components/base/about-modal.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-29T10:30:44Z",
+      "side": 1,
+      "message": "copyright should not be hardcoded",
+      "revId": "8e40ff2a14e3a17afdb1d52b22a96ef02d504016",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_8e55cc1e",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-29T10:30:44Z",
+      "side": 1,
+      "message": "make it as openAboutModal()",
+      "revId": "8e40ff2a14e3a17afdb1d52b22a96ef02d504016",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_6e31680b",
+        "filename": "app/index.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-29T10:30:44Z",
+      "side": 1,
+      "message": "remove empty class",
+      "revId": "8e40ff2a14e3a17afdb1d52b22a96ef02d504016",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_ee2578c2",
+        "filename": "app/styles/about.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-29T10:30:44Z",
+      "side": 1,
+      "message": "content height should be auto incremental.",
+      "revId": "8e40ff2a14e3a17afdb1d52b22a96ef02d504016",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_8e2cacac",
+        "filename": "app/styles/about.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-29T10:30:44Z",
+      "side": 1,
+      "message": "use grid layout \u0026 remove this",
+      "revId": "8e40ff2a14e3a17afdb1d52b22a96ef02d504016",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_6e184885",
+        "filename": "app/styles/about.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-03-29T10:30:44Z",
+      "side": 1,
+      "message": "Use HR tags to replace this",
+      "revId": "8e40ff2a14e3a17afdb1d52b22a96ef02d504016",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
