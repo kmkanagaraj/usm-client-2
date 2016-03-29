@@ -16,6 +16,24 @@
       "revId": "9a167b2e1a44a46108a07599f76f04debe5da8a7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_674d0b72",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-29T18:41:14Z",
+      "side": 1,
+      "message": "Typescript will convert this to var during the compilation.",
+      "parentUuid": "da9b358b_316e25ca",
+      "revId": "9a167b2e1a44a46108a07599f76f04debe5da8a7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
