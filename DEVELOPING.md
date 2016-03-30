@@ -1,3 +1,5 @@
+# Kitoon [![Build Status](https://travis-ci.org/skyrings/kitoon.svg?branch=master)](https://travis-ci.org/skyrings/kitoon) [![Dependency Status](https://david-dm.org/skyrings/kitoon.svg)](https://david-dm.org/skyrings/kitoon) [![Issue Stats](http://issuestats.com/github/skyrings/kitoon/badge/pr?style=flat)](http://issuestats.com/github/skyrings/kitoon)
+
 # Kitoon
 Kitoon is a user interface for Skyring
 
@@ -10,7 +12,23 @@ This uses following frameworks and tools
 * Bower
 
 ## Building
-The build steps can be found at [README](./README.md)
+1. install latest versions of nodejs and rpm-build `yum install nodejs npm rpm-build`
+2. clone the repository `git clone git@github.com:skyrings/kitoon.git`
+3. `cd kitoon`
+4. run `make build-setup`
+5. run `make rpm`
+6. the generated rpm can be found in `${HOME}/rpmbuild/RPMS/noarch`
+
+### Development setup in Fedora 21/22/23
+1. install latest version of nodejs `yum install nodejs npm`
+2. install `gulp` and `tsd` gloabally - `npm install -g gulp tsd`
+3. clone the repository `git clone git@github.com:skyrings/kitoon.git`
+4. `cd kitoon`
+5. install node modules `npm install`
+6. install typescript definition files `tsd install`
+7. to build `gulp compile`
+
+Build artificats can be found in the `dist` directory
 
 ## Adding type definitions
 While using an external javascript library in the project, type definitions for that library needs to be added so that typescript compiler can perform the validations. 
