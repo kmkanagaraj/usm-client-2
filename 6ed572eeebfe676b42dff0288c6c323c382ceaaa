@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_02e2ad03",
+        "filename": "app/components/events/event-details.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-30T06:20:00Z",
+      "side": 1,
+      "message": "ng-if\u003d\"!event.detail.acked\"",
+      "range": {
+        "startLine": 52,
+        "startChar": 17,
+        "endLine": 52,
+        "endChar": 53
+      },
+      "revId": "6ed572eeebfe676b42dff0288c6c323c382ceaaa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
