@@ -24,6 +24,7 @@ build:
 dist: build
 	@echo "making dist tarball in $(TARNAME)"
 	mkdir $(TARDIR)
+	cp README.md $(TARDIR)/.
 	cp -r $(KITOON_DIST)/* $(TARDIR)
 	tar -zcf $(TARDIR).tar.gz $(TARDIR);
 	rm -rf $(TARDIR)
