@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_51ec00c7",
+        "filename": "app/components/base/about-modal.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-03-31T13:24:07Z",
+      "side": 1,
+      "message": "I don\u0027t think the layout will work correctly. Please check with different resolution and confirm.",
+      "revId": "5296e0b327ddc0f9260c4b179df0eb3a1d8c8de9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
