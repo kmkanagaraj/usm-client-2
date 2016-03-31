@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_d1e4903c",
+        "filename": "app/components/clusters/accept-hosts-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-31T12:01:01Z",
+      "side": 1,
+      "message": "missing ( )",
+      "range": {
+        "startLine": 59,
+        "startChar": 29,
+        "endLine": 59,
+        "endChar": 85
+      },
+      "revId": "9983ff39c08f81a4b0c8a8c37043df04697acfac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
