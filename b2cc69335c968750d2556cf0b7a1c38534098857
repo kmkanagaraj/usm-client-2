@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_03ae2e2e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-31T04:37:19Z",
+      "side": 1,
+      "message": "Can you list the rpmlint error this patch is fixing?",
+      "revId": "b2cc69335c968750d2556cf0b7a1c38534098857",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_c3a7264e",
+        "filename": "kitoon.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-03-31T04:37:19Z",
+      "side": 1,
+      "message": "We do have more fonts. Is the error thrown only for this font?",
+      "revId": "b2cc69335c968750d2556cf0b7a1c38534098857",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
