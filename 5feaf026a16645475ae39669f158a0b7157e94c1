@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_204b8ab2",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-01T18:29:33Z",
+      "side": 1,
+      "message": "donutValue: number",
+      "range": {
+        "startLine": 86,
+        "startChar": 33,
+        "endLine": 86,
+        "endChar": 44
+      },
+      "revId": "5feaf026a16645475ae39669f158a0b7157e94c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e0cb621d",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-01T18:29:33Z",
+      "side": 1,
+      "message": "else if",
+      "range": {
+        "startLine": 88,
+        "startChar": 8,
+        "endLine": 88,
+        "endChar": 10
+      },
+      "revId": "5feaf026a16645475ae39669f158a0b7157e94c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_c0d05ecc",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 456,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-01T18:29:33Z",
+      "side": 1,
+      "message": "this should go to separate scss file",
+      "range": {
+        "startLine": 454,
+        "startChar": 0,
+        "endLine": 456,
+        "endChar": 1
+      },
+      "revId": "5feaf026a16645475ae39669f158a0b7157e94c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
