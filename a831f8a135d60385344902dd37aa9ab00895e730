@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9b358b_86c7e711",
+        "filename": "Makefile",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-01T12:29:52Z",
+      "side": 1,
+      "message": "This will make README.md also part of webapp and it can be accessed by browser. I am not sure whether this is the expected behavior.",
+      "range": {
+        "startLine": 27,
+        "startChar": 1,
+        "endLine": 27,
+        "endChar": 25
+      },
+      "revId": "a831f8a135d60385344902dd37aa9ab00895e730",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
