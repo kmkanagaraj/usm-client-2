@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_e6cb5371",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006269
+      },
+      "writtenOn": "2016-04-01T09:37:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da9b358b_03ae2e2e",
+      "revId": "b2cc69335c968750d2556cf0b7a1c38534098857",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da9b358b_c3a7264e",
         "filename": "kitoon.spec",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2016-03-31T04:37:19Z",
       "side": 1,
       "message": "We do have more fonts. Is the error thrown only for this font?",
+      "revId": "b2cc69335c968750d2556cf0b7a1c38534098857",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_e6f6b3d6",
+        "filename": "kitoon.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1006269
+      },
+      "writtenOn": "2016-04-01T09:37:28Z",
+      "side": 1,
+      "message": "I did not receive any other errors apart from this.\nBrew build link: https://brewweb.devel.redhat.com/taskinfo?taskID\u003d10761909",
+      "parentUuid": "da9b358b_c3a7264e",
       "revId": "b2cc69335c968750d2556cf0b7a1c38534098857",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
