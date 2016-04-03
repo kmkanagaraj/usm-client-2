@@ -16,6 +16,24 @@
       "revId": "337cc1ee788761f6f401be053d07054469e9d7a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_46bea600",
+        "filename": "app/styles/storage-list-view.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-03T09:48:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_268de27b",
+      "revId": "337cc1ee788761f6f401be053d07054469e9d7a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
