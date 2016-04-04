@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_14d0c452",
+        "filename": "app/components/clusters/configdetail/config-detail-directive.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:44:58Z",
+      "side": 1,
+      "message": "configDetail?",
+      "range": {
+        "startLine": 24,
+        "startChar": 28,
+        "endLine": 24,
+        "endChar": 40
+      },
+      "revId": "35cd8b68ac82ea616615d9c807b706afd5fb3c6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b4ceb8b2",
+        "filename": "app/components/clusters/configdetail/config-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:44:58Z",
+      "side": 1,
+      "message": "Why do we need this?. Why not just use the status itself.\n\nNote: It will be overwritten by following code(line 32)",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 17
+      },
+      "revId": "35cd8b68ac82ea616615d9c807b706afd5fb3c6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_34bbc810",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:44:58Z",
+      "side": 1,
+      "message": "Remove tab space",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 2
+      },
+      "revId": "35cd8b68ac82ea616615d9c807b706afd5fb3c6b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
