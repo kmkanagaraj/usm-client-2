@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_14b684dc",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T06:58:24Z",
+      "side": 0,
+      "message": "Can u keep the link to Developing.md here.",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 87
+      },
+      "revId": "a5f02f96ebe2daeee57178acb8b05b1b9ab4b5c8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
