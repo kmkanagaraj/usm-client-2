@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_66f64ad9",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:21:41Z",
+      "side": 1,
+      "message": "Please rename this to searchBy so that its more easy to understand.",
+      "range": {
+        "startLine": 24,
+        "startChar": 40,
+        "endLine": 24,
+        "endChar": 50
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_260042aa",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:21:41Z",
+      "side": 1,
+      "message": "Why you are assigning the search text to different models. Can we just one model and use \u0027searchBy\u0027 value to determine the exact search criteria?",
+      "range": {
+        "startLine": 33,
+        "startChar": 141,
+        "endLine": 33,
+        "endChar": 178
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_09c79113",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:21:41Z",
+      "side": 1,
+      "message": "Why scrolling for this filter?.",
+      "range": {
+        "startLine": 100,
+        "startChar": 33,
+        "endLine": 100,
+        "endChar": 50
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e9cb4d1d",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:21:41Z",
+      "side": 1,
+      "message": "Use Bytes directive here to convert the size units.",
+      "range": {
+        "startLine": 185,
+        "startChar": 18,
+        "endLine": 185,
+        "endChar": 200
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e9990d21",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:21:41Z",
+      "side": 1,
+      "message": "Can we call it \u0027enabled\u0027 ?",
+      "range": {
+        "startLine": 56,
+        "startChar": 29,
+        "endLine": 56,
+        "endChar": 35
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_94961493",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 6
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:21:41Z",
+      "side": 1,
+      "message": "Do we need to set the height. How it will work in different devices.",
+      "range": {
+        "startLine": 6,
+        "startChar": 8,
+        "endLine": 6,
+        "endChar": 22
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_749390a4",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 6
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-04T04:21:41Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 22
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
