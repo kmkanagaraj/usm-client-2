@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_d4c93cae",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-04T05:33:55Z",
+      "side": 1,
+      "message": "i don\u0027t thing so , this search will work with this code\nit should be \nng-model\u003d\"storages.search\"",
+      "range": {
+        "startLine": 7,
+        "startChar": 83,
+        "endLine": 7,
+        "endChar": 89
+      },
+      "revId": "85499274b327930943f9848ecebd4eee1275bf67",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
