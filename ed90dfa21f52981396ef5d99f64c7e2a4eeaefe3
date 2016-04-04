@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_b4ba386d",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-04T12:09:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_66f64ad9",
+      "range": {
+        "startLine": 24,
+        "startChar": 40,
+        "endLine": 24,
+        "endChar": 50
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_260042aa",
         "filename": "app/components/clusters/osdsdetail/osd-detail.html",
         "patchSetId": 6
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-04T04:21:41Z",
       "side": 1,
       "message": "Why you are assigning the search text to different models. Can we just one model and use \u0027searchBy\u0027 value to determine the exact search criteria?",
+      "range": {
+        "startLine": 33,
+        "startChar": 141,
+        "endLine": 33,
+        "endChar": 178
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8f72817b",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-04T12:09:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_260042aa",
       "range": {
         "startLine": 33,
         "startChar": 141,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_4f0359b9",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-04T12:09:58Z",
+      "side": 1,
+      "message": "that day we discussed about , to put scroll in filter , there is too many option in this filter and small screen we need to scroll whole page \n\nso that why i put scroll for this particular filter",
+      "parentUuid": "baa041b7_09c79113",
+      "range": {
+        "startLine": 100,
+        "startChar": 33,
+        "endLine": 100,
+        "endChar": 50
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_e9cb4d1d",
         "filename": "app/components/clusters/osdsdetail/osd-detail.html",
         "patchSetId": 6
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_0f88b121",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-04T12:09:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_e9cb4d1d",
+      "range": {
+        "startLine": 185,
+        "startChar": 18,
+        "endLine": 185,
+        "endChar": 200
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_e9990d21",
         "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
         "patchSetId": 6
@@ -105,6 +201,30 @@
       "writtenOn": "2016-04-04T04:21:41Z",
       "side": 1,
       "message": "Can we call it \u0027enabled\u0027 ?",
+      "range": {
+        "startLine": 56,
+        "startChar": 29,
+        "endLine": 56,
+        "endChar": 35
+      },
+      "revId": "ed90dfa21f52981396ef5d99f64c7e2a4eeaefe3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ef8c6d37",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-04T12:09:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_e9990d21",
       "range": {
         "startLine": 56,
         "startChar": 29,
