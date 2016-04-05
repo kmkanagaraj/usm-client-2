@@ -6,6 +6,7 @@ import {Cluster} from '../rest/clusters';
 export class StorageNewController {
     private clusters: Array<Cluster>;
     private cluster: Cluster;
+    private hostCount: number;
     private type: String;
 
     static $inject: Array<string> = [
@@ -20,9 +21,16 @@ export class StorageNewController {
             this.clusters = clusters;
             if (this.clusters.length > 0) {
                 this.cluster = this.clusters[0];
+                this.getClusterSummary(this.cluster);
             }
         });
         this.type = "object";
+    }
+
+    public getClusterSummary(cluster):void {
+        this.clusterSvc.getClusterSummary(cluster.clusterid).then((summary) => {
+            this.hostCount= summary.nodescount.total;
+        });
     }
 
     public next(): void {
