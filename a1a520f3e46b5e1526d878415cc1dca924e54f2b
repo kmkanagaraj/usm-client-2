@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_6ae5e8a6",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "This doesn\u0027t consider the filtering. I see x osds selected even when nothing is shown because of filter condition.",
+      "range": {
+        "startLine": 44,
+        "startChar": 67,
+        "endLine": 44,
+        "endChar": 133
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_4a46a4c0",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "I think we should apply only the selected searchBy. Currently it applies all the searchByTest[..] conditions.",
+      "range": {
+        "startLine": 139,
+        "startChar": 167,
+        "endLine": 139,
+        "endChar": 179
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_2adda014",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "This is not required. I see that we are using this to bind to the check box in filter list. Why not just add another field in the filterList and bind that to checkbox and use for filtering. In fact you are already doing that with PGStatus filtering.",
+      "range": {
+        "startLine": 45,
+        "startChar": 26,
+        "endLine": 45,
+        "endChar": 56
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_4aaa2472",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "ShowAll also not required. Its used only in applyFilter. It can be computed on demand and we don\u0027t need maintain this in the controller.",
+      "range": {
+        "startLine": 48,
+        "startChar": 23,
+        "endLine": 48,
+        "endChar": 30
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8a926c56",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "this is not required. You can You can just use the selection.activateOsd. Instead of setting this flag to value, you can set selection.activeOsd \u003d null.",
+      "range": {
+        "startLine": 48,
+        "startChar": 39,
+        "endLine": 48,
+        "endChar": 52
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_caaf5493",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "rename this function as per the comment. It is not filtering the selectedOsds.",
+      "range": {
+        "startLine": 173,
+        "startChar": 11,
+        "endLine": 173,
+        "endChar": 28
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_eae698e7",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "This filtering is very tricky. We are assuming that index of osdStatus in filter list will be equal to osd.status. Like UP-IN \u003d 0 and UP_OUT\u003d1 etc. If change the filterList order then this code will break. Please add a comment for this in the filterList definition so that we don\u0027t change the list accidentally.",
+      "range": {
+        "startLine": 186,
+        "startChar": 18,
+        "endLine": 186,
+        "endChar": 54
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_2aa120aa",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "This doesn\u0027t clear the filter. checks for active filter and return false if there is  not filter. Please rename this accordingly.",
+      "range": {
+        "startLine": 206,
+        "startChar": 11,
+        "endLine": 206,
+        "endChar": 31
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_0ad89c52",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-05T04:31:09Z",
+      "side": 1,
+      "message": "I dont think this function is clearing the filter. Just checks  is there any filter active and return false if there is a filter. Please rename the function accordingly.S",
+      "range": {
+        "startLine": 217,
+        "startChar": 11,
+        "endLine": 217,
+        "endChar": 19
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
