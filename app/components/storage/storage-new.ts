@@ -6,6 +6,7 @@ import {Cluster} from '../rest/clusters';
 export class StorageNewController {
     private clusters: Array<Cluster>;
     private cluster: Cluster;
+    private canCreateStorage: number;
     private type: String;
 
     static $inject: Array<string> = [
@@ -20,9 +21,28 @@ export class StorageNewController {
             this.clusters = clusters;
             if (this.clusters.length > 0) {
                 this.cluster = this.clusters[0];
+                this.getClusterSummary(this.cluster);
             }
         });
         this.type = "object";
+    }
+
+    public getClusterSummary(cluster):void {
+        this.clusterSvc.get(cluster.clusterid).then((result) => {
+            if(result.state == 2) {
+                 return this.clusterSvc.getClusterSummary(cluster.clusterid);
+            }
+            else {
+                this.canCreateStorage = 0;
+            }
+        }).then((summary) => {
+            if(summary.slucount.total) {
+                this.canCreateStorage = 2;
+            }
+            else {
+                this.canCreateStorage = 1;
+            }
+        });
     }
 
     public next(): void {
