@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_7d10104f",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-05T05:52:06Z",
+      "side": 1,
+      "message": "copyright should be part of about object",
+      "revId": "78d962d042ac1088d54399d9d9bca58ecd2da5e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5d1d4c65",
+        "filename": "app/config/config.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-05T05:52:06Z",
+      "side": 1,
+      "message": "This should not be here.\n\nIt should be in the downstream branding.",
+      "revId": "78d962d042ac1088d54399d9d9bca58ecd2da5e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
