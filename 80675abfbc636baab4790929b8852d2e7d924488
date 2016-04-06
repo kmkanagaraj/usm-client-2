@@ -68,6 +68,30 @@
       "revId": "80675abfbc636baab4790929b8852d2e7d924488",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_759ca069",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-06T17:35:11Z",
+      "side": 1,
+      "message": "we need to bit careful when iterating over the keys. Since aboutDetail is a restangular resource, it would have added some utility functions.",
+      "parentUuid": "baa041b7_d226e215",
+      "range": {
+        "startLine": 199,
+        "startChar": 16,
+        "endLine": 206,
+        "endChar": 17
+      },
+      "revId": "80675abfbc636baab4790929b8852d2e7d924488",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
