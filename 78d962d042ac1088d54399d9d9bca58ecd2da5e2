@@ -138,6 +138,24 @@
       "revId": "78d962d042ac1088d54399d9d9bca58ecd2da5e2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_92e5faa9",
+        "filename": "app/config/config.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-06T14:37:55Z",
+      "side": 1,
+      "message": "Opened a discussion on sds-mgmt.\nLet\u0027s wait for resolution on this.",
+      "parentUuid": "baa041b7_11632bb3",
+      "revId": "78d962d042ac1088d54399d9d9bca58ecd2da5e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
