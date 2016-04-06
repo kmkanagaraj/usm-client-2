@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_6c5500c5",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-06T09:07:17Z",
+      "side": 1,
+      "message": "We can do that. But it will be too much nesting in UI thought.",
+      "parentUuid": "baa041b7_519c1369",
+      "range": {
+        "startLine": 86,
+        "startChar": 3,
+        "endLine": 90,
+        "endChar": 5
+      },
+      "revId": "73efb01c194dbd32be2bb431e9a6eaf6d8a9fd55",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_719f1760",
         "filename": "app/components/storage/object/objectstorage-list.html",
         "patchSetId": 5
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-06T05:32:23Z",
       "side": 1,
       "message": "might be option1 is empty object : {} .\nin that case you should check the undefined case",
+      "range": {
+        "startLine": 71,
+        "startChar": 50,
+        "endLine": 71,
+        "endChar": 73
+      },
+      "revId": "73efb01c194dbd32be2bb431e9a6eaf6d8a9fd55",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8c48442f",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-06T09:07:17Z",
+      "side": 1,
+      "message": "Do u know of any case where options1 will be empty object?. All the pools will have pgnum for sure.",
+      "parentUuid": "baa041b7_719f1760",
       "range": {
         "startLine": 71,
         "startChar": 50,
