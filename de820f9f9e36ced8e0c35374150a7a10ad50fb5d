@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_71903796",
+        "filename": "app/components/storage/storage-new.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-06T00:23:47Z",
+      "side": 1,
+      "message": "This condition should ideally go to it\u0027s parent div.form-group element (line 16).",
+      "range": {
+        "startLine": 17,
+        "startChar": 54,
+        "endLine": 17,
+        "endChar": 81
+      },
+      "revId": "de820f9f9e36ced8e0c35374150a7a10ad50fb5d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
