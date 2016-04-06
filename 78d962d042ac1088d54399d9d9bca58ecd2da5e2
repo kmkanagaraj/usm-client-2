@@ -120,6 +120,24 @@
       "revId": "78d962d042ac1088d54399d9d9bca58ecd2da5e2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_11632bb3",
+        "filename": "app/config/config.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-06T04:28:29Z",
+      "side": 1,
+      "message": "yes, we don\u0027t need this upstream.\n\nWe need to have an downstream branding patch which will have all product related stuff.\n\nSometime you will be overriding what upstream has.",
+      "parentUuid": "baa041b7_d1802349",
+      "revId": "78d962d042ac1088d54399d9d9bca58ecd2da5e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
