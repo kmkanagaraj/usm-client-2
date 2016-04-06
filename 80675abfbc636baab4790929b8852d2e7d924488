@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_52dd3213",
+        "filename": "app/components/base/about-modal.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-06T14:37:55Z",
+      "side": 1,
+      "message": "Thanks for taking up the suggestion, and implementing it more semantically with data-list items. (y)",
+      "range": {
+        "startLine": 11,
+        "startChar": 21,
+        "endLine": 11,
+        "endChar": 23
+      },
+      "revId": "80675abfbc636baab4790929b8852d2e7d924488",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b23c7e30",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-06T14:37:55Z",
+      "side": 1,
+      "message": "Please call it \"details\" or \"aboutDetails\".\n\n\"aboutDet\" is a middle ground that\u0027s worse of both worlds (neither clear enough or slender enough).",
+      "range": {
+        "startLine": 197,
+        "startChar": 44,
+        "endLine": 197,
+        "endChar": 52
+      },
+      "revId": "80675abfbc636baab4790929b8852d2e7d924488",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d226e215",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-06T14:37:55Z",
+      "side": 1,
+      "message": "A cleaner, DRY-er (but hack-y) way would be:\n\n this.about \u003d JSON.parse(JSON.stringify(aboutDet))\n this.about.copyright \u003d config.copyright\n\n\nNOTE: don\u0027t go this way ^ if aboutDet is significantly big object (will take significant string parsing, which JS is bad at, and lead to longer execution time). It\u0027s okay to do if there\u0027s only a handful few keys/subkeys in the object.\n\n\nA bit better approach is for..in loop:\n\n\n for (var i in aboutDet) {\n   this.about[i] \u003d aboutDet[i]\n }\n this.about.copyright \u003d config.copyright\n\nAlso, changing the key names are unnecessary and doesn\u0027t make it better (same as before: middle ground that\u0027s worse of both worlds).",
+      "range": {
+        "startLine": 199,
+        "startChar": 16,
+        "endLine": 206,
+        "endChar": 17
+      },
+      "revId": "80675abfbc636baab4790929b8852d2e7d924488",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
