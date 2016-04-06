@@ -49,7 +49,7 @@ enum AlarmStatus {
     CLEARED         //5
 }
 
-enum NodeState {
+export enum NodeState {
     UNACCEPTED,     //0
     INITIALIZING,   //1
     ACTIVE,         //2
@@ -109,6 +109,14 @@ export class ServerService {
     getFreeHosts() {
         return this.rest.all('nodes').getList<Node>({ state: 'free' }).then(function(servers) {
             return _.sortBy(_.filter(servers, server => server.state === NodeState.ACTIVE), "hostname");
+        });
+    }
+
+    // **getAllFreeHosts**
+    // **@returns** a promise with all free servers including the unaccepted Hosts.
+    getAllFreeHosts() {
+        return this.rest.all('nodes').getList<Node>({ state: 'free' }).then(function(servers) {
+            return _.sortBy(servers, "state");
         });
     }
 

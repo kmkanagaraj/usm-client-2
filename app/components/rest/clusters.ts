@@ -214,5 +214,15 @@ export class ClusterService {
             return network_latency;
         });
     }
+    
+    // **getImportClusterDeatils
+    // **@returns** A promise with Ceph Cluster Information for importing
+    getImportClusterDeatils(monNode: string) {
+        return this.restFull.one('/importclusternodes?bootstrapnode=' + monNode + "&clustertype=ceph").get();
+    }
+    
+    importCephCluster(bootStrapInfo: any) {
+        return this.restFull.all('importcluster').post(bootStrapInfo);
+    }
 
 }
