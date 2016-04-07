@@ -143,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_18834bce",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-07T00:54:06Z",
+      "side": 1,
+      "message": "I understand that filterBy.active is required to determine the active filter. \n\nBut if my understanding is correct, osdStatus and utilization object will have same keys in filterList.OSDStatus, filterList.Utilization. Actually it will have the indexes of filterList.Utilization, OSDStatus as Keys here. Instead of doing this, why not just add another filed called \u0027checked\u0027 in the filterList.OSDStatus and filterList.Utilization itself and use that for filtering and binding to CheckBox.",
+      "parentUuid": "baa041b7_71aa771b",
+      "range": {
+        "startLine": 45,
+        "startChar": 26,
+        "endLine": 45,
+        "endChar": 56
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_4aaa2472",
         "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
         "patchSetId": 9
