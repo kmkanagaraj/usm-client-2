@@ -1,0 +1,221 @@
+<div class="host-overview-detail ">
+    <div class="host-contain container-fluid cards-pf">
+        <div class="row">
+            <!-- Card Part -->
+            <div class="col-xs-12 col-sm-6 col-md-12" style="min-height: 896px;">
+                <!-- First row -->
+                <div class="row row-cards-pf">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
+                            <h2 class="card-pf-title">
+                                <a href="">Host Summary</a>
+                            </h2>
+                            <div class="card-pf-body">
+                                <p class="card-pf-aggregate-status-notifications">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        <label>Host Role</label>
+                                        <div>{{hostoverview.summary.basicDetail.hostRole}}</div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        <label>Up Since</label>
+                                        <div>{{hostoverview.summary.basicDetail.upSince | date : 'MMM d yyyy, hh:mm:ss a' }}</div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        <label>Cluster</label>
+                                        <div>
+                                            <span ng-if="hostoverview.summary.basicDetail.clusterStatus === 0" class="pficon pficon-ok"></span>
+                                            <span ng-if="hostoverview.summary.basicDetail.clusterStatus === 1" class="pficon pficon-warning-triangle-o"></span>
+                                            <span ng-if="hostoverview.summary.basicDetail.clusterStatus === 2" class="pficon pficon-error-circle-o"></span>
+                                            {{hostoverview.summary.basicDetail.cluster}}
+                                        </div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
+                            <h2 class="card-pf-title">
+                                <a href="">{{hostoverview.summary.osd.total}} OSDs</a>
+                            </h2>
+                            <div class="card-pf-body">
+                                <p class="card-pf-aggregate-status-notifications">
+                                    <span ng-if="hostoverview.summary.osd.error>0" class="card-pf-aggregate-status-notification"><a href="">
+                                        <span class="pficon pficon-error-circle-o"></span>
+                                        <span>{{hostoverview.summary.osd.error}}</span></a>
+                                    </span>
+                                    <span ng-if="hostoverview.summary.osd.warning>0" class="card-pf-aggregate-status-notification"><a href="">
+                                        <span class="pficon pficon-warning-triangle-o"></span>
+                                        <span>{{hostoverview.summary.osd.warning}}</span></a>
+                                    </span>
+                                    <span ng-if="hostoverview.summary.osd.error===0 && hostoverview.summary.osd.warning===0" class="card-pf-aggregate-status-notification"><a href="">
+                                        <span class="pficon pficon-ok"></span></a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
+                            <h2 class="card-pf-title">
+                                <a href="">{{hostoverview.summary.rhscService.total}} RHSC Services</a>
+                            </h2>
+                            <div class="card-pf-body">
+                                <p class="card-pf-aggregate-status-notifications">
+                                    <span ng-if="hostoverview.summary.rhscService.error>0" class="card-pf-aggregate-status-notification"><a href="">
+                                        <span class="pficon pficon-error-circle-o"></span>
+                                        <span>{{hostoverview.summary.rhscService.error}}</span></a>
+                                    </span>
+                                    <span ng-if="hostoverview.summary.rhscService.warning>0" class="card-pf-aggregate-status-notification"><a href="">
+                                        <span class="pficon pficon-warning-triangle-o"></span>
+                                        <span>{{hostoverview.summary.rhscService.warning}}</span></a>
+                                    </span>
+                                    <span ng-if="hostoverview.summary.rhscService.error===0 && hostoverview.summary.rhscService.warning===0" class="card-pf-aggregate-status-notification"><a href="">
+                                        <span class="pficon pficon-ok"></span></a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- First row end -->
+                <!-- Second row -->
+                <div class="row row-cards-pf">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="card-pf card-pf-aggregate-status card-pf-with-action">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-5">
+                                    <span class="pull-left system-performance">Utilization</span>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-7">
+                                    <span class="pull-right time-slot">
+                                        <span class="add-cursor-pointer" data-animation="am-flip-x" data-template="views/hosts/host-overview/host-utilization-time-slot-dropdown.tpl.html" bs-dropdown="ellipsis">{{hostoverview.duration.utilizationSelectedTimeSlot.name}}<b class="caret"></b>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <div class="card-pf-body">
+                                        <center><label>CPU</label></center>
+                                        <div ng-if="hostoverview.donutCharts.cpu.data.total > 0">
+                                            <div pf-donut-pct-chart config="hostoverview.donutCharts.cpu.config" data="hostoverview.donutCharts.cpu.data" center-label="hostoverview.donutCharts.cpu.label">
+                                            </div>
+                                        </div>
+                                        <div ng-if="hostoverview.trendCharts.cpu.data.total>0" pf-sparkline-chart config="hostoverview.trendCharts.cpu.config" chart-data="hostoverview.trendCharts.cpu.data">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <div class="card-pf-body">
+                                        <center><label>Memory</label></center>
+                                        <div ng-if="hostoverview.donutCharts.memory.data.total > 0">
+                                            <div pf-donut-pct-chart config="hostoverview.donutCharts.memory.config" data="hostoverview.donutCharts.memory.data" center-label="hostoverview.donutCharts.memory.label">
+                                            </div>
+                                        </div>
+                                        <div ng-if="hostoverview.trendCharts.memory.data.total>0" pf-sparkline-chart config="hostoverview.trendCharts.memory.config" chart-data="hostoverview.trendCharts.memory.data">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <div class="card-pf-body">
+                                        <center><label>Swap</label></center>
+                                        <div ng-if="hostoverview.donutCharts.swap.data.total > 0">
+                                            <div pf-donut-pct-chart config="hostoverview.donutCharts.swap.config" data="hostoverview.donutCharts.swap.data" center-label="hostoverview.donutCharts.swap.label">
+                                            </div>
+                                        </div>
+                                        <div ng-if="hostoverview.trendCharts.swap.data.total>0" pf-sparkline-chart config="hostoverview.trendCharts.swap.config" chart-data="hostoverview.trendCharts.swap.data">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <div class="card-pf-body">
+                                        <center><label>Storage</label></center>
+                                        <div ng-if="hostoverview.donutCharts.storage.data.total > 0">
+                                            <div pf-donut-pct-chart config="hostoverview.donutCharts.storage.config" data="hostoverview.donutCharts.storage.data" center-label="hostoverview.donutCharts.storage.label">
+                                            </div>
+                                        </div>
+                                        <div ng-if="hostoverview.trendCharts.storage.data.total>0" pf-sparkline-chart config="hostoverview.trendCharts.storage.config" chart-data="hostoverview.trendCharts.storage.data">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Second row end -->
+                <!--Third row -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-5">
+                                    <span class="pull-left system-performance">Network</span>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-7">
+                                    <span class="pull-right time-slot">
+                                        <span class="add-cursor-pointer" data-animation="am-flip-x" data-template="views/hosts/host-overview/host-network-time-slot-dropdown.tpl.html" bs-dropdown="ellipsis">{{hostoverview.duration.networkSelectedTimeSlot.name}}<b class="caret"></b>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <div class="card-pf-body">
+                                        <div class="network-detail">
+                                            <div class="network-detail-padding">
+                                                <span class="pficon pficon-ok"></span>
+                                                <label>Cluster Network </label>
+                                                <div class="ip-address-detail">
+                                                    <small>{{hostoverview.host.cluster_ip4}}</small>
+                                                </div>
+                                            </div>
+                                            <div class="network-detail-padding">
+                                                <span class="pficon pficon-ok"></span>
+                                                <label>Public Network</label>
+                                                <div class="ip-address-detail">
+                                                    <small>{{hostoverview.host.public_ip4}}</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-5">
+                                    <span class="pull-left system-performance">Performance</span>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-7">
+                                    <span class="pull-right time-slot">
+                                        <span class="add-cursor-pointer" data-animation="am-flip-x" data-template="views/hosts/host-overview/host-performance-time-slot-dropdown.tpl.html" bs-dropdown="ellipsis">{{hostoverview.duration.performanceSelectedTimeSlot.name}}<b class="caret"></b>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="card-pf-body">
+                                        <div pf-trends-chart config="hostoverview.trendCharts.iops.config" chart-data="hostoverview.trendCharts.iops.data"></div>
+                                    </div>
+                                    <div class="card-pf-body">
+                                        <div pf-trends-chart config="hostoverview.trendCharts.throughput.config" chart-data="hostoverview.trendCharts.throughput.data"></div>
+                                    </div>
+                                    <div class="card-pf-body">
+                                        <div pf-trends-chart config="hostoverview.trendCharts.latency.config" chart-data="hostoverview.trendCharts.latency.data"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Third row -->
+            </div>
+        </div><!-- End of Fisrt Big row -->
+    </div>
+</div>
