@@ -1,27 +1,19 @@
-@import 'host-overview';
-@import 'host-config';
+.host-overview-detail {
 
-.cluster-detail {
-
-    .cluster-contain {
-        margin-top: 0;
-        padding-top: 20px;
+    .custom-height {
+        min-height: 97px;
     }
 
     .card-pf-title {
         margin:10px 0px !important;
     }
 
-    .custom-breadcrumb {
-        font-size: 17px;
-        padding: 8px;
+    .host-container {
+        margin-top: 0;
+        padding-top: 20px;
     }
 
-    .add-cursor-pointer {
-       cursor: pointer;
-    }
-
-    .cluster-utilization {
+    .host-utilization {
         margin-top: 2%;
     }
 
@@ -52,4 +44,25 @@
         margin-left: 7px;
         margin-top: 9px;
     }
+
+    .bigger-size-title {
+        font-size: 30px !important;
+    }
+
+    .bigger-size-card {
+        font-size: 30px !important;
+        margin-top: 40px;
+    }
+
+    .network-detail {
+        margin-top: 1%;
+        font-size: 15px;
+        .network-detail-padding {
+            padding: 6%;
+        }
+        .ip-address-detail {
+            margin-top: -12px;
+        }
+    }
+
 }
