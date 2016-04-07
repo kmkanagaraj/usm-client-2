@@ -60,6 +60,7 @@ export class HostListController {
     updateHost = (hosts) => {
         var self = this;
         _.each(hosts, function(host: any) {
+            let hostname =(host.hostname).split(".").join("_");
             host.hostnameShort = host.hostname.split(".")[0];
             host.alerts = 0;
             if (self.hostStats[host.nodeid]) {
@@ -87,14 +88,12 @@ export class HostListController {
                 host.cluster_type = "Free";
                 host.cluster_name = "Unassigned";
             }
-            self.serverService.getMemoryUtilization(host.nodeid).then((results) => {
-                if (results != null && results !== 'null\n') {
-                    var free = results[2].values[0][1];
-                    var used = results[3].values[0][1];
-                    var total = free + used;
-                    var avg = Math.ceil((used / total) * 100);
-                    self.hostStats[host.nodeid] = { memAvg: avg };
-                }
+            self.serverService.getHostMemoryUtilization(hostname,'').then((memory_utilization) => {
+                /* sample response : "target": "collectd.system.cpu-user Current:1.01 Max:17.30 Min:0.20 ".
+                formatting the currentState :- taking first value from  array , and splitting target's key string based on space and than at the last splitting this array based on ':'. now will have currentState in splitted array */
+                var currentState = memory_utilization[0].target.split(" ")[1].split(":");
+                self.hostStats[host.nodeid] = { memAvg: parseInt(currentState[1]) };
+                
             });
         });
         this.list = hosts;
