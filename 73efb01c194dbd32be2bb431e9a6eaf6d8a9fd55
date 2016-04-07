@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_5818b384",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-07T05:03:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_1299ea6e",
+      "range": {
+        "startLine": 86,
+        "startChar": 3,
+        "endLine": 90,
+        "endChar": 5
+      },
+      "revId": "73efb01c194dbd32be2bb431e9a6eaf6d8a9fd55",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_719f1760",
         "filename": "app/components/storage/object/objectstorage-list.html",
         "patchSetId": 5
@@ -132,6 +156,30 @@
       "side": 1,
       "message": "If it doesn\u0027t (have the key), then it\u0027s a problem on the API side, and should be fixed there.\n\nAgreed what Kamlesh suggested though - it\u0027d be a good practice to check. But it\u0027s not fatal in this case.",
       "parentUuid": "baa041b7_8c48442f",
+      "range": {
+        "startLine": 71,
+        "startChar": 50,
+        "endLine": 71,
+        "endChar": 73
+      },
+      "revId": "73efb01c194dbd32be2bb431e9a6eaf6d8a9fd55",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d825e3c2",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-07T05:03:13Z",
+      "side": 1,
+      "message": "I understand the problem if the key is not present. But that is very unlikely in this case. If we start putting such checks then we may end of checking everything before displaying. Thats the  reason i didn\u0027t add.",
+      "parentUuid": "baa041b7_52b652dd",
       "range": {
         "startLine": 71,
         "startChar": 50,
