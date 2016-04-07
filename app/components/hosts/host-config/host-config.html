@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+    <div>
+      <h3>Host Configuration</h3>
+    </div>
+    <table class="table table-striped table-bordered">
+      <tbody>
+        <tr>
+          <td><b>OS Version</b></td>
+          <td ng-bind="hostconfig.host.os.Name + ' ' + hostconfig.host.os.OSVersion "></td>
+        </tr>
+        <tr>
+          <td><b>Kernel Version</b></td>
+          <td ng-bind="hostconfig.host.os.KernelVersion"></td>
+        </tr>
+        <tr>
+          <td><b>CPU Model</b></td>
+          <td ng-bind="hostconfig.host.cpus[0].ModelName"></td>
+        </tr>
+        <tr>
+          <td><b>CPU Sockets</b></td>
+          <td ng-bind="hostconfig.host.cpus[0].Sockets"></td>
+        </tr>
+        <tr>
+          <td><b>CPU Cores per Socket</b></td>
+          <td ng-bind="hostconfig.host.cpus[0].CoresPerSocket"></td>
+        </tr>
+        <tr>
+          <td><b>CPU Threads Per Core</b></td>
+          <td ng-bind="hostconfig.host.cpus[0].ThreadsPerCore"></td>
+        </tr>
+        <tr>
+          <td><b>Physical Memory</b></td>
+          <td ng-bind="hostconfig.host.memory.TotalSize | bytes "></td>
+        </tr>
+        <tr>
+          <td><b>Swap Size</b></td>
+          <td ng-bind="hostconfig.host.memory.SwapTotal | bytes "></td>
+        </tr>
+        <tr>
+          <td><b>SE Linux Mode</b></td>
+          <td ng-bind="hostconfig.host.os.SELinuxMode"></td>
+        </tr>
+        <tr>
+          <td><b>Cluster Network Address</b></td>
+          <td ng-bind="hostconfig.host.cluster_ip4"></td>
+        </tr>
+        <tr>
+          <td><b>Public Network Address</b></td>
+          <td ng-bind="hostconfig.host.public_ip4"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
