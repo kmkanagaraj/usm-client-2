@@ -255,4 +255,61 @@ export class ServerService {
     public delete(hostname){
         return this.restFull.one('nodes',hostname).all('actions').post({action: 'delete'});
     }
+
+    // **getHostCpuUtilization**
+    // **@returns** a promise with host's cpu utilization.
+    getHostCpuUtilization(host_name, time_slot) {
+        return this.rest.all('monitoring/target=cactiStyle(collectd.'+host_name+'.cpu.percent-user)&format=json&duration='+time_slot).getList().then(function(cpu_utilization) {
+            return cpu_utilization;
+        });
+    }
+
+    // **getHostMemoryUtilization**
+    // **@returns** a promise with host's memory utilization.
+    getHostMemoryUtilization(host_name, time_slot) {
+        return this.rest.all('monitoring/target=cactiStyle(collectd.'+host_name+'.memory.percent-used)&format=json&duration='+time_slot).getList().then(function(memory_utilization) {
+            return memory_utilization;
+        });
+    }
+
+    // **getHostSwapUtilization**
+    // **@returns** a promise with host's swap utilization.
+    getHostSwapUtilization(host_name, time_slot) {
+        return this.rest.all('monitoring/target=cactiStyle(collectd.'+host_name+'.swap.percent-used)&format=json&duration='+time_slot).getList().then(function(swap_utilization) {
+            return swap_utilization;
+        });
+    }
+
+    // **getHostStorageUtilization**
+    // **@returns** a promise with host's storage utilization.
+    getHostStorageUtilization(host_name, time_slot) {
+        return this.rest.all('monitoring/target=cactiStyle(collectd.'+host_name+'.storage_utilization.percent_bytes)&format=json&duration='+time_slot).getList().then(function(swap_utilization) {
+            return swap_utilization;
+        });
+    }
+
+    // **getHostIOPS**
+    // **@returns** a promise with disks IOPS for host.
+    getHostIOPS(host_name, time_slot) {
+        return this.rest.all('monitoring/target=cactiStyle(collectd.'+host_name+'.disk-read_write)&format=json&duration='+time_slot).getList().then(function(iops) {
+            return iops;
+        });
+    }
+
+    // **getHostThroughput**
+    // **@returns** a promise with network throughput for host.
+    getHostThroughput(host_name, time_slot) {
+        return this.rest.all('monitoring/target=cactiStyle(collectd.'+host_name+'.interface-rx_tx)&format=json&duration='+time_slot).getList().then(function(throughput) {
+            return throughput;
+        });
+    }
+
+    // **getHostNetworkLatency**
+    // **@returns** a promise with network latency for host.
+    getHostNetworkLatency(host_name, time_slot) {
+        return this.rest.all('monitoring/target=cactiStyle(collectd.'+host_name+'.ping.ping-*)&format=json&duration='+time_slot).getList().then(function(network_latency) {
+            return network_latency;
+        });
+    }
+
 }
