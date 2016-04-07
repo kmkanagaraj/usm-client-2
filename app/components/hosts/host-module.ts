@@ -2,7 +2,7 @@
 declare function require(name: string);
 
 import {HostListController} from './host';
-import {HostDetailController} from './host-detail';
+import {HostDetailController} from './host-details/host-detail';
 
 var angular: ng.IAngularStatic = require('angular');
 

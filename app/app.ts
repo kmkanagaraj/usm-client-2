@@ -33,6 +33,8 @@ import {KTDroppable} from "./components/shared/directives/kt-droppable";
 import {StorageSizeSelector} from "./components/shared/directives/storage-size-selector";
 import {OsdDetail} from "./components/clusters/osdsdetail/osd-detail-directive";
 import {HostList} from "./components/clusters/hostdetail/host-list-directive";
+import {HostOverview} from "./components/hosts/host-overview/host-overview-directive";
+import {HostConfig} from "./components/hosts/host-config/host-config-directive";
 import {StorageProfileDisks} from './components/clusters/storageprofile/storageprofile-disks';
 
 import {BytesFilter} from './components/shared/filters/bytes';
@@ -100,6 +102,8 @@ class USMApp {
             .directive('storageSizeSelector', () => new StorageSizeSelector())
             .directive('osdDetail', () => new OsdDetail())
             .directive('hostList', () => new HostList())
+            .directive('hostOverview', () => new HostOverview())
+            .directive('hostConfig', () => new HostConfig())
             .directive('storageprofileDisks', () => new StorageProfileDisks())
             .filter('bytes', BytesFilter)
             .controller('LdapConfigController',LdapConfigController)
