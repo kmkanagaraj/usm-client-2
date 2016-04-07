@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_bb7459cf",
+        "filename": "app/components/storage/storage-new.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-07T09:19:51Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "baa041b7_fb5e6175",
+      "range": {
+        "startLine": 13,
+        "startChar": 79,
+        "endLine": 13,
+        "endChar": 89
+      },
+      "revId": "58412e3b35d1b17f7a8ad76bfd8e2f5fb894375c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_1b5a2584",
         "filename": "app/components/storage/storage-new.ts",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-07T08:52:40Z",
       "side": 1,
       "message": "take full name - \"cluster\" here",
+      "range": {
+        "startLine": 30,
+        "startChar": 29,
+        "endLine": 30,
+        "endChar": 34
+      },
+      "revId": "58412e3b35d1b17f7a8ad76bfd8e2f5fb894375c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_9b819592",
+        "filename": "app/components/storage/storage-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-07T09:19:51Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "baa041b7_1b5a2584",
       "range": {
         "startLine": 30,
         "startChar": 29,
