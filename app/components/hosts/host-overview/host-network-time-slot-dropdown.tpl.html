@@ -1,0 +1,5 @@
+<ul class="dropdown-menu  cluster-dropdown-menu" role="menu">
+    <li role="presentation" ng-repeat="time in hostoverview.duration.timeSlots" ng-if="time.name !== hostoverview.duration.networkSelectedTimeSlot.name">
+        <a role="menuitem" ng-click="hostoverview.changeTimeSlotForNetwork(time)"> <i class="fa fa-check"></i> {{time.name}} </a>
+    </li>
+</ul>
