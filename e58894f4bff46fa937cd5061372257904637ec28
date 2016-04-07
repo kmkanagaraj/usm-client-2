@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_5879d3fb",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 11
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-07T00:54:06Z",
+      "side": 1,
+      "message": "flag is not required. Just returning false here should terminate the iteration.\n\nhttps://lodash.com/docs#forOwn",
+      "range": {
+        "startLine": 91,
+        "startChar": 20,
+        "endLine": 91,
+        "endChar": 32
+      },
+      "revId": "e58894f4bff46fa937cd5061372257904637ec28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
