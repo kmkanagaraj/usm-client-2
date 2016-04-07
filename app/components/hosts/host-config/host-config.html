@@ -1,0 +1,77 @@
+<div class="host-config">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+      <div>
+        <label>Host Configuration</label>
+      </div>
+      <table class="table table-striped table-bordered">
+        <tbody>
+          <tr>
+            <td>OS Version</td>
+            <td ng-bind="hostconfig.host.os.Name + ' ' + hostconfig.host.os.OSVersion "></td>
+          </tr>
+          <tr>
+            <td>Kernel Version</td>
+            <td ng-bind="hostconfig.host.os.KernelVersion"></td>
+          </tr>
+
+          <tr>
+            <td>CPU Model</td>
+            <td>
+              <span ng-repeat="cpu in hostconfig.host.cpus">
+                {{cpu.ModelName}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>CPU Sockets</td>
+            <td>
+              <span ng-repeat="cpu in hostconfig.host.cpus">
+                {{cpu.Sockets}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>CPU Cores per Socket</td>
+            <td>
+              <span ng-repeat="cpu in hostconfig.host.cpus">
+                {{cpu.CoresPerSocket}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>CPU Threads Per Core</td>
+            <td>
+              <span ng-repeat="cpu in hostconfig.host.cpus">
+                {{cpu.ThreadsPerCore}}
+              </span>
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>Physical Memory</td>
+            <td ng-bind="hostconfig.host.memory.TotalSize"></td>
+          </tr>
+          <tr>
+            <td>Swap Size</td>
+            <td ng-bind="hostconfig.host.memory.SwapTotal"></td>
+          </tr>
+          <tr>
+            <td>SE Linux Mode</td>
+            <td ng-bind="hostconfig.host.os.SELinuxMode"></td>
+          </tr>
+          <tr>
+            <td>Cluster Network Address</td>
+            <td ng-bind="hostconfig.host.cluster_ip4"></td>
+          </tr>
+          <tr>
+            <td>Public Network Address</td>
+            <td ng-bind="hostconfig.host.public_ip4"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
