@@ -167,6 +167,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_68bcbe6c",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T08:43:26Z",
+      "side": 1,
+      "message": "adding again another field for osdStatus and utilization is not feasible i think .\n\nwe have already enabled field for filtering disable and enable",
+      "parentUuid": "baa041b7_18834bce",
+      "range": {
+        "startLine": 45,
+        "startChar": 26,
+        "endLine": 45,
+        "endChar": 56
+      },
+      "revId": "a1a520f3e46b5e1526d878415cc1dca924e54f2b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_4aaa2472",
         "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
         "patchSetId": 9
