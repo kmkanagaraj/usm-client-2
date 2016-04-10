@@ -1,5 +1,4 @@
-<div class="row">
-  <div class="col-md-9">
+<div>
     <h3>
       Available Hosts
     </h3>
@@ -90,25 +89,4 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-md-3">
-    <h3>Storage Capacity</h3>
-    <span class="text-muted">
-       Available storage in selected hosts
-    </span>
-    <div class="row selected-hosts-storage">
-      <div class="col-md-12 available-storage">
-        <div>
-          <i class="fa fa-database icon"></i>
-          <span>{{cluster.getDisks().length}} Disks</span>
-          <a ng-if="cluster.getDisks().length>0" ng-click="cluster.showDisks()" href="">(Edit)</a> 
-        </div>
-        <div>
-          <i class="fa fa-pie-chart"></i>
-          <span>{{cluster.getDisksSize() | bytes}}</span>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
