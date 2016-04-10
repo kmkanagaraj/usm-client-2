@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_c3860bb9",
+        "filename": "app/components/clusters/configdetail/config-detail-directive.ts",
+        "patchSetId": 7
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-10T17:52:50Z",
+      "side": 1,
+      "message": "Why we need this as a directive? I see this directive being used only in Cluster Details page. Is there any other place where this will be useful?\n\nIf we need this directive then please rename it as ClusterConfigDetail.",
+      "range": {
+        "startLine": 19,
+        "startChar": 13,
+        "endLine": 19,
+        "endChar": 25
+      },
+      "revId": "3b6b70890342409f81399dcb26902419777012c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_a39307fa",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-10T17:52:50Z",
+      "side": 1,
+      "message": "Remove LWS.",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 1
+      },
+      "revId": "3b6b70890342409f81399dcb26902419777012c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
