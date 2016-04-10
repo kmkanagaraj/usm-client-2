@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "baa041b7_e3c46f93",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T11:27:03Z",
+      "side": 1,
+      "message": "we can\u0027t do this in html page itself",
+      "range": {
+        "startLine": 230,
+        "startChar": 11,
+        "endLine": 230,
+        "endChar": 27
+      },
+      "revId": "015f023d4105f5833b7bb2f7825c9abedc59d16a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_23ca57a2",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T11:27:03Z",
+      "side": 1,
+      "message": "Is this really required ?",
+      "range": {
+        "startLine": 82,
+        "startChar": 171,
+        "endLine": 82,
+        "endChar": 206
+      },
+      "revId": "015f023d4105f5833b7bb2f7825c9abedc59d16a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_08bbf273",
         "filename": "app/config/config.json",
         "patchSetId": 2
