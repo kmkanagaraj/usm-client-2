@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_c3ff2b33",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 12
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-10T17:32:30Z",
+      "side": 1,
+      "message": "As I pointed out in patch set 10, it is applying all the searchByTexts not just the selected search by. Just try the following.\n\n1. Open OSD Details page\n2. First Search by HostName. Give a search condition which doesn\u0027t anymatch any host in the list.\n3. Change the Search by to StorageProfile and give a valid profile. \n4. No OSD will be shown.",
+      "range": {
+        "startLine": 139,
+        "startChar": 149,
+        "endLine": 139,
+        "endChar": 179
+      },
+      "revId": "c742fd926dc56400cef5dd816d5a588cdd0fcb4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
