@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_1e7c4871",
+        "filename": "app/components/hosts/host-config/host-config.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_63bcdf6c",
+      "range": {
+        "startLine": 6,
+        "startChar": 16,
+        "endLine": 6,
+        "endChar": 19
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_43c1dbe3",
         "filename": "app/components/hosts/host-config/host-config.ts",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "Can we define a Host entity as a type?",
+      "range": {
+        "startLine": 7,
+        "startChar": 12,
+        "endLine": 7,
+        "endChar": 22
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7e8d947a",
+        "filename": "app/components/hosts/host-config/host-config.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_43c1dbe3",
       "range": {
         "startLine": 7,
         "startChar": 12,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_5ee9b019",
+        "filename": "app/components/hosts/host-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_c3adeb32",
+      "range": {
+        "startLine": 4,
+        "startChar": 8,
+        "endLine": 4,
+        "endChar": 15
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_23b6d78a",
         "filename": "app/components/hosts/host-detail.ts",
         "patchSetId": 3
@@ -82,6 +154,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "Why do we need hostList in hostdetails?",
+      "range": {
+        "startLine": 7,
+        "startChar": 12,
+        "endLine": 7,
+        "endChar": 20
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3eeeec22",
+        "filename": "app/components/hosts/host-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "we have one drop-down in header of host dashboard.\nfrom there we can select the host and also we can switch b/w any host from drop-down .\n\nso that the reason , we should have all host list in this page . so that we can list down all host in drop down.",
+      "parentUuid": "baa041b7_23b6d78a",
       "range": {
         "startLine": 7,
         "startChar": 12,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_1ef3280c",
+        "filename": "app/components/hosts/host-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_03bbd373",
+      "range": {
+        "startLine": 9,
+        "startChar": 16,
+        "endLine": 9,
+        "endChar": 19
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_e3b0ef8d",
         "filename": "app/components/hosts/host-detail.ts",
         "patchSetId": 3
@@ -128,6 +248,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "Change this to activeTab and its a number type.",
+      "range": {
+        "startLine": 11,
+        "startChar": 12,
+        "endLine": 11,
+        "endChar": 20
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7ee4743a",
+        "filename": "app/components/hosts/host-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_e3b0ef8d",
       "range": {
         "startLine": 11,
         "startChar": 12,
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_5ed09053",
+        "filename": "app/components/hosts/host-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_a3aae717",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 15
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_83a7e34e",
         "filename": "app/components/hosts/host-detail.ts",
         "patchSetId": 3
@@ -174,6 +342,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "Why do we need to get hostList to get a host?. Can\u0027t we directly call serverService.get(hostId)?",
+      "range": {
+        "startLine": 40,
+        "startChar": 17,
+        "endLine": 40,
+        "endChar": 42
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7ebb540f",
+        "filename": "app/components/hosts/host-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "we have one drop-down in header of host dashboard.\nfrom there we can select the host and also we can switch b/w any host from drop-down .\n\nso that the reason , we should have all host list in this page . so that we can list down all host in drop down.",
+      "parentUuid": "baa041b7_83a7e34e",
       "range": {
         "startLine": 40,
         "startChar": 17,
@@ -209,6 +401,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_3e3cac92",
+        "filename": "app/components/hosts/host-list-menu-dropdown.tpl.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "we have one drop-down in header of host dashboard.\nfrom there we can select the host and also we can switch b/w any host from drop-down .\n\nso that the reason , we should have all host list in this page . so that we can list down all host in drop down.",
+      "parentUuid": "baa041b7_236db704",
+      "range": {
+        "startLine": 2,
+        "startChar": 27,
+        "endLine": 2,
+        "endChar": 67
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_c374cbd0",
         "filename": "app/components/hosts/host-list.html",
         "patchSetId": 3
@@ -220,6 +436,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "Just hosts/{nodeid} should be enough.",
+      "range": {
+        "startLine": 33,
+        "startChar": 40,
+        "endLine": 33,
+        "endChar": 48
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_fe452417",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_c374cbd0",
       "range": {
         "startLine": 33,
         "startChar": 40,
@@ -255,6 +495,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_9e55f8c7",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_837ec3ac",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 15
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_634a9f85",
         "filename": "app/components/hosts/host-overview/host-overview.ts",
         "patchSetId": 3
@@ -266,6 +530,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "Why are we hard coding the data here?",
+      "range": {
+        "startLine": 29,
+        "startChar": 17,
+        "endLine": 29,
+        "endChar": 24
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5e5e50ea",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "This APi is not yet done . as i told you earlier some of data is mock data because of no api for that . \n\nso once we have api i will update the code",
+      "parentUuid": "baa041b7_634a9f85",
       "range": {
         "startLine": 29,
         "startChar": 17,
@@ -301,6 +589,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_fe5c04ef",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Here we have total 3 drop-down for selecting individual time slot for the graph and also these 3 are in different section . so we can not use only one for all these 3 time slot .\n\nyou can see here - http://10.70.42.248:8080\ngo to node detail page",
+      "parentUuid": "baa041b7_434f9b92",
+      "range": {
+        "startLine": 38,
+        "startChar": 47,
+        "endLine": 38,
+        "endChar": 82
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_a381c791",
         "filename": "app/components/hosts/host-overview/host-overview.ts",
         "patchSetId": 3
@@ -312,6 +624,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "Remove TWS.",
+      "range": {
+        "startLine": 40,
+        "startChar": 83,
+        "endLine": 40,
+        "endChar": 84
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3e638cb3",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_a381c791",
       "range": {
         "startLine": 40,
         "startChar": 83,
@@ -347,6 +683,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_7e69148b",
+        "filename": "app/styles/host-config.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_e35eaf44",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 1
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_c35bab53",
         "filename": "app/styles/host-detail.scss",
         "patchSetId": 3
@@ -358,6 +718,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "This breadCrumb should be used in all the pages. Can we move this to main scss file itself?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 5
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3e0a6cd3",
+        "filename": "app/styles/host-detail.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Its not exactly breadcrumb css , you can see the properties . just align here.\n\nI am using this css with patternfly breadcrumb  . and this is just for align of breadcrumb . i don\u0027t think so , we should have to put in main.scss.",
+      "parentUuid": "baa041b7_c35bab53",
       "range": {
         "startLine": 3,
         "startChar": 0,
@@ -393,6 +777,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_1e0fa8e2",
+        "filename": "app/styles/host-overview.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_a358a757",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 1
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_8355a31e",
         "filename": "app/styles/host-overview.scss",
         "patchSetId": 3
@@ -404,6 +812,30 @@
       "writtenOn": "2016-04-10T18:30:06Z",
       "side": 1,
       "message": "Align the line correctly.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 1
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_fe13e40b",
+        "filename": "app/styles/host-overview.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:06:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_8355a31e",
       "range": {
         "startLine": 11,
         "startChar": 0,
