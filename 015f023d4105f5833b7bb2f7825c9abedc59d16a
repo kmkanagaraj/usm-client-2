@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_08bbf273",
+        "filename": "app/config/config.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-10T08:05:41Z",
+      "side": 1,
+      "message": "If ceph upstream supports hybrid role, this should be \u0027true\u0027\n\nWe could change this to false in downstream.",
+      "revId": "015f023d4105f5833b7bb2f7825c9abedc59d16a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
