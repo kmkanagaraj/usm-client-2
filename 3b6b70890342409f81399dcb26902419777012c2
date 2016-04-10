@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_9e03b8b8",
+        "filename": "app/components/clusters/configdetail/config-detail-directive.ts",
+        "patchSetId": 7
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:18:47Z",
+      "side": 1,
+      "message": "for modular wise code , we have created separate directive for that . also whatever directive we have created for cluster i think that is only being used in cluster detail .\nalso same as host",
+      "parentUuid": "baa041b7_c3860bb9",
+      "range": {
+        "startLine": 19,
+        "startChar": 13,
+        "endLine": 19,
+        "endChar": 25
+      },
+      "revId": "3b6b70890342409f81399dcb26902419777012c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_a39307fa",
         "filename": "app/styles/cluster-config-detail.scss",
         "patchSetId": 7
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-10T17:52:50Z",
       "side": 1,
       "message": "Remove LWS.",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 1
+      },
+      "revId": "3b6b70890342409f81399dcb26902419777012c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5e2c104a",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-10T20:18:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_a39307fa",
       "range": {
         "startLine": 3,
         "startChar": 0,
