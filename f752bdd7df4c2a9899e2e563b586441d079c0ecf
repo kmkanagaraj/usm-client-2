@@ -778,6 +778,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_9c2bc1eb",
+        "filename": "app/styles/host-detail.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-11T08:30:26Z",
+      "side": 1,
+      "message": "Note : -  Already \"breadcrumb\" CSS is defined in patternfly.\n\tdirectly we can use this css whereever we want \n \tlike \u003cdiv class\u003d\"breadcrumb\"\u003eabc \u003c/div\u003e \n\tNo need to add our CSS for this \n\n\tThis class \"custom-breadcrumb\" is just for align of breadcrumb div according to view \n\twhich is suitable on this host details page .\n\n\treally i don\u0027t think so this should be in main.scss\n\n\tyou can see in html page , how i am using this --\u003e\n\t\u003col class\u003d\"breadcrumb custom-breadcrumb\"\u003e\n\t\tsomthing\n\t\u003c/ol\u003e",
+      "parentUuid": "baa041b7_bc17a5ec",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 5
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_a358a757",
         "filename": "app/styles/host-overview.scss",
         "patchSetId": 3
