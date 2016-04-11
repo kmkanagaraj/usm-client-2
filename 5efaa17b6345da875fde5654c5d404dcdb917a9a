@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_dcf149cf",
+        "filename": "app/components/hosts/host-config/host-config-directive.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:09:19Z",
+      "side": 1,
+      "message": "Can we just pass the host itself?",
+      "range": {
+        "startLine": 22,
+        "startChar": 8,
+        "endLine": 22,
+        "endChar": 21
+      },
+      "revId": "5efaa17b6345da875fde5654c5d404dcdb917a9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5cf3f90a",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:09:19Z",
+      "side": 1,
+      "message": "Please bind all the missing fields. If it is missing in API then lets wait till the API is available or remove the filed altogether.",
+      "range": {
+        "startLine": 11,
+        "startChar": 16,
+        "endLine": 11,
+        "endChar": 26
+      },
+      "revId": "5efaa17b6345da875fde5654c5d404dcdb917a9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_9c5e21e8",
+        "filename": "app/components/hosts/host-detail.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:09:19Z",
+      "side": 1,
+      "message": "Can we use type Node here?.",
+      "range": {
+        "startLine": 6,
+        "startChar": 27,
+        "endLine": 6,
+        "endChar": 28
+      },
+      "revId": "5efaa17b6345da875fde5654c5d404dcdb917a9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_bc5205dc",
+        "filename": "app/components/hosts/host-detail.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:09:19Z",
+      "side": 1,
+      "message": "Can we use type Node here?.",
+      "range": {
+        "startLine": 7,
+        "startChar": 18,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "5efaa17b6345da875fde5654c5d404dcdb917a9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5c5899fa",
+        "filename": "app/components/hosts/host-list-menu-dropdown.tpl.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:09:19Z",
+      "side": 1,
+      "message": "How it will look when we have more hosts in the cluster like 50+ nodes.",
+      "range": {
+        "startLine": 2,
+        "startChar": 27,
+        "endLine": 2,
+        "endChar": 67
+      },
+      "revId": "5efaa17b6345da875fde5654c5d404dcdb917a9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3c5dd5e9",
+        "filename": "app/components/hosts/host-overview/host-overview-directive.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:09:19Z",
+      "side": 1,
+      "message": "Can we just pass the host object itself so that we are loading again.",
+      "range": {
+        "startLine": 22,
+        "startChar": 8,
+        "endLine": 22,
+        "endChar": 21
+      },
+      "revId": "5efaa17b6345da875fde5654c5d404dcdb917a9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3c2b9532",
+        "filename": "app/components/hosts/host-overview/host-utilization-time-slot-dropdown.tpl.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:09:19Z",
+      "side": 1,
+      "message": "Can we move all the host-details related js/html files into one folder /hosts/host-details folder?",
+      "revId": "5efaa17b6345da875fde5654c5d404dcdb917a9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
