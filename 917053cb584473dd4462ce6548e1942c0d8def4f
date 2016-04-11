@@ -1,0 +1,303 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_62a5f602",
+        "filename": "app/components/hosts/host-config/host-config.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "host",
+      "range": {
+        "startLine": 8,
+        "startChar": 12,
+        "endLine": 8,
+        "endChar": 22
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_42f8b2e5",
+        "filename": "app/components/hosts/host-config/host-config.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Unused dependencies.",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 15
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_22c5ae8d",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Do we need format the dateTime filed here?",
+      "range": {
+        "startLine": 21,
+        "startChar": 80,
+        "endLine": 21,
+        "endChar": 87
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e2e7c63e",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "We will not call this as RHSC in upstream. Is backend also says rhscService?",
+      "range": {
+        "startLine": 61,
+        "startChar": 86,
+        "endLine": 61,
+        "endChar": 99
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_a2377eaf",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Do we need to show the total Memory available and total used in text as well.",
+      "range": {
+        "startLine": 115,
+        "startChar": 40,
+        "endLine": 115,
+        "endChar": 46
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_823c7a94",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Do we need to show the total Swap available and total used in text as well.",
+      "range": {
+        "startLine": 126,
+        "startChar": 40,
+        "endLine": 126,
+        "endChar": 46
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6241760b",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Do we need to show the total Storage available and total used in text as well.",
+      "range": {
+        "startLine": 137,
+        "startChar": 39,
+        "endLine": 137,
+        "endChar": 46
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_224c8e41",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "I think we have to show the actual network utilization like how much Gb of total capacity is used",
+      "range": {
+        "startLine": 153,
+        "startChar": 31,
+        "endLine": 153,
+        "endChar": 38
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_023f4ab5",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Node type?.",
+      "range": {
+        "startLine": 7,
+        "startChar": 18,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_c2b6023d",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Can you replace this with this.duration.timeSlots[0]",
+      "range": {
+        "startLine": 28,
+        "startChar": 48,
+        "endLine": 28,
+        "endChar": 81
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8287da60",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Can you replace this with this.duration.timeSlots[0]",
+      "range": {
+        "startLine": 29,
+        "startChar": 16,
+        "endLine": 29,
+        "endChar": 80
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_627cd672",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "Can you replace this with this.duration.timeSlots[0]",
+      "range": {
+        "startLine": 30,
+        "startChar": 16,
+        "endLine": 30,
+        "endChar": 83
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_422552a9",
+        "filename": "app/styles/host-overview.scss",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T11:55:24Z",
+      "side": 1,
+      "message": "LWS.",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 1
+      },
+      "revId": "917053cb584473dd4462ce6548e1942c0d8def4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
