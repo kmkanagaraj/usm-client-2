@@ -754,6 +754,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_bc17a5ec",
+        "filename": "app/styles/host-detail.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:09:19Z",
+      "side": 1,
+      "message": "We are showing/planning to show breadcrumb in all the pages. Is there way to avoid re-writing this style in all other pages.",
+      "parentUuid": "baa041b7_3e0a6cd3",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 5
+      },
+      "revId": "f752bdd7df4c2a9899e2e563b586441d079c0ecf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_a358a757",
         "filename": "app/styles/host-overview.scss",
         "patchSetId": 3
