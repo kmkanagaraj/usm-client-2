@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_7c2b5d83",
+        "filename": "app/components/clusters/configdetail/config-detail-directive.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "cluster-config-detail?",
+      "range": {
+        "startLine": 13,
+        "startChar": 4,
+        "endLine": 13,
+        "endChar": 17
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_fc376de1",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "Can we bind this correctly?",
+      "range": {
+        "startLine": 12,
+        "startChar": 24,
+        "endLine": 12,
+        "endChar": 26
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1c42113f",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "Can we bind this correctly?",
+      "range": {
+        "startLine": 16,
+        "startChar": 16,
+        "endLine": 16,
+        "endChar": 26
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_dc34a9df",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "Can we bind this correctly?",
+      "range": {
+        "startLine": 20,
+        "startChar": 16,
+        "endLine": 20,
+        "endChar": 26
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_bc31e5ee",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "Can we bind this correctly?",
+      "range": {
+        "startLine": 24,
+        "startChar": 16,
+        "endLine": 24,
+        "endChar": 26
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_9c4d0175",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "Can we bind this correctly?",
+      "range": {
+        "startLine": 32,
+        "startChar": 16,
+        "endLine": 32,
+        "endChar": 26
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7c523d15",
+        "filename": "app/components/clusters/configdetail/config-detail.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "It a string type. change it to string.",
+      "range": {
+        "startLine": 6,
+        "startChar": 16,
+        "endLine": 6,
+        "endChar": 20
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5c577902",
+        "filename": "app/components/clusters/configdetail/config-detail.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "Where these dependencies are used?",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 15
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3c5cb524",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 8
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T05:00:22Z",
+      "side": 1,
+      "message": "Remove all LWS in this page.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 1
+      },
+      "revId": "3717ba947cd450afd08f2d34b0bc7b87f18f8656",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
