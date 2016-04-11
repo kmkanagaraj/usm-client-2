@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_35797894",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-04-11T06:10:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_b23c7e30",
+      "range": {
+        "startLine": 197,
+        "startChar": 44,
+        "endLine": 197,
+        "endChar": 52
+      },
+      "revId": "80675abfbc636baab4790929b8852d2e7d924488",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_d226e215",
         "filename": "app/components/requests/requests-controller.ts",
         "patchSetId": 6
