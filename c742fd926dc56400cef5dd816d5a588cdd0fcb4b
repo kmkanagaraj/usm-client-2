@@ -22,6 +22,30 @@
       "revId": "c742fd926dc56400cef5dd816d5a588cdd0fcb4b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_dc76e93d",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.html",
+        "patchSetId": 12
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T07:34:59Z",
+      "side": 1,
+      "message": "If this issue is fixed then i can ack the patch.",
+      "parentUuid": "baa041b7_c3ff2b33",
+      "range": {
+        "startLine": 139,
+        "startChar": 149,
+        "endLine": 139,
+        "endChar": 179
+      },
+      "revId": "c742fd926dc56400cef5dd816d5a588cdd0fcb4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
