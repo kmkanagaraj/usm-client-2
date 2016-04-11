@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_c21722ec",
+        "filename": "app/components/storage/storage-new.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T12:32:31Z",
+      "side": 1,
+      "message": "Can you add the check for cluster status as kanagaraj suggested?",
+      "range": {
+        "startLine": 16,
+        "startChar": 43,
+        "endLine": 16,
+        "endChar": 62
+      },
+      "revId": "e146529807ee4c237436730f5d3627a4bda17a70",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_a2d3fe37",
+        "filename": "app/components/storage/storage-new.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T12:32:31Z",
+      "side": 1,
+      "message": "Same as above.",
+      "range": {
+        "startLine": 53,
+        "startChar": 88,
+        "endLine": 53,
+        "endChar": 121
+      },
+      "revId": "e146529807ee4c237436730f5d3627a4bda17a70",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
