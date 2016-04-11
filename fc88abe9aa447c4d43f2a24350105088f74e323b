@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_5c09b92b",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-11T04:50:34Z",
+      "side": 1,
+      "message": "this could just be /clusters/import",
+      "range": {
+        "startLine": 176,
+        "startChar": 29,
+        "endLine": 176,
+        "endChar": 53
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3c0ef534",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-11T04:50:34Z",
+      "side": 1,
+      "message": "This sentence might be misleading. Could be rephrased to something like\n\n\u0027The following hosts do not belong to the cluster being managed by USM\u0027",
+      "range": {
+        "startLine": 13,
+        "startChar": 15,
+        "endLine": 13,
+        "endChar": 71
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1c145142",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-11T04:50:34Z",
+      "side": 1,
+      "message": "I would suggest use a checkbox to make the selection more explicit.",
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_fc108d50",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-11T04:50:34Z",
+      "side": 1,
+      "message": "I don\u0027t think showing a \u0027-\u0027 for unaccepted hosts would look good",
+      "range": {
+        "startLine": 41,
+        "startChar": 24,
+        "endLine": 41,
+        "endChar": 83
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_dc1dc967",
+        "filename": "app/components/clusters/import-cluster/import-cluster.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-11T04:50:34Z",
+      "side": 1,
+      "message": "If this is going to not compatible, i wouldn\u0027t want the response code to be 200",
+      "range": {
+        "startLine": 42,
+        "startChar": 20,
+        "endLine": 42,
+        "endChar": 51
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5c20999b",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-11T04:50:34Z",
+      "side": 1,
+      "message": "sorting is not required since you are fetching the nodes which are in free state",
+      "range": {
+        "startLine": 119,
+        "startChar": 12,
+        "endLine": 119,
+        "endChar": 46
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3c25d5aa",
+        "filename": "app/styles/import-cluster.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-11T04:50:34Z",
+      "side": 1,
+      "message": "i would suggest not to use \u0027important\u0027 if possible",
+      "range": {
+        "startLine": 3,
+        "startChar": 26,
+        "endLine": 3,
+        "endChar": 45
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
