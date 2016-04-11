@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_9c9501e6",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T08:27:54Z",
+      "side": 1,
+      "message": "I can do that. That will even save me from writing the same code in expand cluster controller.",
+      "parentUuid": "baa041b7_e3c46f93",
+      "range": {
+        "startLine": 230,
+        "startChar": 11,
+        "endLine": 230,
+        "endChar": 27
+      },
+      "revId": "015f023d4105f5833b7bb2f7825c9abedc59d16a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_23ca57a2",
         "filename": "app/components/clusters/clusters-new-hosts.html",
         "patchSetId": 2
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_5c9f7903",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T08:27:54Z",
+      "side": 1,
+      "message": "I have added this to avoid selecting the row when I change the selection in combo list. It not a new change in this patch.",
+      "parentUuid": "baa041b7_23ca57a2",
+      "range": {
+        "startLine": 82,
+        "startChar": 171,
+        "endLine": 82,
+        "endChar": 206
+      },
+      "revId": "015f023d4105f5833b7bb2f7825c9abedc59d16a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_08bbf273",
         "filename": "app/config/config.json",
         "patchSetId": 2
@@ -59,6 +107,24 @@
       "writtenOn": "2016-04-10T08:05:41Z",
       "side": 1,
       "message": "If ceph upstream supports hybrid role, this should be \u0027true\u0027\n\nWe could change this to false in downstream.",
+      "revId": "015f023d4105f5833b7bb2f7825c9abedc59d16a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_dcfca940",
+        "filename": "app/config/config.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-11T08:27:54Z",
+      "side": 1,
+      "message": "Will change this.",
+      "parentUuid": "baa041b7_08bbf273",
       "revId": "015f023d4105f5833b7bb2f7825c9abedc59d16a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
