@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_4b032d74",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "According to UX/UI design just i used table which is suitable look match with UX/UI design\n\nyou can see UX design here \nhttps://docs.google.com/presentation/d/13TGXJ-wUPTcO6Sn_2f5C8X-Xi6ZgYz4cjR-0QPgiKjE/edit#slide\u003did.g1270ae41e3_0_18",
+      "parentUuid": "baa041b7_cbe4dd3c",
+      "range": {
+        "startLine": 7,
+        "startChar": 6,
+        "endLine": 7,
+        "endChar": 56
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_6bca71a3",
         "filename": "app/components/hosts/host-details/hosts-detail.html",
         "patchSetId": 8
@@ -53,6 +77,30 @@
       "writtenOn": "2016-04-12T02:27:34Z",
       "side": 1,
       "message": "What if host.enabled is false?. Are we not showing any icon?. When this will happen?.",
+      "range": {
+        "startLine": 8,
+        "startChar": 29,
+        "endLine": 8,
+        "endChar": 52
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_cba73d4e",
+        "filename": "app/components/hosts/host-details/hosts-detail.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "host.enabled \u003d true means \u003d managed node\nhost.enabled \u003d false means \u003d unmanaged node\n\nalso here might be we can have unmanaged node , so i am going to remove this line \"hostdetail.host.enabled\"",
+      "parentUuid": "baa041b7_6bca71a3",
       "range": {
         "startLine": 8,
         "startChar": 29,
@@ -88,6 +136,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_cb55fd1d",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_cbbbbd0d",
+      "range": {
+        "startLine": 2,
+        "startChar": 21,
+        "endLine": 2,
+        "endChar": 28
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_0b708571",
         "filename": "app/components/hosts/host-overview/host-overview.html",
         "patchSetId": 8
@@ -99,6 +171,30 @@
       "writtenOn": "2016-04-12T02:27:34Z",
       "side": 1,
       "message": "How come it is always OK?. Is there a way to check whether this network is Up or Down?",
+      "range": {
+        "startLine": 169,
+        "startChar": 47,
+        "endLine": 169,
+        "endChar": 86
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1638a8d2",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "its not maintained currently from backend api",
+      "parentUuid": "baa041b7_0b708571",
       "range": {
         "startLine": 169,
         "startChar": 47,
@@ -134,6 +230,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_363bacd3",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 8
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "its not maintained currently from backend api",
+      "parentUuid": "baa041b7_eb6c419e",
+      "range": {
+        "startLine": 176,
+        "startChar": 47,
+        "endLine": 176,
+        "endChar": 86
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_6b26f169",
         "filename": "app/components/hosts/host-overview/host-overview.ts",
         "patchSetId": 8
@@ -157,6 +277,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_76ddb441",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "i have tried . we can define the type but anyhow we have to define this value - object {data:{},config:{}} also.",
+      "parentUuid": "baa041b7_6b26f169",
+      "range": {
+        "startLine": 31,
+        "startChar": 21,
+        "endLine": 31,
+        "endChar": 38
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_cb173dec",
         "filename": "app/components/hosts/host-overview/host-overview.ts",
         "patchSetId": 8
@@ -168,6 +312,30 @@
       "writtenOn": "2016-04-12T02:27:34Z",
       "side": 1,
       "message": "these three lines are not needed. You can just pass this.duration.timeSlots[0] in the following lines.",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 52,
+        "endChar": 83
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1111d252",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_cb173dec",
       "range": {
         "startLine": 50,
         "startChar": 0,
@@ -226,6 +394,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_71201e9c",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_eb1a0117",
+      "range": {
+        "startLine": 121,
+        "startChar": 46,
+        "endLine": 121,
+        "endChar": 55
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_4be20d05",
         "filename": "app/components/rest/server.ts",
         "patchSetId": 8
@@ -237,6 +429,30 @@
       "writtenOn": "2016-04-12T02:27:34Z",
       "side": 1,
       "message": "We have getCpuUtilization getMemoryUtilization etc defined already. How this new APIs are different from the the old ones. Do we need to both? If so then please add comment about what exactly is returned in the new APIs\n\nAlso we can remove the old ones if they are not used anymore.",
+      "range": {
+        "startLine": 261,
+        "startChar": 4,
+        "endLine": 261,
+        "endChar": 25
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b19b46c9",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 261,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-12T13:34:42Z",
+      "side": 1,
+      "message": "removed getCpuUtilization and getMemoryUtilization is being used in host.ts file \nand comments already there",
+      "parentUuid": "baa041b7_4be20d05",
       "range": {
         "startLine": 261,
         "startChar": 4,
