@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_0b7ac524",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 7
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-12T04:07:07Z",
+      "side": 1,
+      "message": "what happens if getConfig() is returned before getAboutDetails()?\n\nIt should be changed to \n\n this.sysSvc.getAboutDetails().then((aboutDetails) \u003d\u003e {\n     this.about \u003d aboutDetails;\n     return this.configSvc.getConfig();\n }).then((config) \u003d\u003e {\n     this.about.copyright \u003d config.copyright;\n });",
+      "range": {
+        "startLine": 197,
+        "startChar": 0,
+        "endLine": 202,
+        "endChar": 11
+      },
+      "revId": "5da75023f9a3149635c1a0847c60c0eb52f70127",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
