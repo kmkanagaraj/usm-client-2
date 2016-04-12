@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_2b40e9a4",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-12T05:33:34Z",
+      "side": 1,
+      "message": "This is sixth Tab. Adding entity name in comment would be more meaningful",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_0b3d252b",
+        "filename": "app/components/clusters/configdetail/config-detail-directive.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-12T05:33:34Z",
+      "side": 1,
+      "message": "one way binding is enough for this. use \u0026",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_cb461dbf",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-12T05:33:34Z",
+      "side": 1,
+      "message": "Remove ng-bind. add it once backend data is available",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_0b24050b",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 9
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-12T05:33:34Z",
+      "side": 1,
+      "message": "use existing patternfly labels",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8b17f5a2",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-12T05:33:34Z",
+      "side": 1,
+      "message": "bootstrap having classes to set upper case",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
