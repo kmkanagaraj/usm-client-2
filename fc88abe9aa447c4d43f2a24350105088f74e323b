@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_f1c42e41",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-12T12:18:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_5c09b92b",
+      "range": {
+        "startLine": 176,
+        "startChar": 29,
+        "endLine": 176,
+        "endChar": 53
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_3c0ef534",
         "filename": "app/components/clusters/import-cluster/import-cluster.html",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-11T04:50:34Z",
       "side": 1,
       "message": "This sentence might be misleading. Could be rephrased to something like\n\n\u0027The following hosts do not belong to the cluster being managed by USM\u0027",
+      "range": {
+        "startLine": 13,
+        "startChar": 15,
+        "endLine": 13,
+        "endChar": 71
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5103da73",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-12T12:18:14Z",
+      "side": 1,
+      "message": "I am little bit worried about the name USM. We have to say Skyring in upstream and change it in down stream.",
+      "parentUuid": "baa041b7_3c0ef534",
       "range": {
         "startLine": 13,
         "startChar": 15,
@@ -65,6 +113,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_91096298",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-12T12:18:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_1c145142",
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_fc108d50",
         "filename": "app/components/clusters/import-cluster/import-cluster.html",
         "patchSetId": 2
@@ -76,6 +142,30 @@
       "writtenOn": "2016-04-11T04:50:34Z",
       "side": 1,
       "message": "I don\u0027t think showing a \u0027-\u0027 for unaccepted hosts would look good",
+      "range": {
+        "startLine": 41,
+        "startChar": 24,
+        "endLine": 41,
+        "endChar": 83
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b104667e",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-12T12:18:14Z",
+      "side": 1,
+      "message": "This is what recommended by UX. Can we use something like unknown .",
+      "parentUuid": "baa041b7_fc108d50",
       "range": {
         "startLine": 41,
         "startChar": 24,
@@ -111,6 +201,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_911722a3",
+        "filename": "app/components/clusters/import-cluster/import-cluster.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-12T12:18:14Z",
+      "side": 1,
+      "message": "That word compatible is misleading. Actually it will be false if there are some hosts which are not known to USM.",
+      "parentUuid": "baa041b7_dc1dc967",
+      "range": {
+        "startLine": 42,
+        "startChar": 20,
+        "endLine": 42,
+        "endChar": 51
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_5c20999b",
         "filename": "app/components/rest/server.ts",
         "patchSetId": 2
@@ -134,6 +248,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_d1efeaae",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-12T12:18:14Z",
+      "side": 1,
+      "message": "free state returns both accepted and un accepted nodes. Thats why I have added a sorting based on the state.",
+      "parentUuid": "baa041b7_5c20999b",
+      "range": {
+        "startLine": 119,
+        "startChar": 12,
+        "endLine": 119,
+        "endChar": 46
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_3c25d5aa",
         "filename": "app/styles/import-cluster.scss",
         "patchSetId": 2
@@ -145,6 +283,30 @@
       "writtenOn": "2016-04-11T04:50:34Z",
       "side": 1,
       "message": "i would suggest not to use \u0027important\u0027 if possible",
+      "range": {
+        "startLine": 3,
+        "startChar": 26,
+        "endLine": 3,
+        "endChar": 45
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_113d522b",
+        "filename": "app/styles/import-cluster.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-12T12:18:14Z",
+      "side": 1,
+      "message": "I don\u0027t see anyway other than this. I want to change the background color of the selected row.",
+      "parentUuid": "baa041b7_3c25d5aa",
       "range": {
         "startLine": 3,
         "startChar": 26,
