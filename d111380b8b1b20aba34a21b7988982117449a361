@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_71993e6e",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-12T11:39:59Z",
+      "side": 1,
+      "message": "Now, this.about and aboutDetails are refering to the same object in the memory. So any change in this.about will actually (and may be unintentionally) update aboutDetails as well.\n\nExample: var foo \u003d { a: \"A\", b: \"B\" }\nvar  bar \u003d foo\nbar.c \u003d \"C\"\n\n// We never updated foo, right? But see this:\nconsole.log(foo) // { a: \"A\", b: \"B\", c: \"C\" }",
+      "range": {
+        "startLine": 197,
+        "startChar": 12,
+        "endLine": 197,
+        "endChar": 38
+      },
+      "revId": "d111380b8b1b20aba34a21b7988982117449a361",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_519e3a57",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-12T11:39:59Z",
+      "side": 1,
+      "message": "As stated above, now aboutDetails.copyright \u003d config.copyright.\n\nIf that\u0027s what you want to do, then there\u0027s no need of creating another scoped variable, cause you\u0027re updating the source variable anyway.\n\nThe reason I gave the example in previous snippet:\n for (var i in aboutDet) {\n   this.about[i] \u003d aboutDet[i]\n }\n this.about.copyright \u003d config.copyright\n\nThis doesn\u0027t touch/alter the value of aboutDetails (just reads/copies from it).",
+      "range": {
+        "startLine": 200,
+        "startChar": 12,
+        "endLine": 200,
+        "endChar": 52
+      },
+      "revId": "d111380b8b1b20aba34a21b7988982117449a361",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
