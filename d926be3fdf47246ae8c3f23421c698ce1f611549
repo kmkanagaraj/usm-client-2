@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_177d3f1c",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T09:20:02Z",
+      "side": 1,
+      "message": "You can make this as h3",
+      "range": {
+        "startLine": 5,
+        "startChar": 9,
+        "endLine": 5,
+        "endChar": 14
+      },
+      "revId": "d926be3fdf47246ae8c3f23421c698ce1f611549",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f779bb30",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T09:20:02Z",
+      "side": 1,
+      "message": "Make this a \u003cp\u003e",
+      "range": {
+        "startLine": 7,
+        "startChar": 11,
+        "endLine": 7,
+        "endChar": 16
+      },
+      "revId": "d926be3fdf47246ae8c3f23421c698ce1f611549",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d776b73d",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T09:20:02Z",
+      "side": 1,
+      "message": "This can be removed if u make the previous small as \u003cp\u003e",
+      "range": {
+        "startLine": 10,
+        "startChar": 55,
+        "endLine": 10,
+        "endChar": 71
+      },
+      "revId": "d926be3fdf47246ae8c3f23421c698ce1f611549",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b773334d",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T09:20:02Z",
+      "side": 1,
+      "message": "This style sheet can removed after making the suggested changes in cluster-config-details.html",
+      "revId": "d926be3fdf47246ae8c3f23421c698ce1f611549",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_375de3e9",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 11
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T09:20:02Z",
+      "side": 1,
+      "message": "I don\u0027t think u need 18px font-size. Std 12px looks better. So this can be removed.",
+      "range": {
+        "startLine": 3,
+        "startChar": 3,
+        "endLine": 3,
+        "endChar": 20
+      },
+      "revId": "d926be3fdf47246ae8c3f23421c698ce1f611549",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
