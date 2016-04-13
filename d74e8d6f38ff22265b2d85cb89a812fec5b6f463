@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_9205ddc3",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T11:41:32Z",
+      "side": 1,
+      "message": "All these issues are not related to this patch. I just did a reformatting. May be I will send a separate patch to fix these comments.",
+      "parentUuid": "baa041b7_b7e2139e",
+      "range": {
+        "startLine": 12,
+        "startChar": 35,
+        "endLine": 12,
+        "endChar": 42
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_37ede38b",
         "filename": "app/components/clusters/clusters-new-hosts.html",
         "patchSetId": 2
@@ -140,6 +164,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_d26c859e",
+        "filename": "app/components/clusters/clusters-new.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T11:41:32Z",
+      "side": 1,
+      "message": "Do we need to plural directive here?. Its a header field and anyway it will be minimum 3 Monitors in the cluster.",
+      "parentUuid": "baa041b7_b7a7b34e",
+      "range": {
+        "startLine": 49,
+        "startChar": 16,
+        "endLine": 49,
+        "endChar": 24
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_d7aa3719",
         "filename": "app/components/clusters/clusters-new.html",
         "patchSetId": 2
@@ -151,6 +199,30 @@
       "writtenOn": "2016-04-13T10:22:43Z",
       "side": 1,
       "message": "can we use plural directive ?",
+      "range": {
+        "startLine": 51,
+        "startChar": 16,
+        "endLine": 51,
+        "endChar": 21
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b269018e",
+        "filename": "app/components/clusters/clusters-new.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T11:41:32Z",
+      "side": 1,
+      "message": "same as above.",
+      "parentUuid": "baa041b7_d7aa3719",
       "range": {
         "startLine": 51,
         "startChar": 16,
