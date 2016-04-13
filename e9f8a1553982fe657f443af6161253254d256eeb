@@ -22,6 +22,30 @@
       "revId": "e9f8a1553982fe657f443af6161253254d256eeb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6dd5de41",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 13
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_f209c932",
+      "range": {
+        "startLine": 41,
+        "startChar": 23,
+        "endLine": 41,
+        "endChar": 79
+      },
+      "revId": "e9f8a1553982fe657f443af6161253254d256eeb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
