@@ -20,6 +20,7 @@ export class ObjectStorageController {
     private slus: SLU[];
     private slusFiltered: SLU[];
     private name: string;
+    private poolName: string;
     private count: number = 1;
     private types = ['Replicated', 'Erasure Coded'];
     private type = 'Replicated';
@@ -34,6 +35,10 @@ export class ObjectStorageController {
     private pgSlider = {};
     private quota = { enabled: false, objects: { enabled: false, value: undefined }, percentage: { enabled: false, value: 75 } };
     private pools = [];
+    private prepSummary: any;
+    private summary: boolean = false;
+    private existingPool: string;
+    private rbdList: any[];
 
     static $inject: Array<string> = [
         '$routeParams',
@@ -154,10 +159,9 @@ export class ObjectStorageController {
             pgNum = Math.pow(2, this.pgSlider['value']);
         }
         this.targetSize = GetOptimalSizeForPGNum(pgNum, this.slusFiltered, this.replicas);
-
-        for (let index = 0; index < this.count; index++) {
+        if (this.count === 1) {
             let pool = {
-                name: this.name + index,
+                name: this.name,
                 type: this.type,
                 profile: this.profile,
                 replicas: this.replicas,
@@ -166,6 +170,24 @@ export class ObjectStorageController {
                 quota: this.quota
             }
             this.pools.push(angular.copy(pool));
+        } else {
+            for (let index = 0; index < this.count; index++) {
+                let pool = {
+                    name: this.name + index,
+                    type: this.type,
+                    profile: this.profile,
+                    replicas: this.replicas,
+                    ecprofile: this.ecprofile,
+                    capacity: this.targetSize,
+                    quota: this.quota
+                }
+                this.pools.push(angular.copy(pool));
+            }
+        }
+        this.summary = true;
+        if (this.existingPool === "false") {
+            this.poolName = this.name;
+            this.prepSummary();
         }
     }
 
@@ -205,7 +227,17 @@ export class ObjectStorageController {
                     storage['quota_params'].quota_max_bytes = Math.round((pool.quota.percentage.value / 100) * pool.capacity).toString();
                 }
             }
-
+            if (this.existingPool === "false") {
+                var rbdArray = [];
+                _.each(this.rbdList, (rbd) => {
+                    var blockdevice = {
+                        name: rbd.name,
+                        size: rbd.size.value + rbd.size.unit
+                    };
+                    rbdArray.push(blockdevice);
+                });
+                storage['blockdevices'] = rbdArray;
+            }
             list.push(this.storageSvc.create(this.cluster.clusterid, storage));
         }
         this.$q.all(list).then((tasks) => {

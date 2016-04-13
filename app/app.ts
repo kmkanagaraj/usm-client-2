@@ -27,7 +27,7 @@ import {TaskListController} from "./components/tasks/task-list";
 import {TaskDetailController} from "./components/tasks/task-detail-controller";
 import {TaskDetail} from "./components/tasks/task-detail";
 import {EmailController} from "./components/admin/mail-settings-controller";
-
+import {ObjectStorage} from "./components/storage/object/objectstorage-new-directive";
 import {KTDraggable} from "./components/shared/directives/kt-draggable";
 import {KTDroppable} from "./components/shared/directives/kt-droppable";
 import {StorageSizeSelector} from "./components/shared/directives/storage-size-selector";
@@ -100,6 +100,7 @@ class USMApp {
             .directive('storageSizeSelector', () => new StorageSizeSelector())
             .directive('osdDetail', () => new OsdDetail())
             .directive('hostList', () => new HostList())
+            .directive('objectStorage', () => new ObjectStorage())
             .directive('storageprofileDisks', () => new StorageProfileDisks())
             .filter('bytes', BytesFilter)
             .controller('LdapConfigController',LdapConfigController)
