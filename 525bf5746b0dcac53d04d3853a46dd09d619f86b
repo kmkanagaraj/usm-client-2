@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_082640ce",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:39:24Z",
+      "side": 1,
+      "message": "please provide a short explanation here",
+      "revId": "525bf5746b0dcac53d04d3853a46dd09d619f86b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e822fcb8",
+        "filename": "app/components/rest/storage.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:39:24Z",
+      "side": 1,
+      "message": "remove whitespace.",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 4
+      },
+      "revId": "525bf5746b0dcac53d04d3853a46dd09d619f86b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_a82cf4ab",
+        "filename": "app/components/rest/storage.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:39:24Z",
+      "side": 1,
+      "message": "rename this to update",
+      "range": {
+        "startLine": 56,
+        "startChar": 4,
+        "endLine": 56,
+        "endChar": 8
+      },
+      "revId": "525bf5746b0dcac53d04d3853a46dd09d619f86b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_48120864",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:39:24Z",
+      "side": 1,
+      "message": "can we bundle this into a pool object?",
+      "range": {
+        "startLine": 16,
+        "startChar": 4,
+        "endLine": 19,
+        "endChar": 135
+      },
+      "revId": "525bf5746b0dcac53d04d3853a46dd09d619f86b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_681dcc72",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:39:24Z",
+      "side": 1,
+      "message": "why is this commented?",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 13
+      },
+      "revId": "525bf5746b0dcac53d04d3853a46dd09d619f86b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_88181086",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:39:24Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "range": {
+        "startLine": 104,
+        "startChar": 0,
+        "endLine": 104,
+        "endChar": 4
+      },
+      "revId": "525bf5746b0dcac53d04d3853a46dd09d619f86b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
