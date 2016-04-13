@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_adbbe60d",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T13:33:30Z",
+      "side": 1,
+      "message": "you can get an instance of aboutDetails only when you call the rest service.\n\nAlso the scope is only to this function and no other code in the function refers the instance",
+      "parentUuid": "baa041b7_ed932ea2",
+      "range": {
+        "startLine": 197,
+        "startChar": 12,
+        "endLine": 197,
+        "endChar": 38
+      },
+      "revId": "d111380b8b1b20aba34a21b7988982117449a361",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_519e3a57",
         "filename": "app/components/requests/requests-controller.ts",
         "patchSetId": 9
