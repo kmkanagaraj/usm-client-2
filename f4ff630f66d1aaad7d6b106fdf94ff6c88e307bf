@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_68302c57",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:34:53Z",
+      "side": 1,
+      "message": "tags are wrongly placed",
+      "range": {
+        "startLine": 27,
+        "startChar": 9,
+        "endLine": 27,
+        "endChar": 65
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_887930ff",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:34:53Z",
+      "side": 1,
+      "message": "It should be \u0027Hostname\u0027",
+      "range": {
+        "startLine": 31,
+        "startChar": 24,
+        "endLine": 31,
+        "endChar": 33
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_087880c3",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:34:53Z",
+      "side": 1,
+      "message": "this check is not required since bootstrapNode will be undefined anyway",
+      "range": {
+        "startLine": 93,
+        "startChar": 80,
+        "endLine": 93,
+        "endChar": 111
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_684f0c93",
+        "filename": "app/components/clusters/import-cluster/import-cluster.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:34:53Z",
+      "side": 1,
+      "message": "I would like to see a more useful error message which would tell me the list of nodes which are not known to the USM.",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 17
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
