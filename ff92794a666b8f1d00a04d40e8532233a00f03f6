@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_721db972",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 10
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T13:12:33Z",
+      "side": 1,
+      "message": "Use bytes directive to show the memory in right format",
+      "range": {
+        "startLine": 27,
+        "startChar": 25,
+        "endLine": 27,
+        "endChar": 57
+      },
+      "revId": "ff92794a666b8f1d00a04d40e8532233a00f03f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5212b563",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T13:12:33Z",
+      "side": 1,
+      "message": "Use bytes directive to show the memory in right format",
+      "range": {
+        "startLine": 31,
+        "startChar": 25,
+        "endLine": 31,
+        "endChar": 57
+      },
+      "revId": "ff92794a666b8f1d00a04d40e8532233a00f03f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
