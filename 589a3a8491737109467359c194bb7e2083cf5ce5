@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_d23485df",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T10:55:33Z",
+      "side": 1,
+      "message": "Make it poolWithRBD.",
+      "range": {
+        "startLine": 20,
+        "startChar": 8,
+        "endLine": 20,
+        "endChar": 20
+      },
+      "revId": "589a3a8491737109467359c194bb7e2083cf5ce5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d24b6558",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T10:55:33Z",
+      "side": 1,
+      "message": "prepareRBDSummary will be more easy to understand.",
+      "range": {
+        "startLine": 21,
+        "startChar": 8,
+        "endLine": 21,
+        "endChar": 19
+      },
+      "revId": "589a3a8491737109467359c194bb7e2083cf5ce5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_123b0dd3",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T10:55:33Z",
+      "side": 1,
+      "message": "Add comment so that it is easy understand that these variables are binding from storage directive.",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 27
+      },
+      "revId": "589a3a8491737109467359c194bb7e2083cf5ce5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
