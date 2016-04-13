@@ -1,0 +1,303 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_ed3e8eb7",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "Is it working ?\n\ni don\u0027t think so , \n\nbecause it should be preapre-rbd-summary",
+      "range": {
+        "startLine": 100,
+        "startChar": 78,
+        "endLine": 100,
+        "endChar": 97
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_32173153",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "!\u003d\u003d ?",
+      "range": {
+        "startLine": 13,
+        "startChar": 127,
+        "endLine": 13,
+        "endChar": 129
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6d2b9e83",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "ng-if ?",
+      "range": {
+        "startLine": 93,
+        "startChar": 76,
+        "endLine": 93,
+        "endChar": 82
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ad1ac66c",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "can we use css class here ?",
+      "range": {
+        "startLine": 93,
+        "startChar": 52,
+        "endLine": 93,
+        "endChar": 75
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8d26e2b8",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 94,
+        "startChar": 53,
+        "endLine": 94,
+        "endChar": 76
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_2d2596aa",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 122,
+        "startChar": 52,
+        "endLine": 122,
+        "endChar": 83
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_0d3bf2d2",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "ng-if ?",
+      "range": {
+        "startLine": 127,
+        "startChar": 39,
+        "endLine": 127,
+        "endChar": 46
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6d527e15",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 151,
+        "startChar": 52,
+        "endLine": 151,
+        "endChar": 84
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_12266dce",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "Should be prepare-rbd-summary ?",
+      "range": {
+        "startLine": 13,
+        "startChar": 47,
+        "endLine": 13,
+        "endChar": 59
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_32405156",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "{{blockdevice}} ?\n\nbecause it string binding",
+      "range": {
+        "startLine": 13,
+        "startChar": 34,
+        "endLine": 13,
+        "endChar": 45
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_125f8d42",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "can we defined manual type using interface?",
+      "range": {
+        "startLine": 38,
+        "startChar": 12,
+        "endLine": 38,
+        "endChar": 29
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f25b0953",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 41,
+        "startChar": 12,
+        "endLine": 41,
+        "endChar": 19
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b255811e",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T13:18:07Z",
+      "side": 1,
+      "message": "why we are doing angular.copy here ? Is deep copy ?",
+      "range": {
+        "startLine": 184,
+        "startChar": 32,
+        "endLine": 184,
+        "endChar": 50
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
