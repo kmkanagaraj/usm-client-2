@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_b7e2139e",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T10:22:43Z",
+      "side": 1,
+      "message": "name should be meaning full",
+      "range": {
+        "startLine": 12,
+        "startChar": 35,
+        "endLine": 12,
+        "endChar": 42
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_37ede38b",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T10:22:43Z",
+      "side": 1,
+      "message": "can we put this in css class",
+      "range": {
+        "startLine": 13,
+        "startChar": 79,
+        "endLine": 13,
+        "endChar": 101
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d7fc7740",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T10:22:43Z",
+      "side": 1,
+      "message": "doing all this here . i think , we should have some function on ng-click , there we can do it all this",
+      "range": {
+        "startLine": 25,
+        "startChar": 81,
+        "endLine": 25,
+        "endChar": 143
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_37a4c355",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T10:22:43Z",
+      "side": 1,
+      "message": "we can\u0027t use here - ng-if",
+      "range": {
+        "startLine": 47,
+        "startChar": 53,
+        "endLine": 47,
+        "endChar": 60
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d79357f9",
+        "filename": "app/components/clusters/clusters-new-hosts.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T10:22:43Z",
+      "side": 1,
+      "message": "this should be host-col-host-type or host-col-type.\n\ni mean ,this is css class as it should not be in camel case",
+      "range": {
+        "startLine": 80,
+        "startChar": 58,
+        "endLine": 80,
+        "endChar": 66
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b7a7b34e",
+        "filename": "app/components/clusters/clusters-new.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T10:22:43Z",
+      "side": 1,
+      "message": "can we use plural directive ?",
+      "range": {
+        "startLine": 49,
+        "startChar": 16,
+        "endLine": 49,
+        "endChar": 24
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d7aa3719",
+        "filename": "app/components/clusters/clusters-new.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T10:22:43Z",
+      "side": 1,
+      "message": "can we use plural directive ?",
+      "range": {
+        "startLine": 51,
+        "startChar": 16,
+        "endLine": 51,
+        "endChar": 21
+      },
+      "revId": "d74e8d6f38ff22265b2d85cb89a812fec5b6f463",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
