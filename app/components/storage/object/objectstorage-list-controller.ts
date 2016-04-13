@@ -13,6 +13,9 @@ export class ObjectStorageListController {
     private list: Array<any>;
     private clusterMap = {};
     private timer;
+    private capacity;
+    private ecprofile;
+    private ecprofiles = [{ k: 2, m: 1, text: '2+1', value: 'default' }, { k: 4, m: 2, text: '4+2', value: 'k4m2' }, { k: 6, m: 3, text: '6+3', value: 'k6m3' }, { k: 8, m: 4, text: '8+4', value: 'k8m4' }];
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -97,4 +100,43 @@ export class ObjectStorageListController {
             $hide();
         });
     }
+
+      public update(storage): void {
+            this.storageSvc.get(storage.clusterid, storage.storageid).then((result) => {
+                this.capacity = numeral().unformat(result.size);
+                if(result.name != storage.name){
+                    let poolName = {
+                        name: storage.name
+                    };
+                     // PoolName should be update seperately... so that need to make two different calls
+                     this.storageSvc.update(storage.clusterid, storage.storageid, poolName);
+                }
+                let pool;
+                if(result.replicas != storage.replicas || result.quota_enabled != storage.quota_enabled ){
+                    if (storage.type === 'replicated') {
+                        pool = {
+                                replicas: storage.replicas
+                            };
+                    }
+                }
+                if(result.replicas != storage.replicas || result.quota_enabled != storage.quota_enabled ){
+                    if(storage.type === 'erasure_coded'){
+                        pool.options = {
+                                ecprofile : storage.ecprofile.value
+                            };
+                    }
+                }
+                if (result.quota_enabled != storage.quota_enabled) {
+                    pool.quota_enabled = storage.quota_enabled;
+                    if (result.quota_params.quota_max_objects != storage.quota_params.quota_max_objects) {
+                        pool.quota_params.quota_max_objects = storage.quota_params.quota_max_objects;
+                    }
+                    if (result.quota_params.quota_max_bytes != storage.quota_params.quota_max_bytes) {
+                        pool.quota_params.quota_max_bytes = Math.round((storage.quota_params.quota_max_bytes / 100) * this.capacity).toString();
+                    }
+                }
+                // PoolName should be update seperately... so that need to make two different calls
+                this.storageSvc.update(storage.clusterid, storage.storageid, pool);
+            });
+      }
 }
