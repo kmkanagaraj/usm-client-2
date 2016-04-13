@@ -13,6 +13,12 @@ export class ObjectStorageListController {
     private list: Array<any>;
     private clusterMap = {};
     private timer;
+    private name;
+    private replicas;
+    private capacity;
+    private ecprofile;
+    private ecprofiles = [{ k: 2, m: 1, text: '2+1', value: 'default' }, { k: 4, m: 2, text: '4+2', value: 'k4m2' }, { k: 6, m: 3, text: '6+3', value: 'k6m3' }, { k: 8, m: 4, text: '8+4', value: 'k8m4' }];
+    private quota = { enabled: false, objects: { enabled: false, value: undefined }, percentage: { enabled: false, value: undefined} };
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -38,10 +44,10 @@ export class ObjectStorageListController {
         private storageSvc: StorageService,
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
-        this.timer = this.$interval(() => this.refresh(), 5000);
+        /*this.timer = this.$interval(() => this.refresh(), 5000);
         this.$scope.$on('$destroy', () => {
             this.$interval.cancel(this.timer);
-        });
+        });*/
         this.refresh();
     }
 
@@ -97,4 +103,35 @@ export class ObjectStorageListController {
             $hide();
         });
     }
+
+    public update(storage): void {
+            this.storageSvc.get(storage.clusterid, storage.storageid).then((result) => {
+                this.capacity = numeral().unformat(result.size);
+            });
+            var poolName = {
+                name: this.name
+            };
+            let pool;
+            if (storage.type === 'Replicated') {
+                 pool['replicas'] = this.replicas;
+            }
+            else {
+                 pool.options['ecprofile'] = this.ecprofile.value;
+            }
+
+            if (this.quota.enabled) {
+                pool['quota_enabled'] = true;
+                pool['quota_params'] = {};
+                if (this.quota.objects.enabled) {
+                    pool['quota_params'].quota_max_objects = this.quota.objects.value.toString();
+                }
+                if (this.quota.percentage.enabled) {
+                    pool['quota_params'].quota_max_bytes = Math.round((this.quota.percentage.value / 100) * this.capacity).toString();
+                }
+            }
+            // PoolName should be update seperately... so that here making two different calls
+             this.storageSvc.update(storage.clusterid, storage.storageid, poolName);
+             this.storageSvc.update(storage.clusterid, storage.storageid, pool);
+             this.name = this.capacity;
+      }
 }
