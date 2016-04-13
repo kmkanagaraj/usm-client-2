@@ -301,6 +301,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_9c55f61e",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T06:35:26Z",
+      "side": 1,
+      "message": "You can define one chart type and use it in all the charts. In that way you don\u0027t need to define {data:{},config:{}} again and again.",
+      "parentUuid": "baa041b7_76ddb441",
+      "range": {
+        "startLine": 31,
+        "startChar": 21,
+        "endLine": 31,
+        "endChar": 38
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_cb173dec",
         "filename": "app/components/hosts/host-overview/host-overview.ts",
         "patchSetId": 8
@@ -453,6 +477,30 @@
       "side": 1,
       "message": "removed getCpuUtilization and getMemoryUtilization is being used in host.ts file \nand comments already there",
       "parentUuid": "baa041b7_4be20d05",
+      "range": {
+        "startLine": 261,
+        "startChar": 4,
+        "endLine": 261,
+        "endChar": 25
+      },
+      "revId": "3466ac0500282fc8fe47110de0355531cb827c5e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_dc749ed0",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 261,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-13T06:35:26Z",
+      "side": 1,
+      "message": "Looks like old getMemoryUtilization(nodeId) is not available anymore in backend. All its usages should be removed and we should use new API.",
+      "parentUuid": "baa041b7_b19b46c9",
       "range": {
         "startLine": 261,
         "startChar": 4,
