@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_ed932ea2",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-13T13:28:33Z",
+      "side": 1,
+      "message": "Do I understand correctly that a new instance of aboutDetails will be returned ONLY when someone calls getAboutDetails() from SystemService and NOT when someone refers to aboutDetails itself?\n\nOr is there something I\u0027m missing?",
+      "parentUuid": "baa041b7_dcc7fe43",
+      "range": {
+        "startLine": 197,
+        "startChar": 12,
+        "endLine": 197,
+        "endChar": 38
+      },
+      "revId": "d111380b8b1b20aba34a21b7988982117449a361",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_519e3a57",
         "filename": "app/components/requests/requests-controller.ts",
         "patchSetId": 9
@@ -84,6 +108,30 @@
       "side": 1,
       "message": "I dont think we need to worry about modifying aboutDetails since a new instance will be returned whenever some body calls it.\n\nAlso we are re-using the same object instead creating another one.",
       "parentUuid": "baa041b7_519e3a57",
+      "range": {
+        "startLine": 200,
+        "startChar": 12,
+        "endLine": 200,
+        "endChar": 52
+      },
+      "revId": "d111380b8b1b20aba34a21b7988982117449a361",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ad8d267d",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-13T13:28:33Z",
+      "side": 1,
+      "message": "As stated before.",
+      "parentUuid": "baa041b7_bcc43a40",
       "range": {
         "startLine": 200,
         "startChar": 12,
