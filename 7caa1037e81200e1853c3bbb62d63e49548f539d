@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_dcf5be83",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T06:28:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_2b40e9a4",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_0b3d252b",
         "filename": "app/components/clusters/configdetail/config-detail-directive.ts",
         "patchSetId": 9
@@ -30,6 +48,24 @@
       "writtenOn": "2016-04-12T05:33:34Z",
       "side": 1,
       "message": "one way binding is enough for this. use \u0026",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3cd14ace",
+        "filename": "app/components/clusters/configdetail/config-detail-directive.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T06:28:29Z",
+      "side": 1,
+      "message": "ya here i am using two way data binding . but i am not doing any operation direct on this object . assigning into \"id\" than doing the operation\n\nIt will not work like two-way binding at all",
+      "parentUuid": "baa041b7_0b3d252b",
       "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_dcd81ef2",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T06:28:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_cb461dbf",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_0b24050b",
         "filename": "app/styles/cluster-config-detail.scss",
         "patchSetId": 9
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_5cc1aee3",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 9
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T06:28:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_0b24050b",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_8b17f5a2",
         "filename": "app/styles/cluster-config-detail.scss",
         "patchSetId": 9
@@ -81,6 +153,24 @@
       "writtenOn": "2016-04-12T05:33:34Z",
       "side": 1,
       "message": "bootstrap having classes to set upper case",
+      "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3cb6ea8a",
+        "filename": "app/styles/cluster-config-detail.scss",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-13T06:28:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_8b17f5a2",
       "revId": "7caa1037e81200e1853c3bbb62d63e49548f539d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
