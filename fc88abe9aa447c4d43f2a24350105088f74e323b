@@ -225,6 +225,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_28f8e4e4",
+        "filename": "app/components/clusters/import-cluster/import-cluster.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T17:27:54Z",
+      "side": 1,
+      "message": "but still the result.status should not be 200",
+      "parentUuid": "baa041b7_911722a3",
+      "range": {
+        "startLine": 42,
+        "startChar": 20,
+        "endLine": 42,
+        "endChar": 51
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_5c20999b",
         "filename": "app/components/rest/server.ts",
         "patchSetId": 2
@@ -260,6 +284,30 @@
       "side": 1,
       "message": "free state returns both accepted and un accepted nodes. Thats why I have added a sorting based on the state.",
       "parentUuid": "baa041b7_5c20999b",
+      "range": {
+        "startLine": 119,
+        "startChar": 12,
+        "endLine": 119,
+        "endChar": 46
+      },
+      "revId": "fc88abe9aa447c4d43f2a24350105088f74e323b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_88e9301d",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T17:27:54Z",
+      "side": 1,
+      "message": "ok. Then the inconsistency in the backend api should be fixed.",
+      "parentUuid": "baa041b7_d1efeaae",
       "range": {
         "startLine": 119,
         "startChar": 12,
