@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_925efde7",
+        "filename": "app/components/clusters/configdetail/config-detail-directive.ts",
+        "patchSetId": 12
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-13T11:19:42Z",
+      "side": 1,
+      "message": "please atleast move it to oneway text substitution using @",
+      "revId": "06afe3dc24f4be4e27106848be239a80f1ba0a3a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
