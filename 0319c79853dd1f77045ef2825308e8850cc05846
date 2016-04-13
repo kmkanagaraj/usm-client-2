@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_a803d40e",
+        "filename": "app/app.ts",
+        "patchSetId": 11
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:53:54Z",
+      "side": 1,
+      "message": "can we put this into HostModule?",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 80
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ce04e116",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:53:54Z",
+      "side": 1,
+      "message": "we need to show all the cpus in the system not just the first one",
+      "range": {
+        "startLine": 17,
+        "startChar": 10,
+        "endLine": 24,
+        "endChar": 15
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ae099d2e",
+        "filename": "app/components/hosts/host-config/host-config.ts",
+        "patchSetId": 11
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:53:54Z",
+      "side": 1,
+      "message": "not being used?",
+      "range": {
+        "startLine": 7,
+        "startChar": 4,
+        "endLine": 7,
+        "endChar": 23
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8e25b9ac",
+        "filename": "app/components/hosts/host-overview/host-utilization-time-slot-dropdown.tpl.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:53:54Z",
+      "side": 1,
+      "message": "this looks almost similar to host-performance-time-slot-dropdown.tpl.html\n\ncan we make this as a directive and re-use?",
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_4e38d1d3",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-13T18:53:54Z",
+      "side": 1,
+      "message": "these imports can be moved to host-detail.scss",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 22
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
