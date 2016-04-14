@@ -187,6 +187,30 @@
       "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_517510c9",
+        "filename": "app/components/clusters/import-cluster/import-cluster.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-14T05:45:09Z",
+      "side": 1,
+      "message": "That should be enough.\n\nBut against each node you are saying  \u0027Accepted\u0027 or \u0027Unaccepted\u0027, which is not much meaningful i think",
+      "parentUuid": "baa041b7_91a4b857",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 17
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
