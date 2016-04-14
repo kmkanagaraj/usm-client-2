@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_374a7cc6",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T10:14:09Z",
+      "side": 1,
+      "message": "but i think \"preapre-rbd-summary\" this one look good instead of \"preapre-Rbd-Summary\"",
+      "parentUuid": "baa041b7_57c2a086",
+      "range": {
+        "startLine": 100,
+        "startChar": 78,
+        "endLine": 100,
+        "endChar": 97
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_32173153",
         "filename": "app/components/storage/object/objectstorage-new-directive.html",
         "patchSetId": 3
@@ -328,6 +352,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_f712d4b3",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T10:14:09Z",
+      "side": 1,
+      "message": "in your directive , you are taking \"prepareRbdSummary\" scope variable than here you should say prepare-Rbd-Summary\u003d\"whatever\"",
+      "parentUuid": "baa041b7_774c8442",
+      "range": {
+        "startLine": 13,
+        "startChar": 47,
+        "endLine": 13,
+        "endChar": 59
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_125f8d42",
         "filename": "app/components/storage/object/objectstorage-new.ts",
         "patchSetId": 3
@@ -433,6 +481,30 @@
       "writtenOn": "2016-04-13T13:18:07Z",
       "side": 1,
       "message": "why we are doing angular.copy here ? Is deep copy ?",
+      "range": {
+        "startLine": 184,
+        "startChar": 32,
+        "endLine": 184,
+        "endChar": 50
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b70c4c95",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T10:14:09Z",
+      "side": 1,
+      "message": "?",
+      "parentUuid": "baa041b7_b255811e",
       "range": {
         "startLine": 184,
         "startChar": 32,
