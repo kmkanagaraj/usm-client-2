@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_7726c4cf",
+        "filename": "app/components/storage/storage-new.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T11:17:34Z",
+      "side": 1,
+      "message": "You can have specific message like \"Cluster is not active\" or \"There is no OSD in the selected cluster\".",
+      "range": {
+        "startLine": 21,
+        "startChar": 24,
+        "endLine": 21,
+        "endChar": 89
+      },
+      "revId": "6ff896aa27a5ffdccaa221faf410413932410ea6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_17565829",
+        "filename": "app/components/storage/storage-new.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T11:17:34Z",
+      "side": 1,
+      "message": "May be you call it \u0027canCreateStorage\u0027",
+      "range": {
+        "startLine": 9,
+        "startChar": 12,
+        "endLine": 9,
+        "endChar": 21
+      },
+      "revId": "6ff896aa27a5ffdccaa221faf410413932410ea6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b73b2ceb",
+        "filename": "app/components/storage/storage-new.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T11:17:34Z",
+      "side": 1,
+      "message": "I think it will be better to check the slus(OSD) count instead of just hostcount. Actually that is the bug we are trying to fix here.",
+      "range": {
+        "startLine": 39,
+        "startChar": 12,
+        "endLine": 39,
+        "endChar": 53
+      },
+      "revId": "6ff896aa27a5ffdccaa221faf410413932410ea6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
