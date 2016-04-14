@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_11fae842",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T05:27:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_68302c57",
+      "range": {
+        "startLine": 27,
+        "startChar": 9,
+        "endLine": 27,
+        "endChar": 65
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_887930ff",
         "filename": "app/components/clusters/import-cluster/import-cluster.html",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-13T18:34:53Z",
       "side": 1,
       "message": "It should be \u0027Hostname\u0027",
+      "range": {
+        "startLine": 31,
+        "startChar": 24,
+        "endLine": 31,
+        "endChar": 33
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d19a4014",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T05:27:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_887930ff",
       "range": {
         "startLine": 31,
         "startChar": 24,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_b19fbc02",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T05:27:43Z",
+      "side": 1,
+      "message": "correct.",
+      "parentUuid": "baa041b7_087880c3",
+      "range": {
+        "startLine": 93,
+        "startChar": 80,
+        "endLine": 93,
+        "endChar": 111
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_684f0c93",
         "filename": "app/components/clusters/import-cluster/import-cluster.ts",
         "patchSetId": 3
@@ -82,6 +154,30 @@
       "writtenOn": "2016-04-13T18:34:53Z",
       "side": 1,
       "message": "I would like to see a more useful error message which would tell me the list of nodes which are not known to the USM.",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 17
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_91a4b857",
+        "filename": "app/components/clusters/import-cluster/import-cluster.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T05:27:43Z",
+      "side": 1,
+      "message": "Unknown nodes will be marked in the node list anyway. Do u want me to put all those nodes in the error message?.",
+      "parentUuid": "baa041b7_684f0c93",
       "range": {
         "startLine": 42,
         "startChar": 0,
