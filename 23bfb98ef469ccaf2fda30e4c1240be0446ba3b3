@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_57c2a086",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-14T09:09:35Z",
+      "side": 1,
+      "message": "Yes, this will work. Html tags/ attributes are case in sensitive. Anyway im changing it to small case",
+      "parentUuid": "baa041b7_ed3e8eb7",
+      "range": {
+        "startLine": 100,
+        "startChar": 78,
+        "endLine": 100,
+        "endChar": 97
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_32173153",
         "filename": "app/components/storage/object/objectstorage-new-directive.html",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-13T13:18:07Z",
       "side": 1,
       "message": "!\u003d\u003d ?",
+      "range": {
+        "startLine": 13,
+        "startChar": 127,
+        "endLine": 13,
+        "endChar": 129
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d73c7095",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-14T09:09:35Z",
+      "side": 1,
+      "message": "these changes are not by me. just moved this code to make it a directive",
+      "parentUuid": "baa041b7_32173153",
       "range": {
         "startLine": 13,
         "startChar": 127,
@@ -232,6 +280,54 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_774c8442",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-14T09:09:35Z",
+      "side": 1,
+      "message": "\u003e Should be prepare-rbd-summary ?",
+      "parentUuid": "baa041b7_12266dce",
+      "range": {
+        "startLine": 13,
+        "startChar": 47,
+        "endLine": 13,
+        "endChar": 59
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_57498030",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-14T09:09:35Z",
+      "side": 1,
+      "message": "can be a string value or variable that holds string value. just for example",
+      "parentUuid": "baa041b7_32405156",
+      "range": {
+        "startLine": 13,
+        "startChar": 34,
+        "endLine": 13,
+        "endChar": 45
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_125f8d42",
         "filename": "app/components/storage/object/objectstorage-new.ts",
         "patchSetId": 3
@@ -255,6 +351,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_1753f8e2",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-14T09:09:35Z",
+      "side": 1,
+      "message": "cannot define a type or interface here. this is an variable binded with a method",
+      "parentUuid": "baa041b7_125f8d42",
+      "range": {
+        "startLine": 38,
+        "startChar": 12,
+        "endLine": 38,
+        "endChar": 29
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_f25b0953",
         "filename": "app/components/storage/object/objectstorage-new.ts",
         "patchSetId": 3
@@ -266,6 +386,30 @@
       "writtenOn": "2016-04-13T13:18:07Z",
       "side": 1,
       "message": "same as above",
+      "range": {
+        "startLine": 41,
+        "startChar": 12,
+        "endLine": 41,
+        "endChar": 19
+      },
+      "revId": "23bfb98ef469ccaf2fda30e4c1240be0446ba3b3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_975dc8eb",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-14T09:09:35Z",
+      "side": 1,
+      "message": "we don\u0027t have type defined for this object.\nthis is an object array",
+      "parentUuid": "baa041b7_f25b0953",
       "range": {
         "startLine": 41,
         "startChar": 12,
