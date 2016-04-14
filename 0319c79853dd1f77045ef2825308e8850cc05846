@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_b13b3ceb",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T05:53:54Z",
+      "side": 1,
+      "message": "I think we have to show following 3 fields to give a clear understanding.\n\nCPU Sockets, CPU Cores per sockets, CPU Threads Per Core..\n\nlscpu command returns all these three things.",
+      "parentUuid": "baa041b7_ce04e116",
+      "range": {
+        "startLine": 17,
+        "startChar": 10,
+        "endLine": 24,
+        "endChar": 15
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_ae099d2e",
         "filename": "app/components/hosts/host-config/host-config.ts",
         "patchSetId": 11
