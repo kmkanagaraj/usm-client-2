@@ -211,6 +211,30 @@
       "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_112d48a7",
+        "filename": "app/components/clusters/import-cluster/import-cluster.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T05:58:37Z",
+      "side": 1,
+      "message": "Yes are right. I made a mistake the host listing for cluster summary. I think we should say Accepted, Unaccepted, Not Found.",
+      "parentUuid": "baa041b7_517510c9",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 17
+      },
+      "revId": "f4ff630f66d1aaad7d6b106fdf94ff6c88e307bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
