@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_14741633",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-14T12:45:44Z",
+      "side": 1,
+      "message": "Having this refresh during Edit Pool will reload the whole content and invalidate the edit. Can we disable this refresh only during Edit?.\n\nKanagaraj: Do u have any suggestion here?",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 13
+      },
+      "revId": "9c18cb17eebc24a4d2832301498b289d42a4b6b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
