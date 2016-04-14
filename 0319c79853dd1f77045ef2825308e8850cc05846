@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_74a482a5",
+        "filename": "app/app.ts",
+        "patchSetId": 11
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T09:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_a803d40e",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 80
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_ce04e116",
         "filename": "app/components/hosts/host-config/host-config.html",
         "patchSetId": 11
@@ -72,6 +96,54 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_7796c44d",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T09:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_b13b3ceb",
+      "range": {
+        "startLine": 17,
+        "startChar": 10,
+        "endLine": 24,
+        "endChar": 15
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_97b028f6",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T09:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_ce04e116",
+      "range": {
+        "startLine": 17,
+        "startChar": 10,
+        "endLine": 24,
+        "endChar": 15
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_ae099d2e",
         "filename": "app/components/hosts/host-config/host-config.ts",
         "patchSetId": 11
@@ -83,6 +155,30 @@
       "writtenOn": "2016-04-13T18:53:54Z",
       "side": 1,
       "message": "not being used?",
+      "range": {
+        "startLine": 7,
+        "startChar": 4,
+        "endLine": 7,
+        "endChar": 23
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f4b652db",
+        "filename": "app/components/hosts/host-config/host-config.ts",
+        "patchSetId": 11
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T09:58:11Z",
+      "side": 1,
+      "message": "being used in line no . \u003d 16",
+      "parentUuid": "baa041b7_ae099d2e",
       "range": {
         "startLine": 7,
         "startChar": 4,
@@ -112,6 +208,23 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_77cb6454",
+        "filename": "app/components/hosts/host-overview/host-utilization-time-slot-dropdown.tpl.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T09:58:11Z",
+      "side": 1,
+      "message": "we can create a directive for this . but having some issue with data-template url (in same directive file , how to declare path ) and also , here i am calling different function in different file \n\nhostoverview.changeTimeSlotForUtilization(time) \u003d this is calling in utilization time slot file\n\nhostoverview.changeTimeSlotForPerformance(time) \u003d this is calling in performance time slot file\n\ni don\u0027t think so we can use this as directive .",
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_4e38d1d3",
         "filename": "app/styles/main.scss",
         "patchSetId": 11
@@ -123,6 +236,30 @@
       "writtenOn": "2016-04-13T18:53:54Z",
       "side": 1,
       "message": "these imports can be moved to host-detail.scss",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 22
+      },
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d4e22ed5",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 11
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-14T09:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_4e38d1d3",
       "range": {
         "startLine": 23,
         "startChar": 0,
