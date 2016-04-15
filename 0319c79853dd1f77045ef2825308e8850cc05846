@@ -225,6 +225,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_55cbb553",
+        "filename": "app/components/hosts/host-overview/host-utilization-time-slot-dropdown.tpl.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-15T04:14:19Z",
+      "side": 1,
+      "message": "You can actually pass the function to be called to the directive.\n\nFor example, how ng-click or ng-change works",
+      "parentUuid": "baa041b7_77cb6454",
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_4e38d1d3",
         "filename": "app/styles/main.scss",
         "patchSetId": 11
