@@ -1,0 +1,222 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_9fd83655",
+        "filename": "app/app.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "This should be moved to storage module",
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_dfc59e5b",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be true?",
+      "range": {
+        "startLine": 100,
+        "startChar": 56,
+        "endLine": 100,
+        "endChar": 77
+      },
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7fdd7241",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "Snapshots are not supported for now, this block can be removed",
+      "range": {
+        "startLine": 118,
+        "startChar": 12,
+        "endLine": 118,
+        "endChar": 30
+      },
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1fcc2688",
+        "filename": "app/components/storage/object/objectstorage-new-directive.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "This will conflict with the footer of the rbd creation flow.",
+      "range": {
+        "startLine": 264,
+        "startChar": 0,
+        "endLine": 269,
+        "endChar": 10
+      },
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5fe2ae04",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "wrong description",
+      "range": {
+        "startLine": 10,
+        "startChar": 1,
+        "endLine": 10,
+        "endChar": 53
+      },
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3fe80ae2",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "Description about the input parameters should be added",
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_df9c7e6b",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "Pool names should be pool1, pool2, pool3, etc",
+      "range": {
+        "startLine": 177,
+        "startChar": 20,
+        "endLine": 177,
+        "endChar": 44
+      },
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5fb06ef4",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "shouldn\u0027t the condition be opposite?",
+      "range": {
+        "startLine": 189,
+        "startChar": 0,
+        "endLine": 192,
+        "endChar": 9
+      },
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ffc86276",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "The condition and the content of the block are contracting.",
+      "range": {
+        "startLine": 231,
+        "startChar": 16,
+        "endLine": 231,
+        "endChar": 44
+      },
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7fab328a",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-17T17:10:50Z",
+      "side": 1,
+      "message": "this could be made simple like\n\n var rbdArray \u003d _.map(this.rbdList, (rbd) \u003d\u003e {name: rbd.name, size: rbd.size.value + rbd.size.unit});",
+      "range": {
+        "startLine": 232,
+        "startChar": 0,
+        "endLine": 239,
+        "endChar": 19
+      },
+      "revId": "00359ecb85a55ff60943f3cab059b970ee6de48d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
