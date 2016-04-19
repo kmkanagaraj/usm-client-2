@@ -3,6 +3,7 @@
 import {UtilService} from '../../rest/util';
 import {ClusterService} from '../../rest/clusters';
 import {StorageService} from '../../rest/storage';
+import {ServerService} from '../../rest/server';
 import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import {numeral} from '../../base/libs';
@@ -13,6 +14,7 @@ export class ObjectStorageListController {
     private list: Array<any>;
     private clusterMap = {};
     private timer;
+    private clusters;
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -22,6 +24,7 @@ export class ObjectStorageListController {
         '$q',
         '$modal',
         'ClusterService',
+        'ServerService',
         'StorageService',
         'RequestService',
         'RequestTrackingService'
@@ -35,6 +38,7 @@ export class ObjectStorageListController {
         private $q: ng.IQService,
         private $modal: any,
         private clusterSvc: ClusterService,
+        private serverService: ServerService,
         private storageSvc: StorageService,
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
@@ -43,6 +47,9 @@ export class ObjectStorageListController {
             this.$interval.cancel(this.timer);
         });
         this.refresh();
+        this.clusterSvc.getList().then(clusterlist => {
+            this.clusters = clusterlist;
+        });
     }
 
     public refresh() {
@@ -95,6 +102,25 @@ export class ObjectStorageListController {
                 });
             }
             $hide();
+        });
+    }
+    public createCluster(): void {
+        this.serverService.getDiscoveredHosts().then(freeHosts => {
+            if (freeHosts.length > 0) {
+                var modal = ModalHelpers.UnAcceptedHostsFound(this.$modal, {}, freeHosts.length);
+                modal.$scope.$hide = _.wrap(modal.$scope.$hide, ($hide, confirmed: boolean) => {
+                    if (confirmed) {
+                        this.$location.path('/clusters/new/accept-hosts');
+                    }
+                    else {
+                        this.$location.path('/clusters/new');
+                    }
+                    $hide();
+                });
+            }
+            else {
+                this.$location.path('/clusters/new');
+            }
         });
     }
 }
