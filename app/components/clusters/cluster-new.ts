@@ -113,6 +113,18 @@ export class ClusterNewController {
         this.newPool.copyCountList = VolumeHelpers.getCopiesList();
         this.newPool.copyCount = VolumeHelpers.getRecomendedCopyCount();
 
+        this.serverService.getDiscoveredHosts().then(freeHosts => {
+            if (freeHosts.length > 0) {
+                var modal = ModalHelpers.UnAcceptedHostsFound(this.modalService, {}, freeHosts.length);
+                modal.$scope.$hide = _.wrap(modal.$scope.$hide, ($hide, confirmed: boolean) => {
+                    if (confirmed) {
+                        this.locationService.path('/clusters/new/accept-hosts');
+                    }
+                    $hide();
+                });
+            }
+        });
+
         this.configSvc.getConfig().then((config) => {
             if (config.ceph_min_monitors) {
                 this.minMonsRequired = config.ceph_min_monitors;
