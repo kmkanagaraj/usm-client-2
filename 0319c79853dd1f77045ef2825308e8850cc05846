@@ -243,6 +243,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_472c2002",
+        "filename": "app/components/hosts/host-overview/host-utilization-time-slot-dropdown.tpl.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-19T06:39:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_55cbb553",
+      "revId": "0319c79853dd1f77045ef2825308e8850cc05846",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_4e38d1d3",
         "filename": "app/styles/main.scss",
         "patchSetId": 11
