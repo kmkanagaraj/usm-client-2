@@ -1,0 +1,251 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_53d73b23",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 14
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "We don\u0027t need to display all the details for all the CPUs..\n\nWe just need to show CPU Sockets ( No.of CPU sockets), CPU Cores per sockets(No of cores in a CPU socket), CPU Threads Per Core ( No of CPU Threads in a Core).\n\nlscpu gives the following output. \n\n[root@dhcp37-140 ~]# lscpu\nArchitecture:          x86_64\nCPU op-mode(s):        32-bit, 64-bit\nByte Order:            Little Endian\nCPU(s):                2\nOn-line CPU(s) list:   0,1\nThread(s) per core:    1\nCore(s) per socket:    1\nSocket(s):             2\nNUMA node(s):          1\nVendor ID:             GenuineIntel\nCPU family:            6\nModel:                 13\nStepping:              3\nCPU MHz:               1999.999\nBogoMIPS:              3999.99\nHypervisor vendor:     KVM\nVirtualization type:   full\nL1d cache:             32K\nL1i cache:             32K\nL2 cache:              4096K\nNUMA node0 CPU(s):     0,1\n[root@dhcp37-140 ~]#\n\nWe just need to show the values of CPU(s), \u0027Core(s) per socket\u0027, \u0027Thread(s) per core\u0027",
+      "range": {
+        "startLine": 21,
+        "startChar": 19,
+        "endLine": 21,
+        "endChar": 59
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d33b4b37",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 14
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "We should use \u0027bytes\u0027 directive here to show the size in proper format.",
+      "range": {
+        "startLine": 55,
+        "startChar": 48,
+        "endLine": 55,
+        "endChar": 57
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_9345c3b4",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 14
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "We should use \u0027bytes\u0027 directive here to show the size in proper format.",
+      "range": {
+        "startLine": 59,
+        "startChar": 24,
+        "endLine": 59,
+        "endChar": 57
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f303ef40",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 14
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "Missing implementation.",
+      "range": {
+        "startLine": 163,
+        "startChar": 0,
+        "endLine": 163,
+        "endChar": 4
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d3feab37",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 14
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "remove white spaces.",
+      "range": {
+        "startLine": 96,
+        "startChar": 0,
+        "endLine": 96,
+        "endChar": 16
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_938f03cc",
+        "filename": "app/components/hosts/time-slot/time-slot-directive.ts",
+        "patchSetId": 14
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "May be you can call this \u0027timeSlotChanged\u0027",
+      "range": {
+        "startLine": 22,
+        "startChar": 8,
+        "endLine": 22,
+        "endChar": 21
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b3fd673c",
+        "filename": "app/components/hosts/time-slot/time-slot.ts",
+        "patchSetId": 14
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "You can define this controller in the directive itself.",
+      "range": {
+        "startLine": 3,
+        "startChar": 13,
+        "endLine": 3,
+        "endChar": 31
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_73647f21",
+        "filename": "app/styles/cluster-detail.scss",
+        "patchSetId": 14
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "These things should be imported in host-details.scss.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 22
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5335fbf4",
+        "filename": "app/styles/host-config.scss",
+        "patchSetId": 14
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "Try to use the existing patternfly styles as much as possible. I think we removed similar css in cluster config. Please look at that patch.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 1
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_53997b1e",
+        "filename": "app/styles/host-detail.scss",
+        "patchSetId": 14
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "remove LWS",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 5
+      },
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_73191f88",
+        "filename": "app/styles/host-overview.scss",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-20T11:01:42Z",
+      "side": 1,
+      "message": "Please try the use the styles from patternfly. \n\nSee https://rawgit.com/patternfly/patternfly/master/tests/cards.html for reference.",
+      "revId": "f99676d07f7134ba825a56eeedcc7737d6607722",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
