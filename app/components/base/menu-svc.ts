@@ -19,13 +19,13 @@ export class MenuService {
             label: 'Hosts',
             id: 'hosts',
             href: '/hosts',
-            icon: 'pficon pficon-container-node',
+            icon: 'pficon pficon-screen',
             active: false
         },{
             label: 'Storage',
             id: 'storage',
             href: '/storage',
-            icon: 'fa fa-database',
+            icon: 'pficon pficon-container-node',
             hasSubMenus: true,
             subMenus: [
                 {

@@ -19,7 +19,10 @@
 @import 'ldap-add-user';
 @import 'blockdevice-list';
 @import 'cluster-osd-detail';
-@import 'storage-list-view';
+@import 'host-detail';
+@import 'host-overview';
+@import 'host-config';
+@import 'host-osd';
 
 //---------- Guage Disable ---------
 .c3-chart-arc .c3-gauge-value

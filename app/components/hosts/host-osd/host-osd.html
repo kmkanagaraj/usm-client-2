@@ -1,0 +1,189 @@
+<div class="host-osd-detail">
+  <div class="row">
+    <div class="col-md-2">
+      <span class="pull-left">
+        <i class="filter-icon" ng-class="hostosd.isLeftSidebarShow?'fa fa-chevron-circle-left':'fa fa-chevron-circle-right'" ng-click="hostosd.isLeftSidebarShow=!hostosd.isLeftSidebarShow"></i>
+      </span>
+    </div>
+    <div class="col-md-7">
+      <div class="row">
+        <div class="col-md-3">
+          <label>Storage Profile:</label>
+          <select class="form-control" ng-model="hostosd.selectByStorageProfile.storageprofile">
+            <option selected ng-click="hostosd.selectBy('')">All</option>
+            <option ng-click="hostosd.selectBy('general')">General</option>
+            <option ng-click="hostosd.selectBy('sas')">SAS</option>
+            <option ng-click="hostosd.selectBy('ssd')">SSD</option>
+          </select>
+        </div>
+        <div class="col-md-offset-2 col-md-7">
+          <label>Filter By:</label>
+          <form>
+            <div class="form-group toolbar-pf-filter">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                            OSD Name
+                        </button>
+                    </div>
+                    <!-- /btn-group -->
+                    <input type="text" placeholder="Filter by OSD Name..." class="form-control" ng-model="hostosd.searchByText.name">
+                    <span class="input-group-addon">
+                      <i class="fa fa-search"></i>
+                    </span>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-6 col-md-3">
+          <div class="selected-osd-separator pull-right"><label> {{hostosd.totalSelectedOSDs.length}} OSD Selected </label></div>
+        </div>
+        <div class="col-md-3">
+          <div class="dropdown pull-right">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" bs-dropdown="dropdown">
+              Action
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li role="presentation">
+                <a role="menuitem" href="" ng-click="hostosd.osdActionChange('mark_up')"> Mark UP </a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" href="" ng-click="hostosd.osdActionChange('mark_in')"> Mark IN </a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" href="" ng-click="hostosd.osdActionChange('mark_out')"> Mark OUT </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Left side filter bar -->
+ <nav class="left-sidebar" ng-class="hostosd.isLeftSidebarShow?'left-sidebar-expand':'left-sidebar-collapse'">
+    <div class="panel-group" role="tablist" aria-multiselectable="true" bs-collapse ng-class="hostosd.isLeftSidebarShow?'panel-group-expand':'panel-group-collapse'">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+          <h4 class="panel-title">
+            <a bs-collapse-toggle ng-click="hostosd.activeFilter='osd_status'">
+              Filter by OSD Status
+            </a>
+          </h4>
+        </div>
+        <div class="panel-collapse" role="tabpanel" bs-collapse-target>
+          <div class="panel-body">
+            <div class="checkbox" ng-repeat="data in hostosd.filterList.OSDStatus">
+              <label>
+                <input type="checkbox" ng-model="data.checked" ng-disabled="!data.enabled"/><i class="{{data.icon}}"></i> {{data.name}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+          <h4 class="panel-title">
+            <a bs-collapse-toggle ng-click="hostosd.activeFilter='pg_status'">
+              Filter by PG Status
+            </a>
+          </h4>
+        </div>
+        <div class="panel-collapse" role="tabpanel" bs-collapse-target>
+          <div class="panel-body scroll-for-filter">
+            <div class="checkbox" ng-repeat="filter in hostosd.filterList.PGStatus">
+              <label>
+                <input type="checkbox" ng-model="filter.checked" ng-change="hostosd.isShowAllOsdByPgStatusFilter()">{{filter.name}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+          <h4 class="panel-title">
+            <a bs-collapse-toggle ng-click="hostosd.activeFilter='utilization'">
+              Filter by Utilization
+            </a>
+          </h4>
+        </div>
+        <div class="panel-collapse" role="tabpanel" bs-collapse-target>
+          <div class="panel-body">
+            <div class="checkbox" ng-repeat="data in hostosd.filterList.Utilization">
+              <label>
+                <input type="checkbox" ng-model="data.checked" ng-disabled="!data.enabled"/>{{data.name}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End of filter bar -->
+  <div class="row">
+    <div ng-class="hostosd.isLeftSidebarShow?'col-md-offset-2 col-md-7':'col-md-9'">
+      <div ng-class="hostosd.osdList.length > 8 ? 'div-with-scroll': ''">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12" ng-repeat="osd in hostosd.filteredOSD[$index]=(hostosd.osdList | filter:hostosd.applyFilter | filter: hostosd.searchByText | filter: hostosd.selectByStorageProfile )">
+            <div class="osd-box" ng-click="hostosd.selection.activeOsd=osd" ng-class="hostosd.selection.activeOsd===osd?'selected-osd':''">
+              <div class="osd-box-content">
+                <div class="osd-box-osd-name">
+                  <div class="pull-right">
+                    <i ng-class="hostosd.filterList.OSDStatus[osd.status].icon"></i>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" ng-change="hostosd.maintainTotalSelectedOsds()" ng-model="hostosd.selection.allSelectedOsds[osd.sluid]"> {{osd.name}}
+                    </label>
+                  </div>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar" ng-class="hostosd.filterList.Utilization[osd.usage.status].icon" role="progressbar" aria-valuemin="0" aria-valuemax="100" ng-style="{width:osd.usage.percentused+'%'}">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="sidebar-nav-fixed pull-right affix right-sidebar">
+          <div class="right-sidebar-contain" ng-if="hostosd.selection.activeOsd">
+            <h2>
+              <i ng-class="hostosd.filterList.OSDStatus[hostosd.selection.activeOsd.status].icon"></i>
+              <label ng-bind="hostosd.selection.activeOsd.name"></label>
+              <span>
+                <button ng-if="hostosd.selection.activeOsd.type === 1" class="btn btn-success">Data</button>
+                <button ng-if="hostosd.selection.activeOsd.type === 2" class="btn btn-success">Journal</button>
+              </span>
+            </h2>
+            <hr>
+            <div class="selected-osd-detail">
+              <label>Device Path:</label>
+              <div class="detail-content"><small ng-bind="hostosd.selection.activeOsd.options1.device"></small></div>
+            </div>
+            <div class="selected-osd-detail">
+              <label>Utilization:</label>
+              <div class="detail-content">
+                <small>
+                  {{hostosd.selection.activeOsd.usage.used | bytes }} used of
+                  {{hostosd.selection.activeOsd.usage.total | bytes }} total
+                </small>
+              </div>
+            </div>
+            <div class="selected-osd-detail">
+              <label>Host:</label>
+              <div class="detail-content"><small ng-bind="hostosd.selection.activeOsd.node"></small></div>
+            </div>
+            <div class="selected-osd-detail">
+              <label>Storage Profile:</label>
+              <div class="detail-content"><small ng-bind="hostosd.selection.activeOsd.storageprofile"></small></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

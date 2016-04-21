@@ -49,8 +49,7 @@ export class ClusterNewController {
     private pools: Array<any>;
     private newPool: any;
     private clusterHelper: ClusterHelper;
-    private selectedHosts: number;
-    private cephMixHostRoles: boolean = false;
+
     static $inject: Array<string> = [
         '$q',
         '$log',
@@ -98,7 +97,7 @@ export class ClusterNewController {
         this.newHost = {};
         this.hostTypes = ["Monitor", "OSD Host", "OSD + Monitor"];
         this.availableNetworks = [];
-        this.selectedHosts = 0;
+
         this.clusterTypes = this.clusterHelper.getClusterTypes();
         this.clusterType = this.clusterTypes[1];
 
@@ -116,9 +115,6 @@ export class ClusterNewController {
         this.configSvc.getConfig().then((config) => {
             if (config.ceph_min_monitors) {
                 this.minMonsRequired = config.ceph_min_monitors;
-            }
-            if (config.ceph_mix_host_roles){
-                this.cephMixHostRoles = config.ceph_mix_host_roles;
             }
         });
         this.fetchFreeHosts();
@@ -189,20 +185,12 @@ export class ClusterNewController {
         return this.disks;
     }
 
-    public getHostsDisksSize(host: any): number {
-        var size: number = 0;
-        size = _.reduce(host.disks, (size: any, disk: any) => {
-            return size + disk.Size;
-        }, 0);
-        return size;
-    }
-
     public getDisksSize(): any {
         var size: number = 0;
         size = _.reduce(this.disks, (size: any, disk: any) => {
             return size + disk.Size;
         }, 0);
-        return size;
+        return numeral(size).format('0.0 b');
     }
 
     public countDisks() {
@@ -252,14 +240,11 @@ export class ClusterNewController {
                 host.hostType = this.hostTypes[1];  //There are some disks so it can be an OSD
             }
         }
-
-        host.selected ? this.selectedHosts++ : this.selectedHosts--;
         this.countDisks();
         this.validateHost(host);
     }
 
     public selectAllHosts() {
-        this.selectedHosts = 0;
         _.each(this.hosts, (host) => {
             this.selectHost(host, true);
         });
@@ -376,12 +361,12 @@ export class ClusterNewController {
         this.step = configValid ? this.step + nextStep : this.step;
     }
 
-    public isSubmitAvailable(): boolean {
-        return this.step === 4;
+    public isCancelAvailable(): boolean {
+        return this.step === 1;
     }
 
-    public isBackAvailable(): boolean {
-        return this.step !== 1;
+    public isSubmitAvailable(): boolean {
+        return this.step === 5;
     }
 
     public cancel() {

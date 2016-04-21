@@ -7,7 +7,6 @@ import {VolumeService} from '../rest/volume';
 import {ServerService} from '../rest/server';
 import {ClusterService} from '../rest/clusters';
 import {RequestService} from '../rest/request';
-import {ConfigService} from '../rest/config';
 import {ClusterHelper} from './cluster-helpers';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
 import * as ModalHelpers from '../modal/modal-helpers';
@@ -24,8 +23,6 @@ export class ClusterExpandController {
     private clusterHelper: ClusterHelper;
     private hostTypes: Array<string>;
     private errorMessage: string;
-    private selectedHosts: number;
-    private cephMixHostRoles: boolean = false;
     static $inject: Array<string> = [
         '$q',
         '$log',
@@ -39,8 +36,7 @@ export class ClusterExpandController {
         'ServerService',
         'ClusterService',
         'RequestService',
-        'RequestTrackingService',
-        'ConfigService'
+        'RequestTrackingService'
     ];
 
     constructor(private qService: ng.IQService,
@@ -55,21 +51,14 @@ export class ClusterExpandController {
         private serverService: ServerService,
         private clusterService: ClusterService,
         private requestService: RequestService,
-        private requestTrackingService: RequestTrackingService,
-        private configSvc: ConfigService) {
+        private requestTrackingService: RequestTrackingService) {
 
         this.newHost = {};
-        this.selectedHosts = 0;
         this.hosts = [];
         this.disks = [];
         this.clusterHelper = new ClusterHelper(utilService, requestService, logService, timeoutService);
         this.clusterID = this.routeParamsSvc['id'];
         this.hostTypes = ["Monitor", "OSD Host", "OSD + Monitor"];
-        this.configSvc.getConfig().then((config) => {
-            if (config.ceph_mix_host_roles){
-                this.cephMixHostRoles = config.ceph_mix_host_roles;
-            }
-        });
         this.clusterService.get(this.clusterID).then((cluster)=>this.loadCluster(cluster));
         this.fetchFreeHosts();
     }
@@ -123,7 +112,6 @@ export class ClusterExpandController {
     }
 
     public selectAllHosts() {
-        this.selectedHosts = 0;
         _.each(this.hosts, (host) => {
             this.selectHost(host, true);
         });
@@ -138,8 +126,6 @@ export class ClusterExpandController {
                 host.hostType = this.hostTypes[1];  //There are some disks so it can be an OSD
             }
         }
-
-        host.selected ? this.selectedHosts++ : this.selectedHosts--;
         this.countDisks();
         this.validateHost(host);
     }
@@ -156,20 +142,12 @@ export class ClusterExpandController {
         return this.disks;
     }
 
-    public getHostsDisksSize(host: any): number {
-        var size: number = 0;
-        size = _.reduce(host.disks, (size: any, disk: any) => {
-            return size + disk.Size;
-        }, 0);
-        return size;
-    }
-
     public getDisksSize(): any {
         var size: number = 0;
         size = _.reduce(this.disks, (size: any, disk: any) => {
             return size + disk.Size;
         }, 0);
-        return size;
+        return numeral(size).format('0.0 b');
     }
 
     public countDisks() {

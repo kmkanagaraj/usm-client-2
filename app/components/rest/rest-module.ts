@@ -16,7 +16,6 @@ import {EventService} from './events';
 import {LdapService} from './ldap';
 import {EmailService} from "./email";
 import {ConfigService} from "./config";
-import {SystemService} from "./system";
 
 var angular: ng.IAngularStatic = require('angular');
 
@@ -37,7 +36,6 @@ angular.module(moduleName, ['angular-growl'])
     .service('EventService', EventService)
     .service('LdapService',LdapService)
     .service('EmailService', EmailService)
-    .service('ConfigService', ConfigService)
-    .service('SystemService',SystemService);
+    .service('ConfigService', ConfigService);
 
 export default moduleName;

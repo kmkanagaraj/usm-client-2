@@ -2,8 +2,6 @@
 
 interface AppConfig {
     ceph_min_monitors?: number;
-    ceph_mix_host_roles?: boolean;
-    copyright?: string;
 }
 
 export class ConfigService {

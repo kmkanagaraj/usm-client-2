@@ -33,8 +33,10 @@ import {KTDroppable} from "./components/shared/directives/kt-droppable";
 import {StorageSizeSelector} from "./components/shared/directives/storage-size-selector";
 import {OsdDetail} from "./components/clusters/osdsdetail/osd-detail-directive";
 import {HostList} from "./components/clusters/hostdetail/host-list-directive";
+import {HostOverview} from "./components/hosts/host-overview/host-overview-directive";
+import {HostConfig} from "./components/hosts/host-config/host-config-directive";
+import {HostOsd} from "./components/hosts/host-osd/host-osd-directive";
 import {StorageProfileDisks} from './components/clusters/storageprofile/storageprofile-disks';
-import {ClusterConfigDetail} from "./components/clusters/configdetail/config-detail-directive";
 
 import {BytesFilter} from './components/shared/filters/bytes';
 
@@ -101,8 +103,10 @@ class USMApp {
             .directive('storageSizeSelector', () => new StorageSizeSelector())
             .directive('osdDetail', () => new OsdDetail())
             .directive('hostList', () => new HostList())
+            .directive('hostOverview', () => new HostOverview())
+            .directive('hostConfig', () => new HostConfig())
+            .directive('hostOsd', () => new HostOsd())
             .directive('storageprofileDisks', () => new StorageProfileDisks())
-            .directive('clusterConfigDetail', () => new ClusterConfigDetail())
             .filter('bytes', BytesFilter)
             .controller('LdapConfigController',LdapConfigController)
             .controller('TaskListController',TaskListController)
@@ -137,10 +141,6 @@ class USMApp {
                     }else if (operation === 'getList' && what === 'slus') {
                         _.each(data, (slus: any) => {
                             slus.options1 = slus.options;
-                        });
-                    }else if (operation === 'getList' && what === 'storages') {
-                        _.each(data, (storage: any) => {
-                            storage.options1 = storage.options;
                         });
                     }
                     return data;
