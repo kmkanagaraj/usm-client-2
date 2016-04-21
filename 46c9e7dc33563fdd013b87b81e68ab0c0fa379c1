@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_907812c6",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-21T12:05:11Z",
+      "side": 1,
+      "message": "Directly calling \u0027/clusters/new\u0027 will not bring the \u0027Accept Host\u0027 flow in create cluster. Please have a look at the create cluster from Clusters, Hosts list page. We may to change the way \u0027Accept Host\u0027 is integrated to create cluster to avoid repeating the same code in all the places.",
+      "range": {
+        "startLine": 105,
+        "startChar": 8,
+        "endLine": 105,
+        "endChar": 45
+      },
+      "revId": "46c9e7dc33563fdd013b87b81e68ab0c0fa379c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f0663e28",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-21T12:05:11Z",
+      "side": 1,
+      "message": "I don\u0027t thing we are creating any pool as part of the cluster creation.",
+      "range": {
+        "startLine": 36,
+        "startChar": 57,
+        "endLine": 36,
+        "endChar": 114
+      },
+      "revId": "46c9e7dc33563fdd013b87b81e68ab0c0fa379c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
