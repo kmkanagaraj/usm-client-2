@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_0dd18f57",
+        "filename": "app/components/hosts/host-config/host-config-directive.ts",
+        "patchSetId": 15
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-21T06:34:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_4d6317dd",
+      "range": {
+        "startLine": 5,
+        "startChar": 9,
+        "endLine": 5,
+        "endChar": 16
+      },
+      "revId": "a31863b61e836c2fd02b30d1ce09576cf73877e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_ed778b9d",
         "filename": "app/components/hosts/host-config/host-config.html",
         "patchSetId": 15
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-21T05:42:36Z",
       "side": 1,
       "message": "I think all the field names (text in the left side column) should be bold.",
+      "range": {
+        "startLine": 9,
+        "startChar": 10,
+        "endLine": 9,
+        "endChar": 29
+      },
+      "revId": "a31863b61e836c2fd02b30d1ce09576cf73877e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_cdca87a1",
+        "filename": "app/components/hosts/host-config/host-config.html",
+        "patchSetId": 15
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-21T06:34:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_ed778b9d",
       "range": {
         "startLine": 9,
         "startChar": 10,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_8dfa3fbc",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 15
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-21T06:34:41Z",
+      "side": 1,
+      "message": "it\u0027s not yet done from backend api",
+      "parentUuid": "baa041b7_2d5e9312",
+      "range": {
+        "startLine": 61,
+        "startChar": 86,
+        "endLine": 61,
+        "endChar": 99
+      },
+      "revId": "a31863b61e836c2fd02b30d1ce09576cf73877e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_8db0ff44",
         "filename": "app/components/hosts/host-overview/host-overview.html",
         "patchSetId": 15
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_6dca5b70",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 15
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-21T06:34:41Z",
+      "side": 1,
+      "message": "it all about rendering graph in browser . if will not check this condition , sometime graph will not render in browser because of at the time of loading graph data we don\u0027t have all actual data from api . calling api and getting response will have some time \n\nand here we just saying once we have data from backend api than only start rendering graph",
+      "parentUuid": "baa041b7_8db0ff44",
+      "range": {
+        "startLine": 133,
+        "startChar": 52,
+        "endLine": 133,
+        "endChar": 95
+      },
+      "revId": "a31863b61e836c2fd02b30d1ce09576cf73877e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_0d83cf57",
         "filename": "app/components/hosts/host-overview/host-overview.html",
         "patchSetId": 15
@@ -105,6 +201,30 @@
       "writtenOn": "2016-04-21T05:42:36Z",
       "side": 1,
       "message": "Same as above. This is applicable for all the charts.",
+      "range": {
+        "startLine": 137,
+        "startChar": 52,
+        "endLine": 137,
+        "endChar": 97
+      },
+      "revId": "a31863b61e836c2fd02b30d1ce09576cf73877e2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_4dc9d777",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 15
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-21T06:34:41Z",
+      "side": 1,
+      "message": "same as above",
+      "parentUuid": "baa041b7_0d83cf57",
       "range": {
         "startLine": 137,
         "startChar": 52,
