@@ -42,6 +42,15 @@ export class EventListController {
         private $location: ng.ILocationService,
         private modalSvc,
         private eventSvc: EventService) {
+            var queryParams = $location.search();
+        if(queryParams['search'] !== undefined && queryParams['entity'] !== undefined){
+            this.searchQuery = queryParams['search'];
+            this.searchEntity =  queryParams['entity'];
+            this.applyFilter(this.searchEntity,this.searchQuery);
+            this.applyFilter('severity','warning');
+            this.applyFilter('severity','critical');
+            this.severity = 'notok';
+        }
         this.timer = this.$interval(() => this.refresh(), 5000);
         this.$scope.$on('$destroy', () => {
             this.$interval.cancel(this.timer);
@@ -54,7 +63,10 @@ export class EventListController {
             this.severityLevel = this.criticalEvents;
         } else if (this.severity === 'warning') {
             this.severityLevel = this.warningEvents;
-        } else {
+        } else if (this.severity === 'notok'){
+            this.severityLevel = this.criticalEvents;
+            this.severityLevel.concat(this.warningEvents);
+        }else {
             this.severityLevel = [];
         }
 
@@ -65,11 +77,11 @@ export class EventListController {
             todatetime: this.toDateTimeFilter,
             severity: this.severityLevel
         };
-        if (this.searchEntity === 'Cluster') {
+        if (this.searchEntity.toLowerCase() === 'cluster'.toLowerCase()) {
             this.requestObject['clustername'] = this.searchQuery;
-        } else if (this.searchEntity === 'Host') {
+        } else if (this.searchEntity.toLowerCase() === 'host'.toLowerCase()) {
             this.requestObject['nodename'] = this.searchQuery;
-        } else if (this.searchEntity === 'Description') {
+        } else if (this.searchEntity.toLowerCase() === 'description'.toLowerCase()) {
             this.requestObject['searchmessage'] = this.searchQuery;
         }
 
@@ -78,6 +90,7 @@ export class EventListController {
             this.totalPages = Math.ceil(data.totalcount / this.pageSize);
             this.list = data.events;
         });
+        this.requestObject['pageno'] = 1;
         this.requestObject['severity'] = this.criticalEvents;
         this.eventSvc.getList(this.requestObject).then((data: any) => {
             this.criticalCount = data.totalcount;
@@ -121,16 +134,16 @@ export class EventListController {
         delete this.filterObject[key];
         this.fromDateTimeFilter = this.filterObject["from"];
         this.toDateTimeFilter = this.filterObject["to"];
-        this.searchQuery = this.filterObject["search"];
+        this.searchQuery = this.filterObject[this.searchEntity];
         this.severity = this.filterObject["severity"];
     }
 
     public setSearchEntity(entity) {
         this.searchQuery = "";
         this.searchEntity = entity;
-        delete this.filterObject['Cluster'];
-        delete this.filterObject['Host'];
-        delete this.filterObject['Description'];
+        delete this.filterObject['cluster'];
+        delete this.filterObject['host'];
+        delete this.filterObject['description'];
     }
 
     public dismiss(eventId) {
