@@ -10,6 +10,20 @@
       </div>
     </div>
     <div class="form-group">
+      <label class="col-md-2 control-label" for="journalSizeValue">Journal Size</label>
+      <div class="col-md-2">
+        <input type="number" id="journalSizeValue" name="journalSizeValue" class="form-control" ng-model="cluster.journalSize.value"
+          ng-change="cluster.updateJournalSize()" required min="1"></input>
+      </div>
+      <div class="col-md-2">
+        <select pf-select ng-model="cluster.journalSize.unit" id="journalSizeUnit" name="journalSizeUnit" class="form-control" ng-options="unit for unit in cluster.sizeUnits"
+          ng-change="cluster.updateJournalSize()"></select>
+      </div>
+      <div ng-show="!form.journalSizeValue.$valid">
+        <div ng-show="form.journalSizeValue.$error.min" class="error-validation-msg">Journal Size is not valid!</div>
+      </div>
+    </div>
+    <div class="form-group">
       <div class="col-md-6 col-md-offset-2">
         <p class="text-info">
            <label class="fa fa-exclamation-circle"></label>
