@@ -114,6 +114,11 @@ export class RouteConfig {
 			controller: 'EventListController',
 			controllerAs: 'events',
 			name: 'events'
+		}).when('/filter/events/:entity/:search', {
+			templateUrl: 'views/events/event-list.html',
+			controller: 'EventListController',
+			controllerAs: 'events',
+			name: 'events'
 		}).when('/events/:eventId', {
 			templateUrl: 'views/events/event-details.html',
 			controller: 'EventDetailController',
