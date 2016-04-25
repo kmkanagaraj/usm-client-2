@@ -1,7 +1,9 @@
-// <reference path="../../../typings/tsd.d.ts" />
+// <reference path="../../../../typings/tsd.d.ts" />
 
 import {BlockDeviceService} from '../../rest/blockdevice';
 import {BlockDevice} from '../../rest/blockdevice';
+import {ClusterService} from '../../rest/clusters';
+import {ServerService} from '../../rest/server';
 import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import {numeral} from '../../base/libs';
@@ -12,12 +14,15 @@ export class BlockDeviceListController {
     private clusterId: string;
     private list: BlockDevice[] = [];
     private timer;
+    private clusters;
     private sizeUnits = ['GB', 'TB'];
     static $inject: Array<string> = [
         '$scope',
         '$interval',
         '$location',
         '$modal',
+        'ClusterService',
+        'ServerService',
         'BlockDeviceService',
         'RequestService',
         'RequestTrackingService'
@@ -27,14 +32,19 @@ export class BlockDeviceListController {
         private $interval: ng.IIntervalService,
         private $location: ng.ILocationService,
         private $modal,
+        private clusterSvc: ClusterService,
         private blockDeviceSvc: BlockDeviceService,
         private requestSvc: RequestService,
+        private serverService: ServerService,
         private requestTrackingSvc: RequestTrackingService) {
         this.timer = this.$interval(() => this.refresh(), 5000);
         this.$scope.$on('$destroy', () => {
             this.$interval.cancel(this.timer);
         });
         this.refresh();
+        this.clusterSvc.getList().then(clusterlist => {
+            this.clusters = clusterlist;
+        });
     }
 
     public refresh() {
@@ -115,6 +125,25 @@ export class BlockDeviceListController {
                 });
             }
             $hide();
+        });
+    }
+    public createCluster(): void {
+        this.serverService.getDiscoveredHosts().then(freeHosts => {
+            if (freeHosts.length > 0) {
+                var modal = ModalHelpers.UnAcceptedHostsFound(this.$modal, {}, freeHosts.length);
+                modal.$scope.$hide = _.wrap(modal.$scope.$hide, ($hide, confirmed: boolean) => {
+                    if (confirmed) {
+                        this.$location.path('/clusters/new/accept-hosts');
+                    }
+                    else{
+                        this.$location.path('/clusters/new');
+                    }
+                    $hide();
+                });
+            }
+            else {
+                this.$location.path('/clusters/new');
+            }
         });
     }
 }
