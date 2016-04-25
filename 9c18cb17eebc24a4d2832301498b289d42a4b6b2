@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "baa041b7_c05a412a",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-25T16:06:30Z",
+      "side": 1,
+      "message": "You can (and ideally should) initialize in one go.",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 205
+      },
+      "revId": "9c18cb17eebc24a4d2832301498b289d42a4b6b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_14741633",
         "filename": "app/components/storage/object/objectstorage-list-controller.ts",
         "patchSetId": 2
@@ -18,6 +41,99 @@
         "startChar": 0,
         "endLine": 50,
         "endChar": 13
+      },
+      "revId": "9c18cb17eebc24a4d2832301498b289d42a4b6b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_a0429d3c",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-25T16:06:30Z",
+      "side": 1,
+      "message": "Perils of polling. \u003e_\u003c",
+      "parentUuid": "baa041b7_14741633",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 13
+      },
+      "revId": "9c18cb17eebc24a4d2832301498b289d42a4b6b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_2038cd9f",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-25T16:06:30Z",
+      "side": 1,
+      "message": "Sorry, didn\u0027t get this part.\nCan you please clarify?",
+      "range": {
+        "startLine": 135,
+        "startChar": 13,
+        "endLine": 135,
+        "endChar": 39
+      },
+      "revId": "9c18cb17eebc24a4d2832301498b289d42a4b6b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_c044811c",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-25T16:06:30Z",
+      "side": 1,
+      "message": "I think there\u0027d be a blankspace in between",
+      "range": {
+        "startLine": 79,
+        "startChar": 65,
+        "endLine": 79,
+        "endChar": 90
+      },
+      "revId": "9c18cb17eebc24a4d2832301498b289d42a4b6b2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_606db597",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-25T16:06:30Z",
+      "side": 1,
+      "message": "Looks like you\u0027re using flexbox model wrong.\n\nThis is not a big red flag though, even patternfly is riddled with flex+float mess. But consider restyling.",
+      "range": {
+        "startLine": 463,
+        "startChar": 0,
+        "endLine": 466,
+        "endChar": 5
       },
       "revId": "9c18cb17eebc24a4d2832301498b289d42a4b6b2",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
