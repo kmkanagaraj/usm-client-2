@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_570ef23b",
+        "filename": "app/components/base/about-modal.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-26T15:33:07Z",
+      "side": 1,
+      "message": "Why are we using image for about info?\nAlso it\u0027s not there in the assets - do we already have it done from UXD?",
+      "range": {
+        "startLine": 7,
+        "startChar": 37,
+        "endLine": 7,
+        "endChar": 46
+      },
+      "revId": "82296131aa6d2747a6a3a48e9e772c04ab04fc42",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f702a60a",
+        "filename": "app/components/base/about-modal.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-04-26T15:33:07Z",
+      "side": 1,
+      "message": "This is (for now) the Red Hat logo, not the app-logo.\nDo we have anything from the UXD yet?",
+      "range": {
+        "startLine": 10,
+        "startChar": 37,
+        "endLine": 10,
+        "endChar": 45
+      },
+      "revId": "82296131aa6d2747a6a3a48e9e772c04ab04fc42",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
