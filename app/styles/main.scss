@@ -451,3 +451,62 @@ host-is-mon {
     padding: 6px;
   }
 }
+
+.about {
+    position: relative;
+    width: 600px;
+    height: auto;
+    background-color: #292e34;
+
+    .imgsource{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .overlap{
+        color: white;
+        padding: 72px;
+    }
+
+    .modalTitle{
+        padding-bottom: 30px;
+        font-family:  Open Sans Light;
+        font-size:  22px;
+    }
+
+    .modalLabel{
+        font-family: Open Sans Bold;
+        font-size: 12px;
+    }
+
+    .modalText{
+        font-family: Open Sans Regular;
+        font-size: 12px;
+    }
+
+    .tradeMark{
+        padding-top: 30px;
+        font-family: Open Sans Regular;
+        font-size: 10px;
+    }
+
+    .logo{
+        position: absolute;
+        padding:17px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .btnclose{
+        padding: 17px;
+        color: white;
+        border: 0;
+        cursor: pointer;
+        text-shadow: 0 1px 0 white;
+        float: right;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #292e34;
+    }
+}
