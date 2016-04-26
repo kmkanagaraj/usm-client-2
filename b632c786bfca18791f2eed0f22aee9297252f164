@@ -16,6 +16,46 @@
       "revId": "b632c786bfca18791f2eed0f22aee9297252f164",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_94e91883",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-26T13:53:55Z",
+      "side": 1,
+      "message": "input-group can be used to group the related elements",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 12
+      },
+      "revId": "b632c786bfca18791f2eed0f22aee9297252f164",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5404b048",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-26T13:53:55Z",
+      "side": 1,
+      "message": "Do we have any max limit?",
+      "revId": "b632c786bfca18791f2eed0f22aee9297252f164",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
