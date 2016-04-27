@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_4e489b2d",
+        "filename": "app/components/events/event-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-27T11:14:39Z",
+      "side": 1,
+      "message": "I think here no events are displayed because of the filter condition. Can u change the message accordingly?",
+      "range": {
+        "startLine": 118,
+        "startChar": 17,
+        "endLine": 118,
+        "endChar": 36
+      },
+      "revId": "0af7b834fcfde683854ed6cc63be62271ed13847",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
