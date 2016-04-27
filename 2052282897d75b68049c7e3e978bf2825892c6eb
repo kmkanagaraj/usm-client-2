@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_c3512410",
+        "filename": "app/components/router/route-config.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-27T06:44:27Z",
+      "side": 1,
+      "message": "Why do we need a new route?\n\nIs it possible to accommodate this into the existing route?",
+      "revId": "2052282897d75b68049c7e3e978bf2825892c6eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
