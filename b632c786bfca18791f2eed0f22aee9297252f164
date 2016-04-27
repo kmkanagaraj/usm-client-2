@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_a83cbfe2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-27T05:44:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_3619337a",
+      "revId": "b632c786bfca18791f2eed0f22aee9297252f164",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_97ffda66",
         "filename": "app/components/clusters/cluster-new.ts",
         "patchSetId": 1
@@ -30,6 +48,30 @@
       "writtenOn": "2016-04-26T14:44:37Z",
       "side": 1,
       "message": "Is this even being used, or required?",
+      "range": {
+        "startLine": 36,
+        "startChar": 4,
+        "endLine": 36,
+        "endChar": 37
+      },
+      "revId": "b632c786bfca18791f2eed0f22aee9297252f164",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_c835c3f7",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-27T05:44:54Z",
+      "side": 1,
+      "message": "Yes. It is used in the Unit filed.",
+      "parentUuid": "baa041b7_97ffda66",
       "range": {
         "startLine": 36,
         "startChar": 4,
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_0855eb1b",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-27T05:44:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_94e91883",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 12
+      },
+      "revId": "b632c786bfca18791f2eed0f22aee9297252f164",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_5404b048",
         "filename": "app/components/clusters/clusters-new-configure.html",
         "patchSetId": 1
@@ -76,6 +142,24 @@
       "writtenOn": "2016-04-26T13:53:55Z",
       "side": 1,
       "message": "Do we have any max limit?",
+      "revId": "b632c786bfca18791f2eed0f22aee9297252f164",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e832c70f",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-27T05:44:54Z",
+      "side": 1,
+      "message": "I think it can\u0027t be in TBs. So at least we can put it as 1024.",
+      "parentUuid": "baa041b7_5404b048",
       "revId": "b632c786bfca18791f2eed0f22aee9297252f164",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
