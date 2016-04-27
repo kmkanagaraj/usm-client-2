@@ -22,6 +22,30 @@
       "revId": "40d33d158bb3a19eb972841060239a55c2a3d755",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_09bbad0f",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-27T14:58:01Z",
+      "side": 1,
+      "message": "example added to comment",
+      "parentUuid": "baa041b7_ce16eba6",
+      "range": {
+        "startLine": 46,
+        "startChar": 8,
+        "endLine": 46,
+        "endChar": 87
+      },
+      "revId": "40d33d158bb3a19eb972841060239a55c2a3d755",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
