@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_ae7de76f",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-27T10:59:00Z",
+      "side": 1,
+      "message": "Give one line space before this method.",
+      "range": {
+        "startLine": 107,
+        "startChar": 4,
+        "endLine": 107,
+        "endChar": 10
+      },
+      "revId": "022f751bb665b69264ce6b67895579d9c6cc6499",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
