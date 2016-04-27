@@ -16,6 +16,24 @@
       "revId": "2052282897d75b68049c7e3e978bf2825892c6eb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_03eeeceb",
+        "filename": "app/components/router/route-config.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-27T08:38:36Z",
+      "side": 1,
+      "message": "Refer http://stackoverflow.com/questions/17513093/how-can-i-set-a-query-parameter-in-angularjs-without-doing-a-route",
+      "parentUuid": "baa041b7_c3512410",
+      "revId": "2052282897d75b68049c7e3e978bf2825892c6eb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
