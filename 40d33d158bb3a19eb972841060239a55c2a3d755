@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_ce16eba6",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-27T13:13:18Z",
+      "side": 1,
+      "message": "do you have an example of how this url will look like?",
+      "range": {
+        "startLine": 46,
+        "startChar": 8,
+        "endLine": 46,
+        "endChar": 87
+      },
+      "revId": "40d33d158bb3a19eb972841060239a55c2a3d755",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
