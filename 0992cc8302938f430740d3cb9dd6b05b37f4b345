@@ -22,6 +22,30 @@
       "revId": "0992cc8302938f430740d3cb9dd6b05b37f4b345",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_71d21bd4",
+        "filename": "app/components/storage/blockdevice/blockdevice-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-04-28T10:47:47Z",
+      "side": 1,
+      "message": "It has been done in some other patch",
+      "parentUuid": "baa041b7_6edfdf69",
+      "range": {
+        "startLine": 130,
+        "startChar": 3,
+        "endLine": 148,
+        "endChar": 5
+      },
+      "revId": "0992cc8302938f430740d3cb9dd6b05b37f4b345",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
