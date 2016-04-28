@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_9ebeced2",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-28T05:24:04Z",
+      "side": 1,
+      "message": "\u003cstrong\u003e should be used instead of \u003cb\u003e",
+      "range": {
+        "startLine": 55,
+        "startChar": 82,
+        "endLine": 55,
+        "endChar": 96
+      },
+      "revId": "e6af1f515db120518532979fa9d0daf13c2eb1e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7eb54aec",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-28T05:24:04Z",
+      "side": 1,
+      "message": "during the import process",
+      "range": {
+        "startLine": 56,
+        "startChar": 72,
+        "endLine": 56,
+        "endChar": 86
+      },
+      "revId": "e6af1f515db120518532979fa9d0daf13c2eb1e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_bea2b2ac",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-28T05:24:04Z",
+      "side": 1,
+      "message": "do we really hit this?\n\nI mean we move to second step only if there are some nodes",
+      "range": {
+        "startLine": 67,
+        "startChar": 25,
+        "endLine": 67,
+        "endChar": 72
+      },
+      "revId": "e6af1f515db120518532979fa9d0daf13c2eb1e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1ecbde73",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-28T05:24:04Z",
+      "side": 1,
+      "message": "can we provide some help text about what the user can do fix it?",
+      "range": {
+        "startLine": 91,
+        "startChar": 24,
+        "endLine": 91,
+        "endChar": 120
+      },
+      "revId": "e6af1f515db120518532979fa9d0daf13c2eb1e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_fea03aa1",
+        "filename": "app/components/clusters/import-cluster/import-cluster.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-04-28T05:24:04Z",
+      "side": 1,
+      "message": "This can be simplified to\n\n _.every(clusterSummary.nodes (node:any) \u003d\u003e node.found)",
+      "range": {
+        "startLine": 56,
+        "startChar": 15,
+        "endLine": 56,
+        "endChar": 81
+      },
+      "revId": "e6af1f515db120518532979fa9d0daf13c2eb1e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
