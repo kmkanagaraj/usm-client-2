@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_fe1b9a19",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-28T04:56:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_eeb76fd6",
+      "range": {
+        "startLine": 45,
+        "startChar": 83,
+        "endLine": 45,
+        "endChar": 84
+      },
+      "revId": "4b72c0c40ce9d5b6a3b9a2202180645d933008e6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_34236c07",
         "filename": "app/components/clusters/import-cluster/import-cluster.html",
         "patchSetId": 5
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-27T12:52:10Z",
       "side": 1,
       "message": "Please get rid of this",
+      "range": {
+        "startLine": 93,
+        "startChar": 20,
+        "endLine": 93,
+        "endChar": 24
+      },
+      "revId": "4b72c0c40ce9d5b6a3b9a2202180645d933008e6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_de1696f0",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-28T04:56:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_34236c07",
       "range": {
         "startLine": 93,
         "startChar": 20,
