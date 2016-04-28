@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_318b73c5",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-28T10:53:16Z",
+      "side": 1,
+      "message": "All these things can go to the else part of if @ line 117.",
+      "range": {
+        "startLine": 128,
+        "startChar": 0,
+        "endLine": 136,
+        "endChar": 30
+      },
+      "revId": "079e0ce1533788272251cd818cf09c9e8aaee979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
