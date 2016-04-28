@@ -190,6 +190,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_fef39a9c",
+        "filename": "app/components/clusters/import-cluster/import-cluster.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-28T06:07:34Z",
+      "side": 1,
+      "message": "We have an error message in the top. Currently it says \"One or more of the hosts in this cluster cannot be found. Please ensure that Ceph 2.0 or greater is installed on this host and that it is available on the network. Click Refresh to search for this host again.\". May be we can include details about salt configuration here.",
+      "parentUuid": "baa041b7_1ecbde73",
+      "range": {
+        "startLine": 91,
+        "startChar": 24,
+        "endLine": 91,
+        "endChar": 120
+      },
+      "revId": "e6af1f515db120518532979fa9d0daf13c2eb1e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_fea03aa1",
         "filename": "app/components/clusters/import-cluster/import-cluster.ts",
         "patchSetId": 6
