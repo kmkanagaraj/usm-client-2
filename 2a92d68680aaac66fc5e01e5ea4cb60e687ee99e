@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_092283b9",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-29T19:52:51Z",
+      "side": 1,
+      "message": "Now fetching only for last 10 mins. showing last 10 min data with one entry per minute is quite enough",
+      "parentUuid": "baa041b7_655b752f",
+      "range": {
+        "startLine": 94,
+        "startChar": 59,
+        "endLine": 94,
+        "endChar": 64
+      },
+      "revId": "2a92d68680aaac66fc5e01e5ea4cb60e687ee99e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_8558b933",
         "filename": "app/components/clusters/clusters.html",
         "patchSetId": 3
