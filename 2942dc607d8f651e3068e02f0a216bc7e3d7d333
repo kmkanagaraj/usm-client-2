@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_e5b54531",
+        "filename": "app/components/hosts/host-details/host-list-menu-dropdown.tpl.html",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-29T07:30:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_e5478549",
+      "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_253e8db8",
         "filename": "app/components/hosts/host-details/hosts-detail.html",
         "patchSetId": 19
@@ -30,6 +48,24 @@
       "writtenOn": "2016-04-29T06:38:44Z",
       "side": 1,
       "message": "\u003cANY class\u003d\"ng-class: expression;\"\u003e should be used when u have to decide for a single class substittion.",
+      "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_459871c0",
+        "filename": "app/components/hosts/host-details/hosts-detail.html",
+        "patchSetId": 19
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-29T07:30:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_253e8db8",
       "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_25932da5",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 19
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-29T07:30:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_c54ec16e",
+      "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_0564a9e1",
         "filename": "app/components/hosts/host-overview/host-overview.ts",
         "patchSetId": 19
@@ -64,6 +118,24 @@
       "writtenOn": "2016-04-29T06:38:44Z",
       "side": 1,
       "message": "In your charts in cluster dashboard we are getting console errors \"angular.js:13424 Error: url or json or rows or columns is required\". may be you get same errors here also. \nHere is the fix data{xData:[],yData:[]},config:{} - define xData and YData",
+      "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e58c2581",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 19
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-29T07:30:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_0564a9e1",
       "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_65f7f5f5",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 19
+      },
+      "lineNbr": 240,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-29T07:30:43Z",
+      "side": 1,
+      "message": "yes , i aware about api changes . But this api is being used into main dashboard , i am going to send another patch for main dashboard api change . there i will take care all these.",
+      "parentUuid": "baa041b7_e55e6511",
+      "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_c59c81c2",
         "filename": "app/styles/host-overview.scss",
         "patchSetId": 19
@@ -98,6 +188,24 @@
       "writtenOn": "2016-04-29T06:38:44Z",
       "side": 1,
       "message": "give margins in pixels.",
+      "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_45df5169",
+        "filename": "app/styles/host-overview.scss",
+        "patchSetId": 19
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-29T07:30:43Z",
+      "side": 1,
+      "message": "these all css are not being used . i will remove and also cross check for all css class whether it is being used or not . it not using , will remove it",
+      "parentUuid": "baa041b7_c59c81c2",
       "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_25da0d79",
+        "filename": "app/styles/host-overview.scss",
+        "patchSetId": 19
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-29T07:30:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_a59f3db3",
+      "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_85a6790e",
         "filename": "app/styles/host-overview.scss",
         "patchSetId": 19
@@ -132,6 +258,24 @@
       "writtenOn": "2016-04-29T06:38:44Z",
       "side": 1,
       "message": "important is not required. is this because patternfly over riding your styles? then make patternfly css loas before our main css",
+      "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_05e94914",
+        "filename": "app/styles/host-overview.scss",
+        "patchSetId": 19
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-04-29T07:30:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_85a6790e",
       "revId": "2942dc607d8f651e3068e02f0a216bc7e3d7d333",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
