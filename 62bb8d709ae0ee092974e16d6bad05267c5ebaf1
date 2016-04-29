@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_2c15553f",
+        "filename": "app/components/storage/object/objectstorage-new-directive.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-29T21:02:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_f41e1962",
+      "range": {
+        "startLine": 16,
+        "startChar": 36,
+        "endLine": 16,
+        "endChar": 37
+      },
+      "revId": "62bb8d709ae0ee092974e16d6bad05267c5ebaf1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_911c7f78",
         "filename": "app/components/storage/object/objectstorage-new.ts",
         "patchSetId": 6
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_0c10514d",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 231,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-29T21:02:10Z",
+      "side": 1,
+      "message": "When binding using @, we can pass only string",
+      "parentUuid": "baa041b7_911c7f78",
+      "range": {
+        "startLine": 231,
+        "startChar": 40,
+        "endLine": 231,
+        "endChar": 47
+      },
+      "revId": "62bb8d709ae0ee092974e16d6bad05267c5ebaf1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_310ed33b",
         "filename": "app/components/storage/object/objectstorage-new.ts",
         "patchSetId": 6
@@ -59,6 +107,30 @@
       "writtenOn": "2016-04-28T11:17:23Z",
       "side": 1,
       "message": "this should be align with above line",
+      "range": {
+        "startLine": 233,
+        "startChar": 16,
+        "endLine": 233,
+        "endChar": 51
+      },
+      "revId": "62bb8d709ae0ee092974e16d6bad05267c5ebaf1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ec1e4d62",
+        "filename": "app/components/storage/object/objectstorage-new.ts",
+        "patchSetId": 6
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-04-29T21:02:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_310ed33b",
       "range": {
         "startLine": 233,
         "startChar": 16,
