@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_8cbea1d2",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 4
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-04-30T00:58:27Z",
+      "side": 1,
+      "message": "Is it summary.usage.free?",
+      "range": {
+        "startLine": 124,
+        "startChar": 40,
+        "endLine": 124,
+        "endChar": 59
+      },
+      "revId": "5327b04d4227e71f4915532b2ae33d9ba1eab595",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
