@@ -17,5 +17,5 @@ angular.module(moduleName, [])
     .directive('hostOverview', () => new HostOverview())
     .directive('hostConfig', () => new HostConfig())
     .directive('timeSlot', () => new TimeSlot());
-    
+
 export default moduleName;
