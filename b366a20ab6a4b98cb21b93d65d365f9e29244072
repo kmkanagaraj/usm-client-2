@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_ba8cf37f",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-05-02T05:26:40Z",
+      "side": 1,
+      "message": "Actually, the style ensures they\u0027re placed right.\nIf the order is changed, it\u0027ll require extra minus-margin \u0026 positioning the floated content.",
+      "parentUuid": "baa041b7_e00c2596",
+      "range": {
+        "startLine": 6,
+        "startChar": 9,
+        "endLine": 6,
+        "endChar": 22
+      },
+      "revId": "b366a20ab6a4b98cb21b93d65d365f9e29244072",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_602135fb",
         "filename": "app/components/hosts/host-list.html",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-04-25T18:49:15Z",
       "side": 1,
       "message": "We don\u0027t have Icons in any Kebab. Also it is not suggested by UX. May be we should add in all the places after discussing with UX or remove from here.",
+      "range": {
+        "startLine": 32,
+        "startChar": 35,
+        "endLine": 32,
+        "endChar": 55
+      },
+      "revId": "b366a20ab6a4b98cb21b93d65d365f9e29244072",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7aed4b24",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-05-02T05:26:40Z",
+      "side": 1,
+      "message": "This is to maintain consistency with cluster list page.",
+      "parentUuid": "baa041b7_602135fb",
       "range": {
         "startLine": 32,
         "startChar": 35,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_5af4c7f0",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-05-02T05:26:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_e08305cb",
+      "range": {
+        "startLine": 57,
+        "startChar": 54,
+        "endLine": 57,
+        "endChar": 64
+      },
+      "revId": "b366a20ab6a4b98cb21b93d65d365f9e29244072",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_607815f3",
         "filename": "app/components/hosts/host-list.html",
         "patchSetId": 1
@@ -82,6 +154,30 @@
       "writtenOn": "2016-04-25T18:49:15Z",
       "side": 1,
       "message": "This is supposed to be \u0027X TB of Y TB used\u0027. This is how it is shown in other places too.",
+      "range": {
+        "startLine": 68,
+        "startChar": 28,
+        "endLine": 69,
+        "endChar": 111
+      },
+      "revId": "b366a20ab6a4b98cb21b93d65d365f9e29244072",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3af7c3f6",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-05-02T05:26:40Z",
+      "side": 1,
+      "message": "I\u0027ll change, but in this list template that looks pretty ugly though.",
+      "parentUuid": "baa041b7_607815f3",
       "range": {
         "startLine": 68,
         "startChar": 28,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_bae3d332",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-05-02T05:26:40Z",
+      "side": 1,
+      "message": "I\u0027ll try to get a go/no-go on this very soon.\nWith time-series graph replaced with only current status the page stays super responsive.",
+      "parentUuid": "baa041b7_0064a946",
+      "range": {
+        "startLine": 74,
+        "startChar": 28,
+        "endLine": 74,
+        "endChar": 31
+      },
+      "revId": "b366a20ab6a4b98cb21b93d65d365f9e29244072",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_c05da17a",
         "filename": "app/styles/hosts.scss",
         "patchSetId": 1
@@ -128,6 +248,24 @@
       "writtenOn": "2016-04-25T18:49:15Z",
       "side": 1,
       "message": "Its better to wrap all the hosts listing specific styles under .hosts{} to avoid unwanted conflicts.",
+      "revId": "b366a20ab6a4b98cb21b93d65d365f9e29244072",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_fa927b9e",
+        "filename": "app/styles/hosts.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-05-02T05:26:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_c05da17a",
       "revId": "b366a20ab6a4b98cb21b93d65d365f9e29244072",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
