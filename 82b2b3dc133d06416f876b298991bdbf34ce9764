@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_9b837156",
+        "filename": "app/components/hosts/host-osd/host-osd.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-03T04:29:35Z",
+      "side": 1,
+      "message": "I assume the same being used in cluster osds as well.\n\nCan we make this as a reusable component?",
+      "range": {
+        "startLine": 151,
+        "startChar": 10,
+        "endLine": 182,
+        "endChar": 16
+      },
+      "revId": "82b2b3dc133d06416f876b298991bdbf34ce9764",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7b866d66",
+        "filename": "app/components/hosts/host-osd/host-osd.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-03T04:29:35Z",
+      "side": 1,
+      "message": "I see the most of the things are common in host-osd and cluster-osd.\n\nWe need to look for reusing the same. Otherwise we maintenance would be complex in future.",
+      "revId": "82b2b3dc133d06416f876b298991bdbf34ce9764",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5b7de96c",
+        "filename": "app/styles/host-osd.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-03T04:29:35Z",
+      "side": 1,
+      "message": "i would suggest to keep the standard colors as scss variables to make them easy use.\n\nhttps://robots.thoughtbot.com/sass-variables",
+      "range": {
+        "startLine": 150,
+        "startChar": 0,
+        "endLine": 164,
+        "endChar": 5
+      },
+      "revId": "82b2b3dc133d06416f876b298991bdbf34ce9764",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
