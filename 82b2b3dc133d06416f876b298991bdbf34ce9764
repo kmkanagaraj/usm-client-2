@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_fbf5ddca",
+        "filename": "app/components/hosts/host-osd/host-osd.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-03T07:25:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_9b837156",
+      "range": {
+        "startLine": 151,
+        "startChar": 10,
+        "endLine": 182,
+        "endChar": 16
+      },
+      "revId": "82b2b3dc133d06416f876b298991bdbf34ce9764",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_7b866d66",
         "filename": "app/components/hosts/host-osd/host-osd.ts",
         "patchSetId": 2
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_db0459c1",
+        "filename": "app/components/hosts/host-osd/host-osd.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-03T07:25:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_7b866d66",
+      "revId": "82b2b3dc133d06416f876b298991bdbf34ce9764",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_5b7de96c",
         "filename": "app/styles/host-osd.scss",
         "patchSetId": 2
@@ -53,6 +95,30 @@
       "writtenOn": "2016-05-03T04:29:35Z",
       "side": 1,
       "message": "i would suggest to keep the standard colors as scss variables to make them easy use.\n\nhttps://robots.thoughtbot.com/sass-variables",
+      "range": {
+        "startLine": 150,
+        "startChar": 0,
+        "endLine": 164,
+        "endChar": 5
+      },
+      "revId": "82b2b3dc133d06416f876b298991bdbf34ce9764",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_bbff55a9",
+        "filename": "app/styles/host-osd.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-03T07:25:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_5b7de96c",
       "range": {
         "startLine": 150,
         "startChar": 0,
