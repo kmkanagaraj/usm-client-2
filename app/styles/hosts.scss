@@ -1,5 +1,14 @@
-.hosts {
-    .status-icon {
-        font-size: 2em;
-    }
+.hosts .list-view-pf-additional-info {
+    float: none;
+    margin: auto 1rem;
+}
+.hosts .list-view-pf-additional-info-item {
+    flex-direction: column;
+}
+.hosts .list-view-pf-additional-info-item strong {
+    margin: auto 5px;
+}
+.hosts .focus {
+    font-weight: 600;
+    font-size: 2rem;
 }
