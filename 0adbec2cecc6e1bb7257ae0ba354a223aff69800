@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_922b4b94",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-05T05:38:56Z",
+      "side": 1,
+      "message": "this creates an assumption on the path which is not good.\n\nIn future, if somebody changes the route config, this will be broken.\n\nSo there are two choices to go with\n\n1. Have both clusterId and hostId in directive. You can make the call based on which ever is present\n\n2. Have entity type in directive \u0027Cluster\u0027 or \u0027Host\u0027",
+      "range": {
+        "startLine": 114,
+        "startChar": 7,
+        "endLine": 114,
+        "endChar": 47
+      },
+      "revId": "0adbec2cecc6e1bb7257ae0ba354a223aff69800",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b2308f02",
+        "filename": "app/components/hosts/host-module.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-05T05:38:56Z",
+      "side": 1,
+      "message": "This file can be excluded from the commit.",
+      "revId": "0adbec2cecc6e1bb7257ae0ba354a223aff69800",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
