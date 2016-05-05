@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_f06a90b2",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-05T06:27:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_922b4b94",
+      "range": {
+        "startLine": 114,
+        "startChar": 7,
+        "endLine": 114,
+        "endChar": 47
+      },
+      "revId": "0adbec2cecc6e1bb7257ae0ba354a223aff69800",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_b2308f02",
         "filename": "app/components/hosts/host-module.ts",
         "patchSetId": 3
@@ -36,6 +60,24 @@
       "writtenOn": "2016-05-05T05:38:56Z",
       "side": 1,
       "message": "This file can be excluded from the commit.",
+      "revId": "0adbec2cecc6e1bb7257ae0ba354a223aff69800",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b06088d0",
+        "filename": "app/components/hosts/host-module.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-05T06:27:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_b2308f02",
       "revId": "0adbec2cecc6e1bb7257ae0ba354a223aff69800",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
