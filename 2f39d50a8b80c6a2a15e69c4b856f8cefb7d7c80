@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_72320712",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-05T05:09:08Z",
+      "side": 1,
+      "message": "I don\u0027t think \u0027Remove/Forget\u0027 is allowed always. Pls check what are the states eligible for removal.",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 29
+      },
+      "revId": "2f39d50a8b80c6a2a15e69c4b856f8cefb7d7c80",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_92546b21",
+        "filename": "app/styles/hosts.scss",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-05T05:09:08Z",
+      "side": 1,
+      "message": "You can use SCSS nesting to avoid repeating \u0027.hosts\u0027",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 1
+      },
+      "revId": "2f39d50a8b80c6a2a15e69c4b856f8cefb7d7c80",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
