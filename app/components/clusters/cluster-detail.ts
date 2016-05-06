@@ -279,6 +279,12 @@ export class ClusterDetailController {
 
     public getMostUsedPools(mostUsedPools) {
         _.each(mostUsedPools, (pool) => {
+            /* if "used" and "total" both are zero . than while calculating percentage 
+            (used/total) coming as "NAN". because of Infinity result. so if both are zero.
+            than just assinging "total" = with some valid number other than zero. */
+            if( pool["usage"]["used"] === 0 && pool["usage"]["total"] === 0 ) {
+                pool["usage"]["total"] = 1;
+            }
             this.mostUsedPools.push({"title":pool["name"],"data":pool["usage"]});
         });
     }
