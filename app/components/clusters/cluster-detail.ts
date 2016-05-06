@@ -278,7 +278,7 @@ export class ClusterDetailController {
     }
 
     public getMostUsedPools(mostUsedPools) {
-        _.each(mostUsedPools, (pool) => {
+        _.each(mostUsedPools, (pool) => { 
             this.mostUsedPools.push({"title":pool["name"],"data":pool["usage"]});
         });
     }
