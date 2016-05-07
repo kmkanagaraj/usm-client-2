@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_57aecb81",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 11
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-07T05:43:10Z",
+      "side": 1,
+      "message": "This doesn\u0027t look good. It will be true for all ec pools and end not updating ecprofile at all.",
+      "range": {
+        "startLine": 133,
+        "startChar": 11,
+        "endLine": 133,
+        "endChar": 57
+      },
+      "revId": "8da52d9f4288300ed41e9deac8c09eed27010851",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
