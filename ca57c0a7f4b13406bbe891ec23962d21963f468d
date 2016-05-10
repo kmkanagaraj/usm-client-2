@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_e22f5886",
+        "filename": "app/components/admin/admin.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-10T11:22:31Z",
+      "side": 1,
+      "message": "remove LWS. I see this in all the pages.",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 1
+      },
+      "revId": "ca57c0a7f4b13406bbe891ec23962d21963f468d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_826c0cd1",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-10T11:22:31Z",
+      "side": 1,
+      "message": "Format the lines.",
+      "range": {
+        "startLine": 2,
+        "startChar": 1,
+        "endLine": 2,
+        "endChar": 41
+      },
+      "revId": "ca57c0a7f4b13406bbe891ec23962d21963f468d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
