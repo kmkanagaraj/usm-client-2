@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_d1f77c57",
+        "filename": "app/components/admin/ldap-config-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-11T11:14:01Z",
+      "side": 1,
+      "message": "i think we can remove uid, firstname, lastname, displayname, email",
+      "revId": "dad576c7a059a13299b435b5317b241bb08107b0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
