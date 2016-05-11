@@ -2,6 +2,7 @@ import {LdapService} from '../rest/ldap';
 
 export class LdapConfigController {
     private errorMsg: boolean;
+    private directoryService: string;
     private ldapServer : string;
     private port: string;
     private base: string;
@@ -21,12 +22,13 @@ export class LdapConfigController {
 
     public save():void {
         var config = {
+            directoryservice: this.directoryService,
             ldapserver: this.ldapServer,
             port: parseInt(this.port),
             base: this.base,
             domainadmin: this.domainAdmin,
             password: this.password,
-            uid: "cn",
+            uid: "",
             firstname: "displayName",
             lastname: "sn",
             displayname: "",
