@@ -17,8 +17,8 @@ export class StorageService {
 
     // **getList**
     // **@returns** a promise with all storages.
-    getList() {
-        return this.rest.all('storages').getList().then(function(storages) {
+    getList(status) {
+        return this.rest.all('storages?' + status).getList().then(function(storages) {
             return storages;
         });
     }

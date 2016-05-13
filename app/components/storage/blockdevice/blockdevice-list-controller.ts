@@ -39,7 +39,7 @@ export class BlockDeviceListController {
             this.$interval.cancel(this.timer);
         });
         this.refresh();
-        this.clusterSvc.getList().then(clusterlist => {
+        this.clusterSvc.getList('').then(clusterlist => {
             this.clusters = clusterlist;
         });
     }
