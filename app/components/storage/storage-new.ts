@@ -17,7 +17,7 @@ export class StorageNewController {
     constructor(private $location: ng.ILocationService,
         private clusterSvc: ClusterService) {
         this.clusters = [];
-        this.clusterSvc.getList().then((clusters) => {
+        this.clusterSvc.getList('').then((clusters) => {
             this.clusters = clusters;
             if (this.clusters.length > 0) {
                 this.cluster = this.clusters[0];

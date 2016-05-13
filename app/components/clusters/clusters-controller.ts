@@ -13,6 +13,7 @@ import * as ModalHelpers from '../modal/modal-helpers';
 export class ClustersController {
     public clusterList: Array<any>;
     private clusterHelper: ClusterHelper;
+    private searchQuery: string;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -46,6 +47,11 @@ export class ClustersController {
         private serverService: ServerService,
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
+        this.searchQuery = '';
+        var queryParams = $location.search();
+        if (Object.keys(queryParams).length > 0) {
+            this.searchQuery = queryParams.query;
+        }
         this.clusterHelper = new ClusterHelper(null, null, null, null);
         this.timer = this.$interval(() => this.refresh(), 10000);
         this.refresh();
@@ -55,7 +61,7 @@ export class ClustersController {
     }
 
     public refresh() {
-        this.clusterSvc.getList().then((clusters: Cluster[]) => {
+        this.clusterSvc.getList(this.searchQuery).then((clusters: Cluster[]) => {
             this.loadData(clusters);
         });
     }

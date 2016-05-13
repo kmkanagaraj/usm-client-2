@@ -80,8 +80,8 @@ export class ClusterService {
 
     // **getList**
     // **@returns** a promise with a list of all the clusters.
-    public getList() {
-        return this.rest.all('clusters').getList<Cluster>();
+    public getList(status) {
+        return this.rest.all('clusters?' + status).getList<Cluster>();
     }
 
     // **getAlerts**
@@ -142,7 +142,7 @@ export class ClusterService {
     // **@returns** a promise with the cluster metadata for the specific
     // cluster based on it's name.
     getByName(name: string) {
-        return this.getList().then<Cluster>(function(clusters: Array<Cluster>) {
+        return this.getList('').then<Cluster>(function(clusters: Array<Cluster>) {
             return _.find(clusters, function(cluster: Cluster) {
                 return cluster.name === name;
             });

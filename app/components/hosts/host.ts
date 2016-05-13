@@ -12,6 +12,7 @@ export class HostListController {
     private clusters: {};
     private hostStats: {};
     private clusterHelper: ClusterHelper;
+    private searchQuery: string;
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -37,6 +38,11 @@ export class HostListController {
         private serverService: ServerService,
         private utilService: UtilService,
         private requestService: RequestService) {
+        this.searchQuery = '';
+        var queryParams = $location.search();
+        if (Object.keys(queryParams).length > 0) {
+            this.searchQuery = queryParams.query;
+        }
         this.clusterHelper = new ClusterHelper(utilService, requestService, $log, $timeout);
         this.clusters = {};
         this.hostStats = {};
@@ -49,7 +55,7 @@ export class HostListController {
 
     public reloadData() {
         if(this.clusterId === undefined) {
-            this.serverService.getList().then(this.updateHost);
+            this.serverService.getList(this.searchQuery).then(this.updateHost);
         }else {
             this.serverService.getListByCluster(this.clusterId).then(this.updateHost);
         }
