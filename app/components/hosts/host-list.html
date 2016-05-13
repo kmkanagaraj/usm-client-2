@@ -6,6 +6,14 @@
         <div class="col-md-3">
             <input type="text" class="form-control" placeholder="Search" ng-model="hosts.search">
         </div>
+        <div class="col-md-3">
+            <span class="label label-info" ng-if="hosts.searchQuery !== ''">
+                {{hosts.searchQuery}}
+                <a href="" ng-click="hosts.clearFilter()">
+                <span class="pficon pficon-close cross-button-color"></span>
+                </a>
+            </span>
+        </div>
     </div>
     <center ng-if="hosts.list.length == 0">
         <div class="blank-slate-pf">
