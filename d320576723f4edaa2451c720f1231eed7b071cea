@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_93fc5173",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-13T10:30:21Z",
+      "side": 0,
+      "message": "Why are removing the style?",
+      "range": {
+        "startLine": 2,
+        "startChar": 28,
+        "endLine": 2,
+        "endChar": 29
+      },
+      "revId": "d320576723f4edaa2451c720f1231eed7b071cea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_53fb6979",
+        "filename": "app/components/storage/blockdevice/blockdevice-new.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-13T10:30:21Z",
+      "side": 1,
+      "message": "This can be moved to a css",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 50
+      },
+      "revId": "566cbc9eb0befaafa1c91f78889253ebc8b09f8d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
