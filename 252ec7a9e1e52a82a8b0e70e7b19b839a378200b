@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_532929e5",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-13T10:44:49Z",
+      "side": 1,
+      "message": "A better name with boolean value will make it easy to understand.",
+      "range": {
+        "startLine": 84,
+        "startChar": 92,
+        "endLine": 84,
+        "endChar": 98
+      },
+      "revId": "252ec7a9e1e52a82a8b0e70e7b19b839a378200b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_134841cb",
+        "filename": "app/components/clusters/cluster-new.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-13T10:44:49Z",
+      "side": 1,
+      "message": "Remove LWS.",
+      "range": {
+        "startLine": 117,
+        "startChar": 0,
+        "endLine": 117,
+        "endChar": 8
+      },
+      "revId": "252ec7a9e1e52a82a8b0e70e7b19b839a378200b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
