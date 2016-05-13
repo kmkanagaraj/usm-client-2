@@ -6,6 +6,16 @@
         <div class="col-md-3">
             <input type="text" class="form-control" placeholder="Search" ng-model="hosts.search">
         </div>
+        <div class="col-md-3">
+            <ul class="list-inline">
+                <li ng-repeat="(key, value) in hosts.filterObject">
+                    <span class="label label-info">
+                    {{key}} : {{value}}
+                     <a href="" ng-click="hosts.clearFilter(key)"><span class="pficon pficon-close cross-button-color"></span></a>
+                    </span>
+                </li>
+            </ul>
+        </div>
     </div>
     <center ng-if="hosts.list.length == 0">
         <div class="blank-slate-pf">

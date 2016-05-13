@@ -14,6 +14,13 @@ export class StorageService {
         });
     }
 
+    // **getListWithStatus**
+    // **@returns** a promise with all storages with status.
+    getListWithStatus(status) {
+        return this.rest.all('storages?' + status).getList().then(function(storages) {
+            return storages;
+        });
+    }
 
     // **getList**
     // **@returns** a promise with all storages.

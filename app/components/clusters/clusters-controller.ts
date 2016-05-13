@@ -13,6 +13,8 @@ import * as ModalHelpers from '../modal/modal-helpers';
 export class ClustersController {
     public clusterList: Array<any>;
     private clusterHelper: ClusterHelper;
+    private searchQuery: string;
+    private filterObject: any;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -46,6 +48,10 @@ export class ClustersController {
         private serverService: ServerService,
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
+        this.filterObject = $location.search();
+        if (this.filterObject !== undefined && Object.keys(this.filterObject).length > 0) {
+            this.applyingFilterObject(this.filterObject);
+        }
         this.clusterHelper = new ClusterHelper(null, null, null, null);
         this.timer = this.$interval(() => this.refresh(), 10000);
         this.refresh();
@@ -54,10 +60,44 @@ export class ClustersController {
         });
     }
 
-    public refresh() {
-        this.clusterSvc.getList().then((clusters: Cluster[]) => {
-            this.loadData(clusters);
+    public applyingFilterObject(filterObject: any) {
+        this.searchQuery = '';
+        /* Example getting the value for filterObject : -
+            There is 3 case : - 
+            1) { status: [error,warning] , tab: <OSD,HOST,etc> }
+            2) { tab: <OSD,HOST,etc> }
+            3) { status: [error,warning] }
+        */
+        Object.keys(filterObject).forEach((value: any) => {
+            if(filterObject[value] instanceof Array) {
+                var tempArray = filterObject[value].map(function(status) { 
+                  return value + '=' + status; 
+                })
+                this.searchQuery = tempArray.join('&');
+            }else {
+                this.searchQuery = this.searchQuery + "&";
+                this.searchQuery = this.searchQuery + value + "=" + filterObject[value];
+            }
         });
+    }
+    
+
+    public refresh() {
+        if(this.searchQuery === '') {
+            this.clusterSvc.getList().then((clusters: Cluster[]) => {
+                this.loadData(clusters);
+            });
+        }else {
+            this.clusterSvc.getListWithStatus(this.searchQuery).then((clusters: Cluster[]) => {
+                this.loadData(clusters);
+            });
+        }
+    }
+
+    public clearFilter(key) {
+        delete this.filterObject[key];
+        this.applyingFilterObject(this.filterObject);
+        this.refresh();
     }
 
     /**
