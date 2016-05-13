@@ -20,6 +20,7 @@ export class ObjectStorageListController {
     private enable_max_percentage;
     private enable_quota_max_objects;
     private ecprofiles = [{ k: 2, m: 1, text: '2+1', value: 'default' }, { k: 4, m: 2, text: '4+2', value: 'k4m2' }, { k: 6, m: 3, text: '6+3', value: 'k6m3' }, { k: 8, m: 4, text: '8+4', value: 'k8m4' }];
+    private searchQuery: string;
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -45,12 +46,17 @@ export class ObjectStorageListController {
         private storageSvc: StorageService,
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
+        this.searchQuery = '';
+        var queryParams = $location.search();
+        if (Object.keys(queryParams).length > 0) {
+            this.searchQuery = queryParams.query;
+        }
         this.timer = this.$interval(() => this.refresh(), 5000);
         this.$scope.$on('$destroy', () => {
             this.$interval.cancel(this.timer);
         });
         this.refresh();
-        this.clusterSvc.getList().then(clusterlist => {
+        this.clusterSvc.getList('').then(clusterlist => {
             this.clusters = clusterlist;
         });
     }
@@ -74,7 +80,12 @@ export class ObjectStorageListController {
                 _.each(clusters, (cluster) => {
                     this.clusterMap[cluster.clusterid] = cluster;
                 });
-                return this.storageSvc.getList();
+                if(this.searchQuery === '') {
+                    return this.storageSvc.getList();
+                }else {
+                    return this.storageSvc.getListWithStatus(this.searchQuery);
+                }
+                
             }).then(list => {
                 this.loadData(list);
             });
