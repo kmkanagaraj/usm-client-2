@@ -12,6 +12,7 @@ export class HostListController {
     private clusters: {};
     private hostStats: {};
     private clusterHelper: ClusterHelper;
+    private searchQuery: string;
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -22,7 +23,8 @@ export class HostListController {
         'ClusterService',
         'ServerService',
         'UtilService',
-        'RequestService'
+        'RequestService',
+        '$route'
     ];
     private timer;
 
@@ -36,7 +38,13 @@ export class HostListController {
         private clusterSvc: ClusterService,
         private serverService: ServerService,
         private utilService: UtilService,
-        private requestService: RequestService) {
+        private requestService: RequestService,
+        private $route: ng.route.IRouteService) {
+        this.searchQuery = '';
+        var queryParams = $location.search();
+        if (queryParams.query !== undefined && Object.keys(queryParams).length > 0) {
+            this.searchQuery = queryParams.query;
+        }
         this.clusterHelper = new ClusterHelper(utilService, requestService, $log, $timeout);
         this.clusters = {};
         this.hostStats = {};
@@ -49,10 +57,20 @@ export class HostListController {
 
     public reloadData() {
         if(this.clusterId === undefined) {
-            this.serverService.getList().then(this.updateHost);
+            if(this.searchQuery === '') {
+                this.serverService.getList().then(this.updateHost);
+            }else {
+                this.serverService.getListWithStatus(this.searchQuery).then(this.updateHost);
+            }
         }else {
             this.serverService.getListByCluster(this.clusterId).then(this.updateHost);
         }
+    }
+
+    public clearFilter() {
+        this.searchQuery = "";
+        this.$location.search('');
+        this.$route.reload();
     }
 
     updateHost = (hosts) => {

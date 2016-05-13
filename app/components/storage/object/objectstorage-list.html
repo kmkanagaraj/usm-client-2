@@ -6,7 +6,15 @@
         <div class="col-md-3">
             <input type="text" class="form-control" placeholder="Search" ng-model="search">
         </div>
-        <div class="col-md-offset-6 col-md-3">
+        <div class="col-md-3">
+            <span class="label label-info" ng-if="storages.searchQuery !== ''">
+                {{storages.searchQuery}}
+                <a href="" ng-click="storages.clearFilter()">
+                <span class="pficon pficon-close cross-button-color"></span>
+                </a>
+            </span>
+        </div>
+        <div class="col-md-offset-3 col-md-3">
             <span class="pull-right">
                 <button class="btn btn-primary btn-lg" ng-click="storages.create()">Add Storage</button>
             </span>
