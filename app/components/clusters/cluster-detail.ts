@@ -106,7 +106,7 @@ export class ClusterDetailController {
                          { name: "Last 2 hours", value: "-2h" },
                          { name: "Last 24 hours", value: "" }];
         this.selectedTimeSlot = this.timeSlots[0];
-        this.clusterService.getList().then((clusters: Array<any>) => {
+        this.clusterService.getList('').then((clusters: Array<any>) => {
            this.clusterList = clusters;
         });
         this.clusterService.get(this.id).then((cluster) => this.loadCluster(cluster));
