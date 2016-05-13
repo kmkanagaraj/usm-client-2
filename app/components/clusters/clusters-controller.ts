@@ -13,6 +13,8 @@ import * as ModalHelpers from '../modal/modal-helpers';
 export class ClustersController {
     public clusterList: Array<any>;
     private clusterHelper: ClusterHelper;
+    private searchQuery: string;
+    private paramsObject: any;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -46,6 +48,10 @@ export class ClustersController {
         private serverService: ServerService,
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
+        this.paramsObject = $location.search();
+        if (this.paramsObject !== undefined && Object.keys(this.paramsObject).length > 0) {
+            this.applyingFilter(this.paramsObject);
+        }
         this.clusterHelper = new ClusterHelper(null, null, null, null);
         this.timer = this.$interval(() => this.refresh(), 10000);
         this.refresh();
@@ -54,10 +60,50 @@ export class ClustersController {
         });
     }
 
-    public refresh() {
-        this.clusterSvc.getList().then((clusters: Cluster[]) => {
-            this.loadData(clusters);
+    public isArray(data): Boolean {
+        return data instanceof Array;
+    }
+
+    public applyingFilter(paramsObject: any) {
+        this.searchQuery = '';
+        /* paramsObject can have 3 case : -
+            1) { status: [error,warning] , tab: <OSD,HOST,etc> }
+            2) { tab: <OSD,HOST,etc> }
+            3) { status: [error,warning] }
+        */
+        Object.keys(paramsObject).forEach((value: any) => {
+            if(paramsObject[value] instanceof Array) {
+                var tempArray = paramsObject[value].map(function(status) {
+                  return value + '=' + status;
+                })
+                this.searchQuery = tempArray.join('&');
+            }else {
+                this.searchQuery = this.searchQuery + "&";
+                this.searchQuery = this.searchQuery + value + "=" + paramsObject[value];
+            }
         });
+    }
+
+    public refresh() {
+        if(this.searchQuery === '') {
+            this.clusterSvc.getList().then((clusters: Cluster[]) => {
+                this.loadData(clusters);
+            });
+        }else {
+            this.clusterSvc.getListWithStatus(this.searchQuery).then((clusters: Cluster[]) => {
+                this.loadData(clusters);
+            });
+        }
+    }
+
+    public clearFilter(key, itemIndex) {
+        if(itemIndex === null) {
+            delete this.paramsObject[key];
+        }else {
+            this.paramsObject[key].splice(itemIndex, 1);
+        }
+        this.applyingFilter(this.paramsObject);
+        this.refresh();
     }
 
     /**
