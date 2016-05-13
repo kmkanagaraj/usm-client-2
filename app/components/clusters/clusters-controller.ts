@@ -13,6 +13,7 @@ import * as ModalHelpers from '../modal/modal-helpers';
 export class ClustersController {
     public clusterList: Array<any>;
     private clusterHelper: ClusterHelper;
+    private searchQuery: string;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -26,7 +27,8 @@ export class ClustersController {
         'StorageService',
         'ServerService',
         'RequestService',
-        'RequestTrackingService'
+        'RequestTrackingService',
+        '$route'
     ];
 
     //Timer to refresh the data every 10 seconds
@@ -45,7 +47,13 @@ export class ClustersController {
         private storageSvc: StorageService,
         private serverService: ServerService,
         private requestSvc: RequestService,
-        private requestTrackingSvc: RequestTrackingService) {
+        private requestTrackingSvc: RequestTrackingService,
+        private $route: ng.route.IRouteService) {
+        this.searchQuery = '';
+        var queryParams = $location.search();
+        if (Object.keys(queryParams).length > 0) {
+            this.searchQuery = queryParams.query;
+        }
         this.clusterHelper = new ClusterHelper(null, null, null, null);
         this.timer = this.$interval(() => this.refresh(), 10000);
         this.refresh();
@@ -55,9 +63,21 @@ export class ClustersController {
     }
 
     public refresh() {
-        this.clusterSvc.getList().then((clusters: Cluster[]) => {
-            this.loadData(clusters);
-        });
+        if(this.searchQuery === '') {
+            this.clusterSvc.getList().then((clusters: Cluster[]) => {
+                this.loadData(clusters);
+            });
+        }else {
+            this.clusterSvc.getListWithStatus(this.searchQuery).then((clusters: Cluster[]) => {
+                this.loadData(clusters);
+            });
+        }
+    }
+
+    public clearFilter() {
+        this.searchQuery = "";
+        this.$location.search('');
+        this.$route.reload();
     }
 
     /**
