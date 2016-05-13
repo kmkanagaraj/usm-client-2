@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_8e978a39",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-05-13T12:43:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_f3d6fdef",
+      "range": {
+        "startLine": 115,
+        "startChar": 32,
+        "endLine": 115,
+        "endChar": 36
+      },
+      "revId": "be1ea53fc1986537b5d2c2f8aa1f97f1a67143d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_33d105fb",
         "filename": "app/components/storage/object/objectstorage-list-controller.ts",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-05-13T10:22:40Z",
       "side": 1,
       "message": "undefined !\u003d undefined. So Either of these conditions will be true always and we will update the pool always.",
+      "range": {
+        "startLine": 116,
+        "startChar": 12,
+        "endLine": 117,
+        "endChar": 50
+      },
+      "revId": "be1ea53fc1986537b5d2c2f8aa1f97f1a67143d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ee717645",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1007385
+      },
+      "writtenOn": "2016-05-13T12:43:45Z",
+      "side": 1,
+      "message": "I think undefined !\u003d undefined gives false as a result so it will be work fine...",
+      "parentUuid": "baa041b7_33d105fb",
       "range": {
         "startLine": 116,
         "startChar": 12,
