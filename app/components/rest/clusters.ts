@@ -78,6 +78,12 @@ export class ClusterService {
         });
     }
 
+    // **getFilteredList**
+    // **@returns** a promise with a list of all the clusters with status.
+    public getFilteredList(status) {
+        return this.rest.all('clusters?' + status).getList<Cluster>();
+    }
+
     // **getList**
     // **@returns** a promise with a list of all the clusters.
     public getList() {
