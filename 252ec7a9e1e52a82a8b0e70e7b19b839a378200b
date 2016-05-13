@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_eef73657",
+        "filename": "app/components/clusters/cluster-expand.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-13T13:18:10Z",
+      "side": 1,
+      "message": "This cannot take boolean. it need proper cluster id to take to a cluster expand page loaded with correct cluster.\nexpand \u003d \u003ccluster ID\u003e",
+      "parentUuid": "baa041b7_532929e5",
+      "range": {
+        "startLine": 84,
+        "startChar": 92,
+        "endLine": 84,
+        "endChar": 98
+      },
+      "revId": "252ec7a9e1e52a82a8b0e70e7b19b839a378200b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_134841cb",
         "filename": "app/components/clusters/cluster-new.ts",
         "patchSetId": 1
