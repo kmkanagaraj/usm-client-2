@@ -6,7 +6,17 @@
         <div class="col-md-3">
             <input type="text" class="form-control" placeholder="Search" ng-model="search">
         </div>
-        <div class="col-md-offset-6 col-md-3">
+        <div class="col-md-3">
+            <ul class="list-inline">
+                <li ng-repeat="(key, value) in clusters.filterObject">
+                    <span class="label label-info">
+                    {{key}} : {{value}}
+                     <a href="" ng-click="clusters.clearFilter(key)"><span class="pficon pficon-close cross-button-color"></span></a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-offset-3 col-md-3">
             <span class="pull-right">
             <button class="btn btn-primary btn-lg" ng-click="clusters.createNewCluster()">Create</button>
             <button class="btn btn-default btn-lg" ng-click="clusters.importCluster()">Import</button>

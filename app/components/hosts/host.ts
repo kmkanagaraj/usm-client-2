@@ -12,6 +12,8 @@ export class HostListController {
     private clusters: {};
     private hostStats: {};
     private clusterHelper: ClusterHelper;
+    private searchQuery: string;
+    private filterObject: any;
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -37,6 +39,10 @@ export class HostListController {
         private serverService: ServerService,
         private utilService: UtilService,
         private requestService: RequestService) {
+        this.filterObject = $location.search();
+        if (this.filterObject !== undefined && Object.keys(this.filterObject).length > 0) {
+            this.applyingFilterObject(this.filterObject);
+        }
         this.clusterHelper = new ClusterHelper(utilService, requestService, $log, $timeout);
         this.clusters = {};
         this.hostStats = {};
@@ -47,9 +53,40 @@ export class HostListController {
         this.reloadData();
     }
 
+    public applyingFilterObject(filterObject: any) {
+        this.searchQuery = '';
+        /* Example getting the value for filterObject : -
+            There is 3 case : - 
+            1) { status: [error,warning] , tab: <OSD,HOST,etc> }
+            2) { tab: <OSD,HOST,etc> }
+            3) { status: [error,warning] }
+        */
+        Object.keys(filterObject).forEach((value: any) => {
+            if(filterObject[value] instanceof Array) {
+                var tempArray = filterObject[value].map(function(status) { 
+                  return value + '=' + status; 
+                })
+                this.searchQuery = tempArray.join('&');
+            }else {
+                this.searchQuery = this.searchQuery + "&";
+                this.searchQuery = this.searchQuery + value + "=" + filterObject[value];
+            }
+        });
+    }
+
+    public clearFilter(key) {
+        delete this.filterObject[key];
+        this.applyingFilterObject(this.filterObject);
+        this.reloadData();
+    }
+
     public reloadData() {
         if(this.clusterId === undefined) {
-            this.serverService.getList().then(this.updateHost);
+            if(this.searchQuery === '') {
+                this.serverService.getList().then(this.updateHost);
+            }else {
+                this.serverService.getListWithStatus(this.searchQuery).then(this.updateHost);
+            }
         }else {
             this.serverService.getListByCluster(this.clusterId).then(this.updateHost);
         }
