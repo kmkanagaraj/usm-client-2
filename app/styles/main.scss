@@ -22,6 +22,7 @@
 @import 'storage-list-view';
 @import 'host-detail';
 @import 'import-cluster';
+@import 'branding';
 
 //---------- Guage Disable ---------
 .c3-chart-arc .c3-gauge-value, .c3-chart-arcs-gauge-min, .c3-chart-arcs-gauge-max
@@ -48,22 +49,6 @@
 
 .no-left-padding{
     padding-left:0px !important;
-}
-
-.navbar-product-name {
-    font-size: 15px;
-    font-weight: 600;
-    color: #F1F1F1;
-    padding-left: 10px;
-
-    &:hover {
-        color: #F1F1F1;
-        text-decoration: none;
-    }
-}
-
-.navbar-utility{
-    font-size:13px;
 }
 
 .panel-clusters {
@@ -139,7 +124,7 @@ host-is-mon {
 
 .cluster-summary-host-header {
     cursor: pointer;
-    color: $usmblue;
+    color: $usmcolor;
 }
 
 .error-validation-msg {
@@ -473,7 +458,6 @@ host-is-mon {
 .listview {
     display: block !important;
 }
-
 .storage-header{
     border-bottom: 1px solid #eeeeee;
 }
