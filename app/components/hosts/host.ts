@@ -40,7 +40,7 @@ export class HostListController {
         this.clusterHelper = new ClusterHelper(utilService, requestService, $log, $timeout);
         this.clusters = {};
         this.hostStats = {};
-        this.timer = this.$interval(() => this.reloadData(), 7000);
+        this.timer = this.$interval(() => this.reloadData(), 60000);
         this.$scope.$on('$destroy', () => {
             this.$interval.cancel(this.timer);
         });
