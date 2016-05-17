@@ -9,6 +9,7 @@ export class HostDetailController {
     private id: string;
     private tabList: any;
     private activeTab: number;
+    private isMon: Boolean;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -18,11 +19,11 @@ export class HostDetailController {
 
     constructor(private routeParamsSvc: ng.route.IRouteParamsService,
         private serverService: ServerService) {
+            this.isMon = true;
             this.hostList = [];
             this.tabList = {
                 Overview: 1,
-                Configuration: 2,
-                OSDs: 3
+                Configuration: 2
             }
             this.activeTab = this.tabList.Overview;
             this.id = this.routeParamsSvc['id'];
@@ -30,6 +31,15 @@ export class HostDetailController {
                 this.hostList = hosts;
                 this.host = _.find(hosts, (host) => {
                     return host.nodeid === this.id;
+                });
+                this.serverService.getHostSummary(this.host.nodeid).then((summary) => {
+                    summary.role.forEach((role) => {
+                        if(role === 'OSD') {
+                            this.isMon = false;
+                            this.tabList.OSDs = 3
+                            return;
+                        }
+                    });
                 });
             });
     }
