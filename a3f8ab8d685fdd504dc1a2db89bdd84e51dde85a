@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_36744934",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-17T04:25:18Z",
+      "side": 1,
+      "message": "have a newline between subject and the message",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 35
+      },
+      "revId": "a3f8ab8d685fdd504dc1a2db89bdd84e51dde85a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_16714544",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-17T04:25:18Z",
+      "side": 1,
+      "message": "Need to check host state before removing",
+      "range": {
+        "startLine": 36,
+        "startChar": 28,
+        "endLine": 38,
+        "endChar": 32
+      },
+      "revId": "a3f8ab8d685fdd504dc1a2db89bdd84e51dde85a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d6951d33",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-17T04:25:18Z",
+      "side": 1,
+      "message": "the chart should not be shown if the host is failed to initialize",
+      "range": {
+        "startLine": 56,
+        "startChar": 117,
+        "endLine": 56,
+        "endChar": 141
+      },
+      "revId": "a3f8ab8d685fdd504dc1a2db89bdd84e51dde85a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b696193c",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-17T04:25:18Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 68,
+        "startChar": 117,
+        "endLine": 68,
+        "endChar": 141
+      },
+      "revId": "a3f8ab8d685fdd504dc1a2db89bdd84e51dde85a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_969b1566",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-17T04:25:18Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 80,
+        "startChar": 117,
+        "endLine": 80,
+        "endChar": 141
+      },
+      "revId": "a3f8ab8d685fdd504dc1a2db89bdd84e51dde85a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_16a82576",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1006048
+      },
+      "writtenOn": "2016-05-17T04:25:18Z",
+      "side": 1,
+      "message": "This information may not be available if the host is not part of any cluster.",
+      "range": {
+        "startLine": 92,
+        "startChar": 0,
+        "endLine": 97,
+        "endChar": 30
+      },
+      "revId": "a3f8ab8d685fdd504dc1a2db89bdd84e51dde85a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
