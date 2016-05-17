@@ -21,8 +21,7 @@ export class HostDetailController {
             this.hostList = [];
             this.tabList = {
                 Overview: 1,
-                Configuration: 2,
-                OSDs: 3
+                Configuration: 2
             }
             this.activeTab = this.tabList.Overview;
             this.id = this.routeParamsSvc['id'];
@@ -30,6 +29,12 @@ export class HostDetailController {
                 this.hostList = hosts;
                 this.host = _.find(hosts, (host) => {
                     return host.nodeid === this.id;
+                });
+                this.host.roles.forEach((role) => {
+                    if(role === 'OSD') {
+                        this.tabList.OSDs = 3
+                        return;
+                    }
                 });
             });
     }
