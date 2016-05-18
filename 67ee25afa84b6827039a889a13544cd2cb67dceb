@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "baa041b7_58aff629",
+        "filename": "app/components/hosts/host-details/host-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-18T10:14:37Z",
+      "side": 1,
+      "message": "Is host role not available in the host model itself?",
+      "range": {
+        "startLine": 35,
+        "startChar": 16,
+        "endLine": 35,
+        "endChar": 87
+      },
+      "revId": "67ee25afa84b6827039a889a13544cd2cb67dceb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b8b3a299",
+        "filename": "app/components/hosts/host-details/host-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-18T10:14:37Z",
+      "side": 1,
+      "message": "How do you handle Mon+OSD case?",
+      "range": {
+        "startLine": 38,
+        "startChar": 28,
+        "endLine": 38,
+        "endChar": 47
+      },
+      "revId": "67ee25afa84b6827039a889a13544cd2cb67dceb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_18b96e15",
         "filename": "app/components/hosts/host-details/hosts-detail.html",
         "patchSetId": 2
@@ -31,6 +77,52 @@
       "side": 1,
       "message": "actually here , we are calling our OSD directive for particular host .\n\nSuppose , host is MON , than , we don\u0027t have to show OSD related anything , so that why , if host is mon , just i am not calling osd directive here .",
       "parentUuid": "baa041b7_18b96e15",
+      "revId": "67ee25afa84b6827039a889a13544cd2cb67dceb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_78b2ba95",
+        "filename": "app/components/hosts/host-details/hosts-detail.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-18T10:14:37Z",
+      "side": 1,
+      "message": "This is not required since you are not adding OSD tab in case of host without OSD role.",
+      "range": {
+        "startLine": 33,
+        "startChar": 16,
+        "endLine": 33,
+        "endChar": 30
+      },
+      "revId": "67ee25afa84b6827039a889a13544cd2cb67dceb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d869c6fa",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-18T10:14:37Z",
+      "side": 1,
+      "message": "Its better to check if its OSD instead of checking if it is not Mon",
+      "range": {
+        "startLine": 41,
+        "startChar": 36,
+        "endLine": 41,
+        "endChar": 55
+      },
       "revId": "67ee25afa84b6827039a889a13544cd2cb67dceb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
