@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_b8f042fe",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-18T06:52:07Z",
+      "side": 1,
+      "message": "also check queryParams.query !\u003d\u003d undefined",
+      "revId": "e1b3a6be557ca680c2d8a1469cc9280c54108235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_38e55237",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-18T06:52:07Z",
+      "side": 1,
+      "message": "add same condition like cluster",
+      "revId": "e1b3a6be557ca680c2d8a1469cc9280c54108235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_18e28e2f",
+        "filename": "app/components/rest/storage.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-18T06:52:07Z",
+      "side": 1,
+      "message": "use custom get to pass parameter",
+      "revId": "e1b3a6be557ca680c2d8a1469cc9280c54108235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f8d12a58",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-18T06:52:07Z",
+      "side": 1,
+      "message": "undefined condition required",
+      "revId": "e1b3a6be557ca680c2d8a1469cc9280c54108235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d8d6664e",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 8
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-18T06:52:07Z",
+      "side": 1,
+      "message": "remove white space",
+      "revId": "e1b3a6be557ca680c2d8a1469cc9280c54108235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b8c72297",
+        "filename": "app/styles/dashboard.scss",
+        "patchSetId": 8
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-18T06:52:07Z",
+      "side": 1,
+      "message": "make is as pixel",
+      "revId": "e1b3a6be557ca680c2d8a1469cc9280c54108235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_98cc5ebc",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 8
+      },
+      "lineNbr": 477,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-18T06:52:07Z",
+      "side": 1,
+      "message": "move this to cluster specific css file.",
+      "revId": "e1b3a6be557ca680c2d8a1469cc9280c54108235",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
