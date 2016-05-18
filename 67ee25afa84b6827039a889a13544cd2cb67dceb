@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_18b96e15",
+        "filename": "app/components/hosts/host-details/hosts-detail.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-18T06:53:48Z",
+      "side": 1,
+      "message": "what do you refer by this here?",
+      "revId": "67ee25afa84b6827039a889a13544cd2cb67dceb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
