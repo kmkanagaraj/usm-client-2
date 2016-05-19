@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_58148f9e",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 17
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-19T12:54:04Z",
+      "side": 1,
+      "message": "TWS.",
+      "range": {
+        "startLine": 82,
+        "startChar": 42,
+        "endLine": 82,
+        "endChar": 44
+      },
+      "revId": "83f89f0a4766ba9928ac0712cc5fa08341e82e48",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
