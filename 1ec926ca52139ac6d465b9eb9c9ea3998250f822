@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_52f0ee66",
+        "filename": "app/components/base/about-modal.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-19T06:03:30Z",
+      "side": 1,
+      "message": "can we use CSS class instead of img tag , and in css class , we can link for images and all.",
+      "range": {
+        "startLine": 11,
+        "startChar": 24,
+        "endLine": 11,
+        "endChar": 130
+      },
+      "revId": "1ec926ca52139ac6d465b9eb9c9ea3998250f822",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_32f56a56",
+        "filename": "app/components/login/login.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-19T06:03:30Z",
+      "side": 1,
+      "message": "same here",
+      "range": {
+        "startLine": 11,
+        "startChar": 16,
+        "endLine": 11,
+        "endChar": 121
+      },
+      "revId": "1ec926ca52139ac6d465b9eb9c9ea3998250f822",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_12e6e6af",
+        "filename": "app/index.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-19T06:03:30Z",
+      "side": 1,
+      "message": "this all styles , can not put in css class ?",
+      "range": {
+        "startLine": 25,
+        "startChar": 55,
+        "endLine": 25,
+        "endChar": 96
+      },
+      "revId": "1ec926ca52139ac6d465b9eb9c9ea3998250f822",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f2ea6273",
+        "filename": "app/index.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-19T06:03:30Z",
+      "side": 1,
+      "message": "use \"!\u003d\u003d \" operator here",
+      "range": {
+        "startLine": 67,
+        "startChar": 86,
+        "endLine": 67,
+        "endChar": 89
+      },
+      "revId": "1ec926ca52139ac6d465b9eb9c9ea3998250f822",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5297ceeb",
+        "filename": "app/styles/modules/_usm_colors.scss",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-19T06:03:30Z",
+      "side": 1,
+      "message": "Here also , we can put common color for usm-app. like nav-bar, header etc . so that whenever we need to change the color , we can change from here directly for overall application, no need to go each file and change the colors",
+      "revId": "1ec926ca52139ac6d465b9eb9c9ea3998250f822",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
