@@ -20,11 +20,14 @@ export class OsdDetailController {
     private totalSelectedOSDs: Array<any>;
     private storageProfileArray: Array<any>;
     private selectByStorageProfile: any;
+    private paramsObject: any;
+    private filterCollapse: any;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
         '$q',
         '$modal',
+        '$location',
         '$scope',
         '$timeout',
         '$log',
@@ -36,6 +39,7 @@ export class OsdDetailController {
 
     constructor(private qService: ng.IQService,
         private $modal: any,
+        private locationService: ng.ILocationService,
         private scopeService: ng.IScope,
         private timeoutService: ng.ITimeoutService,
         private logService: ng.ILogService,
@@ -44,6 +48,7 @@ export class OsdDetailController {
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
 
+        this.filterCollapse = { osd_status: false, pg_status: false, utilization: false}
         this.filteredOSD = {};
         this.isLeftSidebarShow = true;
         this.selection = { activeOsd: {} ,allSelectedOsds: {} };
@@ -70,7 +75,7 @@ export class OsdDetailController {
             {name: "recovery", checked: false},
             {name: "backfill", checked: false},
             {name: "remapped", checked: false},
-            {name: "down", echecked: false},
+            {name: "down", checked: false},
             {name: "inconsistent", checked: false},
             {name: "peering", checked: false},
             {name: "incomplete", checked: false},
@@ -91,6 +96,24 @@ export class OsdDetailController {
         this.selectByStorageProfile = { storageprofile: '' };
         this.totalSelectedOSDs = [];
         this.getOSDs();
+        this.paramsObject = locationService.search();
+        if (Object.keys(this.paramsObject).length > 0) {
+            if(this.paramsObject.active_filter !== undefined && this.paramsObject.filter_name !== undefined) {
+                this.filterCollapse[this.paramsObject.active_filter] = true;
+                this.activeFilter = this.paramsObject.active_filter;
+                if(this.paramsObject.active_filter === 'osd_status') {
+                    this.paramsObject.filter_name.forEach((name: any) => {
+                        _.find(this.filterList.OSDStatus, (filter: any) => {
+                                return filter.name === name;
+                        }).checked = true;
+                    });
+                }else if(this.paramsObject.active_filter === 'utilization') {
+                    _.find(this.filterList.Utilization, (filter: any) => {
+                            return filter.name.split(' ')[0] === this.paramsObject.filter_name;
+                    }).checked = true;
+                }
+            }
+        }
         /* Here , watching the filteredOSD(filtered osd list) variable for any changes .
         so that we can select first value as a selected OSD in UI . and if there is no
         any element inside array, than no osd will be selected in UI. */
