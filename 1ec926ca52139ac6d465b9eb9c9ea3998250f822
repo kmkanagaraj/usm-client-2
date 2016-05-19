@@ -71,6 +71,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_185607ce",
+        "filename": "app/index.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T13:00:26Z",
+      "side": 1,
+      "message": "not part of this patch",
+      "parentUuid": "baa041b7_12e6e6af",
+      "range": {
+        "startLine": 25,
+        "startChar": 55,
+        "endLine": 25,
+        "endChar": 96
+      },
+      "revId": "1ec926ca52139ac6d465b9eb9c9ea3998250f822",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_f2ea6273",
         "filename": "app/index.html",
         "patchSetId": 3
@@ -82,6 +106,30 @@
       "writtenOn": "2016-05-19T06:03:30Z",
       "side": 1,
       "message": "use \"!\u003d\u003d \" operator here",
+      "range": {
+        "startLine": 67,
+        "startChar": 86,
+        "endLine": 67,
+        "endChar": 89
+      },
+      "revId": "1ec926ca52139ac6d465b9eb9c9ea3998250f822",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f85a43f1",
+        "filename": "app/index.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T13:00:26Z",
+      "side": 1,
+      "message": "same as above",
+      "parentUuid": "baa041b7_f2ea6273",
       "range": {
         "startLine": 67,
         "startChar": 86,
