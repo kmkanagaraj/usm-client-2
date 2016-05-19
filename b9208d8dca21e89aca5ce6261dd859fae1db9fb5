@@ -2,6 +2,57 @@
   "comments": [
     {
       "key": {
+        "uuid": "baa041b7_1897273b",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 16
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T12:37:20Z",
+      "side": 1,
+      "message": "cannot be undefined. returns empty object if no arguments are returned",
+      "revId": "b9208d8dca21e89aca5ce6261dd859fae1db9fb5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d87e5f18",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 16
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T12:37:20Z",
+      "side": 1,
+      "message": "remove space",
+      "revId": "b9208d8dca21e89aca5ce6261dd859fae1db9fb5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_58b80fc8",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 16
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T12:37:20Z",
+      "side": 1,
+      "message": "undefined check not required",
+      "revId": "b9208d8dca21e89aca5ce6261dd859fae1db9fb5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_98ab3775",
         "filename": "app/components/rest/clusters.ts",
         "patchSetId": 16
@@ -71,6 +122,23 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_18ae0781",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 16
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T12:37:20Z",
+      "side": 1,
+      "message": "undefined check not required",
+      "revId": "b9208d8dca21e89aca5ce6261dd859fae1db9fb5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_f89b6364",
         "filename": "app/components/storage/object/objectstorage-list-controller.ts",
         "patchSetId": 16
@@ -94,6 +162,23 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_98c21733",
+        "filename": "app/styles/dashboard.scss",
+        "patchSetId": 16
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T12:37:20Z",
+      "side": 1,
+      "message": "it is part of bootstrap class. http://www.w3schools.com/bootstrap/bootstrap_ref_css_text.asp",
+      "revId": "b9208d8dca21e89aca5ce6261dd859fae1db9fb5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_38966b3f",
         "filename": "app/styles/dashboard.scss",
         "patchSetId": 16
@@ -111,6 +196,23 @@
         "endLine": 72,
         "endChar": 5
       },
+      "revId": "b9208d8dca21e89aca5ce6261dd859fae1db9fb5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_38e42bdf",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 16
+      },
+      "lineNbr": 477,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T12:37:20Z",
+      "side": 1,
+      "message": "lets not confuse this name. simply cross-button is enough.\nbut use with hierarchy .list-inline \u003e .cross-button",
       "revId": "b9208d8dca21e89aca5ce6261dd859fae1db9fb5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
