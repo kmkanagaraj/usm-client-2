@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_4da3b3b2",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 13
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T12:37:20Z",
+      "side": 1,
+      "message": "white space",
+      "revId": "d3b6b1413d76fa28c7f52bad1802d79ac93a82e1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_4df05367",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 13
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-19T12:37:20Z",
+      "side": 1,
+      "message": "remove white space",
+      "revId": "d3b6b1413d76fa28c7f52bad1802d79ac93a82e1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
