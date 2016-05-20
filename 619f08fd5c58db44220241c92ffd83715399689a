@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_5bf7e658",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-20T09:03:31Z",
+      "side": 1,
+      "message": "This check is not required. just check paramsObject.tab !\u003d undefined",
+      "revId": "619f08fd5c58db44220241c92ffd83715399689a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
