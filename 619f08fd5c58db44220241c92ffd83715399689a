@@ -16,6 +16,24 @@
       "revId": "619f08fd5c58db44220241c92ffd83715399689a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3b4c229d",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-20T11:01:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_5bf7e658",
+      "revId": "619f08fd5c58db44220241c92ffd83715399689a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
