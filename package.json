@@ -27,7 +27,12 @@
         "restangular": "git://github.com/mgonto/restangular#1.5.1",
         "angular-bootstrap-datetimepicker": "^1.0.1",
         "moment": "^2.11.2",
-        "bootstrap": "^3.3.6"
+        "bootstrap": "^3.3.6",
+        "angular-gettext": "~2.2.1",
+        "gulp-sass": "~2.3.1",
+        "grunt": "~1.0.1",
+        "grunt-angular-gettext": "~2.1.15",
+        "string-format": "~0.5.0"
     },
     "devDependencies": {
         "browserify": "~12.0.2",

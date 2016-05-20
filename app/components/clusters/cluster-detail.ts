@@ -11,6 +11,7 @@ import * as ModalHelpers from '../modal/modal-helpers';
 import {numeral} from '../base/libs';
 import {RequestService} from '../rest/request';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
+import {I18N} from '../base/i18n';
 
 export class ClusterDetailController {
     private clusterHelpers: ClusterHelper;
@@ -53,7 +54,8 @@ export class ClusterDetailController {
         'StorageService',
         'BlockDeviceService',
         'RequestService',
-        'RequestTrackingService'
+        'RequestTrackingService',
+        'I18N'
     ];
 
     constructor(private qService: ng.IQService,
@@ -68,7 +70,8 @@ export class ClusterDetailController {
         private storageService: StorageService,
         private blockDeviceSvc: BlockDeviceService,
         private requestSvc: RequestService,
-        private requestTrackingSvc: RequestTrackingService) {
+        private requestTrackingSvc: RequestTrackingService,
+        private i18n: I18N) {
 
         this.nearFullStorageProfileArray = [];
         this.clusterUtilization = { data: {}, config: {} };
@@ -167,13 +170,13 @@ export class ClusterDetailController {
                      '</span>';
         };
         this.clusterUtilization.config.centerLabelFn = () => {
-              return Math.round(usage.percentused) + "% Used";
+              return Math.round(usage.percentused) + this.i18n._("% Used");
         };
     }
 
     public getUtilizationByProfile(profiles: any) {
         this.nearFullStorageProfileArray = [];
-        this.utilizationByProfile.title = 'Utilization by storage profile';
+        this.utilizationByProfile.title = this.i18n._('Utilization by storage profile');
         this.utilizationByProfile.layout = {
           'type': 'multidata'
         };
@@ -183,7 +186,7 @@ export class ClusterDetailController {
             var usedData = Math.round(profiles[profile]["Utilization"]["percentused"]);
             this.nearFullStorageProfileArray.push({name:profile,isNearFull:profiles[profile]["IsFull"]})
             if(profile === 'general') {
-                subdata.push({ "used" : usedData , "color" : "#004368" , "subtitle" : "General" });
+                subdata.push({ "used" : usedData , "color" : "#004368" , "subtitle" : this.i18n._("General") });
             }else if(profile === 'sas') {
                 subdata.push({ "used" : usedData , "color" : "#00659c" , "subtitle" : "SAS" });
             }else if(profile === 'ssd') {
@@ -251,7 +254,7 @@ export class ClusterDetailController {
                      '</span>';
         };
         this.systemUtilization[value].config.centerLabelFn = () => {
-              return Math.round(usage.used) + "% Used";
+              return Math.round(usage.used) + this.i18n._("% Used");
         };
     }
 

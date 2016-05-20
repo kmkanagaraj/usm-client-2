@@ -1,6 +1,9 @@
 /// <reference path="../../../../typings/tsd.d.ts" />
 
-import {numeral} from '../../base/libs';
+//import {numeral} from '../../base/libs';
+/* tslint:disable */
+var numeral = require('numeral');
+/* tslint:enable */
 
 /*
  * @ngdoc filter
