@@ -11,6 +11,10 @@ export class MenuController {
 
         $scope.menus = MenuService.getMenus();
 
+        $rootScope.$on('gettextLanguageChanged', function (event, data) {
+            $scope.menus = MenuService.getMenus();
+        });
+
         $scope.navigate = function(menu, parentMenu) {
             $location.path(menu.href)
         }

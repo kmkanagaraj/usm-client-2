@@ -1,6 +1,7 @@
 // <reference path="../../../typings/tsd.d.ts" />
 
 import {EventService} from '../rest/events';
+import {I18N} from '../base/i18n';
 
 export class EventDetailController {
     private eventId: string;
@@ -12,14 +13,16 @@ export class EventDetailController {
         '$interval',
         '$routeParams',
         'EventService',
-        'growl'
+        'growl',
+        'I18N'
     ];
     constructor(
         private $scope: ng.IScope,
         private $interval: ng.IIntervalService,
         private routeParamsSvc: ng.route.IRouteParamsService,
         private eventSvc: EventService,
-        private growl: any) {
+        private growl: any,
+        private i18n: I18N) {
         this.eventId = this.routeParamsSvc['eventId'];
         this.refresh();
     }
@@ -38,5 +41,9 @@ export class EventDetailController {
             this.errorMessage = status.data;
             this.growl.error(status.data);
         });
+    }
+
+    public getLocalizedDateTime(timestamp) {
+        return this.i18n.getDateTime(timestamp);
     }
 }

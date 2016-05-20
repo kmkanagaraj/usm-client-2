@@ -9,8 +9,8 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-4 col-md-3">
                                 <h2 class="card-pf-title">
-                                    <a href="">{{clusterdetail.capacity.used | bytes }} Used</a>
-                                    <p><small>of {{clusterdetail.capacity.total | bytes}} Total</small></p>
+                                    <a href="" translate>{{clusterdetail.capacity.used | bytes }} Used</a>
+                                    <p><small><translate>of {{clusterdetail.capacity.total | bytes}} Total</translate></small></p>
                                 </h2>
                                 <div class="card-pf-body">
                                     <div ng-if="clusterdetail.clusterUtilization.data.total > 0">
@@ -35,7 +35,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                         <h2 class="card-pf-title">
-                            <a href="">{{clusterdetail.hosts.total}} Hosts</a>
+                            <a href="" translate>{{clusterdetail.hosts.total}} Hosts</a>
                         </h2>
                         <div class="card-pf-body">
                             <p class="card-pf-aggregate-status-notifications">
@@ -47,7 +47,7 @@
                                     <span class="pficon pficon-ok"></span></a>
                                 </span>
                                 <span class="card-pf-aggregate-status-notification" ng-if="clusterdetail.hosts.unaccepted>0"><a href="">{{clusterdetail.hosts.unaccepted}}
-                                </a><small class="status-notification">To Accept</small></span>
+                                </a><small class="status-notification"><translate>To Accept</translate></small></span>
                             </p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-3">
                     <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                         <h2 class="card-pf-title">
-                            <a href="">{{clusterdetail.monitors.total}} Monitors</a>
+                            <a href="" translate>{{clusterdetail.monitors.total}} Monitors</a>
                         </h2>
                         <div class="card-pf-body">
                             <p class="card-pf-aggregate-status-notifications">
@@ -73,7 +73,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-3">
                     <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                         <h2 class="card-pf-title">
-                            <a href="">{{clusterdetail.pgs.total}} PGs</a>
+                            <a href="" translate>{{clusterdetail.pgs.total}} PGs</a>
                         </h2>
                         <div class="card-pf-body">
                             <p class="card-pf-aggregate-status-notifications">
@@ -95,7 +95,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                         <h2 class="card-pf-title">
-                            <a href="">{{clusterdetail.pools.total}} Pools</a>
+                            <a href="" translate>{{clusterdetail.pools.total}} Pools</a>
                         </h2>
                         <div class="card-pf-body">
                             <p class="card-pf-aggregate-status-notifications">
@@ -113,7 +113,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-3">
                     <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                         <h2 class="card-pf-title">
-                            <a href="">{{clusterdetail.osds.total}} OSDs</a>
+                            <a href="" translate>{{clusterdetail.osds.total}} OSDs</a>
                         </h2>
                         <div class="card-pf-body">
                             <p class="card-pf-aggregate-status-notifications">
@@ -131,7 +131,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-3">
                     <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                         <h2 class="card-pf-title">
-                            <a href="">{{clusterdetail.objects.total}} Objects</a>
+                            <a href="" translate>{{clusterdetail.objects.total}} Objects</a>
                         </h2>
                         <div class="card-pf-body">
                             <p class="card-pf-aggregate-status-notifications">
@@ -154,7 +154,7 @@
                     <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-5">
-                                <span class="pull-left system-performance">System Performance</span>
+                                <span class="pull-left system-performance" translate>System Performance</span>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-7">
                                 <span class="pull-right time-slot">
@@ -178,7 +178,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-3">
                                 <div class="card-pf-body">
-                                    <center><label>Memory</label></center>
+                                    <center><label translate>Memory</label></center>
                                     <div ng-if="clusterdetail.systemUtilization.memory.data.total > 0">
                                         <div pf-donut-pct-chart config="clusterdetail.systemUtilization.memory.config" data="clusterdetail.systemUtilization.memory.data" center-label="clusterdetail.systemUtilization.memory.label">
                                         </div>
@@ -212,7 +212,7 @@
                     <div class="card-pf" ng-if="clusterdetail.mostUsedPools.length>0">
                         <div class="card-pf-heading">
                             <h2 class="card-pf-title">
-                                Most Used Pools
+                                <translate>Most Used Pools</translate>
                             </h2>
                         </div>
                         <div class="card-pf-body">
