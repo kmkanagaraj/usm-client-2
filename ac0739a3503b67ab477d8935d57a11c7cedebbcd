@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_3b7b02f7",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-20T08:35:13Z",
+      "side": 1,
+      "message": "Can we use \u0027\u003d\u003d\u003d\u0027 operator here .",
+      "range": {
+        "startLine": 30,
+        "startChar": 46,
+        "endLine": 30,
+        "endChar": 48
+      },
+      "revId": "ac0739a3503b67ab477d8935d57a11c7cedebbcd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1b803ebf",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-20T08:35:13Z",
+      "side": 1,
+      "message": "same as above.",
+      "range": {
+        "startLine": 56,
+        "startChar": 135,
+        "endLine": 56,
+        "endChar": 137
+      },
+      "revId": "ac0739a3503b67ab477d8935d57a11c7cedebbcd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_9b256e0a",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-20T08:35:13Z",
+      "side": 1,
+      "message": "Are we still using c3chart for graph ? , i means , Now we have started using angular-patternfly for charts and graph.",
+      "range": {
+        "startLine": 57,
+        "startChar": 28,
+        "endLine": 65,
+        "endChar": 38
+      },
+      "revId": "ac0739a3503b67ab477d8935d57a11c7cedebbcd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_db8536cf",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-20T08:35:13Z",
+      "side": 1,
+      "message": "try to use \u0027\u003d\u003d\u003d\u0027 operator instead of using \u0027\u003d\u003d\u0027 for better type and value checking.",
+      "range": {
+        "startLine": 68,
+        "startChar": 135,
+        "endLine": 68,
+        "endChar": 137
+      },
+      "revId": "ac0739a3503b67ab477d8935d57a11c7cedebbcd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7b1e2abc",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-20T08:35:13Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 69,
+        "startChar": 28,
+        "endLine": 77,
+        "endChar": 38
+      },
+      "revId": "ac0739a3503b67ab477d8935d57a11c7cedebbcd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5b1b66ca",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 5
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-20T08:35:13Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 81,
+        "startChar": 28,
+        "endLine": 89,
+        "endChar": 38
+      },
+      "revId": "ac0739a3503b67ab477d8935d57a11c7cedebbcd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
