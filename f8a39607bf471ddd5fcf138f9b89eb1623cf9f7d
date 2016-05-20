@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_fb091a85",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-20T08:25:18Z",
+      "side": 1,
+      "message": "check if active_filter is !\u003d\u003d undefined before using it",
+      "revId": "f8a39607bf471ddd5fcf138f9b89eb1623cf9f7d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_db0e568b",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-20T08:25:18Z",
+      "side": 1,
+      "message": "same as above filer index",
+      "revId": "f8a39607bf471ddd5fcf138f9b89eb1623cf9f7d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
