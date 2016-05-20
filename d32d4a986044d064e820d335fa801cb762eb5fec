@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_3eebf014",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 6
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-20T10:29:37Z",
+      "side": 1,
+      "message": "use hostnameShort or if using hostname, then remove hostnameShort in controller",
+      "revId": "d32d4a986044d064e820d335fa801cb762eb5fec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
