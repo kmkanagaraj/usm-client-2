@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_3b62e23e",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "Just checking this.paramsObject.tab !\u003d\u003d undefined should be enough",
+      "range": {
+        "startLine": 88,
+        "startChar": 7,
+        "endLine": 88,
+        "endChar": 56
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7b750af8",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "This can be moved inside getOverallUtilization() method.",
+      "range": {
+        "startLine": 120,
+        "startChar": 8,
+        "endLine": 120,
+        "endChar": 101
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_bb56f259",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "Is this related to this patch. Please explain this in commit message.",
+      "range": {
+        "startLine": 148,
+        "startChar": 11,
+        "endLine": 150,
+        "endChar": 110
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7b4ceac7",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "Its difficult to understand what you are doing here. please explain all the changes in commit message",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 50
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5b4926b6",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "How unaccepted hosts are related to a particular cluster?",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 71,
+        "endChar": 97
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1bcefe2d",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "What is filter_index? and what is 1,2,3? \nCan you make the constant with proper names",
+      "range": {
+        "startLine": 150,
+        "startChar": 184,
+        "endLine": 150,
+        "endChar": 198
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3bc9c226",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "What you mean by filterCollapse?",
+      "range": {
+        "startLine": 51,
+        "startChar": 13,
+        "endLine": 51,
+        "endChar": 27
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_9bda0ee7",
+        "filename": "app/components/hosts/host.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "Why this change is required.",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 13
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5be00696",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-20T08:46:31Z",
+      "side": 1,
+      "message": "Why this?",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 13
+      },
+      "revId": "84ff29142aaeb14c6086030e30ae91f65b799bc7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
