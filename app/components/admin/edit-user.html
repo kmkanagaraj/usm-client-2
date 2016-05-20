@@ -1,6 +1,6 @@
 <ol class="breadcrumb">
-	<li><a href="#/admin">Users</a></li>
-	<li>Edit User</li>
+	<li><a href="#/admin" translate>Users</a></li>
+	<li translate>Edit User</li>
 </ol>
 
 <h2>
@@ -9,50 +9,50 @@
 
 <form class="form-horizontal">
     <div class="form-group">
-    <label class="col-sm-2 col-md-2 control-label">Type</label>
-    <div class="col-sm-6 col-md-3"><p class="form-control-static">Internal</p></div>
+    <label class="col-sm-2 col-md-2 control-label" translate>Type</label>
+    <div class="col-sm-6 col-md-3"><p class="form-control-static" translate>Internal</p></div>
     <label class="col-sm-4 col-md-2">
        Enabled <input type="checkbox" id="enabled" ng-model="userEdit.status">
     </label>
   </div>
   <div class="form-group">
-    <label for="usedid" class="col-sm-2 col-md-2 control-label">User Id</label>
+    <label for="usedid" class="col-sm-2 col-md-2 control-label" translate>User Id</label>
     <div class="col-sm-10 col-md-5">
       <p id="userid" class="form-control-static">{{userEdit.userId}}</p>
     </div>
   </div>
   <div class="form-group">
-    <label for="firstname" class="col-sm-2 col-md-2 control-label">First Name</label>
+    <label for="firstname" class="col-sm-2 col-md-2 control-label" translate>First Name</label>
     <div class="col-sm-10 col-md-5">
       <p id="firstName" class="form-control-static">{{userEdit.firstName}}</p>
     </div>
   </div>
     <div class="form-group">
-    <label for="lastname" class="col-sm-2 col-md-2 control-label">Last Name</label>
+    <label for="lastname" class="col-sm-2 col-md-2 control-label" translate>Last Name</label>
     <div class="col-sm-10 col-md-5">
       <p id="lastname" class="form-control-static">{{userEdit.lastName}}</p>
     </div>
   </div>
     <div class="form-group">
-    <label for="email" class="col-sm-2 col-md-2 control-label">Email</label>
+    <label for="email" class="col-sm-2 col-md-2 control-label" translate>Email</label>
     <div class="col-sm-6 col-md-3">
-      <input type="email" class="form-control" id="email" ng-model="userEdit.email" placeholder="Email">
+      <input type="email" class="form-control" id="email" ng-model="userEdit.email" placeholder="{{'Email'|translate}}">
     </div>
     <label class="col-sm-4 col-md-2">
       Email Notifications <input type="checkbox" id="notifications" ng-model="userEdit.notificationenabled">
     </label>
   </div>
     <div class="form-group">
-    <label for="password" class="col-sm-2 col-md-2 control-label">Password</label>
+    <label for="password" class="col-sm-2 col-md-2 control-label" translate>Password</label>
     <div class="col-sm-10 col-md-5">
-      <input type="password" class="form-control" id="password" ng-model="userEdit.password" placeholder="Password">
+      <input type="password" class="form-control" id="password" ng-model="userEdit.password" placeholder="{{'Password'|translate}}">
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button class="btn btn-primary" ng-click="userEdit.save()">Save</button>
-      <button class="btn btn-default" ng-click="userEdit.cancel()">Cancel</button>
+      <button class="btn btn-primary" ng-click="userEdit.save()" translate>Save</button>
+      <button class="btn btn-default" ng-click="userEdit.cancel()" translate>Cancel</button>
     </div>
   </div>
 </form>

@@ -3,13 +3,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" ng-click="$hide()">&times;</button>
-                <h4 class="modal-title"> My Settings </h4>
+                <h4 class="modal-title" translate> My Settings </h4>
             </div>
             <div class="modal-body" ng-controller="UserEditController as userEdit">
               <form class="form-horizontal">
                   <div class="form-group">
-                  <label class="col-sm-2 col-md-4 control-label">Type</label>
-                  <div class="col-sm-6 col-md-4">Internal</div>
+                  <label class="col-sm-2 col-md-4 control-label" translate>Type</label>
+                  <div class="col-sm-6 col-md-4" translate>Internal</div>
                 </div>
                 <div class="form-group">
                   <label for="usedid" class="col-sm-2 col-md-4 control-label">User Id</label>
@@ -18,19 +18,19 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="firstname" class="col-sm-2 col-md-4 control-label">First Name</label>
+                  <label for="firstname" class="col-sm-2 col-md-4 control-label" translate>First Name</label>
                   <div class="col-sm-10 col-md-8">
                     <label id="firstname" placeholder="First name">{{userEdit.firstName}}</label>
                   </div>
                 </div>
                   <div class="form-group">
-                  <label for="lastname" class="col-sm-2 col-md-4 control-label">Last Name</label>
+                  <label for="lastname" class="col-sm-2 col-md-4 control-label" translate>Last Name</label>
                   <div class="col-sm-10 col-md-8">
                     <label id="lastname" placeholder="Last name">{{userEdit.lastName}}</label>
                   </div>
                 </div>
                   <div class="form-group">
-                  <label for="email" class="col-sm-2 col-md-4 control-label">Email</label>
+                  <label for="email" class="col-sm-2 col-md-4 control-label" translate>Email</label>
                   <div class="col-sm-10 col-md-4">
                     <label id="lastname" placeholder="Email">{{userEdit.email}}</label>
                   </div>
@@ -38,34 +38,34 @@
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" ng-model="userEdit.notifications" id="notifications"></input>
-                          <span>Email Notifications</span>
+                          <span translate>Email Notifications</span>
                         </label>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="password" class="col-sm-2 col-md-4 control-label">Old Password</label>
+                  <label for="password" class="col-sm-2 col-md-4 control-label" translate>Old Password</label>
                   <div class="col-sm-10 col-md-8">
-                    <input type="password" class="form-control" id="password" ng-model="userEdit.oldpassword"placeholder="Old Password">
+                    <input type="password" class="form-control" id="password" ng-model="userEdit.oldpassword"placeholder="{{'Old Password'|translate}}">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="password" class="col-sm-2 col-md-4 control-label">New Password</label>
+                  <label for="password" class="col-sm-2 col-md-4 control-label" translate>New Password</label>
                   <div class="col-sm-10 col-md-8">
-                    <input type="password" class="form-control" id="password" ng-model="userEdit.password"placeholder="New Password">
+                    <input type="password" class="form-control" id="password" ng-model="userEdit.password"placeholder="{{'New Password'|translate}}">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="password" class="col-sm-2 col-md-4 control-label">Confirm Password</label>
+                  <label for="password" class="col-sm-2 col-md-4 control-label" translate>Confirm Password</label>
                   <div class="col-sm-10 col-md-8">
-                    <input type="password" class="form-control" id="password" ng-model="userEdit.confirmpassword"placeholder="Confirm Password">
+                    <input type="password" class="form-control" id="password" ng-model="userEdit.confirmpassword"placeholder="{{'Confirm Password'|translate}}">
                     <label class="error-validation-msg">{{userEdit.errorMessage}}</label>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-4 col-sm-10">
-                    <button class="btn btn-primary" ng-click="userEdit.saveSettings($hide)">Save</button>
-                    <button class="btn btn-default" ng-click="$hide()">Cancel</button>
+                    <button class="btn btn-primary" ng-click="userEdit.saveSettings($hide)" translate>Save</button>
+                    <button class="btn btn-default" ng-click="$hide()" translate>Cancel</button>
                   </div>
                 </div>
               </form>
