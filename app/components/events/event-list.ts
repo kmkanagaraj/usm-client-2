@@ -21,6 +21,7 @@ export class EventListController {
     private errorMessage: string = "";
     private severity: string;
     private severityLevel = [];
+    private activeFilter: string = "active";
     private alarmStatus = ["indeterminate",
         "critical",
         "major",
@@ -65,6 +66,7 @@ export class EventListController {
         this.$scope.$on('$destroy', () => {
             this.$interval.cancel(this.timer);
         });
+        this.filterObject['status'] = this.activeFilter;
         this.refresh();
     }
 
@@ -95,6 +97,15 @@ export class EventListController {
             this.requestObject['searchmessage'] = this.searchQuery;
         }
 
+        if(this.activeFilter === "active" ) {
+            this.requestObject['acked'] = false;
+        }
+        if(this.activeFilter === "dismissed" ) {
+            this.requestObject['acked'] = true;
+        }
+        if(this.activeFilter === "both"){
+            delete this.requestObject['acked'];
+        }
         this.eventSvc.getList(this.requestObject).then((data: any) => {
             this.totalCount = data.totalcount;
             this.totalPages = Math.ceil(data.totalcount / this.pageSize);
@@ -128,6 +139,8 @@ export class EventListController {
         this.toDateTimeFilter = undefined;
         this.searchQuery = undefined;
         this.severity = undefined;
+        this.activeFilter = "active";
+        this.filterObject['status'] = this.activeFilter;
     }
 
     public applyFilter(key, value) {
