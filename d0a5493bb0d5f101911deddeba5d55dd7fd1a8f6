@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_0f80f8be",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-22T06:47:01Z",
+      "side": 1,
+      "message": "statusFilter may be a good name?",
+      "range": {
+        "startLine": 24,
+        "startChar": 12,
+        "endLine": 24,
+        "endChar": 24
+      },
+      "revId": "d0a5493bb0d5f101911deddeba5d55dd7fd1a8f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ef8034c1",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-22T06:47:01Z",
+      "side": 1,
+      "message": "Why do you need this? Anyway request object is created from this.activeFilter directly in refresh() method",
+      "range": {
+        "startLine": 69,
+        "startChar": 7,
+        "endLine": 69,
+        "endChar": 56
+      },
+      "revId": "d0a5493bb0d5f101911deddeba5d55dd7fd1a8f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_cf8570cf",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-22T06:47:01Z",
+      "side": 1,
+      "message": "same as above",
+      "range": {
+        "startLine": 143,
+        "startChar": 0,
+        "endLine": 143,
+        "endChar": 56
+      },
+      "revId": "d0a5493bb0d5f101911deddeba5d55dd7fd1a8f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
