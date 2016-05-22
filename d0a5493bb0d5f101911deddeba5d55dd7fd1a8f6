@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_0f67d84d",
+        "filename": "app/components/events/event-list.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-22T06:58:43Z",
+      "side": 1,
+      "message": "that is not request object. that object is to display selected filter",
+      "parentUuid": "baa041b7_ef8034c1",
+      "range": {
+        "startLine": 69,
+        "startChar": 7,
+        "endLine": 69,
+        "endChar": 56
+      },
+      "revId": "d0a5493bb0d5f101911deddeba5d55dd7fd1a8f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_cf8570cf",
         "filename": "app/components/events/event-list.ts",
         "patchSetId": 1
