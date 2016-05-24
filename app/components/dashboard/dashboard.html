@@ -53,16 +53,27 @@
                                             <div class="utilization">
                                                 <div class="row margin-for-storage-profile">
                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                        <div pf-utilization-bar-chart chart-data="dash.utilizationByProfile.data" chart-title="dash.utilizationByProfile.title" layout="dash.utilizationByProfile.layout">
+                                                        <small class="pull-left">{{dash.utilizationByProfile.title}}</small>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <div class="progress">
+                                                          <div ng-repeat="profile in dash.utilizationByProfile.data" class="progress-bar" role="progressbar" ng-style="{'width': profile.used + '%', 'background-color': profile.color }">
+                                                          </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-if="dash.nearFullStorageProfileArray.length>0">
-                                                        <span class="pull-left" ng-repeat="profile in dash.nearFullStorageProfileArray">
-                                                            <a href="" title="Near Full">
-                                                                <span class="text-capitalize pficon pficon-warning-triangle-o" ng-if="profile.isNearFull">
-                                                                    {{profile.name}}
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <span class="pull-left" ng-repeat="profile in dash.utilizationByProfile.data">
+                                                            <div class="storage-profile-color">
+                                                                <span class="square-box" ng-style="{ 'background-color': profile.color }">
                                                                 </span>
-                                                            </a>
+                                                                <span>{{profile.subtitle}}</span>
+                                                                <span>{{profile.used | number: 0 }}%</span>
+                                                                <span ng-if="profile.isNearFull">
+                                                                    <a href="" title="Near Full">
+                                                                        <span class="pficon pficon-warning-triangle-o"></span>
+                                                                    </a>
+                                                                </span>
+                                                            </div>
                                                         </span>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

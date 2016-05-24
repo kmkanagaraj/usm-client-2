@@ -36,7 +36,6 @@ export class ClusterDetailController {
     private selectedTimeSlot: any;
     private timer: ng.IPromise<any>;
     private rbds = [];
-    private nearFullStorageProfileArray: Array<any>;
     private paramsObject: any;
 
     //Services that are used in this class.
@@ -70,7 +69,6 @@ export class ClusterDetailController {
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
 
-        this.nearFullStorageProfileArray = [];
         this.clusterUtilization = { data: {}, config: {} };
         this.systemUtilization = {cpu:{data:{},config:{}},memory:{data:{},config:{}}};
         this.mostUsedPools = [];
@@ -172,22 +170,17 @@ export class ClusterDetailController {
     }
 
     public getUtilizationByProfile(profiles: any) {
-        this.nearFullStorageProfileArray = [];
         this.utilizationByProfile.title = 'Utilization by storage profile';
-        this.utilizationByProfile.layout = {
-          'type': 'multidata'
-        };
-        var subdata = [];
+        this.utilizationByProfile.data = [];
         var othersProfile = { "used": 0, "total": 0};
         Object.keys(profiles).forEach((profile) => {
             var usedData = Math.round(profiles[profile]["Utilization"]["percentused"]);
-            this.nearFullStorageProfileArray.push({name:profile,isNearFull:profiles[profile]["IsFull"]})
             if(profile === 'general') {
-                subdata.push({ "used" : usedData , "color" : "#004368" , "subtitle" : "General" });
+                this.utilizationByProfile.data.push({ "used" : usedData , "color" : "#004368" , "subtitle" : "General" , "isFull" : profiles[profile]["IsFull"] });
             }else if(profile === 'sas') {
-                subdata.push({ "used" : usedData , "color" : "#00659c" , "subtitle" : "SAS" });
+                this.utilizationByProfile.data.push({ "used" : usedData , "color" : "#00659c" , "subtitle" : "SAS" , "isFull" : profiles[profile]["IsFull"] });
             }else if(profile === 'ssd') {
-                subdata.push({ "used" : usedData , "color" : "#39a5dc" , "subtitle" : "SSD" });
+                this.utilizationByProfile.data.push({ "used" : usedData , "color" : "#39a5dc" , "subtitle" : "SSD" , "isFull" : profiles[profile]["IsFull"] });
             }else{
                 othersProfile.used = othersProfile.used + profiles[profile]["Utilization"]["used"];
                 othersProfile.total = othersProfile.total + profiles[profile]["Utilization"]["total"];
@@ -195,12 +188,8 @@ export class ClusterDetailController {
         });
         var othersProfilePercent = Math.round(100 * (othersProfile.used / othersProfile.total));
         if (othersProfilePercent > 0) {
-            subdata.push({ "used" : othersProfilePercent , "color" : "#7dc3e8" , "subtitle" : "Others" });
+            this.utilizationByProfile.data.push({ "used" : othersProfilePercent , "color" : "#7dc3e8" , "subtitle" : "Others" });
         }
-        this.utilizationByProfile.data = {
-          'total': '100',
-          'subdata' : subdata
-        };
     }
 
     public getOverallUtilization() {

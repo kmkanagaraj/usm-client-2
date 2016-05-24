@@ -22,16 +22,27 @@
                                 <div class="cluster-utilization">
                                     <div class="row margin-for-storage-profile">
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div pf-utilization-bar-chart chart-data="clusterdetail.utilizationByProfile.data" chart-title="clusterdetail.utilizationByProfile.title" layout="clusterdetail.utilizationByProfile.layout">
+                                            <small class="pull-left">{{clusterdetail.utilizationByProfile.title}}</small>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="progress">
+                                              <div ng-repeat="profile in clusterdetail.utilizationByProfile.data" class="progress-bar" role="progressbar" ng-style="{'width': profile.used + '%', 'background-color': profile.color }">
+                                              </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-if="clusterdetail.nearFullStorageProfileArray.length>0">
-                                            <span class="pull-left" ng-repeat="profile in clusterdetail.nearFullStorageProfileArray">
-                                                <a href="" title="Near Full">
-                                                    <span class="text-capitalize pficon pficon-warning-triangle-o" ng-if="profile.isNearFull">
-                                                        {{profile.name}}
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <span class="pull-left" ng-repeat="profile in clusterdetail.utilizationByProfile.data">
+                                                <div class="storage-profile-color">
+                                                    <span class="square-box" ng-style="{ 'background-color': profile.color }">
                                                     </span>
-                                                </a>
+                                                    <span>{{profile.subtitle}}</span>
+                                                    <span>{{profile.used | number: 0 }}%</span>
+                                                    <span ng-if="profile.isFull">
+                                                        <a href="" title="Full">
+                                                            <span class="pficon pficon-warning-triangle-o"></span>
+                                                        </a>
+                                                    </span>
+                                                </div>
                                             </span>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
