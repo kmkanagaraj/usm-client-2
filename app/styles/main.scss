@@ -475,3 +475,17 @@ host-is-mon {
 .no-left-pad{
     padding-left:0px;
 }
+
+// ----- for storage profile color ------
+
+.storage-profile-color > span {
+    padding: 1px;
+}
+
+.storage-profile-color .square-box {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    margin-left: 3px; 
+}
