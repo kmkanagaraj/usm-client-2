@@ -13,6 +13,7 @@ var ngAnnotate = require('gulp-ng-annotate');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var del = require('del');
+var browserSync = require('browser-sync').create();
 //var es = require('event-stream');
 //var bowerFiles = require('main-bower-files');
 //var print = require('gulp-print');
@@ -152,6 +153,14 @@ gulp.task('compile', ['tslint', 'tsc', 'browserify', 'sass', 'css', 'templates',
 
 gulp.task('watch', function () {
     gulp.watch(path.tscripts, ['browserify']);
+    gulp.watch(path.styles, ['sass']);
+});
+
+gulp.task('bs', function() {
+    browserSync.init({
+        proxy: argv.server,
+        serveStatic: ['./dist']
+    });
     gulp.watch(path.styles, ['sass']);
 });
 
