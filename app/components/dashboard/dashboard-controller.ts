@@ -22,7 +22,6 @@ export class DashboardController {
     private timeSlots: [{name:string, value:string}];
     private selectedTimeSlot: any;
     private timer: ng.IPromise<any>;
-    private nearFullStorageProfileArray: Array<any>;
 
     static $inject: Array<string> = [
         '$scope',
@@ -44,7 +43,6 @@ export class DashboardController {
             this.systemUtilization = {cpu:{data:{},config:{}},memory:{data:{},config:{}}};
             this.utilizationByProfile = {};
             this.mostUsedPools = [];
-            this.nearFullStorageProfileArray = [];
             this.capacity = {};
             this.clusters = { criticalAlerts: 0, error: 0, nearfull: 0, total: 0 };
             this.hosts = { criticalAlerts: 0, error: 0, total: 0, unaccepted: 0 };
@@ -72,7 +70,7 @@ export class DashboardController {
                 if (clusters.length === 0) {
                     this.$location.path('/clusters');
                 }else {
-                    this.timer = this.intervalSvc(() => this.loadDashboardData(), 10000);
+                    this.timer = this.intervalSvc(() => this.loadDashboardData(), 10000 );
                     this.scopeService.$on('$destroy', () => {
                         this.intervalSvc.cancel(this.timer);
                     });
@@ -135,22 +133,17 @@ export class DashboardController {
      *This is the helper function for format the utilization by profile data.
     */
     public formatUtilizationByProfileData(profiles: any) {
-        this.nearFullStorageProfileArray = [];
         this.utilizationByProfile.title = 'Utilization by storage profile';
-        this.utilizationByProfile.layout = {
-          'type': 'multidata'
-        };
-        var subdata = [];
+        this.utilizationByProfile.data = [];
         var othersProfile: UsageData = { "used": 0, "total": 0};
         Object.keys(profiles).forEach((profile) => {
             var usedData = Math.round(profiles[profile]["utilization"]["percentused"]);
-            this.nearFullStorageProfileArray.push({name:profile,isNearFull:profiles[profile]["isNearFull"]})
             if(profile === 'general') {
-                subdata.push({ "used" : usedData , "color" : "#004368" , "subtitle" : "General" });
+                this.utilizationByProfile.data.push({ "used" : usedData , "color" : "#004368" , "subtitle" : "General" , "isNearFull" : profiles[profile]["isNearFull"] });
             }else if(profile === 'sas') {
-                subdata.push({ "used" : usedData , "color" : "#00659c" , "subtitle" : "SAS" });
+                this.utilizationByProfile.data.push({ "used" : usedData , "color" : "#00659c" , "subtitle" : "SAS" , "isNearFull" : profiles[profile]["isNearFull"] });
             }else if(profile === 'ssd') {
-                subdata.push({ "used" : usedData , "color" : "#39a5dc" , "subtitle" : "SSD" });
+                this.utilizationByProfile.data.push({ "used" : usedData , "color" : "#39a5dc" , "subtitle" : "SSD" , "isNearFull" : profiles[profile]["isNearFull"] });
             }else{
                 othersProfile.used = othersProfile.used + profiles[profile]["utilization"]["used"];
                 othersProfile.total = othersProfile.total + profiles[profile]["utilization"]["total"];
@@ -158,12 +151,8 @@ export class DashboardController {
         });
         var othersProfilePercent = Math.round(100 * (othersProfile.used / othersProfile.total));
         if (othersProfilePercent > 0) {
-            subdata.push({ "used" : othersProfilePercent , "color" : "#7dc3e8" , "subtitle" : "Others" });
+            this.utilizationByProfile.data.push({ "used" : othersProfilePercent , "color" : "#7dc3e8" , "subtitle" : "Others" });
         }
-        this.utilizationByProfile.data = {
-          'total': '100',
-          'subdata' : subdata
-        };
     }
 
     public getMostUsedPools(storageUsage) {
