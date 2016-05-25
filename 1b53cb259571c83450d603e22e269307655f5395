@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_45d25529",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-25T09:19:19Z",
+      "side": 1,
+      "message": "empty href",
+      "revId": "1b53cb259571c83450d603e22e269307655f5395",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_25cd1185",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-25T09:19:19Z",
+      "side": 1,
+      "message": "Why \u003ca\u003e is required if href\u003d\"\"",
+      "revId": "1b53cb259571c83450d603e22e269307655f5395",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_05c8cd72",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-25T09:19:19Z",
+      "side": 1,
+      "message": "same as above",
+      "revId": "1b53cb259571c83450d603e22e269307655f5395",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e5c28952",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-05-25T09:19:19Z",
+      "side": 1,
+      "message": "Name RHSC should not be here",
+      "range": {
+        "startLine": 75,
+        "startChar": 154,
+        "endLine": 75,
+        "endChar": 164
+      },
+      "revId": "1b53cb259571c83450d603e22e269307655f5395",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
