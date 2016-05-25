@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_85a4dd07",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-25T07:25:46Z",
+      "side": 1,
+      "message": "isFull is not relevant for StorageProfile \"Others\"",
+      "revId": "ff3e12b9322ead6b3c3723484c67e7bc9a560338",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_a5a121fa",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 5
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-25T07:25:46Z",
+      "side": 1,
+      "message": "isNearFull is not relevant for Others?",
+      "revId": "ff3e12b9322ead6b3c3723484c67e7bc9a560338",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_05620dd8",
+        "filename": "package.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-25T07:25:46Z",
+      "side": 1,
+      "message": "I think we should point to a paritcular version.",
+      "range": {
+        "startLine": 10,
+        "startChar": 31,
+        "endLine": 10,
+        "endChar": 81
+      },
+      "revId": "ff3e12b9322ead6b3c3723484c67e7bc9a560338",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
