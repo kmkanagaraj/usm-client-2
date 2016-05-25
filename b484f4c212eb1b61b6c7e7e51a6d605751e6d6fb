@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_65431914",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-25T08:17:05Z",
+      "side": 0,
+      "message": "RHSC Service is not meaningful in upstream. Give a better name which suites both upstream and downstream.",
+      "range": {
+        "startLine": 65,
+        "startChar": 43,
+        "endLine": 65,
+        "endChar": 56
+      },
+      "revId": "b484f4c212eb1b61b6c7e7e51a6d605751e6d6fb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
