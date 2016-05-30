@@ -1,6 +1,7 @@
 // <reference path="../../../typings/tsd.d.ts" />
 
 import {RequestService} from '../rest/request';
+import {I18N} from '../base/i18n';
 
 export class TaskDetailController {
     private list: Array<any>;
@@ -12,13 +13,15 @@ export class TaskDetailController {
         '$scope',
         '$interval',
         '$routeParams',
-        'RequestService'
+        'RequestService',
+        'I18N'
     ];
     constructor(
         private $scope: ng.IScope,
         private $interval: ng.IIntervalService,
         private routeParamsSvc: ng.route.IRouteParamsService,
-        private requestSvc: RequestService) {
+        private requestSvc: RequestService,
+        private i18n: I18N) {
         if(this.taskId === undefined){
             this.taskId = this.routeParamsSvc['taskId'];
         }
@@ -41,5 +44,9 @@ export class TaskDetailController {
                 });
             }
         });
+    }
+
+    public getLocalizedDateTime(timestamp) {
+        return this.i18n.getDateTime(timestamp);
     }
 }
