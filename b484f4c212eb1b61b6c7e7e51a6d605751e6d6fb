@@ -22,6 +22,30 @@
       "revId": "b484f4c212eb1b61b6c7e7e51a6d605751e6d6fb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6f61aba8",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-30T10:49:57Z",
+      "side": 0,
+      "message": "can you suggest some name which should be suitable",
+      "parentUuid": "baa041b7_65431914",
+      "range": {
+        "startLine": 65,
+        "startChar": 43,
+        "endLine": 65,
+        "endChar": 56
+      },
+      "revId": "b484f4c212eb1b61b6c7e7e51a6d605751e6d6fb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
