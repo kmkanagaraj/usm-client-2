@@ -22,6 +22,30 @@
       "revId": "a72bfef5b738b3e96737f3a256cb09123f0e3b9a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_57d0b9c8",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-31T11:08:49Z",
+      "side": 0,
+      "message": "here we need to check only status condition not enabled flag. \nsame thing also we have done for host , you can see in host-detail.html line no. - 6 \n\nand i have given comment in commit message for this changes",
+      "parentUuid": "baa041b7_37b655f9",
+      "range": {
+        "startLine": 6,
+        "startChar": 51,
+        "endLine": 6,
+        "endChar": 84
+      },
+      "revId": "a72bfef5b738b3e96737f3a256cb09123f0e3b9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }

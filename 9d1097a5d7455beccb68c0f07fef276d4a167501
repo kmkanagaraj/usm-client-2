@@ -22,6 +22,30 @@
       "revId": "9d1097a5d7455beccb68c0f07fef276d4a167501",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5782f9c8",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-31T11:08:49Z",
+      "side": 1,
+      "message": "Minimum screen resolution for 1.0 is 1024 x 768.\n\nyou can refer this card -\n\nhttps://trello.com/c/RjdPOYX4/448-ui-cluster-object-details-osd-view",
+      "parentUuid": "baa041b7_d7c72962",
+      "range": {
+        "startLine": 78,
+        "startChar": 22,
+        "endLine": 78,
+        "endChar": 28
+      },
+      "revId": "9d1097a5d7455beccb68c0f07fef276d4a167501",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
