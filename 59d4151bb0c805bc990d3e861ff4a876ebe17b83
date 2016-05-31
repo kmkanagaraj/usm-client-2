@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_b7eb85db",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-31T09:46:06Z",
+      "side": 1,
+      "message": "How this change is related to the patch?. I feel it will affect the controller and eventually the UI as well.",
+      "range": {
+        "startLine": 41,
+        "startChar": 50,
+        "endLine": 41,
+        "endChar": 106
+      },
+      "revId": "59d4151bb0c805bc990d3e861ff4a876ebe17b83",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
