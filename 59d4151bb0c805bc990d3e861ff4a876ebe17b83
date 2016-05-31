@@ -22,6 +22,30 @@
       "revId": "59d4151bb0c805bc990d3e861ff4a876ebe17b83",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_977c01ed",
+        "filename": "app/components/rest/server.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-05-31T11:00:05Z",
+      "side": 1,
+      "message": "now from the backend , api response get change for monitors parameter , and depend on that response, i have updated this , so that we will have correct monitors data in UI .\ni have tested it , working fine .\n\nBut this is not related to this patch , if you want it in another patch , i will do that , but it\u0027s minor changes that why i put in this patch only",
+      "parentUuid": "baa041b7_b7eb85db",
+      "range": {
+        "startLine": 41,
+        "startChar": 50,
+        "endLine": 41,
+        "endChar": 106
+      },
+      "revId": "59d4151bb0c805bc990d3e861ff4a876ebe17b83",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
