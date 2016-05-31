@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_37b655f9",
+        "filename": "app/components/clusters/clusters-detail.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-31T09:51:11Z",
+      "side": 0,
+      "message": "Why its not required?. This seems not related to this patch",
+      "range": {
+        "startLine": 6,
+        "startChar": 51,
+        "endLine": 6,
+        "endChar": 84
+      },
+      "revId": "a72bfef5b738b3e96737f3a256cb09123f0e3b9a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

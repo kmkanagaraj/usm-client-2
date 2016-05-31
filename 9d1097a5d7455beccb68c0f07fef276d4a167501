@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_d7c72962",
+        "filename": "app/styles/cluster-osd-detail.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-05-31T09:51:11Z",
+      "side": 1,
+      "message": "This may not work well in the small screens like tablet/mobile",
+      "range": {
+        "startLine": 78,
+        "startChar": 22,
+        "endLine": 78,
+        "endChar": 28
+      },
+      "revId": "9d1097a5d7455beccb68c0f07fef276d4a167501",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
