@@ -3,6 +3,7 @@ import {ClusterService} from '../rest/clusters';
 import {DashboardSummaryData} from '../rest/server';
 import {UsageData} from '../rest/server';
 import {numeral} from '../base/libs';
+import {I18N} from '../base/i18n';
 
 export class DashboardController {
     private summary: any;
@@ -30,7 +31,8 @@ export class DashboardController {
         '$log',
         '$interval',
         'ServerService',
-        'ClusterService'
+        'ClusterService',
+        'I18N'
     ];
 
     constructor(private scopeService: ng.IScope,
@@ -38,7 +40,8 @@ export class DashboardController {
         private $log: ng.ILogService,
         private intervalSvc: ng.IIntervalService,
         private serverService: ServerService,
-        private clusterService: ClusterService) {
+        private clusterService: ClusterService,
+        private i18n: I18N) {
 
             this.utilization = { data: {}, config: {} };
             this.systemUtilization = {cpu:{data:{},config:{}},memory:{data:{},config:{}}};
@@ -61,9 +64,9 @@ export class DashboardController {
                 throughput: {title:"",data:{xData:[],yData:[]},config:{}},
                 latency: {title:"",data:{xData:[],yData:[]},config:{}}
             };
-            this.timeSlots = [{ name: "Last 1 hour", value: "-1h" },
-                         { name: "Last 2 hours", value: "-2h" },
-                         { name: "Last 24 hours", value: "" }];
+            this.timeSlots = [{ name: this.i18n._("Last 1 hour"), value: "-1h" },
+                         { name: this.i18n._("Last 2 hours"), value: "-2h" },
+                         { name: this.i18n._("Last 24 hours"), value: "" }];
             this.selectedTimeSlot = this.timeSlots[0];
             // Summary data is returned as empty if there are no clusters in the system.
             // So here we are fetching the cluster list and redirect
@@ -122,7 +125,7 @@ export class DashboardController {
         this.utilization.config.chartId = "utilizationChart";
         this.utilization.config.thresholds = {'warning':'60','error':'90'};
         this.utilization.config.centerLabelFn = () => {
-              return Math.round(usage.percentused) + "% Used";
+              return Math.round(usage.percentused) + this.i18n._("% Used");
         };
         this.utilization.config.tooltipFn = (d) => {
               return '<span class="donut-tooltip-pf"style="white-space: nowrap;">' +
@@ -136,7 +139,7 @@ export class DashboardController {
     */
     public formatUtilizationByProfileData(profiles: any) {
         this.nearFullStorageProfileArray = [];
-        this.utilizationByProfile.title = 'Utilization by storage profile';
+        this.utilizationByProfile.title = this.i18n._('Utilization by storage profile');
         this.utilizationByProfile.layout = {
           'type': 'multidata'
         };
@@ -146,7 +149,7 @@ export class DashboardController {
             var usedData = Math.round(profiles[profile]["utilization"]["percentused"]);
             this.nearFullStorageProfileArray.push({name:profile,isNearFull:profiles[profile]["isNearFull"]})
             if(profile === 'general') {
-                subdata.push({ "used" : usedData , "color" : "#004368" , "subtitle" : "General" });
+                subdata.push({ "used" : usedData , "color" : "#004368" , "subtitle" : this.i18n._("General") });
             }else if(profile === 'sas') {
                 subdata.push({ "used" : usedData , "color" : "#00659c" , "subtitle" : "SAS" });
             }else if(profile === 'ssd') {
@@ -158,7 +161,7 @@ export class DashboardController {
         });
         var othersProfilePercent = Math.round(100 * (othersProfile.used / othersProfile.total));
         if (othersProfilePercent > 0) {
-            subdata.push({ "used" : othersProfilePercent , "color" : "#7dc3e8" , "subtitle" : "Others" });
+            subdata.push({ "used" : othersProfilePercent , "color" : "#7dc3e8" , "subtitle" : this.i18n._("Others") });
         }
         this.utilizationByProfile.data = {
           'total': '100',
@@ -218,7 +221,7 @@ export class DashboardController {
                      '</span>';
         };
         this.systemUtilization[graphName].config.centerLabelFn = () => {
-              return Math.round(usage.used) + "% Used";
+              return Math.round(usage.used) + this.i18n._("% Used");
         };
     }
 

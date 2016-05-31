@@ -1,7 +1,7 @@
 <div class="container-fluid import-cluster">
     <ol class="breadcrumb">
-        <li><a ng-href="#/clusters">Clusters</a></li>
-        <li>Import Cluster</li>
+        <li><a ng-href="#/clusters" translate>Clusters</a></li>
+        <li translate>Import Cluster</li>
     </ol>
     <div class="alert alert-danger" ng-if="cluster.error !== undefined">
         <span class="pficon pficon-error-circle-o"></span>
@@ -9,18 +9,18 @@
     </div>
     <div ng-if="cluster.step === 1">
         <section>
-            <h2>Select Monitor Host</h2>
-            <p>The following hosts do not belong to an existing cluster. Select a monitor host from this list. All cluster configuration
+            <h2 translate>Select Monitor Host</h2>
+            <p translate>The following hosts do not belong to an existing cluster. Select a monitor host from this list. All cluster configuration
                 information will be imported from this host.</p>
         </section>
-        <h3>Available Hosts</h3>
+        <h3 translate>Available Hosts</h3>
         <div class="row">
             <div class="form-group col-md-3 toolbar-pf-filter">
-                <input type="text" class="form-control" placeholder="Search" ng-model="cluster.search">
+                <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-model="cluster.search">
             </div>
             <div class="col-md-offset-6 col-md-3">
                 <span class="pull-right">
-                 <button class="btn btn-default pull right" ng-click="cluster.loadAllFreeHosts()">Refresh</button>
+                 <button class="btn btn-default pull right" ng-click="cluster.loadAllFreeHosts()" translate>Refresh</button>
             </span>
             </div>
         </div>
@@ -28,9 +28,9 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th>Hostname</th>
-                    <th>Address</th>
-                    <th>Status</th>
+                    <th translate>Hostname</th>
+                    <th translate>Address</th>
+                    <th translate>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -51,11 +51,11 @@
     </div>
     <div ng-if="cluster.step ===2">
         <section>
-            <h2>Cluster Summary</h2>
-            <p>The following cluster details have been detected. Review and click <strong> Import</strong> to continue importing this
+            <h2 translate>Cluster Summary</h2>
+            <p translate translate-comment="TRANSLATORS: 'strong' should not be translated.">The following cluster details have been detected. Review and click <strong> Import</strong> to continue importing this
                 cluster. Unaccepted hosts will be automatically accepted during import process</p>
             <dl class="dl-horizontal">
-                <dt>Name:</dt>
+                <dt translate>Name:</dt>
                 <dd ng-bind="cluster.clusterSummary.clustername"></dd>
                 <dt>Version:</dt>
                 <dd ng-bind="cluster.clusterSummary.version"></dd>
@@ -66,20 +66,20 @@
         <h3>Hosts</h3>
         <div class="row">
             <div class="form-group col-md-3 toolbar-pf-filter">
-                <input type="text" class="form-control" placeholder="Search" ng-model="cluster.search">
+                <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-model="cluster.search">
             </div>
             <div class="col-md-offset-6 col-md-3">
                 <span class="pull-right">
-                 <button class="btn btn-default pull right" ng-click="cluster.loadClusterDetails()">Refresh</button>
+                 <button class="btn btn-default pull right" ng-click="cluster.loadClusterDetails()" translate>Refresh</button>
             </span>
             </div>
         </div>
         <table class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th>Hostname</th>
-                    <th>Type</th>
-                    <th>Status</th>
+                    <th translate>Hostname</th>
+                    <th translate>Type</th>
+                    <th translate>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -97,8 +97,8 @@
     </div>
     <div>
         <button class="btn btn-primary" ng-if="cluster.step === 1" ng-disabled="cluster.bootstrapNode === undefined"
-        ng-click="cluster.loadClusterDetails(); cluster.search='';">Continue</button>
+        ng-click="cluster.loadClusterDetails(); cluster.search='';" translate>Continue</button>
         <button class="btn btn-primary" ng-if="cluster.step === 2" ng-disabled="cluster.error !== undefined" ng-click="cluster.import()">Import</button>
-        <button class="btn btn-default" ng-click="cluster.cancel()">Cancel</button>
+        <button class="btn btn-default" ng-click="cluster.cancel()" translate>Cancel</button>
     </div>
 </div>

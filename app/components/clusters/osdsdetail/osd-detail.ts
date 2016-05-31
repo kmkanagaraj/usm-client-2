@@ -6,6 +6,7 @@ import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import * as ModalHelpers from '../../modal/modal-helpers';
 import {numeral} from '../../base/libs';
+import {I18N} from '../../base/i18n';
 
 export class OsdDetailController {
     private id: any;
@@ -33,7 +34,8 @@ export class OsdDetailController {
         'ServerService',
         'ClusterService',
         'RequestService',
-        'RequestTrackingService'
+        'RequestTrackingService',
+        'I18N'
     ];
 
     constructor(private qService: ng.IQService,
@@ -45,7 +47,8 @@ export class OsdDetailController {
         private serverService: ServerService,
         private clusterService: ClusterService,
         private requestSvc: RequestService,
-        private requestTrackingSvc: RequestTrackingService) {
+        private requestTrackingSvc: RequestTrackingService,
+        private i18n: I18N) {
 
         this.filteredOSD = {};
         this.isLeftSidebarShow = true;
@@ -86,8 +89,8 @@ export class OsdDetailController {
             {name: "Less than 50%", icon: "progress-bar-normal", enabled: false, checked: false}
         ];
         this.storageProfileArray = [
-            {'name': 'All', 'value': ''},
-            {'name': 'General', 'value': 'general'},
+            {'name': this.i18n._('All'), 'value': ''},
+            {'name': this.i18n._('General'), 'value': 'general'},
             {'name': 'SAS', 'value': 'sas'},
             {'name': 'SSD', 'value': 'ssd'}
         ];

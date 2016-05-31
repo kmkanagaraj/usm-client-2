@@ -2,6 +2,8 @@ app/**/*.js
 app/**/*.js.map
 dist
 node_modules
+po/**/*.po
+po/**/*.mo
 typings
 
 # tar
