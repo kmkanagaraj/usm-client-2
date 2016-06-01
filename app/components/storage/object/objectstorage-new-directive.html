@@ -25,7 +25,7 @@
                     <select pf-select ng-model="storage.type" id="type" class="form-control" ng-options="type for type in storage.types"></select>
                 </div>
             </div>
-            <div class="form-group" ng-class="{'has-error': storage.form.replicas.$error.min || storage.form.replicas.$error.max}" ng-if="storage.type === 'Replicated'">
+            <div class="form-group" ng-class="{'has-error': storage.form.replicas.$error.min || storage.form.replicas.$error.max}" ng-if="storage.type === 'Standard'">
                 <label class="col-md-2 control-label">Replicas</label>
                 <div class="col-md-2">
                     <input type="number" id="replicas" name="replicas" class="form-control" ng-model="storage.replicas" ng-change="storage.replicaChanged(storage.replicas)" min="1" max="5" required></input>
@@ -58,7 +58,7 @@
                         <div class="form-group" ng-if="storage.PGsFixed">
                             <div class="col-md-offset-2 col-md-10">
                                 <p class="text-info">
-                                    <strong>Note:</strong>Pools are created based on the number of OSD's in this cluster.
+                                    <strong>Note:</strong>&nbsp;Pools are created based on the number of OSD's in this cluster.
                                     When the number of OSDs available is 50 or less, a fixed number of Placement Groups will
                                     be assigned.</p>
                             </div>
@@ -86,35 +86,6 @@
                 </div>
             </div>
             <!-- End: General Configuration -->
-            <!-- Adavanced Configuration -->
-            <div class="form-group">
-                <div class="col-md-12">
-                    <h5>
-                        <i class="fa fa-angle-down" style="min-width:10px;" ng-show="storage.expandAdvanced"></i>
-                        <i class="fa fa-angle-right" style="min-width:10px;" ng-show="!storage.expandAdvanced"></i>
-                        <a href="" ng-click="storage.expandAdvanced=!storage.expandAdvanced">Advanced Configuration</a>
-                    </h5>
-                </div>
-                <div class="col-md-12" ng-show="storage.expandAdvanced">
-                    <div class="form-group">
-                        <label class="col-md-2 control-label">Data-at-Rest Encryption</label>
-                        <div class="col-md-2">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" ng-model="storages.dataatrest" id="dataatrest"></input>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-2 control-label">Placement Groups</label>
-                        <div class="col-md-2">
-                            <input type="number" id="placementGroups" class="form-control"></input>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End: Adavanced Configuration -->
             <!-- Quotas -->
             <div class="form-group">
                 <div class="col-md-12">
@@ -197,7 +168,7 @@
                                 <span class="title">Storage Profile</span>
                                 <div class="value">{{pool.profile.name}}</div>
                             </div>
-                            <div class="col-md-1" ng-if="pool.type === 'Replicated'">
+                            <div class="col-md-1" ng-if="pool.type === 'Standard'">
                                 <span class="title">Replicas</span>
                                 <div class="value">{{pool.replicas}}</div>
                             </div>
