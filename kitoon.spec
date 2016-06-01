@@ -25,7 +25,9 @@ Contains the JavaScript GUI content for the skyring front-end components
 %install
 rm -rf $RPM_BUILD_ROOT
 install -m 755 -d $RPM_BUILD_ROOT/%{_datadir}/skyring/webapp
+install -m 755 -d $RPM_BUILD_ROOT/%{_datadir}/skyring/webapp/third_party/swagger-ui
 cp -r ./dist/* $RPM_BUILD_ROOT/%{_datadir}/skyring/webapp/
+cp -r ./third_party/swagger-ui/* $RPM_BUILD_ROOT/%{_datadir}/skyring/webapp/third_party/swagger-ui/
 chmod -x $RPM_BUILD_ROOT/%{_datadir}/skyring/webapp/fonts/PatternFlyIcons-webfont.svg
 
 %clean
