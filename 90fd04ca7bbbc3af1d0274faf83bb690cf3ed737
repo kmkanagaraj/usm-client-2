@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_7c526b68",
+        "filename": "app/components/tasks/task-list.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-06T17:45:02Z",
+      "side": 1,
+      "message": "add ng-blur here as well so that it will be closed when user clicks somewhere outside in the screen",
+      "range": {
+        "startLine": 21,
+        "startChar": 32,
+        "endLine": 21,
+        "endChar": 43
+      },
+      "revId": "90fd04ca7bbbc3af1d0274faf83bb690cf3ed737",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
