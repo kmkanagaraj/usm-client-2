@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_3c1aa3c6",
+        "filename": "app/styles/main.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 478,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-06T17:37:50Z",
+      "side": 1,
+      "message": "Same thing is added in another patch. May be you can send this patch ontop of the other patch.",
+      "range": {
+        "startLine": 478,
+        "startChar": 1,
+        "endLine": 478,
+        "endChar": 28
+      },
+      "revId": "29b3a387b014b39421a65caa89330093fc1be0a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
