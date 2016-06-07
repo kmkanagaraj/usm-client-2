@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_25528635",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-06-07T08:02:37Z",
+      "side": 1,
+      "message": "yes , same thing , here we are doing . in profile.subtitle is nothing but it is storage profile names.",
+      "parentUuid": "baa041b7_c5b4fa82",
+      "range": {
+        "startLine": 45,
+        "startChar": 96,
+        "endLine": 45,
+        "endChar": 126
+      },
+      "revId": "60c2621b09ded34f22c9b660d7a9e39845c5cfec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_65ae4e2f",
         "filename": "app/components/dashboard/dashboard.html",
         "patchSetId": 11
@@ -36,6 +60,30 @@
       "writtenOn": "2016-06-07T07:54:30Z",
       "side": 1,
       "message": "Storage profile name should be in title case. Currently its all in lower case",
+      "range": {
+        "startLine": 74,
+        "startChar": 67,
+        "endLine": 74,
+        "endChar": 97
+      },
+      "revId": "60c2621b09ded34f22c9b660d7a9e39845c5cfec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_053422f9",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-06-07T08:02:37Z",
+      "side": 1,
+      "message": "we have to use same name as defined in backend , we don\u0027t have to capitalize this name in UI.",
+      "parentUuid": "baa041b7_65ae4e2f",
       "range": {
         "startLine": 74,
         "startChar": 67,
