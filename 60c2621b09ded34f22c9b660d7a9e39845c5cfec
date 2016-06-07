@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_c5b4fa82",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T07:54:30Z",
+      "side": 1,
+      "message": "I think we need to show the storage profile names in title case.",
+      "range": {
+        "startLine": 45,
+        "startChar": 96,
+        "endLine": 45,
+        "endChar": 126
+      },
+      "revId": "60c2621b09ded34f22c9b660d7a9e39845c5cfec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_65ae4e2f",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 11
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T07:54:30Z",
+      "side": 1,
+      "message": "Storage profile name should be in title case. Currently its all in lower case",
+      "range": {
+        "startLine": 74,
+        "startChar": 67,
+        "endLine": 74,
+        "endChar": 97
+      },
+      "revId": "60c2621b09ded34f22c9b660d7a9e39845c5cfec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
