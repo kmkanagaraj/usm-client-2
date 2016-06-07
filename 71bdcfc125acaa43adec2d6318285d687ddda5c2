@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_ca81a9c4",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T02:23:08Z",
+      "side": 1,
+      "message": "Same thing repeated in 3 lines",
+      "range": {
+        "startLine": 186,
+        "startChar": 16,
+        "endLine": 186,
+        "endChar": 100
+      },
+      "revId": "71bdcfc125acaa43adec2d6318285d687ddda5c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_aa8425d2",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T02:23:08Z",
+      "side": 1,
+      "message": "Do we need to have a way to change the interval?",
+      "range": {
+        "startLine": 27,
+        "startChar": 44,
+        "endLine": 27,
+        "endChar": 68
+      },
+      "revId": "71bdcfc125acaa43adec2d6318285d687ddda5c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_0a631143",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T02:23:08Z",
+      "side": 1,
+      "message": "Do we need title case here?",
+      "range": {
+        "startLine": 44,
+        "startChar": 168,
+        "endLine": 44,
+        "endChar": 198
+      },
+      "revId": "71bdcfc125acaa43adec2d6318285d687ddda5c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_4a76b906",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T02:23:08Z",
+      "side": 1,
+      "message": "Remove TWS",
+      "range": {
+        "startLine": 44,
+        "startChar": 374,
+        "endLine": 44,
+        "endChar": 389
+      },
+      "revId": "71bdcfc125acaa43adec2d6318285d687ddda5c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6a6bbd1e",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T02:23:08Z",
+      "side": 1,
+      "message": "Line is too big. Fold it into multiple lines",
+      "range": {
+        "startLine": 44,
+        "startChar": 44,
+        "endLine": 44,
+        "endChar": 168
+      },
+      "revId": "71bdcfc125acaa43adec2d6318285d687ddda5c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ea658d44",
+        "filename": "app/components/dashboard/dashboard-controller.ts",
+        "patchSetId": 9
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T02:23:08Z",
+      "side": 1,
+      "message": "Same as previous one. Same logic repeated in all the lines. May be you can combine all these conditions into one if/",
+      "range": {
+        "startLine": 146,
+        "startChar": 15,
+        "endLine": 146,
+        "endChar": 98
+      },
+      "revId": "71bdcfc125acaa43adec2d6318285d687ddda5c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ca58898c",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 9
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T02:23:08Z",
+      "side": 1,
+      "message": "Do we need title case",
+      "range": {
+        "startLine": 73,
+        "startChar": 156,
+        "endLine": 73,
+        "endChar": 185
+      },
+      "revId": "71bdcfc125acaa43adec2d6318285d687ddda5c2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
