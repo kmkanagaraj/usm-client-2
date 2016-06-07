@@ -22,6 +22,30 @@
       "revId": "90fd04ca7bbbc3af1d0274faf83bb690cf3ed737",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_ca10895b",
+        "filename": "app/components/tasks/task-list.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-06-07T05:36:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_7c526b68",
+      "range": {
+        "startLine": 21,
+        "startChar": 32,
+        "endLine": 21,
+        "endChar": 43
+      },
+      "revId": "90fd04ca7bbbc3af1d0274faf83bb690cf3ed737",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
