@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_5de55e06",
+        "filename": "app/components/rest/storage.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-07T11:55:05Z",
+      "side": 1,
+      "message": "Better use a ternary operator and remove the TWS.",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 9
+      },
+      "revId": "04e8f094c1266cf8d98f2a6247b04594edc3c34c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
