@@ -105,8 +105,8 @@ export class HostOverviewController {
     }
 
     public drawGraphs(graphArray, graphName, graphTitle, graphUnits, graphUsage) {
-        this.setGraphData(graphArray,graphName,graphTitle,graphUnits);
-        this.setGraphUtilization({"total":100,"used":graphUsage}, graphName);
+      this.setGraphData(graphArray,graphName,graphTitle,graphUnits);  
+      this.setGraphUtilization({"total":100,"used":graphUsage}, graphName);
     }
 
     public setGraphUtilization(usage, graphName) {
