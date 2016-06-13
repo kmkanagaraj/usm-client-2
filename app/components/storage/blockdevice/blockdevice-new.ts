@@ -126,7 +126,7 @@ export class BlockDeviceController {
     }
 
     public cancel(): void {
-        this.$location.path('/storage');
+        this.$location.path('/rbds/');
     }
 
     public submit(): void {
