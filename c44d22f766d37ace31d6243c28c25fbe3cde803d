@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_126d6acc",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-06-13T13:01:39Z",
+      "side": 1,
+      "message": "we don\u0027t have any specific BUG url for that \nbut we have one google drive there we are maintaining this ..\n\nhttps://docs.google.com/spreadsheets/d/1852pMT_W0PlsrvQXQoH--XWvcO_dHp81idB0gbIU0_0/edit#gid\u003d0",
+      "parentUuid": "baa041b7_2c625817",
+      "revId": "c44d22f766d37ace31d6243c28c25fbe3cde803d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_8cacc436",
         "filename": "app/components/hosts/host-overview/host-overview.html",
         "patchSetId": 4
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_f271e6a9",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-06-13T13:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_8cacc436",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 0
+      },
+      "revId": "c44d22f766d37ace31d6243c28c25fbe3cde803d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_6ca98024",
         "filename": "app/components/hosts/host-overview/host-overview.html",
         "patchSetId": 4
@@ -53,6 +95,30 @@
       "writtenOn": "2016-06-13T11:55:05Z",
       "side": 1,
       "message": "remove the empty lines.",
+      "range": {
+        "startLine": 85,
+        "startChar": 0,
+        "endLine": 88,
+        "endChar": 0
+      },
+      "revId": "c44d22f766d37ace31d6243c28c25fbe3cde803d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_d26702e9",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-06-13T13:01:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_6ca98024",
       "range": {
         "startLine": 85,
         "startChar": 0,
