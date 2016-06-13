@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_2c625817",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-13T11:55:05Z",
+      "side": 1,
+      "message": "If you have a bug, include the BUG url",
+      "revId": "c44d22f766d37ace31d6243c28c25fbe3cde803d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_8cacc436",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-13T11:55:05Z",
+      "side": 1,
+      "message": "Why do we need these empty lines",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 0
+      },
+      "revId": "c44d22f766d37ace31d6243c28c25fbe3cde803d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6ca98024",
+        "filename": "app/components/hosts/host-overview/host-overview.html",
+        "patchSetId": 4
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-13T11:55:05Z",
+      "side": 1,
+      "message": "remove the empty lines.",
+      "range": {
+        "startLine": 85,
+        "startChar": 0,
+        "endLine": 88,
+        "endChar": 0
+      },
+      "revId": "c44d22f766d37ace31d6243c28c25fbe3cde803d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
