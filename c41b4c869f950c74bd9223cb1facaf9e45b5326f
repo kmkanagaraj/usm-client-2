@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_0c08b490",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-06-13T10:45:22Z",
+      "side": 1,
+      "message": "what is the impact of this code change?",
+      "revId": "c41b4c869f950c74bd9223cb1facaf9e45b5326f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
