@@ -1,9 +1,9 @@
 <div class="hosts container-fluid">
     <div class="page-header">
         <div class="col-md-3 pull-right" ng-if="hosts.list.length > 0">
-            <input type="text" class="form-control" placeholder="Search" ng-model="hosts.search">
+            <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-model="hosts.search">
         </div>
-        <h1>Hosts</h1>
+        <h1 translate>Hosts</h1>
         <div class="col-md-6">
             <ul>
                 <span class="list-inline" ng-repeat="(key, value) in hosts.paramsObject">
@@ -28,9 +28,9 @@
             <div class="blank-slate-pf-icon">
                 <i class="pficon pficon-container-node"></i>
             </div>
-            <h1>No hosts detected.</h1>
-            <p>Hosts are detected when you accept a node or <a href="" ng-click="hosts.createNewCluster()">create a cluster</a></p>
-            <p>If you have already cluster created and still do not see hosts, make sure the hosts are configured correctly.</p>
+            <h1 translate>No hosts detected.</h1>
+            <p translate>Hosts are detected when you accept a node or <a href="" ng-click="hosts.createNewCluster()">create a cluster</a></p>
+            <p translate>If you have already cluster created and still do not see hosts, make sure the hosts are configured correctly.</p>
         </div>
     </center>
 
@@ -47,12 +47,12 @@
                     <ul aria-labelledby="dropdownKebabRight" role="menu" class="dropdown-menu dropdown-menu-right">
                         <li ng-if="host.state == 3">
                             <a ng-click="hosts.reinitialize(host)">
-                                <i class="fa fa-repeat"></i> Reinitialize
+                                <i class="fa fa-repeat"></i> <translate>Reinitialize</translate>
                             </a>
                         </li>
                         <li ng-if="host.clusterid === '00000000-0000-0000-0000-000000000000'">
                             <a ng-click="hosts.removeHost(host)">
-                                <i class="fa fa-trash"></i> Forget
+                                <i class="fa fa-trash"></i> <translate>Forget</translate>
                             </a>
                         </li>
                     </ul>
@@ -82,7 +82,7 @@
                                 <chart-size chart-height="80"></chart-size>
                                 <chart-tooltip show-tooltip="false"></chart-tooltip>
                             </c3chart>
-                            <div>Storage</div>
+                            <div translate>Storage</div>
                         </div>
                         <div class="list-view-pf-additional-info-item list-view-pf-additional-info-item-donut-chart" ng-if="host.state == 2">
                             <c3chart bindto-id="donut-cpu-usage-chart-{{$index}}">
@@ -108,13 +108,13 @@
                                 <chart-size chart-height="80"></chart-size>
                                 <chart-tooltip show-tooltip="false"></chart-tooltip>
                             </c3chart>
-                            <div>Memory</div>
+                            <div translate>Memory</div>
                         </div>
                         <div class="list-view-pf-additional-info-item deflex">
-                            Cluster <strong ng-bind="host.cluster_name"></strong>
+                            <translate>Cluster</translate> <strong ng-bind="host.cluster_name"></strong>
                         </div>
                         <div class="list-view-pf-additional-info-item deflex">
-                            Role <strong ng-bind="hosts.getNodeTypeTitle(host)"></strong>
+                            <translate>Role</translate> <strong ng-bind="hosts.getNodeTypeTitle(host)"></strong>
                         </div>
                         <div class="list-view-pf-additional-info-item deflex">
                             <span ng-class="(host.almwarncount + host.almcritcount) > 0 ? 'pficon pficon-error-circle-o' : 'pficon pficon-ok'"></span>

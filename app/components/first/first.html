@@ -2,11 +2,11 @@
 	<div ng-class="first.discoveredHosts.length === 1 ? 'col-lg-offset-4 col-lg-4': first.discoveredHosts.length === 2 ? 'col-lg-offset-2 col-lg-8':'col-lg-12 col-md-12 col-sm-12 col-xs-12'">
 		<div class="available-hosts-list">
 			<center ng-if="first.discoveredHosts.length > 0">
-				<h3><label>The following hosts are discovered.</label></h3>
+				<h3><label translate>The following hosts are discovered.</label></h3>
 			</center>
 			<div class="row">
 				<div class="col-md-offset-6 col-md-6">
-					<button class="btn btn-primary btn-lg pull-right accept-all" ng-if="first.discoveredHosts.length > 1" ng-click="first.acceptAllHosts();">Accept All</button>
+					<button class="btn btn-primary btn-lg pull-right accept-all" ng-if="first.discoveredHosts.length > 1" ng-click="first.acceptAllHosts();" translate>Accept All</button>
 				</div>
 			</div>
 			<div ng-class="first.discoveredHosts.length > 6 ? 'div-with-scroll': ''" class="scroll-for-smaller-screen">
@@ -20,7 +20,7 @@
 						            <span class="fa fa-check" ng-show="discoveredHost.state==='UNACCEPTED'">Accept</span>
 						            <div ng-show="discoveredHost.state==='ACCEPTING'">
 						              <span class="fa fa-spinner fa-spin"></span>
-						              Accepting
+						              <translate>Accepting</translate>
 						            </div>
 						         </button>
 							</div>
@@ -37,11 +37,11 @@
 					<div class="blank-slate-pf-icon">
 						<i class="fa fa-cubes"></i>
 					</div>
-					<h1>Create or Import a Cluster to get Started</h1>
+					<h1 translate>Create or Import a Cluster to get Started</h1>
 
 					<div class="blank-slate-pf-main-action">
 						<button ng-click="first.createCluster()" class="btn btn-primary btn-lg">
-							Create Cluster
+							<translate>Create Cluster</translate>
 						</button>
 					</div>
 				</div>

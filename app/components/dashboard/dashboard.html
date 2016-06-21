@@ -9,7 +9,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
                             <h2 class="card-pf-title">
-                                {{dash.clusters.total}} Clusters
+                                <translate>{{dash.clusters.total}} Clusters</translate>
                             </h2>
                             <div class="card-pf-body cluster-info">
                                 <p class="card-pf-aggregate-status-notifications">
@@ -38,7 +38,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-5">
                                     <h2 class="card-pf-title">
                                         <a href="">Utilization</a>
-                                        <p><small class="cluster-size-label"><label>{{dash.capacity.used | bytes }} Used</label> of {{dash.capacity.total | bytes }} Total</small></p>
+                                        <p><small class="cluster-size-label" translate translate-comment="TRANSLATORS: 'label, 'dash.capacity....' and 'bytes' should not be translated."><label>{{dash.capacity.used | bytes }} Used</label> of {{dash.capacity.total | bytes }} Total</small></p>
                                     </h2>
                                     <hr>
                                     <div class="card-pf-body">
@@ -89,7 +89,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action common-card-height">
                             <h2 class="card-pf-title">
-                                {{dash.hosts.total}} Hosts
+                                <translate>{{dash.hosts.total}} Hosts</translate>
                             </h2>
                             <div class="card-pf-body">
                                 <p class="card-pf-aggregate-status-notifications">
@@ -115,7 +115,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action common-card-height">
                             <h2 class="card-pf-title">
-                                {{dash.monitors.total}} Monitors
+                                <translate>{{dash.monitors.total}} Monitors</translate>
                             </h2>
                             <div class="card-pf-body">
                                 <p class="card-pf-aggregate-status-notifications">
@@ -137,7 +137,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action common-card-height">
                             <h2 class="card-pf-title">
-                                {{dash.pgs.total}} PGs
+                                <translate>{{dash.pgs.total}} PGs</translate>
                             </h2>
                             <div class="card-pf-body">
                                 <p class="card-pf-aggregate-status-notifications">
@@ -163,7 +163,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action common-card-height">
                             <h2 class="card-pf-title">
-                                {{dash.pools.total}} Pools
+                                <translate>{{dash.pools.total}} Pools</translate>
                             </h2>
                             <div class="card-pf-body">
                                 <p class="card-pf-aggregate-status-notifications">
@@ -185,7 +185,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action common-card-height">
                             <h2 class="card-pf-title">
-                                {{dash.osds.total}} OSDs
+                                <translate>{{dash.osds.total}} OSDs</translate>
                             </h2>
                             <div class="card-pf-body">
                                 <p class="card-pf-aggregate-status-notifications">
@@ -211,7 +211,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-3">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action common-card-height">
                             <h2 class="card-pf-title">
-                                {{dash.objects.total}} Objects
+                                <translate>{{dash.objects.total}} Objects</translate>
                             </h2>
                             <div class="card-pf-body">
                                 <p class="card-pf-aggregate-status-notifications">
@@ -234,7 +234,7 @@
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-5">
-                                    <span class="pull-left system-performance">System Performance</span>
+                                    <span class="pull-left system-performance" translate>System Performance</span>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-7">
                                     <span class="pull-right time-slot">
@@ -258,7 +258,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-3">
                                     <div class="card-pf-body">
-                                        <center><label>Memory</label></center>
+                                        <center><label translate>Memory</label></center>
                                         <div ng-if="dash.systemUtilization.memory.data.total > 0">
                                             <div pf-donut-pct-chart config="dash.systemUtilization.memory.config" data="dash.systemUtilization.memory.data" center-label="dash.systemUtilization.memory.label">
                                             </div>
@@ -290,8 +290,8 @@
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="card-pf" ng-if="dash.mostUsedPools.length>0">
                             <div class="card-pf-heading">
-                                <h2 class="card-pf-title">
-                                    Most Used Pools
+                                <h2 class="card-pf-title" translate>
+                                    <translate>Most Used Pools</translate>
                                 </h2>
                             </div>
                             <div class="card-pf-body">

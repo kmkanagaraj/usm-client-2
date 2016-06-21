@@ -1,30 +1,30 @@
 <ol class="breadcrumb">
-    <li><a href="#/admin">Admin</a></li>
-    <li>User</li>
+    <li><a href="#/admin" translate>Admin</a></li>
+    <li translate>User</li>
 </ol>
   <div class="row dataTables_wrapper">
      <div class="col-md-3 form-group has-feedback user-search-feedback" style="display:-webkit-box;">
-            <input type="text" class="form-control" placeholder="Search" ng-model="search"></input>
+            <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-model="search"></input>
             <span class="fa fa-search form-control-feedback"></span>
      </div>
     <div class="col-md-offset-4 col-md-5">
       <span class="pull-right">
-        <button class="btn btn-primary btn-lg" ng-click="users.addUser()">Add User</button>
-        <button class="btn btn-default btn-lg" ng-click="users.addLdapUser()">Add LDAP/AD User</button>
+        <button class="btn btn-primary btn-lg" ng-click="users.addUser()" translate>Add User</button>
+        <button class="btn btn-default btn-lg" ng-click="users.addLdapUser()" translate>Add LDAP/AD User</button>
       </span>
     </div>
   </div>
   <table class="table table-striped table-bordered">
   <thead>
     <tr>
-      <th>User ID</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Role</th>
-      <th>Type</th>
-      <th>Notifications</th>
-      <th>Email</th>
-      <th>Status</th>
+      <th translate>User ID</th>
+      <th translate>First Name</th>
+      <th translate>Last Name</th>
+      <th translate>Role</th>
+      <th translate>Type</th>
+      <th translate>Notifications</th>
+      <th translate>Email</th>
+      <th translate>Status</th>
       <th></th>
     </tr>
   </thead>
@@ -41,21 +41,21 @@
       <td>
       	<div class="dropdown">
 		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" bs-dropdown="dropdown">
-		    Actions
+		    <translate>Actions</translate>
 		    <span class="caret"></span>
 		  </button>
       <ul class="dropdown-menu" role="menu">
         <li role="presentation">
-          <a role="menuitem" href="" ng-click="users.editUser(user.username)"> Edit user </a>
+          <a role="menuitem" href="" ng-click="users.editUser(user.username)"> <translate>Edit user</translate> </a>
         </li>
         <li role="presentation" ng-if ="user.username!=users.currentUser.username">
-          <a role="menuitem" href="" ng-click="users.toggleUserStatus(user)"> {{user.status?'Disable':'Enable'}} user </a>
+          <a role="menuitem" href="" ng-click="users.toggleUserStatus(user)"> <translate translate-comment="TRANSLATORS: 'user.status' should not be translated but 'Disable' and 'Enable' and 'user' are translatable.">{{user.status?'Disable':'Enable'}} user</translate> </a>
         </li>
         <li role="presentation">
-          <a role="menuitem" href="" ng-click="users.toggleEmailStatus(user)"> {{user.notificationenabled?'Disable':'Enable'}} Notification </a>
+          <a role="menuitem" href="" ng-click="users.toggleEmailStatus(user)"> <translate translate-comment="TRANSLATORS: 'user.notificationenabled' should not be translated but 'Disable' and 'Enable' and 'Notification' are translatable.">{{user.notificationenabled?'Disable':'Enable'}} Notification</translate> </a>
         </li>
        <li role="presentation" ng-if ="user.username!=users.currentUser.username">
-          <a role="menuitem" href="" ng-click="users.deleteUser(user.username)"> Delete User</a>
+          <a role="menuitem" href="" ng-click="users.deleteUser(user.username)"> <translate>Delete User</translate></a>
         </li>
       </ul>
 		</div>

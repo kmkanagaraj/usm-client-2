@@ -2,6 +2,7 @@
 // <reference path="./cluster-helpers.ts" />
 // <reference path="../modal/modal-helpers.ts" />
 // <reference path="../typings/node.d.ts"/>
+declare function require(name: string);
 
 import {Pool} from './cluster-modals';
 import {Host} from './cluster-modals';
@@ -22,6 +23,11 @@ import * as ModalHelpers from '../modal/modal-helpers';
 import {VolumeHelpers} from '../volumes/volume-helpers';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
 import {numeral} from '../base/libs';
+import {I18N} from '../base/i18n';
+
+/* tslint:disable */
+var format = require('string-format');
+/* tslint:enaable */
 
 export class ClusterNewController {
     private step: number;
@@ -68,7 +74,8 @@ export class ClusterNewController {
         'UtilService',
         'RequestService',
         'RequestTrackingService',
-        'ConfigService'
+        'ConfigService',
+        'I18N'
     ];
     /**
      * Initializing the properties of the class ClusterNewController.
@@ -87,8 +94,10 @@ export class ClusterNewController {
         private utilService: UtilService,
         private requestService: RequestService,
         private requestTrackingService: any,
-        private configSvc: ConfigService) {
+        private configSvc: ConfigService,
+        private i18n: I18N) {
 
+        format.extend(String.prototype);
         this.step = 1;
         this.clusterHelper = new ClusterHelper(utilService, requestService, logService, timeoutService);
         this.newVolume = {};
@@ -98,7 +107,7 @@ export class ClusterNewController {
         this.pools = [];
         this.disks = [];
         this.newHost = {};
-        this.hostTypes = ["Monitor", "OSD Host", "OSD + Monitor"];
+        this.hostTypes = [this.i18n._("Monitor"), this.i18n._("OSD Host"), this.i18n._("OSD + Monitor")];
         this.availableNetworks = [];
         this.selectedHosts = 0;
         this.clusterTypes = this.clusterHelper.getClusterTypes();
@@ -384,11 +393,12 @@ export class ClusterNewController {
         else if(this.step === 2 && nextStep === 1){
             monCount = this.getMonCount();
             if(monCount < this.minMonsRequired){
-                this.errorMessage = " Choose at least " + this.minMonsRequired + " monitors to continue";
+                // Cannot extract the first " " with nggettext_extract 
+                this.errorMessage = " " + this.i18n._("Choose at least {0} monitors to continue").format(this.minMonsRequired);
                 configValid = false;
             }
             else if(monCount%2 === 0){
-                this.errorMessage = " Number of Monitors cannot be even";
+                this.errorMessage = this.i18n._(" Number of Monitors cannot be even");
                 configValid = false;
             }
             else{

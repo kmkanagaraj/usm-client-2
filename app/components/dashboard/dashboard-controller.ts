@@ -3,6 +3,7 @@ import {ClusterService} from '../rest/clusters';
 import {DashboardSummaryData} from '../rest/server';
 import {UsageData} from '../rest/server';
 import {numeral} from '../base/libs';
+import {I18N} from '../base/i18n';
 
 export class DashboardController {
     private summary: any;
@@ -29,7 +30,8 @@ export class DashboardController {
         '$log',
         '$interval',
         'ServerService',
-        'ClusterService'
+        'ClusterService',
+        'I18N'
     ];
 
     constructor(private scopeService: ng.IScope,
@@ -37,7 +39,8 @@ export class DashboardController {
         private $log: ng.ILogService,
         private intervalSvc: ng.IIntervalService,
         private serverService: ServerService,
-        private clusterService: ClusterService) {
+        private clusterService: ClusterService,
+        private i18n: I18N) {
 
             this.utilization = { data: {}, config: {} };
             this.systemUtilization = {cpu:{data:{},config:{}},memory:{data:{},config:{}}};
@@ -59,9 +62,9 @@ export class DashboardController {
                 throughput: {title:"",data:{xData:[],yData:[]},config:{}},
                 latency: {title:"",data:{xData:[],yData:[]},config:{}}
             };
-            this.timeSlots = [{ name: "Last 1 hour", value: "-1h" },
-                         { name: "Last 2 hours", value: "-2h" },
-                         { name: "Last 24 hours", value: "" }];
+            this.timeSlots = [{ name: this.i18n._("Last 1 hour"), value: "-1h" },
+                         { name: this.i18n._("Last 2 hours"), value: "-2h" },
+                         { name: this.i18n._("Last 24 hours"), value: "" }];
             this.selectedTimeSlot = this.timeSlots[0];
             // Summary data is returned as empty if there are no clusters in the system.
             // So here we are fetching the cluster list and redirect
@@ -121,7 +124,7 @@ export class DashboardController {
         this.utilization.config.chartId = "utilizationChart";
         this.utilization.config.thresholds = {'warning':'60','error':'90'};
         this.utilization.config.centerLabelFn = () => {
-              return usage.percentused.toFixed(1) + "% Used";
+              return usage.percentused.toFixed(1) + this.i18n._("% Used");
         };
         this.utilization.config.tooltipFn = (d) => {
               return '<span class="donut-tooltip-pf"style="white-space: nowrap;">' +
@@ -150,7 +153,7 @@ export class DashboardController {
             }
         });
         if (othersProfile.total > 0) {
-            this.utilizationByProfile.profiles.push({ "usage" : { "total": othersProfile.total, "used": othersProfile.used } , "subtitle" : "Others" });
+            this.utilizationByProfile.profiles.push({ "usage" : { "total": othersProfile.total, "used": othersProfile.used } , "subtitle" : this.i18n._("Others") });
         }
     }
 
@@ -206,7 +209,7 @@ export class DashboardController {
                      '</span>';
         };
         this.systemUtilization[graphName].config.centerLabelFn = () => {
-              return usage.used.toFixed(1) + "% Used";
+              return usage.used.toFixed(1) + this.i18n._("% Used");
         };
     }
 
