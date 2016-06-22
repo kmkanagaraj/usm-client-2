@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_6813855d",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-06-22T09:37:34Z",
+      "side": 1,
+      "message": "why , we are taking this array position ..\nIs it first value of array .. but in this case we should have last value of data points  so that we will have latest last value in ui.",
+      "range": {
+        "startLine": 145,
+        "startChar": 43,
+        "endLine": 145,
+        "endChar": 59
+      },
+      "revId": "afe8cde30fee937643762e075591f00dab606886",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
