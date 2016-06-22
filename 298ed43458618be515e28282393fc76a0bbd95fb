@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_c33032a1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-06-22T13:51:42Z",
+      "side": 1,
+      "message": "\"unused\"",
+      "range": {
+        "startLine": 7,
+        "startChar": 8,
+        "endLine": 7,
+        "endChar": 15
+      },
+      "revId": "298ed43458618be515e28282393fc76a0bbd95fb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_239fde60",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-06-22T13:51:42Z",
+      "side": 1,
+      "message": "Rest of the cards have h2 for the heading elem.",
+      "range": {
+        "startLine": 204,
+        "startChar": 33,
+        "endLine": 204,
+        "endChar": 35
+      },
+      "revId": "298ed43458618be515e28282393fc76a0bbd95fb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_a381aefd",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-06-22T13:51:42Z",
+      "side": 1,
+      "message": "Rest of the cards have h2 for the heading elem.",
+      "range": {
+        "startLine": 237,
+        "startChar": 37,
+        "endLine": 237,
+        "endChar": 39
+      },
+      "revId": "298ed43458618be515e28282393fc76a0bbd95fb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
