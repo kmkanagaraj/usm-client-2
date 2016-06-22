@@ -69,6 +69,30 @@
       "revId": "afe8cde30fee937643762e075591f00dab606886",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_680ca542",
+        "filename": "app/components/clusters/clusters-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-06-22T12:41:22Z",
+      "side": 1,
+      "message": "utilization fetched every 10 mins from backend. so index zero always contains the last value.",
+      "parentUuid": "baa041b7_6813855d",
+      "range": {
+        "startLine": 145,
+        "startChar": 43,
+        "endLine": 145,
+        "endChar": 59
+      },
+      "revId": "afe8cde30fee937643762e075591f00dab606886",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
