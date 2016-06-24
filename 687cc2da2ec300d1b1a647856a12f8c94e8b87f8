@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_3e2c8949",
+        "filename": "app/index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-24T12:18:33Z",
+      "side": 1,
+      "message": "We have to handle the \u0027Cancel\u0027 in accept hosts dialog. By default \u0027Cancel\u0027 in \u0027Accept Hosts\u0027 dialog will open \u0027New Cluster\u0027 wizard.",
+      "range": {
+        "startLine": 38,
+        "startChar": 51,
+        "endLine": 38,
+        "endChar": 84
+      },
+      "revId": "687cc2da2ec300d1b1a647856a12f8c94e8b87f8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
