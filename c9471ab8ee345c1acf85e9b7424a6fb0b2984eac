@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_a1207cb1",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-06-24T17:36:42Z",
+      "side": 1,
+      "message": "Earlier we calculated and displayed % of quota. now we are displaying size in byte type",
+      "parentUuid": "baa041b7_21a46cb7",
+      "range": {
+        "startLine": 130,
+        "startChar": 98,
+        "endLine": 130,
+        "endChar": 144
+      },
+      "revId": "c9471ab8ee345c1acf85e9b7424a6fb0b2984eac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_01aba88a",
         "filename": "app/components/storage/object/objectstorage-list.html",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-06-24T15:38:45Z",
       "side": 1,
       "message": "WHy same condition two times? Can this coma added to previos span itself",
+      "range": {
+        "startLine": 131,
+        "startChar": 86,
+        "endLine": 131,
+        "endChar": 151
+      },
+      "revId": "c9471ab8ee345c1acf85e9b7424a6fb0b2984eac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_e114444e",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-06-24T17:36:42Z",
+      "side": 1,
+      "message": "comma cannot be added to previous. because some times quota_max_bytes wont be available and somethimes quota_max_objects wont be available. i am placing comma only when both are available",
+      "parentUuid": "baa041b7_01aba88a",
       "range": {
         "startLine": 131,
         "startChar": 86,
