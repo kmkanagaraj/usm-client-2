@@ -37,6 +37,7 @@ export class ClusterDetailController {
     private timer: ng.IPromise<any>;
     private rbds = [];
     private paramsObject: any;
+    private isLoading: any;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -69,6 +70,7 @@ export class ClusterDetailController {
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService) {
 
+        this.isLoading = { summaryData: true, clusterUtilizationData: true, trendsChartsData: true };
         this.clusterUtilization = { data: {}, config: {} };
         this.systemUtilization = {cpu:{data:{},config:{}},memory:{data:{},config:{}}};
         this.mostUsedPools = [];
@@ -153,6 +155,7 @@ export class ClusterDetailController {
         api . than only will call this "changeTimeSlot" function. so that we will
         have accurate data */
         this.changeTimeSlot(this.selectedTimeSlot);
+        this.isLoading.summaryData = false;
     }
 
     public getClusterUtilization(usage: any) {
@@ -168,6 +171,7 @@ export class ClusterDetailController {
         this.clusterUtilization.config.centerLabelFn = () => {
               return usage.percentused.toFixed(1) + "% Used";
         };
+        this.isLoading.clusterUtilizationData = false;
     }
 
     public getUtilizationByProfile(profiles: any, monitoringplugins: any) {
@@ -253,6 +257,7 @@ export class ClusterDetailController {
         times.push("dates");
         used.push("used");
         var usageDataArray = graphArray[0].datapoints;
+        var isDataAvailable = (usageDataArray.length > 0 ? true : false);
         for (var index in usageDataArray) {
           var subArray = usageDataArray[index];
           times.push(new Date(subArray[1]));
@@ -261,7 +266,7 @@ export class ClusterDetailController {
         this.trendsCharts[value] = {
             title: graphTitle,
             data: {
-                  dataAvailable: true,
+                  dataAvailable: isDataAvailable,
                   total: 100,
                   xData: times,
                   yData: used
@@ -274,6 +279,7 @@ export class ClusterDetailController {
                 units        :  graphUnits,
             }
         }
+        this.isLoading.trendsChartsData = false;
     }
 
     public changeTimeSlot(time: any) {
