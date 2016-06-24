@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_b8e79111",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-06-24T08:22:11Z",
+      "side": 1,
+      "message": "as per this https://bugzilla.redhat.com/show_bug.cgi?id\u003d1348699 i am moving everything to h3 in upcoming patch",
+      "parentUuid": "baa041b7_239fde60",
+      "range": {
+        "startLine": 204,
+        "startChar": 33,
+        "endLine": 204,
+        "endChar": 35
+      },
+      "revId": "298ed43458618be515e28282393fc76a0bbd95fb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_a381aefd",
         "filename": "app/components/dashboard/dashboard.html",
         "patchSetId": 1
