@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_be20994a",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 3
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-24T12:40:57Z",
+      "side": 1,
+      "message": "Remove this line",
+      "range": {
+        "startLine": 136,
+        "startChar": 0,
+        "endLine": 136,
+        "endChar": 8
+      },
+      "revId": "bb3eeedfd69af8db1af82a2758a9add8d58a7de6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
