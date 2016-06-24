@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_21a46cb7",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-24T15:38:45Z",
+      "side": 1,
+      "message": "What is the issue and what is getting fixed",
+      "range": {
+        "startLine": 130,
+        "startChar": 98,
+        "endLine": 130,
+        "endChar": 144
+      },
+      "revId": "c9471ab8ee345c1acf85e9b7424a6fb0b2984eac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_01aba88a",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-24T15:38:45Z",
+      "side": 1,
+      "message": "WHy same condition two times? Can this coma added to previos span itself",
+      "range": {
+        "startLine": 131,
+        "startChar": 86,
+        "endLine": 131,
+        "endChar": 151
+      },
+      "revId": "c9471ab8ee345c1acf85e9b7424a6fb0b2984eac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
