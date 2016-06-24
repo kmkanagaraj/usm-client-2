@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_819fb85e",
+        "filename": "app/components/requests/requests-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-24T15:46:38Z",
+      "side": 1,
+      "message": "Can be replaced with _.filter(this.events, event\u003d\u003e event[\"severity\"] \u003c 5)",
+      "range": {
+        "startLine": 77,
+        "startChar": 53,
+        "endLine": 79,
+        "endChar": 19
+      },
+      "revId": "3aa160507b0cbe61214e25c178c7187298a5a37c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
