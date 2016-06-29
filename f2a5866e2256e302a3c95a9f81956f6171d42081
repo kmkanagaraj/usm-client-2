@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_04884421",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1007322
+      },
+      "writtenOn": "2016-06-29T11:55:13Z",
+      "side": 1,
+      "message": "Min value 1 is alright, and should be there.\n\nIf the user wants to put 1GB, there\u0027s no reason to force him to put 1024MB instead.",
+      "range": {
+        "startLine": 16,
+        "startChar": 119,
+        "endLine": 16,
+        "endChar": 120
+      },
+      "revId": "f2a5866e2256e302a3c95a9f81956f6171d42081",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
