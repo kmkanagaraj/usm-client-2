@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_e4d5601b",
+        "filename": "app/components/clusters/configdetail/config-detail.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-06-29T11:27:50Z",
+      "side": 1,
+      "message": "Remove TWS",
+      "range": {
+        "startLine": 102,
+        "startChar": 94,
+        "endLine": 102,
+        "endChar": 95
+      },
+      "revId": "2c95cd9e68a0bc4ea87a30da082d74f69a28cb35",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
