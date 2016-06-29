@@ -22,6 +22,30 @@
       "revId": "f2a5866e2256e302a3c95a9f81956f6171d42081",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_44c40c3f",
+        "filename": "app/components/clusters/clusters-new-configure.html",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-06-29T12:15:03Z",
+      "side": 1,
+      "message": "yes. makes sense.",
+      "parentUuid": "baa041b7_04884421",
+      "range": {
+        "startLine": 16,
+        "startChar": 119,
+        "endLine": 16,
+        "endChar": 120
+      },
+      "revId": "f2a5866e2256e302a3c95a9f81956f6171d42081",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
