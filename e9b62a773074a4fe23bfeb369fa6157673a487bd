@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_74157447",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-01T12:44:22Z",
+      "side": 1,
+      "message": "can we use !\u003d\u003d here ?",
+      "range": {
+        "startLine": 174,
+        "startChar": 29,
+        "endLine": 174,
+        "endChar": 31
+      },
+      "revId": "e9b62a773074a4fe23bfeb369fa6157673a487bd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_540dd03c",
+        "filename": "app/components/storage/object/objectstorage-list-controller.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-01T12:44:22Z",
+      "side": 1,
+      "message": "can we use !\u003d\u003d here ?",
+      "range": {
+        "startLine": 174,
+        "startChar": 80,
+        "endLine": 174,
+        "endChar": 83
+      },
+      "revId": "e9b62a773074a4fe23bfeb369fa6157673a487bd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
