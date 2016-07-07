@@ -33,4 +33,9 @@ to send instant notifcations from the SkyRing server to Kitoon UI.
 ### How to use/run the application
 The url http://<host-name/host-ip>:8080 will launch the application
 
+### Development
+Kitoon development happens in
+[gerrithub.io](https://review.gerrithub.io/#/admin/projects/skyrings/kitoon).
+Please submit your patches to gerrithub than pull request.
+
 -More information about the development and build environment is available [here](./DEVELOPING.md)
