@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_f00e1731",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-07-08T09:55:07Z",
+      "side": 1,
+      "message": "why creating new isDataAvailable inside if?",
+      "revId": "46933702e0dd9be846a412e5cbca6dbfb58e3f5b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
