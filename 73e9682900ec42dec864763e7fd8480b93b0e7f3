@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_aa4ff332",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "https://bugzilla.redhat.com/show_bug.cgi?id\u003d1334394\n\nActually , \u0027no data available\u0027 is already there for trend chart .\nbut we are missing same for donut chart as well.\n\nso this patch is only for donut chart if data is not there . \nThis is mentioned already in commit message . if data is not there than \u0027no data available\u0027 will come instead of charts.",
+      "parentUuid": "baa041b7_5f314759",
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_7f13ebb8",
         "filename": "app/components/clusters/cluster-detail.ts",
         "patchSetId": 1
@@ -30,6 +48,30 @@
       "writtenOn": "2016-07-12T07:42:00Z",
       "side": 1,
       "message": "I am not sure how this change is related to No Data Available fix. If you are fixing issue in REST API change, then please explain that so that it is easy to understand the patch",
+      "range": {
+        "startLine": 173,
+        "startChar": 21,
+        "endLine": 173,
+        "endChar": 53
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6a0b2bd7",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "Earlier , we were using total \u003d 100 (hard coded) and used \u003d (percent_used) . in this case , we can\u0027t figure out whether data.total is coming as zero or not because of we were setting up manually 100 .. \n\nbut now we have to figure out , whether \u0027total\u0027 value is coming zero or not from backend .. if it is zero than it means \u0027no data available\u0027.\n\nif data.total value is zero than , no need to show this donut charts, instead of this donut chart , we will have \u0027no data available\u0027 in ui.",
+      "parentUuid": "baa041b7_7f13ebb8",
       "range": {
         "startLine": 173,
         "startChar": 21,
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_2a11a304",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_bf1df3bf",
+      "range": {
+        "startLine": 18,
+        "startChar": 45,
+        "endLine": 18,
+        "endChar": 101
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_5f0a678b",
         "filename": "app/components/clusters/clusters-detail-overview.html",
         "patchSetId": 1
@@ -76,6 +142,30 @@
       "writtenOn": "2016-07-12T07:42:00Z",
       "side": 1,
       "message": "This is not required since it is already checked at line 17",
+      "range": {
+        "startLine": 27,
+        "startChar": 47,
+        "endLine": 27,
+        "endChar": 102
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_2a288332",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_5f0a678b",
       "range": {
         "startLine": 27,
         "startChar": 47,
@@ -111,6 +201,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_ea1e1b0b",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "baa041b7_7f7acbf2",
+      "range": {
+        "startLine": 47,
+        "startChar": 49,
+        "endLine": 47,
+        "endChar": 89
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_bf74d3fd",
         "filename": "app/components/dashboard/dashboard.html",
         "patchSetId": 1
@@ -122,6 +236,30 @@
       "writtenOn": "2016-07-12T07:42:00Z",
       "side": 1,
       "message": "Why this is different from the check in line 66",
+      "range": {
+        "startLine": 68,
+        "startChar": 61,
+        "endLine": 68,
+        "endChar": 112
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_6ad9eb56",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "Each trend chart graph has one attribute - trendsCharts.\u003cany\u003e.data.dataAvailable (boolean) - if it is true it means we have data .. .\nso here if data is not present .. than no need to show this text - \u0027Last 24 hours\u0027\n\nNOTE: -\n\nIn trend chart ,there is inbuild features for \u0027no data available\u0027 if \u0027dataAvailable\u0027 parameter is false\nbut for donut , there is nothing like that\nso that why i have manually handle this \u0027no data available\u0027 for all donut charts",
+      "parentUuid": "baa041b7_bf74d3fd",
       "range": {
         "startLine": 68,
         "startChar": 61,
@@ -157,6 +295,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_caeeb7ec",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 271,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_9f710f0f",
+      "range": {
+        "startLine": 271,
+        "startChar": 45,
+        "endLine": 271,
+        "endChar": 95
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_7f61ab38",
         "filename": "app/components/dashboard/dashboard.html",
         "patchSetId": 1
@@ -180,6 +342,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_4ab18700",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_7f61ab38",
+      "range": {
+        "startLine": 289,
+        "startChar": 45,
+        "endLine": 289,
+        "endChar": 98
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_df24370e",
         "filename": "app/components/hosts/host-overview/host-overview.ts",
         "patchSetId": 1
@@ -191,6 +377,24 @@
       "writtenOn": "2016-07-12T07:38:40Z",
       "side": 1,
       "message": "usage max should be 100% right. what value you get in cpuusage.total?",
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_aa701341",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-12T09:59:03Z",
+      "side": 1,
+      "message": "yes , you are right.\n\nwe had discussion with shubhendu , if cpuusage.percentused \u003d 0 , than we can say that \u0027No data Available\u0027\nBut this is Exceptional case, which not going to happened generally , always cpu usage will have some value.",
+      "parentUuid": "baa041b7_df24370e",
       "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
