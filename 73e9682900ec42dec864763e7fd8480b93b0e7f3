@@ -2,6 +2,184 @@
   "comments": [
     {
       "key": {
+        "uuid": "baa041b7_5f314759",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-12T07:42:00Z",
+      "side": 1,
+      "message": "Add BUG URL",
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7f13ebb8",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-12T07:42:00Z",
+      "side": 1,
+      "message": "I am not sure how this change is related to No Data Available fix. If you are fixing issue in REST API change, then please explain that so that it is easy to understand the patch",
+      "range": {
+        "startLine": 173,
+        "startChar": 21,
+        "endLine": 173,
+        "endChar": 53
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_bf1df3bf",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-12T07:42:00Z",
+      "side": 1,
+      "message": "I think this condition can be moved to the inside \u003cdiv\u003e itself.",
+      "range": {
+        "startLine": 18,
+        "startChar": 45,
+        "endLine": 18,
+        "endChar": 101
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_5f0a678b",
+        "filename": "app/components/clusters/clusters-detail-overview.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-12T07:42:00Z",
+      "side": 1,
+      "message": "This is not required since it is already checked at line 17",
+      "range": {
+        "startLine": 27,
+        "startChar": 47,
+        "endLine": 27,
+        "endChar": 102
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7f7acbf2",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-12T07:42:00Z",
+      "side": 1,
+      "message": "I think this condition can be moved to the inside \u003cdiv\u003e itself.",
+      "range": {
+        "startLine": 47,
+        "startChar": 49,
+        "endLine": 47,
+        "endChar": 89
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_bf74d3fd",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-12T07:42:00Z",
+      "side": 1,
+      "message": "Why this is different from the check in line 66",
+      "range": {
+        "startLine": 68,
+        "startChar": 61,
+        "endLine": 68,
+        "endChar": 112
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_9f710f0f",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 271,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-12T07:42:00Z",
+      "side": 1,
+      "message": "move the if to inside \u003cdiv\u003e",
+      "range": {
+        "startLine": 271,
+        "startChar": 45,
+        "endLine": 271,
+        "endChar": 95
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7f61ab38",
+        "filename": "app/components/dashboard/dashboard.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-12T07:42:00Z",
+      "side": 1,
+      "message": "move the if to inside \u003cdiv\u003e",
+      "range": {
+        "startLine": 289,
+        "startChar": 45,
+        "endLine": 289,
+        "endChar": 98
+      },
+      "revId": "73e9682900ec42dec864763e7fd8480b93b0e7f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_df24370e",
         "filename": "app/components/hosts/host-overview/host-overview.ts",
         "patchSetId": 1
