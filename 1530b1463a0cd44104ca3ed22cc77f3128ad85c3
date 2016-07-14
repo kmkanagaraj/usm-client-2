@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_457e0e1a",
+        "filename": "app/styles/tasks.scss",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-14T10:25:17Z",
+      "side": 1,
+      "message": "remove this white space",
+      "range": {
+        "startLine": 4,
+        "startChar": 5,
+        "endLine": 4,
+        "endChar": 9
+      },
+      "revId": "1530b1463a0cd44104ca3ed22cc77f3128ad85c3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
