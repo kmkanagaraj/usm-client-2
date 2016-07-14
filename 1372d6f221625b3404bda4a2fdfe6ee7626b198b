@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_05c6c667",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-14T10:23:35Z",
+      "side": 1,
+      "message": "actually corresponding to this changes ..also anmol has given one patch for backend changes .. \n\ni tested this one over anmol patch . worked fine..\n\nonly both patches should get merged at same time . otherwise it will break in UI.",
+      "parentUuid": "baa041b7_e51402ea",
+      "revId": "1372d6f221625b3404bda4a2fdfe6ee7626b198b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_45228e53",
         "filename": "app/components/hosts/host-list.html",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2016-07-14T10:14:38Z",
       "side": 1,
       "message": "count cannot be negative.. let it be \u003d\u003d\u003d 0.",
+      "revId": "1372d6f221625b3404bda4a2fdfe6ee7626b198b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_c5a21eae",
+        "filename": "app/components/hosts/host-list.html",
+        "patchSetId": 2
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-14T10:23:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_45228e53",
       "revId": "1372d6f221625b3404bda4a2fdfe6ee7626b198b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
