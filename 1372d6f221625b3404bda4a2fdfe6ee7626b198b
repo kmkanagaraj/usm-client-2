@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "baa041b7_e51402ea",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-07-14T10:15:21Z",
+      "side": 1,
+      "message": "verified and working?",
+      "revId": "1372d6f221625b3404bda4a2fdfe6ee7626b198b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_45228e53",
         "filename": "app/components/hosts/host-list.html",
         "patchSetId": 2
