@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_75ad2ee8",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-19T12:25:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "baa041b7_1575c296",
+      "range": {
+        "startLine": 74,
+        "startChar": 23,
+        "endLine": 74,
+        "endChar": 53
+      },
+      "revId": "2bb86b1f7577a99af48fbca15f0e8cf1118587d0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_3517a646",
         "filename": "app/components/clusters/clusters-detail.html",
         "patchSetId": 1
