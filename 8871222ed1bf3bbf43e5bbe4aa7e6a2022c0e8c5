@@ -22,6 +22,30 @@
       "revId": "8871222ed1bf3bbf43e5bbe4aa7e6a2022c0e8c5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_728784b5",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 310,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-19T11:44:33Z",
+      "side": 1,
+      "message": "now we have auto-refresh with some time interval .. and this function is getting called in that time interval.\n\nif we will not flush this array .than we will have duplicate value in this array",
+      "parentUuid": "baa041b7_7200a434",
+      "range": {
+        "startLine": 310,
+        "startChar": 8,
+        "endLine": 310,
+        "endChar": 32
+      },
+      "revId": "8871222ed1bf3bbf43e5bbe4aa7e6a2022c0e8c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
