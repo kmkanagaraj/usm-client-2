@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_7200a434",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 310,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-19T11:40:27Z",
+      "side": 1,
+      "message": "Why do you need this?. It is already initialized in the constructore",
+      "range": {
+        "startLine": 310,
+        "startChar": 8,
+        "endLine": 310,
+        "endChar": 32
+      },
+      "revId": "8871222ed1bf3bbf43e5bbe4aa7e6a2022c0e8c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
