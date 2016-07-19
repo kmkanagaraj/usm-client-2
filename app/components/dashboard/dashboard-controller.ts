@@ -72,7 +72,7 @@ export class DashboardController {
                 if (clusters.length === 0) {
                     this.$location.path('/clusters');
                 }else {
-                    this.timer = this.intervalSvc(() => this.loadDashboardData(), 120 * 1000 );
+                    this.timer = this.intervalSvc(() => this.loadDashboardData(), 5 * 1000 );
                     this.scopeService.$on('$destroy', () => {
                         this.intervalSvc.cancel(this.timer);
                     });
@@ -120,7 +120,8 @@ export class DashboardController {
     */
     public formatUtilizationData(usage: UsageData) {
         this.capacity = usage;
-        this.utilization.data = usage
+        this.utilization.data = {};
+        this.utilization.data = usage;
         this.utilization.config.chartId = "utilizationChart";
         this.utilization.config.thresholds = {'warning':'60','error':'90'};
         this.utilization.config.centerLabelFn = () => {
