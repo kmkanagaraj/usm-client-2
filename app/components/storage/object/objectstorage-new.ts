@@ -21,11 +21,9 @@ export class ObjectStorageController {
     private slusFiltered: SLU[];
     private name: string;
     private count: number = 1;
-    private types = ['Standard', 'Erasure Coded'];
+    private types = ['Standard'];
     private type = 'Standard';
     private replicas: number = 3;
-    private ecprofiles = [{ k: 2, m: 1, text: '2+1', value: 'default' }, { k: 4, m: 2, text: '4+2', value: 'k4m2' }, { k: 6, m: 3, text: '6+3', value: 'k6m3' }, { k: 8, m: 4, text: '8+4', value: 'k8m4' }];
-    private ecprofile = this.ecprofiles[0];
     private targetSize = 0;
     private profiles: StorageProfile[];
     private profile: StorageProfile;
@@ -128,16 +126,9 @@ export class ObjectStorageController {
         if (this.type === 'Standard') {
             return this.replicas;
         }
-        else {
-            return this.ecprofile.k + this.ecprofile.m;
-        }
     }
 
     public replicaChanged() {
-        this.preparePGSlider();
-    }
-
-    public ecProfileChanged() {
         this.preparePGSlider();
     }
 
@@ -166,7 +157,6 @@ export class ObjectStorageController {
                 type: this.type,
                 profile: this.profile,
                 replicas: this.replicas,
-                ecprofile: this.ecprofile,
                 capacity: this.targetSize,
                 quota: this.quota
             }
@@ -178,7 +168,6 @@ export class ObjectStorageController {
                     type: this.type,
                     profile: this.profile,
                     replicas: this.replicas,
-                    ecprofile: this.ecprofile,
                     capacity: this.targetSize,
                     quota: this.quota
                 }
@@ -209,10 +198,6 @@ export class ObjectStorageController {
             if (pool.type === 'Standard') {
                 storage['type'] = 'replicated';
                 storage['replicas'] = pool.replicas;
-            }
-            else {
-                storage['type'] = 'erasure_coded';
-                storage.options['ecprofile'] = pool.ecprofile.value;
             }
 
             if (this.PGsFixed) {
