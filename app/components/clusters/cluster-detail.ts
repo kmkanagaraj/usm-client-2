@@ -213,15 +213,26 @@ export class ClusterDetailController {
     }
 
     public getCpuUtilization(timeSlot: any) {
-        var total = this.utilizations.cpupercentageusage > 0 ? 100 : 0;
-        this.setGraphUtilization({"total":total,"used":this.utilizations.cpupercentageusage},'cpu');
+        var usage: any;
+        if(this.utilizations.cpupercentageusage !== undefined && this.utilizations.cpupercentageusage > 0) {
+            usage = { "total":100, "used": this.utilizations.cpupercentageusage }
+        } else {
+            usage = {"total": 0,"used": 0}
+        }
+        this.setGraphUtilization(usage,'cpu');
         this.clusterService.getClusterCpuUtilization(this.id,timeSlot.value).then((cpu_utilization) => {
             this.setGraphData(cpu_utilization,"cpu","","%","large");
         });
     }
 
     public getMemoryUtilization(timeSlot: any) {
-        this.setGraphUtilization({"total":this.utilizations.memoryusage.total,"used":this.utilizations.memoryusage.used},'memory');
+        var usage: any;
+        if(this.utilizations.memoryusage !== undefined) {
+            usage = { "total":this.utilizations.memoryusage.total, "used": this.utilizations.memoryusage.used }
+        } else {
+            usage = {"total": 0,"used": 0}
+        }
+        this.setGraphUtilization(usage,'memory');
         this.clusterService.getClusterMemoryUtilization(this.id,timeSlot.value).then((memory_utilization) => {
             this.setGraphData(memory_utilization,"memory","","%","large");
         });

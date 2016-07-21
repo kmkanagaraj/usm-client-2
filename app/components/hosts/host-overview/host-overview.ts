@@ -60,36 +60,65 @@ export class HostOverviewController {
     }
 
     public getCpuUtilization(timeSlot: any) {
-        var total = this.host.utilizations.cpuusage.percentused > 0 ? 100 : 0;
-        this.setGraphUtilization({"total":total,"used": this.host.utilizations.cpuusage.percentused}, "cpu");
+        var usage: any;
+        if(this.host.utilizations.cpuusage !== undefined && this.host.utilizations.cpuusage.percentused > 0) {
+            usage = { "total":100, "used": this.host.utilizations.cpuusage.used }
+        } else {
+            usage = {"total": 0,"used": 0}
+        }
+        this.setGraphUtilization(usage, "cpu");
         this.serverService.getHostCpuUtilization(this.host.nodeid,timeSlot.value).then((cpu_utilization) => {
             this.setGraphData(cpu_utilization,"cpu","","%","large");
         });
     }
 
     public getMemoryUtilization(timeSlot: any) {
-        this.setGraphUtilization({"total":this.host.utilizations.memoryusage.total,"used": this.host.utilizations.memoryusage.used}, "memory");
+        var usage: any;
+        if(this.host.utilizations.memoryusage !== undefined) {
+            usage = { "total":this.host.utilizations.memoryusage.total, "used": this.host.utilizations.memoryusage.used }
+        } else {
+            usage = {"total": 0,"used": 0}
+        }
+        this.setGraphUtilization(usage, "memory");
         this.serverService.getHostMemoryUtilization(this.host.nodeid,timeSlot.value).then((memory_utilization) => {
             this.setGraphData(memory_utilization,"memory","","%","large");
         });
     }
 
     public getSwapUtilization(timeSlot: any) {
-        this.setGraphUtilization({"total":this.host.utilizations.swapusage.total,"used": this.host.utilizations.swapusage.used}, "swap");
+        var usage: any;
+        if(this.host.utilizations.swapusage !== undefined) {
+            usage = { "total":this.host.utilizations.swapusage.total, "used": this.host.utilizations.swapusage.used }
+        } else {
+            usage = {"total": 0,"used": 0}
+        }
+        this.setGraphUtilization(usage, "swap");
         this.serverService.getHostSwapUtilization(this.host.nodeid,timeSlot.value).then((swap_utilization) => {
             this.setGraphData(swap_utilization,"swap","","%","large");
         });
     }
 
     public getStorageUtilization(timeSlot: any) {
-        this.setGraphUtilization({"total":this.host.utilizations.storageusage.total,"used": this.host.utilizations.storageusage.used}, "storage");
+        var usage: any;
+        if(this.host.utilizations.storageusage !== undefined) {
+            usage = { "total":this.host.utilizations.storageusage.total, "used": this.host.utilizations.storageusage.used }
+        } else {
+            usage = {"total": 0,"used": 0}
+        }
+        this.setGraphUtilization(usage, "storage");
         this.serverService.getHostStorageUtilization(this.host.nodeid,timeSlot.value).then((storage_utilization) => {
             this.setGraphData(storage_utilization,"storage","","%","large");
         });
     }
 
     public getNetworkUtilization(timeSlot: any) {
-        this.setGraphUtilization({"total":this.host.utilizations.networkusage.total,"used": this.host.utilizations.networkusage.used}, "network");
+        var usage: any;
+        if(this.host.utilizations.networkusage !== undefined) {
+            usage = { "total":this.host.utilizations.networkusage.total, "used": this.host.utilizations.networkusage.used }
+        } else {
+            usage = {"total": 0,"used": 0}
+        }
+        this.setGraphUtilization(usage, "network");
         this.serverService.getHostNetworkUtilization(this.host.nodeid,timeSlot.value).then((network_utilization) => {
             this.setGraphData(network_utilization,"network","","%","large");
         });
