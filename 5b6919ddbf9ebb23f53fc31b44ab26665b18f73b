@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_d82b0681",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 2
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-22T12:24:37Z",
+      "side": 1,
+      "message": "Just a suggestion, How about just initializing usage variable with \u0027{\"total\": 0,\"used\": 0}\u0027. This way you can avoid the else part altogether.",
+      "range": {
+        "startLine": 233,
+        "startChar": 20,
+        "endLine": 233,
+        "endChar": 42
+      },
+      "revId": "5b6919ddbf9ebb23f53fc31b44ab26665b18f73b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
