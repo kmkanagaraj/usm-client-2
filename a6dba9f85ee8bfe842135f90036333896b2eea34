@@ -22,6 +22,30 @@
       "revId": "a6dba9f85ee8bfe842135f90036333896b2eea34",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3d030412",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-22T12:16:37Z",
+      "side": 0,
+      "message": "Yes, ramesh .. during refresh , we no need to perform this action .. actually scenario is supposed .. user have selected \u0027storage-profile\u0027 for group by .. than it should not changed on auto-refresh .. so that why this function should get called only once i.e in constructor",
+      "parentUuid": "baa041b7_1d29609b",
+      "range": {
+        "startLine": 141,
+        "startChar": 16,
+        "endLine": 141,
+        "endChar": 44
+      },
+      "revId": "a6dba9f85ee8bfe842135f90036333896b2eea34",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
