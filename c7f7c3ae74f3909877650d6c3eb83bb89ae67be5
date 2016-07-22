@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_9dd210d0",
+        "filename": "app/components/shared/directives/pf-donut-pct-chart-fixed.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-22T11:33:30Z",
+      "side": 1,
+      "message": "Please give a meaningful description",
+      "range": {
+        "startLine": 11,
+        "startChar": 3,
+        "endLine": 11,
+        "endChar": 64
+      },
+      "revId": "c7f7c3ae74f3909877650d6c3eb83bb89ae67be5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
