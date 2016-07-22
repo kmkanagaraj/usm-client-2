@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_ddcc1837",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-07-22T11:27:38Z",
+      "side": 1,
+      "message": "just this.performGroupBy(\u0027node\u0027); is enough to be placed.",
+      "revId": "8636050c7d41773aa135d59e3bffb6c3d5506e13",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
