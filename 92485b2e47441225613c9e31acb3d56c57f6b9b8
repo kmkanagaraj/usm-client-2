@@ -22,6 +22,40 @@
       "revId": "92485b2e47441225613c9e31acb3d56c57f6b9b8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7ddcece3",
+        "filename": "app/components/clusters/cluster-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 219,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-07-22T11:34:03Z",
+      "side": 1,
+      "message": "if else can be eliminated by checking (cpupercentusage !\u003d undefined) \u0026\u0026 (cpupercentage \u003e 0)",
+      "revId": "92485b2e47441225613c9e31acb3d56c57f6b9b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_1ddf20d7",
+        "filename": "app/components/hosts/host-overview/host-overview.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-07-22T11:34:03Z",
+      "side": 1,
+      "message": "same as previous comment",
+      "revId": "92485b2e47441225613c9e31acb3d56c57f6b9b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
