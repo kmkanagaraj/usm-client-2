@@ -46,6 +46,30 @@
       "revId": "a6dba9f85ee8bfe842135f90036333896b2eea34",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_182e0e8c",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1004373
+      },
+      "writtenOn": "2016-07-22T12:29:29Z",
+      "side": 0,
+      "message": "I understand we should not change the group by condition during refresh. But I feel we should apply the same( previously selected) group by condition during refresh. Currently I am not sure how that is achieved. \n\nConsider the case,\n\n1. First time we have 100 OSDs listed and we performed group by using storage profile,\n2. During Refresh we are getting only 50 OSDs. Don\u0027t we need to apply the same group on this new data set.",
+      "parentUuid": "baa041b7_3d030412",
+      "range": {
+        "startLine": 141,
+        "startChar": 16,
+        "endLine": 141,
+        "endChar": 44
+      },
+      "revId": "a6dba9f85ee8bfe842135f90036333896b2eea34",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
