@@ -100,7 +100,16 @@ export class OsdDetailController {
         this.scopeService.$on('$destroy', () => {
             this.intervalSvc.cancel(this.timer);
         });
-        this.getOSDs();
+        if( this.type === 'Cluster' ) {
+            this.clusterService.getSlus(this.id).then((slus: Array<any>) => {
+                this.settingUpOsds(slus);
+                this.performGroupBy('node');
+            });
+        } else {
+            this.serverService.getNodeSlus(this.id).then((slus: Array<any>) => {
+                this.settingUpOsds(slus);
+            });
+        }
         this.paramsObject = locationService.search();
         if (Object.keys(this.paramsObject).length > 0) {
             if(this.paramsObject.active_filter !== undefined && this.paramsObject.filter_name !== undefined) {
@@ -138,7 +147,6 @@ export class OsdDetailController {
         if( this.type === 'Cluster' ) {
             this.clusterService.getSlus(this.id).then((slus: Array<any>) => {
                 this.settingUpOsds(slus);
-                this.performGroupBy('node');
             });
         } else {
             this.serverService.getNodeSlus(this.id).then((slus: Array<any>) => {
