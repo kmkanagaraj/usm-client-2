@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_fbfa3a76",
+        "filename": "app/components/storage/object/objectstorage-list.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-07-26T10:53:47Z",
+      "side": 1,
+      "message": "we should not use \u003cbr\u003e element .. Can we use any block level element instead of this..",
+      "range": {
+        "startLine": 112,
+        "startChar": 84,
+        "endLine": 112,
+        "endChar": 90
+      },
+      "revId": "9a3116b571d1d8034c3d8c99c7442c686cd79a1f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
