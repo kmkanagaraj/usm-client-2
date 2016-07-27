@@ -1,0 +1,1700 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: app/components/clusters/cluster-detail.js:128
+#: app/components/clusters/cluster-detail.js:214
+#: app/components/dashboard/dashboard-controller.js:189
+#: app/components/dashboard/dashboard-controller.js:97
+msgid "% Used"
+msgstr ""
+
+#. TRANSLATORS: '&lt;' and '&nbsp;' should not be translated
+#: app/components/clusters/clusters-new.html:61
+msgid "&lt;&nbsp;&nbsp;Back"
+msgstr ""
+
+#: app/components/base/i18n.js:42
+msgid "/[ap].?m?.?/i"
+msgstr ""
+
+#: app/components/clusters/clusters.html:123
+msgid "0 Alerts"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:8
+msgid "1. Configure Cluster"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:12
+msgid "2. Select Hosts"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:16
+msgid "3. Choose Networks"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:20
+msgid "4. Storage Profiles"
+msgstr ""
+
+#. TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}' should not be translated but '%', 'Used' and the order are translatable.
+#: app/components/hosts/host-overview/host-overview.html:124
+msgid ""
+"<div class=\"used-data-block\">\n"
+"                                                            {{hostoverview.host.utilizations.cpuusage.percentused | number : 1}}%\n"
+"                                                        </div>\n"
+"                                                         <div class=\"total-data-block\">\n"
+"                                                           Used\n"
+"                                                        </div>"
+msgstr ""
+
+#. TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}', 'bytes'  should not be translated but 'of' and the order are translatable.
+#: app/components/hosts/host-overview/host-overview.html:163
+msgid ""
+"<div class=\"used-data-block\">\n"
+"                                                            {{hostoverview.host.utilizations.memoryusage.used | bytes}}\n"
+"                                                        </div>\n"
+"                                                         <div class=\"total-data-block\">\n"
+"                                                           of {{hostoverview.host.utilizations.memoryusage.total | bytes}}\n"
+"                                                        </div>"
+msgstr ""
+
+#. TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}', 'bytes'  should not be translated but 'of' and the order are translatable.
+#: app/components/hosts/host-overview/host-overview.html:300
+msgid ""
+"<div class=\"used-data-block\">\n"
+"                                                            {{hostoverview.host.utilizations.networkusage.used|bytes}}\n"
+"                                                        </div>\n"
+"                                                         <div class=\"total-data-block\">\n"
+"                                                           of {{hostoverview.host.utilizations.networkusage.total | bytes}}\n"
+"                                                        </div>"
+msgstr ""
+
+#. TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}', 'bytes'  should not be translated but 'of' and the order are translatable.
+#: app/components/hosts/host-overview/host-overview.html:241
+msgid ""
+"<div class=\"used-data-block\">\n"
+"                                                            {{hostoverview.host.utilizations.storageusage.used|bytes}}\n"
+"                                                        </div>\n"
+"                                                         <div class=\"total-data-block\">\n"
+"                                                           of {{hostoverview.host.utilizations.storageusage.total | bytes}}\n"
+"                                                        </div>"
+msgstr ""
+
+#. TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}', 'bytes'  should not be translated but 'of' and the order are translatable.
+#: app/components/hosts/host-overview/host-overview.html:202
+msgid ""
+"<div class=\"used-data-block\">\n"
+"                                                            {{hostoverview.host.utilizations.swapusage.used | bytes}}\n"
+"                                                        </div>\n"
+"                                                         <div class=\"total-data-block\">\n"
+"                                                           of {{hostoverview.host.utilizations.swapusage.total | bytes}}\n"
+"                                                        </div>"
+msgstr ""
+
+#. TRANSLATORS: clusterdetail..., 'bytes' are should not be translated but 'Used' and 'of' and the order are translatable.
+#: app/components/clusters/clusters-detail-overview.html:27
+msgid "<label>{{clusterdetail.capacity.used | bytes }}</label> of {{clusterdetail.capacity.total | bytes}} Used"
+msgstr ""
+
+#. TRANSLATORS: 'label, 'dash.capacity....' and 'bytes' should not be translated.
+#: app/components/dashboard/dashboard.html:56
+msgid "<label>{{dash.capacity.used | bytes }}</label> of {{dash.capacity.total | bytes }} used"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:74
+msgid "<span ng-if=\"!clusterdetail.isLoading.summaryData\">{{clusterdetail.hosts.total}}</span> Hosts"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:101
+msgid "<span ng-if=\"!clusterdetail.isLoading.summaryData\">{{clusterdetail.monitors.total}}</span> Monitors"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:201
+msgid "<span ng-if=\"!clusterdetail.isLoading.summaryData\">{{clusterdetail.objects.total}}</span> Objects"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:174
+msgid "<span ng-if=\"!clusterdetail.isLoading.summaryData\">{{clusterdetail.osds.total}}</span> OSDs"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:124
+msgid "<span ng-if=\"!clusterdetail.isLoading.summaryData\">{{clusterdetail.pgs.total}}</span> PGs"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:151
+msgid "<span ng-if=\"!clusterdetail.isLoading.summaryData\">{{clusterdetail.pools.total}}</span> Pools"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:12
+msgid "<span ng-if=\"!dash.isLoading.summaryData\">{{dash.clusters.total}}</span> Clusters"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:106
+msgid "<span ng-if=\"!dash.isLoading.summaryData\">{{dash.hosts.total}}</span> Hosts"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:133
+msgid "<span ng-if=\"!dash.isLoading.summaryData\">{{dash.monitors.total}}</span> Monitors"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:233
+msgid "<span ng-if=\"!dash.isLoading.summaryData\">{{dash.objects.total}}</span> Objects"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:206
+msgid "<span ng-if=\"!dash.isLoading.summaryData\">{{dash.osds.total}}</span> OSDs"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:156
+msgid "<span ng-if=\"!dash.isLoading.summaryData\">{{dash.pgs.total}}</span> PGs"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:183
+msgid "<span ng-if=\"!dash.isLoading.summaryData\">{{dash.pools.total}}</span> Pools"
+msgstr ""
+
+#. TRANSLATORS: '{{hostoverview....}} should not be translated.
+#: app/components/hosts/host-overview/host-overview.html:67
+msgid "<span ng-if=\"!hostoverview.isLoading.summaryData\">{{hostoverview.summary.servicedetails.up.length + hostoverview.summary.servicedetails.down.length }}</span> Storage Services"
+msgstr ""
+
+#. TRANSLATORS: '{{hostoverview...}}' should not be translated.
+#: app/components/hosts/host-overview/host-overview.html:44
+msgid "<span ng-if=\"!hostoverview.isLoading.summaryData\">{{hostoverview.summary.storage_logical_units.TotalSLU}}</span> OSDs"
+msgstr ""
+
+#. TRANSLATORS: 'of' and 'used' and the order are translatable but other words 'strong', 'ng-bind', 'cluster.total_size', 'bytes'... should not be translated.
+#: app/components/clusters/clusters.html:100
+msgid ""
+"<strong ng-bind=\" cluster.total_size - cluster.free_size | bytes \"></strong> of {{ cluster.total_size | bytes\n"
+"                                }} used"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:111
+msgid ""
+"<strong ng-bind=\" storage.usage.used | bytes \"></strong> of {{ storage.usage.total | bytes }}\n"
+"                            used"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:61
+msgid ""
+"<strong>Note:</strong>&nbsp;Pools are created based on the number of OSD's in this cluster.\n"
+"                                    When the number of OSDs available is 50 or less, a fixed number of Placement Groups will\n"
+"                                    be assigned."
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:73
+msgid ""
+"<strong>Note:</strong>Pools are created based on the number of OSD's in this cluster.\n"
+"                                    Move the slider to optimize the pool creation based on size and the corresponding number\n"
+"                                    of Placement Groups."
+msgstr ""
+
+#: app/components/clusters/clusters.html:122
+msgid "<strong>{{cluster.almwarncount + cluster.almcritcount}} </strong>Alerts"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:330
+msgid "<translate>Most Used Pools</translate>"
+msgstr ""
+
+#: app/components/base/i18n.js:30
+msgid "AM"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:27
+msgid "Accept"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:17
+msgid "Accept All"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:49
+msgid "Accepting Host"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:76
+#: app/components/events/event-details.html:18
+msgid "Action"
+msgstr ""
+
+#: app/components/admin/admin.html:44
+msgid "Actions"
+msgstr ""
+
+#: app/components/events/event-list.html:56
+msgid "Active"
+msgstr ""
+
+#: app/components/events/event-list.html:66
+#: app/components/tasks/task-list.html:52
+msgid "Active filters:"
+msgstr ""
+
+#: app/components/clusters/clusters-new-hosts.html:25
+#: app/components/clusters/storageprofile/storageprofile-disks.html:13
+#: app/components/storage/blockdevice/blockdevice-list.html:15
+msgid "Add"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-list.html:24
+#: app/components/storage/blockdevice/blockdevice-list.html:38
+#: app/components/storage/blockdevice/blockdevice-new.html:8
+msgid "Add Block Storage"
+msgstr ""
+
+#: app/components/admin/admin.html:13
+msgid "Add LDAP/AD User"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new.html:8
+msgid "Add Object Storage"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-list.html:28
+#: app/components/storage/blockdevice/blockdevice-new.html:3
+#: app/components/storage/object/objectstorage-list.html:33
+#: app/components/storage/object/objectstorage-list.html:46
+#: app/components/storage/storage-new.html:3
+#: app/components/storage/storage-new.html:7
+msgid "Add Storage"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:42
+#: app/components/storage/object/objectstorage-list.html:56
+msgid "Add Storage Pools"
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:3
+#: app/components/admin/add-user.html:3
+#: app/components/admin/add-user.html:6
+#: app/components/admin/admin.html:12
+msgid "Add User"
+msgstr ""
+
+#: app/components/clusters/import-cluster/import-cluster.html:32
+msgid "Address"
+msgstr ""
+
+#: app/components/admin/admin.html:2
+#: app/components/admin/ldap-settings.html:2
+#: app/components/admin/mail-settings.html:2
+#: app/components/base/menu-svc.js:43
+#: app/components/events/event-list.html:3
+#: app/components/tasks/task-list.html:3
+msgid "Admin"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:70
+msgid "Alert user when the following utilization thresholds have been breached"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:138
+msgid "Alerts"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:85
+#: app/components/events/event-list.html:58
+msgid "All"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:7
+msgid "Authentication"
+msgstr ""
+
+#: app/components/clusters/clusters-new-configure.html:31
+msgid "Automatic cluster expansion will be enabled.  Whenever new disks are added to any host of this cluster, the cluster will be expanded automatically."
+msgstr ""
+
+#: app/components/clusters/clusters-new-hosts.html:3
+#: app/components/clusters/import-cluster/import-cluster.html:16
+msgid "Available Hosts"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-item.html:36
+#: app/components/storage/blockdevice/blockdevice-new.html:104
+#: app/components/storage/blockdevice/blockdevice-new.html:43
+msgid "Backing Pool"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:30
+msgid "Base Path Name"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:32
+msgid "Base path name"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:36
+#: app/components/admin/ldap-settings.html:38
+msgid "Bind Account"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:42
+#: app/components/admin/ldap-settings.html:44
+msgid "Bind Password"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:25
+msgid "Bind to IPv6"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:4
+msgid "Block Storage"
+msgstr ""
+
+#: app/components/storage/storage-new.html:47
+msgid "Block Storage (RBD)"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:25
+msgid "CPU Cores per Socket"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:17
+msgid "CPU Model"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:21
+msgid "CPU Sockets"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:29
+msgid "CPU Threads Per Core"
+msgstr ""
+
+#: app/components/admin/add-user.html:47
+#: app/components/admin/edit-user.html:55
+#: app/components/admin/my-settings.html:68
+#: app/components/clusters/accept-hosts.html:62
+#: app/components/clusters/clusters-expand.html:12
+#: app/components/clusters/clusters-new-hosts.html:49
+#: app/components/clusters/clusters-new.html:64
+#: app/components/clusters/import-cluster/import-cluster.html:102
+#: app/components/clusters/storageprofile/storageprofile-disks.html:14
+#: app/components/events/event-dismiss.tpl.html:23
+#: app/components/storage/blockdevice/blockdevice-new.html:119
+#: app/components/storage/object/objectstorage-new-directive.html:204
+#: app/components/storage/storage-new.html:58
+msgid "Cancel"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:5
+msgid "Ceph Cluster Configuration"
+msgstr ""
+
+#: app/components/clusters/cluster-new.js:301
+msgid "Choose at least {0} monitors to continue"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:48
+msgid "Choose existing pool"
+msgstr ""
+
+#: app/components/events/event-list.html:75
+#: app/components/tasks/task-list.html:62
+msgid "Clear All Filters"
+msgstr ""
+
+#: app/components/modal/confirmation-modal.html:11
+#: app/components/modal/custom-modal.html:10
+#: app/components/modal/task-details-popup.html:12
+msgid "Close"
+msgstr ""
+
+#: app/components/events/event-list.html:18
+#: app/components/hosts/host-list.html:115
+#: app/components/hosts/host-overview/host-overview.html:29
+#: app/components/storage/storage-new.html:15
+msgid "Cluster"
+msgstr ""
+
+#: app/components/events/event-details.html:13
+msgid "Cluster :"
+msgstr ""
+
+#: app/components/hosts/host-overview/host-overview.html:322
+msgid "Cluster Network"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:45
+msgid "Cluster Network Address"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:45
+#: app/components/clusters/import-cluster/import-cluster.html:54
+msgid "Cluster Summary"
+msgstr ""
+
+#: app/components/clusters/clusters-new-configure.html:9
+msgid "Cluster name is required"
+msgstr ""
+
+#: app/components/base/menu-svc.js:11
+#: app/components/clusters/clusters.html:3
+#: app/components/clusters/import-cluster/import-cluster.html:3
+msgid "Clusters"
+msgstr ""
+
+#: app/components/events/event-details.html:44
+msgid "Comments"
+msgstr ""
+
+#: app/components/tasks/task-list.js:17
+msgid "Completed"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:6
+msgid "Configure Mail Server"
+msgstr ""
+
+#: app/components/admin/my-settings.html:59
+#: app/components/admin/my-settings.html:61
+msgid "Confirm Password"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:60
+#: app/components/clusters/import-cluster/import-cluster.html:99
+msgid "Continue"
+msgstr ""
+
+#: app/components/clusters/clusters.html:29
+msgid "Create"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:4
+#: app/components/clusters/clusters-new.html:63
+#: app/components/clusters/clusters.html:41
+#: app/components/storage/blockdevice/blockdevice-list.html:44
+#: app/components/storage/object/objectstorage-list.html:62
+msgid "Create Cluster"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:56
+msgid "Create new pool"
+msgstr ""
+
+#: app/components/clusters/clusters.html:39
+msgid "Create or Import a Cluster to get Started"
+msgstr ""
+
+#: app/components/events/event-details.html:25
+msgid "Created"
+msgstr ""
+
+#: app/components/clusters/clusters.html:84
+msgid "Creating"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:78
+msgid "Critical (Full)"
+msgstr ""
+
+#: app/components/base/menu-svc.js:5
+msgid "Dashboard"
+msgstr ""
+
+#: app/components/base/about-modal.html:30
+msgid "Database:"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:86
+msgid "Default"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:13
+msgid "Default Authentication"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:37
+msgid "Default Journal Size"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:17
+msgid "Default Replicas"
+msgstr ""
+
+#: app/components/admin/admin.html:58
+msgid "Delete User"
+msgstr ""
+
+#: app/components/events/event-list.html:21
+msgid "Description"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:29
+#: app/components/events/event-list.html:133
+msgid "Details"
+msgstr ""
+
+#: app/components/clusters/clusters-new-networks.html:6
+msgid "Detected Networks"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:14
+msgid "Device Name"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:19
+msgid "Device Name cannot be empty"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:23
+msgid "Devices to Create"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:51
+msgid "Directory service configuration saved successfully."
+msgstr ""
+
+#: app/components/admin/mail-settings.html:13
+#: app/components/clusters/configdetail/config-detail.html:63
+#: app/components/storage/object/objectstorage-list.html:135
+msgid "Disabled"
+msgstr ""
+
+#: app/components/clusters/clusters-new-volumes.html:40
+#: app/components/clusters/clusters-new.html:51
+msgid "Disks"
+msgstr ""
+
+#: app/components/events/event-details.html:50
+msgid "Dismiss"
+msgstr ""
+
+#: app/components/events/event-dismiss.tpl.html:6
+msgid "Dismiss Events"
+msgstr ""
+
+#: app/components/events/event-dismiss.tpl.html:10
+msgid "Dismiss this event? Enter an optional comment and click OK to continue."
+msgstr ""
+
+#: app/components/events/event-list.html:57
+msgid "Dismissed"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:57
+msgid "Down"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:56
+msgid "Down-In"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:177
+#: app/components/storage/object/objectstorage-new-directive.html:38
+msgid "EC Profile"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:120
+msgid "EC profile"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:77
+msgid "Edit"
+msgstr ""
+
+#: app/components/admin/edit-user.html:3
+msgid "Edit User"
+msgstr ""
+
+#: app/components/admin/admin.html:49
+msgid "Edit user"
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:48
+#: app/components/admin/add-user.html:27
+#: app/components/admin/add-user.html:29
+#: app/components/admin/admin.html:26
+#: app/components/admin/edit-user.html:37
+#: app/components/admin/edit-user.html:39
+#: app/components/admin/my-settings.html:33
+msgid "Email"
+msgstr ""
+
+#: app/components/admin/add-user.html:33
+#: app/components/admin/edit-user.html:42
+#: app/components/admin/mail-settings.html:10
+#: app/components/admin/my-settings.html:41
+msgid "Email Notifications"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:3
+msgid "Email Settings"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:168
+#: app/components/storage/object/objectstorage-new-directive.html:105
+msgid "Enable Quotas"
+msgstr ""
+
+#: app/components/admin/edit-user.html:15
+#: app/components/admin/mail-settings.html:14
+#: app/components/clusters/configdetail/config-detail.html:62
+msgid "Enabled"
+msgstr ""
+
+#: app/components/events/event-dismiss.tpl.html:14
+msgid "Enter a Comment"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:95
+#: app/components/storage/object/objectstorage-new.js:37
+msgid "Erasure Coded"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:50
+msgid "Error saving configuration"
+msgstr ""
+
+#: app/components/base/alert-dropdown.tpl.html:3
+#: app/components/base/menu-svc.js:50
+#: app/components/events/event-list.html:4
+#: app/components/events/event-list.html:7
+msgid "Events"
+msgstr ""
+
+#: app/components/tasks/task-details.html:17
+#: app/components/tasks/task-details.html:38
+msgid "Execution Steps"
+msgstr ""
+
+#: app/components/clusters/clusters.html:54
+msgid "Expand"
+msgstr ""
+
+#: app/components/clusters/clusters-expand.html:13
+msgid "Expand Cluster"
+msgstr ""
+
+#: app/components/clusters/clusters-expand.html:4
+msgid "Expand Cluster: {{cluster.name}}"
+msgstr ""
+
+#: app/components/tasks/task-list.js:17
+msgid "Failed"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:27
+msgid "Filter By:"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:58
+msgid "Filter by OSD Name..."
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:105
+msgid "Filter by OSD Status"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:123
+msgid "Filter by PG Status"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:141
+msgid "Filter by Utilization"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:42
+msgid "Filter by {{osddetail.searchBy.name}}..."
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:46
+#: app/components/admin/add-user.html:15
+#: app/components/admin/admin.html:21
+#: app/components/admin/edit-user.html:25
+#: app/components/admin/my-settings.html:21
+msgid "First Name"
+msgstr ""
+
+#: app/components/admin/add-user.html:17
+msgid "First name"
+msgstr ""
+
+#: app/components/clusters/clusters.html:58
+#: app/components/hosts/host-list.html:55
+msgid "Forget"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:67
+#: app/components/admin/mail-settings.html:69
+#: app/components/events/event-list.html:33
+#: app/components/tasks/task-list.html:21
+msgid "From"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:79
+msgid "Full (95% or more)"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:7
+msgid "General Cluster setting and defaults"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:55
+msgid "Generate notifications for the following events"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:13
+msgid "Group By:"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:4
+msgid "Hide Sidebar"
+msgstr ""
+
+#: app/components/events/event-details.html:14
+msgid "History"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:15
+#: app/components/clusters/osdsdetail/osd-detail.html:36
+#: app/components/events/event-list.html:19
+msgid "Host"
+msgstr ""
+
+#: app/components/events/event-details.html:10
+msgid "Host :"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:4
+msgid "Host Configuration"
+msgstr ""
+
+#: app/components/hosts/host-overview/host-overview.html:17
+msgid "Host Role"
+msgstr ""
+
+#: app/components/hosts/host-overview/host-overview.html:11
+msgid "Host Summary"
+msgstr ""
+
+#: app/components/clusters/clusters-new-hosts.html:35
+#: app/components/clusters/import-cluster/import-cluster.html:31
+#: app/components/clusters/import-cluster/import-cluster.html:80
+msgid "Hostname"
+msgstr ""
+
+#: app/components/base/menu-svc.js:17
+#: app/components/hosts/host-details/hosts-detail.html:4
+#: app/components/hosts/host-list.html:6
+msgid "Hosts"
+msgstr ""
+
+#: app/components/hosts/host-list.html:32
+msgid "Hosts are detected when you accept a node or <a href=\"\" ng-click=\"hosts.createNewCluster()\">create a cluster</a>"
+msgstr ""
+
+#: app/components/hosts/host-list.html:33
+msgid "If you have already cluster created and still do not see hosts, make sure the hosts are configured correctly."
+msgstr ""
+
+#: app/components/modal/unaaccepted-hosts-found-modal.html:14
+msgid "Ignore and Continue"
+msgstr ""
+
+#: app/components/clusters/clusters.html:30
+msgid "Import"
+msgstr ""
+
+#: app/components/clusters/clusters.html:42
+#: app/components/clusters/import-cluster/import-cluster.html:4
+msgid "Import Cluster"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:51
+msgid "Initialization Failed:"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:52
+msgid "Initialization completed:"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:50
+msgid "Initializing Host"
+msgstr ""
+
+#: app/components/tasks/task-list.js:17
+msgid "Inprogress"
+msgstr ""
+
+#: app/components/admin/edit-user.html:13
+#: app/components/admin/my-settings.html:12
+msgid "Internal"
+msgstr ""
+
+#: app/components/clusters/clusters-new-configure.html:24
+msgid "Invalid journal size. Specify a journal size value between 1 and 10240."
+msgstr ""
+
+#: app/components/base/i18n.js:38
+msgid "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:190
+msgid "Journal"
+msgstr ""
+
+#: app/components/clusters/clusters-new-configure.html:13
+msgid "Journal Size"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:18
+msgid "LDAP/AD Host"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:3
+#: app/components/base/menu-svc.js:66
+msgid "LDAP/AD Settings"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:20
+msgid "LDAP/AD host"
+msgstr ""
+
+#: app/components/dashboard/dashboard-controller.js:33
+msgid "Last 1 hour"
+msgstr ""
+
+#: app/components/dashboard/dashboard-controller.js:34
+msgid "Last 2 hours"
+msgstr ""
+
+#: app/components/dashboard/dashboard-controller.js:35
+msgid "Last 24 hours"
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:47
+#: app/components/admin/add-user.html:21
+#: app/components/admin/admin.html:22
+#: app/components/admin/edit-user.html:31
+#: app/components/admin/my-settings.html:27
+msgid "Last Name"
+msgstr ""
+
+#: app/components/admin/add-user.html:23
+msgid "Last name"
+msgstr ""
+
+#: app/components/tasks/task-list.html:124
+msgid "Last updated"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:82
+msgid "Less than 50%"
+msgstr ""
+
+#: app/components/login/login.html:36
+msgid "Log In"
+msgstr ""
+
+#: app/components/base/i18n.js:50
+msgid "MMMM D, YYYY"
+msgstr ""
+
+#: app/components/base/i18n.js:52
+msgid "MMMM D, YYYY h:mm A"
+msgstr ""
+
+#: app/components/base/menu-svc.js:71
+msgid "Mail Settings"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:24
+msgid "MailServer cannot be empty"
+msgstr ""
+
+#: app/components/clusters/clusters.html:55
+msgid "Manage"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:84
+msgid "Mark IN"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:87
+msgid "Mark OUT"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:81
+msgid "Mark UP"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:195
+#: app/components/storage/object/objectstorage-new-directive.html:138
+msgid "Max number of objects"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:178
+#: app/components/storage/object/objectstorage-new-directive.html:115
+msgid "Max percentage used"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:258
+#: app/components/dashboard/dashboard.html:288
+#: app/components/hosts/host-list.html:112
+#: app/components/hosts/host-overview/host-overview.html:162
+msgid "Memory"
+msgstr ""
+
+#: app/components/events/event-details.html:12
+msgid "Message :"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:21
+msgid "Minimum Replicas"
+msgstr ""
+
+#: app/components/clusters/cluster-new.js:50
+msgid "Monitor"
+msgstr ""
+
+#: app/components/base/about-modal.html:24
+msgid "Monitoring:"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:49
+msgid "Monitors"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:303
+#: app/components/dashboard/dashboard.html:331
+msgid "Most Used Pools"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:53
+#: app/components/dashboard/dashboard.html:83
+msgid "Most Used Storage Profiles"
+msgstr ""
+
+#: app/components/admin/my-settings.html:6
+msgid "My Settings"
+msgstr ""
+
+#: app/components/clusters/clusters-new-configure.html:4
+#: app/components/clusters/clusters-new.html:47
+#: app/components/storage/object/objectstorage-new-directive.html:161
+msgid "Name"
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:10
+#: app/components/admin/add-ldap-user.html:12
+msgid "Name or User ID"
+msgstr ""
+
+#: app/components/clusters/import-cluster/import-cluster.html:58
+msgid "Name:"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:80
+msgid "Near Full (85% or more)"
+msgstr ""
+
+#: app/components/admin/my-settings.html:53
+#: app/components/admin/my-settings.html:55
+msgid "New Password"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:116
+#: app/components/storage/object/objectstorage-new-directive.html:201
+#: app/components/storage/storage-new.html:57
+msgid "Next"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:62
+msgid "Next&nbsp;&nbsp;&gt;"
+msgstr ""
+
+#: app/components/clusters/clusters-detail-overview.html:242
+#: app/components/clusters/clusters-detail-overview.html:262
+#: app/components/dashboard/dashboard.html:273
+#: app/components/dashboard/dashboard.html:291
+msgid "No data available"
+msgstr ""
+
+#: app/components/clusters/storageprofile/storageprofile-disks.html:39
+msgid "No disks found for the storage profile"
+msgstr ""
+
+#: app/components/hosts/host-list.html:31
+msgid "No hosts detected."
+msgstr ""
+
+#: app/components/admin/admin.html:25
+#: app/components/clusters/configdetail/config-detail.html:53
+msgid "Notifications"
+msgstr ""
+
+#: app/components/clusters/cluster-new.js:305
+msgid "Number of Monitors cannot be even"
+msgstr ""
+
+#: app/components/events/event-dismiss.tpl.html:22
+msgid "OK"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:9
+msgid "OS Version"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:37
+msgid "OSD"
+msgstr ""
+
+#: app/components/clusters/cluster-new.js:50
+msgid "OSD + Monitor"
+msgstr ""
+
+#: app/components/clusters/cluster-new.js:50
+msgid "OSD Host"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:41
+msgid "OSD Max Backfills"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:45
+msgid "OSD Max Scrubs"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:54
+msgid "OSD Name"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:33
+msgid "OSD Report Timeout"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:29
+msgid "OSD down-Out interval"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:123
+#: app/components/storage/object/objectstorage-new-directive.html:185
+msgid "OSDs"
+msgstr ""
+
+#: app/components/storage/storage-new.html:36
+msgid "Object Storage"
+msgstr ""
+
+#: app/components/clusters/clusters-new-hosts.html:47
+#: app/components/modal/confirmation-modal.html:10
+msgid "Ok"
+msgstr ""
+
+#: app/components/admin/my-settings.html:47
+#: app/components/admin/my-settings.html:49
+msgid "Old Password"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:191
+msgid "Optimized"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:181
+msgid "Optimized For"
+msgstr ""
+
+#: app/components/clusters/cluster-detail.js:154
+#: app/components/dashboard/dashboard-controller.js:128
+msgid "Others"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:19
+msgid "Outgoing MailServer SMTP Address"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:126
+msgid "PGs"
+msgstr ""
+
+#: app/components/base/i18n.js:32
+msgid "PM"
+msgstr ""
+
+#: app/components/admin/add-user.html:39
+#: app/components/admin/add-user.html:41
+#: app/components/admin/edit-user.html:46
+#: app/components/admin/edit-user.html:48
+#: app/components/admin/mail-settings.html:57
+#: app/components/admin/mail-settings.html:59
+#: app/components/clusters/clusters-new-hosts.html:41
+#: app/components/login/login.html:29
+msgid "Password"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:62
+msgid "Password cannot be empty"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:33
+msgid "Physical Memory"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:66
+msgid "Placement Groups"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:78
+msgid "Placement Groups / Optimal Pool Size"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:87
+msgid "Polling Interval"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:151
+#: app/components/storage/object/objectstorage-new-directive.html:5
+msgid "Pool Name"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:10
+msgid "Pool Name cannot be empty"
+msgstr ""
+
+#: app/components/base/menu-svc.js:30
+#: app/components/clusters/clusters.html:118
+#: app/components/storage/object/objectstorage-list.html:4
+#: app/components/storage/object/objectstorage-list.html:7
+msgid "Pools"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:14
+msgid "Pools to Create"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:155
+msgid "Pools to create on {{storage.cluster.name}}"
+msgstr ""
+
+#: app/components/admin/ldap-settings.html:24
+#: app/components/admin/mail-settings.html:37
+msgid "Port"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:42
+msgid "Port cannot be empty"
+msgstr ""
+
+#: app/components/clusters/storageprofile/storageprofile-disks.html:12
+msgid "Profile name"
+msgstr ""
+
+#: app/components/base/about-modal.html:18
+msgid "Provider:"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:49
+msgid "Public Network Address"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:129
+#: app/components/storage/object/objectstorage-new-directive.html:96
+msgid "Quotas"
+msgstr ""
+
+#: app/components/storage/storage-new.html:48
+msgid "RBD integrates with Kernel Virtual Machines (KVM s) and allows block storage devices mounting from Linux for QEMU KVM clients. Data access via Librados and RBD"
+msgstr ""
+
+#: app/components/base/menu-svc.js:36
+#: app/components/storage/blockdevice/blockdevice-list.html:4
+#: app/components/storage/blockdevice/blockdevice-list.html:7
+msgid "RBDs"
+msgstr ""
+
+#: app/components/clusters/clusters-new.html:53
+msgid "Raw Capacity"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:30
+msgid "Re-Initialize"
+msgstr ""
+
+#: app/components/base/progress-dropdown.tpl.html:23
+#: app/components/clusters/import-cluster/import-cluster.html:23
+#: app/components/clusters/import-cluster/import-cluster.html:73
+msgid "Refresh"
+msgstr ""
+
+#: app/components/hosts/host-list.html:50
+msgid "Reinitialize"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:91
+#: app/components/storage/object/objectstorage-list.html:76
+msgid "Remove"
+msgstr ""
+
+#: app/components/clusters/clusters-new-volumes.html:38
+#: app/components/storage/object/objectstorage-list.html:117
+#: app/components/storage/object/objectstorage-list.html:157
+#: app/components/storage/object/objectstorage-new-directive.html:173
+#: app/components/storage/object/objectstorage-new-directive.html:29
+msgid "Replicas"
+msgstr ""
+
+#: app/components/tasks/task-details.html:18
+#: app/components/tasks/task-details.html:39
+msgid "Result"
+msgstr ""
+
+#: app/components/admin/admin.html:23
+#: app/components/hosts/host-list.html:118
+msgid "Role"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:41
+msgid "SE Linux Mode"
+msgstr ""
+
+#: app/components/admin/add-user.html:46
+#: app/components/admin/edit-user.html:54
+#: app/components/admin/ldap-settings.html:49
+#: app/components/admin/mail-settings.html:105
+#: app/components/admin/my-settings.html:67
+msgid "Save"
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:15
+#: app/components/admin/admin.html:7
+#: app/components/clusters/accept-hosts.html:10
+#: app/components/clusters/clusters-new-hosts.html:12
+#: app/components/clusters/clusters.html:7
+#: app/components/clusters/import-cluster/import-cluster.html:19
+#: app/components/clusters/import-cluster/import-cluster.html:69
+#: app/components/hosts/host-list.html:4
+#: app/components/storage/blockdevice/blockdevice-list.html:11
+#: app/components/storage/object/objectstorage-list.html:11
+#: app/components/tasks/task-list.html:14
+msgid "Search"
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:5
+msgid "Search for existing users from the configured LDAP directory and map that user to USM"
+msgstr ""
+
+#: app/components/base/progress-dropdown.tpl.html:28
+msgid "See All"
+msgstr ""
+
+#: app/components/clusters/clusters-new-hosts.html:23
+msgid "Select All"
+msgstr ""
+
+#: app/components/clusters/import-cluster/import-cluster.html:12
+msgid "Select Monitor Host"
+msgstr ""
+
+#: app/components/storage/storage-new.html:52
+msgid "Select for traditional applications that require block storage using kernel RADOS Block Devices"
+msgstr ""
+
+#: app/components/storage/storage-new.html:40
+msgid "Select to create regular RADOS object storage."
+msgstr ""
+
+#: app/components/admin/mail-settings.html:21
+msgid "Server"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:5
+msgid "Show Sidebar"
+msgstr ""
+
+#: app/components/clusters/clusters-new-volumes.html:39
+msgid "Size"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:96
+#: app/components/storage/object/objectstorage-new.js:174
+#: app/components/storage/object/objectstorage-new.js:34
+#: app/components/storage/object/objectstorage-new.js:35
+#: app/components/storage/object/objectstorage-new.js:99
+msgid "Standard"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-list.html:40
+#: app/components/storage/object/objectstorage-list.html:58
+msgid "Start by creating or importing a cluster."
+msgstr ""
+
+#: app/components/tasks/task-list.html:119
+msgid "Started"
+msgstr ""
+
+#: app/components/admin/admin.html:27
+#: app/components/clusters/import-cluster/import-cluster.html:33
+#: app/components/clusters/import-cluster/import-cluster.html:82
+#: app/components/tasks/task-details.html:11
+msgid "Status"
+msgstr ""
+
+#: app/components/base/menu-svc.js:23
+#: app/components/hosts/host-list.html:86
+#: app/components/hosts/host-overview/host-overview.html:240
+#: app/components/storage/blockdevice/blockdevice-list.html:3
+#: app/components/storage/blockdevice/blockdevice-new.html:2
+#: app/components/storage/object/objectstorage-list.html:3
+#: app/components/storage/storage-new.html:2
+msgid "Storage"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:16
+#: app/components/clusters/osdsdetail/osd-detail.html:38
+#: app/components/storage/object/objectstorage-new-directive.html:169
+#: app/components/storage/object/objectstorage-new-directive.html:51
+msgid "Storage Profile"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:20
+msgid "Storage Profile:"
+msgstr ""
+
+#: app/components/clusters/storageprofile/storageprofile-disks.html:7
+msgid "Storage Profiles"
+msgstr ""
+
+#: app/components/base/i18n.js:40
+msgid "Su_Mo_Tu_We_Th_Fr_Sa"
+msgstr ""
+
+#: app/components/tasks/task-details.html:31
+msgid "Sub Tasks"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:74
+#: app/components/admin/mail-settings.html:76
+msgid "Subject Prefix"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:118
+#: app/components/storage/object/objectstorage-new-directive.html:203
+msgid "Submit"
+msgstr ""
+
+#: app/components/hosts/host-overview/host-overview.html:201
+msgid "Swap"
+msgstr ""
+
+#: app/components/hosts/host-config/host-config.html:37
+msgid "Swap Size"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:257
+msgid "System Performance"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:34
+msgid "Target Size"
+msgstr ""
+
+#: app/components/tasks/task-details.html:5
+msgid "Task"
+msgstr ""
+
+#: app/components/modal/task-details-popup.html:6
+msgid "Task Details"
+msgstr ""
+
+#: app/components/base/menu-svc.js:56
+#: app/components/base/progress-dropdown.tpl.html:2
+#: app/components/tasks/task-list.html:4
+#: app/components/tasks/task-list.html:7
+msgid "Tasks"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:88
+msgid "Test"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:81
+#: app/components/admin/mail-settings.html:83
+msgid "Test Message Recipient"
+msgstr ""
+
+#. TRANSLATORS: 'strong' should not be translated.
+#: app/components/clusters/import-cluster/import-cluster.html:55
+msgid ""
+"The following cluster details have been detected. Review and click <strong> Import</strong> to continue importing this\n"
+"                cluster. Unaccepted hosts will be automatically accepted during import process"
+msgstr ""
+
+#: app/components/clusters/import-cluster/import-cluster.html:13
+msgid ""
+"The following hosts do not belong to an existing cluster. Select a monitor host from this list. All cluster configuration\n"
+"                information will be imported from this host."
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:6
+msgid "The following hosts have been discovered. Before creating a cluster, review and accept the hosts you want to include."
+msgstr ""
+
+#: app/components/login/login.js:23
+msgid "The username and password cannot be blank."
+msgstr ""
+
+#: app/components/login/login.js:19
+msgid "The username or password is incorrect."
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:30
+#: app/components/storage/object/objectstorage-new-directive.html:19
+msgid "The value cannot be lesser than 1"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:147
+msgid "The value must be in greater than 0."
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:130
+msgid "The value must be in range 1 to 100."
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:34
+msgid "The value must be in range 1 to 5"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-list.html:39
+msgid "There are currently no Ceph clusters defined. Block Storage must be added to an existing cluster."
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:57
+msgid "There are currently no Ceph clusters defined. Storage pools must be added to an existing cluster."
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-list.html:25
+msgid "There are no RADOS Block Devices currently defined.  Click Add Storage to create RBDs."
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:43
+msgid "There are no storage pools currently defined. Click Add Storage to create RADOS object storage."
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:68
+msgid "Thresholds"
+msgstr ""
+
+#: app/components/events/event-details.html:20
+msgid "Time"
+msgstr ""
+
+#: app/components/events/event-details.html:11
+msgid "Time Submitted :"
+msgstr ""
+
+#: app/components/tasks/task-details.html:9
+msgid "Time Submitted: {{task.getLocalizedDateTime(task.detail.statuslist[0].Timestamp) | date : 'MMM d yyyy, hh:mm:ss a'}}"
+msgstr ""
+
+#: app/components/events/event-list.html:46
+#: app/components/tasks/task-list.html:34
+msgid "To"
+msgstr ""
+
+#: app/components/admin/admin.html:24
+#: app/components/admin/edit-user.html:12
+#: app/components/admin/my-settings.html:11
+#: app/components/clusters/import-cluster/import-cluster.html:81
+#: app/components/storage/object/objectstorage-new-directive.html:165
+#: app/components/storage/object/objectstorage-new-directive.html:23
+msgid "Type"
+msgstr ""
+
+#: app/components/clusters/clusters.html:56
+msgid "UnManage"
+msgstr ""
+
+#: app/components/modal/unaaccepted-hosts-found-modal.html:6
+msgid "Unaccepted Hosts Detected"
+msgstr ""
+
+#: app/components/hosts/host-overview/host-overview.html:25
+msgid "Up Since"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:54
+msgid "Up-In"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.js:55
+msgid "Up-Out"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:28
+msgid "Use SSL"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:31
+msgid "Use TLS"
+msgstr ""
+
+#: app/components/admin/admin.html:3
+#: app/components/events/event-details.html:19
+msgid "User"
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:45
+#: app/components/admin/admin.html:20
+msgid "User ID"
+msgstr ""
+
+#: app/components/admin/add-user.html:11
+#: app/components/admin/add-user.html:9
+#: app/components/admin/edit-user.html:19
+msgid "User Id"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:47
+#: app/components/admin/mail-settings.html:49
+msgid "User Name"
+msgstr ""
+
+#: app/components/clusters/clusters-new-hosts.html:38
+#: app/components/login/login.html:23
+msgid "Username"
+msgstr ""
+
+#: app/components/admin/mail-settings.html:52
+msgid "Username cannot be empty"
+msgstr ""
+
+#: app/components/admin/add-ldap-user.html:2
+#: app/components/admin/add-user.html:2
+#: app/components/admin/edit-user.html:2
+#: app/components/base/menu-svc.js:61
+msgid "Users"
+msgstr ""
+
+#: app/components/dashboard/dashboard.html:40
+#: app/components/hosts/host-overview/host-overview.html:299
+#: app/components/hosts/host-overview/host-overview.html:91
+msgid "Utilization"
+msgstr ""
+
+#: app/components/base/about-modal.html:14
+#: app/components/base/about-modal.html:20
+#: app/components/base/about-modal.html:26
+#: app/components/base/about-modal.html:32
+msgid "Version:"
+msgstr ""
+
+#: app/components/modal/unaaccepted-hosts-found-modal.html:13
+msgid "View and Accept"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:3
+msgid "View and Accept Hosts"
+msgstr ""
+
+#: app/components/clusters/clusters-new-volumes.html:37
+msgid "Volume Name"
+msgstr ""
+
+#: app/components/clusters/configdetail/config-detail.html:77
+msgid "Warning (Near Full)"
+msgstr ""
+
+#: app/components/storage/storage-new.html:29
+msgid "What type of storage do you want to add?"
+msgstr ""
+
+#: app/components/storage/storage-new.html:12
+msgid "Where do you want to add storage?"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-list.html:41
+msgid "You may return here to add block devices after the cluster is created."
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:59
+msgid "You may return here to add more pools after the cluster is created."
+msgstr ""
+
+#: app/components/base/i18n.js:29
+msgid "am"
+msgstr ""
+
+#: app/components/base/admin-dropdown.tpl.html:15
+msgid "change password"
+msgstr ""
+
+#: app/components/events/event-list.js:140
+#: app/components/tasks/task-list.js:89
+msgid "from"
+msgstr ""
+
+#: app/components/base/i18n.js:48
+msgid "h:mm A"
+msgstr ""
+
+#: app/components/base/i18n.js:31
+msgid "pm"
+msgstr ""
+
+#: app/components/base/admin-dropdown.tpl.html:21
+msgid "signout"
+msgstr ""
+
+#: app/components/events/event-list.js:141
+#: app/components/tasks/task-list.js:90
+msgid "to"
+msgstr ""
+
+#: app/components/storage/blockdevice/blockdevice-new.html:65
+msgid "{{ (storage.selectedPool.capacity.total - storage.selectedPool.capacity.used) | bytes }} Available"
+msgstr ""
+
+#: app/components/clusters/clusters-new-hosts.html:22
+msgid "{{ cluster.selectedHosts }} of {{ cluster.hosts.length }} hosts selected"
+msgstr ""
+
+#: app/components/clusters/accept-hosts.html:13
+msgid "{{ hosts.hostsInitialized() }} of {{ hosts.discoveredHosts.length }} hosts accepted ({{ hosts.hostsInProgress() }} in progress)"
+msgstr ""
+
+#: app/components/events/event-list.html:63
+msgid "{{events.totalCount}} Events"
+msgstr ""
+
+#: app/components/clusters/osdsdetail/osd-detail.html:71
+msgid "{{osddetail.totalSelectedOSDs.length}} OSD Selected"
+msgstr ""
+
+#. TRANSLATORS: storage.ecprofile..., 'ng-pluralize', 'count', 'when', '1', 'other' should not be translated but 'Chunks of...', 'host', 'hosts' are translatable.
+#: app/components/storage/object/objectstorage-new-directive.html:43
+msgid "{{storage.ecprofile.k}} Chunks of data; can loose up to {{storage.ecprofile.m}} <ng-pluralize count=\"storage.ecprofile.m\" when=\"{'1': 'host', 'other': 'hosts'}\"></ng-pluralize>"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-list.html:133
+msgid "{{storage.quota_params.quota_max_objects}} objects"
+msgstr ""
+
+#: app/components/storage/object/objectstorage-new-directive.html:56
+msgid "{{storage.slusFiltered.length}} OSDs"
+msgstr ""
+
+#: app/components/tasks/task-list.html:51
+msgid "{{tasks.totalCount}} Results"
+msgstr ""
+
+#. TRANSLATORS: 'user.notificationenabled' should not be translated but 'Disable' and 'Enable' and 'Notification' are translatable.
+#: app/components/admin/admin.html:55
+msgid "{{user.notificationenabled?'Disable':'Enable'}} Notification"
+msgstr ""
+
+#. TRANSLATORS: 'user.status' should not be translated but 'Disable' and 'Enable' and 'user' are translatable.
+#: app/components/admin/admin.html:52
+msgid "{{user.status?'Disable':'Enable'}} user"
+msgstr ""
+
+#: app/components/clusters/storageprofile/storageprofile-disks.html:20
+msgid "{{vm.getDisksForStorageProfile(storageProfile).length}} Disks {{vm.getStorageProfileSize(storageProfile) | bytes}}"
+msgstr ""

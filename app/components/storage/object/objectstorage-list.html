@@ -1,14 +1,14 @@
 <div class="container-fluid">
     <ol class="breadcrumb">
-        <li><a href="#/storage">Storage</a></li>
-        <li>Pools</li>
+        <li><a href="#/storage" translate>Storage</a></li>
+        <li translate>Pools</li>
     </ol>
     <div class="page-header">
-        <h1>Pools</h1>
+        <h1 translate>Pools</h1>
     </div>
     <div class="row form-group" ng-if="storages.list.length > 0">
         <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Search" ng-model="search">
+            <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-model="search">
         </div>
         <div class="col-md-6">
             <ul>
@@ -30,7 +30,7 @@
         </div>
         <div class="col-md-3">
             <span class="pull-right">
-                <button class="btn btn-primary btn-lg" ng-click="storages.create()">Add Storage</button>
+                <button class="btn btn-primary btn-lg" ng-click="storages.create()" translate>Add Storage</button>
             </span>
         </div>
     </div>
@@ -39,11 +39,11 @@
             <div class="blank-slate-pf-icon">
                 <i class="fa fa-database"></i>
             </div>
-            <h1>Add Storage Pools</h1>
-            <p> There are no storage pools currently defined. Click Add Storage to create RADOS object storage.</p>
+            <h1 translate>Add Storage Pools</h1>
+            <p translate> There are no storage pools currently defined. Click Add Storage to create RADOS object storage.</p>
             <div class="blank-slate-pf-main-action">
                 <button class="btn btn-primary btn-lg" ng-click="storages.create()">
-                Add Storage
+                <translate>Add Storage</translate>
                 </button>
             </div>
         </div>
@@ -53,13 +53,13 @@
             <div class="blank-slate-pf-icon">
                 <i class="fa fa-database"></i>
             </div>
-            <h1>Add Storage Pools</h1>
-            <p> There are currently no Ceph clusters defined. Storage pools must be added to an existing cluster.</p>
-            <p> Start by creating or importing a cluster.</p>
-            <p> You may return here to add more pools after the cluster is created.</p>
+            <h1 translate>Add Storage Pools</h1>
+            <p translate> There are currently no Ceph clusters defined. Storage pools must be added to an existing cluster.</p>
+            <p translate> Start by creating or importing a cluster.</p>
+            <p translate> You may return here to add more pools after the cluster is created.</p>
             <div class="blank-slate-pf-main-action">
                 <button class="btn btn-primary btn-lg" ng-click="storages.createCluster()">
-                Create Cluster
+                <translate>Create Cluster</translate>
                 </button>
             </div>
         </div>
@@ -73,8 +73,8 @@
                         <span class="fa fa-ellipsis-v"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownKebabRight-{{$index}}">
-                        <li><a ng-click="storages.remove(storage)">Remove</a></li>
-                        <li><a ng-click="(storages.edit(storage))" >Edit</a></li>
+                        <li><a ng-click="storages.remove(storage)" translate>Remove</a></li>
+                        <li><a ng-click="(storages.edit(storage))" translate>Edit</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,8 +92,8 @@
                                 <strong ng-bind="storages.getClusterName(storage.clusterid)"></strong>
                         </div>
                         <div class="list-group-item-text">
-                            <span ng-if="storage.type === 'erasure_coded'">Erasure Coded</span>
-                            <span ng-if="storage.type === 'replicated'">Standard</span>
+                            <span ng-if="storage.type === 'erasure_coded'" translate>Erasure Coded</span>
+                            <span ng-if="storage.type === 'replicated'" translate>Standard</span>
                         </div>
                     </div>
 
@@ -108,34 +108,34 @@
                                 <chart-size chart-height="80"></chart-size>
                                 <chart-tooltip show-tooltip="false"></chart-tooltip>
                             </c3chart>
-                            <div class="size-wrap">
+                            <div class="size-wrap" translate>
                             <strong ng-bind=" storage.usage.used | bytes "></strong> of {{ storage.usage.total | bytes }}
                             used
                             </div>
                         </div>
                         <div class="list-view-pf-additional-info-item list-view-pf-additional-info-item-stacked" ng-if="storage.type === 'replicated'">
-                            <strong>Replicas</strong>{{storage.replicas }}
+                            <strong translate>Replicas</strong>{{storage.replicas }}
                         </div>
                         <div class="list-view-pf-additional-info-item list-view-pf-additional-info-item-stacked" ng-if="storage.type === 'erasure_coded'">
-                            <strong>EC profile</strong>{{storages.ecprofiles[storage.options1.ecprofile]}}
+                            <strong translate>EC profile</strong>{{storages.ecprofiles[storage.options1.ecprofile]}}
                         </div>
                         <div class="list-view-pf-additional-info-item list-view-pf-additional-info-item-stacked">
-                            <strong>OSDs</strong>{{storage.slus.length }}
+                            <strong translate>OSDs</strong>{{storage.slus.length }}
                         </div>
                         <div class="list-view-pf-additional-info-item list-view-pf-additional-info-item-stacked">
-                            <strong>PGs</strong>{{storage.options1.pg_num }}
+                            <strong translate>PGs</strong>{{storage.options1.pg_num }}
                         </div>
                         <div class="list-view-pf-additional-info-item list-view-pf-additional-info-item-stacked pool-name-box">
-                            <strong>Quotas</strong>
+                            <strong translate>Quotas</strong>
                             <span ng-if="storage.quota_enabled">
                                 <span ng-if="storage.quota_params.quota_max_bytes !== undefined">{{(storage.quota_params.quota_max_bytes / storage.usage.total *100)|number:0}} %</span>
                                 <span ng-if="storage.quota_params.quota_max_bytes !== undefined && storage.quota_params.quota_max_objects !== undefined">, </span>
-                            <span ng-if="storage.quota_params.quota_max_objects !== undefined">{{storage.quota_params.quota_max_objects}} objects</span>
+                            <span ng-if="storage.quota_params.quota_max_objects !== undefined" translate>{{storage.quota_params.quota_max_objects}} objects</span>
                             </span>
-                            <span ng-if="!storage.quota_enabled">Disabled</span>
+                            <span ng-if="!storage.quota_enabled" translate>Disabled</span>
                         </div>
                         <div class="list-view-pf-additional-info-item list-view-pf-additional-info-item-stacked">
-                            <strong>Alerts</strong>
+                            <strong translate>Alerts</strong>
                             <p class="alert-count">
                                 <a ng-href="#/events?searchmessage={{storage.name}} on {{storages.getClusterName(storage.clusterid)}}"  ng-if="(storage.almwarncount + storage.almcritcount) > 0">{{storage.almwarncount + storage.almcritcount}}</a>
                                 <span class="pficon" ng-class="(storage.almwarncount + storage.almcritcount)>0? ((storage.almcritcount > 0)?'pficon-error-circle-o' : 'pficon-warning-triangle-o' ):'pficon-ok'"></span>
@@ -148,13 +148,13 @@
                 <form class="form-horizontal close_icon">
                     <div class = "content-thirty">
                         <div class="form-group">
-                            <label class="col-md-5 control-label">Pool Name</label>
+                            <label class="col-md-5 control-label" translate>Pool Name</label>
                             <div class="col-md-5">
                                 <input type= "text" id="poolName" class="form-control" ng-model= "storages.editPool.name"></input>
                             </div>
                         </div>
                         <div class="form-group" ng-show="storages.editPool.type === 'replicated'">
-                            <label class="col-md-5 control-label">Replicas</label>
+                            <label class="col-md-5 control-label" translate>Replicas</label>
                             <div class="col-md-5" >
                                 <input type="number" id="replicas" class="form-control" ng-model = "storages.editPool.replicas" min="1" max="5" required></input>
                             </div>
@@ -165,7 +165,7 @@
                             <div class="col-md-5">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" id="quotas" ng-model="storages.editPool.quota_enabled">Enable Quotas</input>
+                                        <input type="checkbox" id="quotas" ng-model="storages.editPool.quota_enabled" /><translate>Enable Quotas</translate>
                                     </label>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" id="quotaMaxPercentage" ng-model="storages.enable_max_percentage"
-                                        ng-disabled="!storages.editPool.quota_enabled">Max percentage used</input>
+                                        ng-disabled="!storages.editPool.quota_enabled" /><translate>Max percentage used</translate>
                                     </label>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" id="quotaMaxObjects" ng-model="storages.enable_quota_max_objects"
-                                        ng-disabled="!storages.editPool.quota_enabled">Max number of objects</input>
+                                        ng-disabled="!storages.editPool.quota_enabled" /><translate>Max number of objects</translate>
                                     </label>
                                 </div>
                             </div>

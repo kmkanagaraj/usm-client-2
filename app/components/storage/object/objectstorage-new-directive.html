@@ -2,45 +2,45 @@
         <form name="storage.form" class="form-horizontal" ng-if="!storage.summary" novalidate>
             <!-- General Configuration -->
             <div class="form-group" ng-class="{'has-error': storage.form.poolName.$dirty && storage.form.poolName.$error.required}">
-                <label class="col-md-2 control-label">Pool Name</label>
+                <label class="col-md-2 control-label" translate>Pool Name</label>
                 <div class="col-md-2">
                     <input type="text" id="poolName" name="poolName" class="form-control" ng-model="storage.name" required></input>
                 </div>
                 <div class="col-md-3">
-                    <span class="help-block" ng-if="storage.form.poolName.$dirty && storage.form.poolName.$error.required">Pool Name cannot be empty</span>
+                    <span class="help-block" ng-if="storage.form.poolName.$dirty && storage.form.poolName.$error.required" translate>Pool Name cannot be empty</span>
                 </div>
             </div>
             <div class="form-group" ng-class="{'has-error': storage.form.poolsToCreate.$error.min}" ng-if="storage.poolWithRbd != 'true'">
-                <label class="col-md-2 control-label">Pools to Create</label>
+                <label class="col-md-2 control-label" translate>Pools to Create</label>
                 <div class="col-md-2">
                     <input type="number" id="poolsToCreate" name="poolsToCreate" class="form-control" ng-model="storage.count" min="1" required></input>
                 </div>
                 <div class="col-md-3">
-                    <span class="help-block" ng-if="storage.form.poolsToCreate.$error.min">The value cannot be lesser than 1</span>
+                    <span class="help-block" ng-if="storage.form.poolsToCreate.$error.min" translate>The value cannot be lesser than 1</span>
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-md-2 control-label" for="type">Type</label>
+                <label class="col-md-2 control-label" for="type" translate>Type</label>
                 <div class="col-md-2">
                     <select pf-select ng-model="storage.type" id="type" class="form-control" ng-options="type for type in storage.types"></select>
                 </div>
             </div>
             <div class="form-group" ng-class="{'has-error': storage.form.replicas.$error.min || storage.form.replicas.$error.max}" ng-if="storage.type === 'Standard'">
-                <label class="col-md-2 control-label">Replicas</label>
+                <label class="col-md-2 control-label" translate>Replicas</label>
                 <div class="col-md-2">
                     <input type="number" id="replicas" name="replicas" class="form-control" ng-model="storage.replicas" ng-change="storage.replicaChanged(storage.replicas)" min="1" max="5" required></input>
                 </div>
                 <div class="col-md-3">
-                    <span class="help-block" ng-if="storage.form.replicas.$error.min || storage.form.replicas.$error.max">The value must be in range 1 to 5</span>
+                    <span class="help-block" ng-if="storage.form.replicas.$error.min || storage.form.replicas.$error.max" translate>The value must be in range 1 to 5</span>
                 </div>
             </div>
             <div class="form-group" ng-if="storage.type === 'Erasure Coded'">
-                <label class="col-md-2 control-label">EC Profile</label>
+                <label class="col-md-2 control-label" translate>EC Profile</label>
                 <div class="col-md-2">
                     <select pf-select ng-model="storage.ecprofile" id="ecprofile" name="ecprofile" class="form-control" ng-options="ecprofile.text for ecprofile in storage.ecprofiles" ng-change="storage.ecProfileChanged(storage.ecprofile)"></select>
                 </div>
                 <div class="col-md-3">
-                    <em>{{storage.ecprofile.k}} Chunks of data; can loose up to {{storage.ecprofile.m}} <ng-pluralize count="storage.ecprofile.m" when="{'1': 'host', 'other': 'hosts'}"></ng-pluralize>
+                    <em translate translate-comment="TRANSLATORS: storage.ecprofile..., 'ng-pluralize', 'count', 'when', '1', 'other' should not be translated but 'Chunks of...', 'host', 'hosts' are translatable.">{{storage.ecprofile.k}} Chunks of data; can loose up to {{storage.ecprofile.m}} <ng-pluralize count="storage.ecprofile.m" when="{'1': 'host', 'other': 'hosts'}"></ng-pluralize>
                     </em>
                 </div>
             </div>
@@ -48,34 +48,34 @@
                 <div class="col-md-12">
                     <div class="form-horizontal">
                         <div class="form-group">
-                            <label class="col-md-2 control-label" for="profile">Storage Profile</label>
+                            <label class="col-md-2 control-label" for="profile" translate>Storage Profile</label>
                             <div class="col-md-2">
                                 <select pf-select ng-model="storage.profile" id="profile" class="form-control" ng-options="profile.name for profile in storage.profiles" ng-change="storage.changeStorageProfile(storage.profile)"></select>
                             </div>
                             <div class="col-md-8">
-                                <p class="form-control-static">{{storage.slusFiltered.length}} OSDs</p>
+                                <p class="form-control-static" translate>{{storage.slusFiltered.length}} OSDs</p>
                             </div>
                         </div>
                         <div class="form-group" ng-if="storage.PGsFixed">
                             <div class="col-md-offset-2 col-md-10">
-                                <p class="text-info">
+                                <p class="text-info" translate>
                                     <strong>Note:</strong>&nbsp;Pools are created based on the number of OSD's in this cluster.
                                     When the number of OSDs available is 50 or less, a fixed number of Placement Groups will
                                     be assigned.</p>
                             </div>
-                            <label class="col-md-2 control-label" for="profile">Placement Groups</label>
+                            <label class="col-md-2 control-label" for="profile" translate>Placement Groups</label>
                             <div class="col-md-2">
                                 <p class="form-control-static">{{storage.pgs}}</p>
                             </div>
                         </div>
                         <div class="form-group" ng-if="!storage.PGsFixed">
                             <div class="col-md-offset-2 col-md-10">
-                                <p class="text-info">
+                                <p class="text-info" translate>
                                     <strong>Note:</strong>Pools are created based on the number of OSD's in this cluster.
                                     Move the slider to optimize the pool creation based on size and the corresponding number
                                     of Placement Groups.</p>
                             </div>
-                            <label class="col-md-2 control-label" for="profile">Placement Groups / Optimal Pool Size</label>
+                            <label class="col-md-2 control-label" for="profile" translate>Placement Groups / Optimal Pool Size</label>
                             <div class="col-md-9">
                                 <rzslider rz-slider-model="storage.pgSlider.value" rz-slider-options="storage.pgSlider.options"></rzslider>
                             </div>
@@ -93,7 +93,7 @@
                     <h5>
                         <i class="fa fa-angle-down" style="min-width:10px;" ng-show="storage.expandQuotas"></i>
                         <i class="fa fa-angle-right" style="min-width:10px;" ng-show="!storage.expandQuotas"></i>
-                        <a href="" ng-click="storage.expandQuotas=!storage.expandQuotas">Quotas</a>
+                        <a href="" ng-click="storage.expandQuotas=!storage.expandQuotas" translate>Quotas</a>
                     </h5>
                 </div>
                 <div class="col-md-12" ng-show="storage.expandQuotas">
@@ -102,7 +102,7 @@
                         <div class="col-md-3">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" ng-model="storage.quota.enabled" id="quotas">Enable Quotas</input>
+                                    <input type="checkbox" ng-model="storage.quota.enabled" id="quotas" /><translate>Enable Quotas</translate>
                                 </label>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                         <div class="col-md-3">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" ng-model="storage.quota.percentage.enabled" id="quotaMaxPercentage" ng-disabled="!storage.quota.enabled">Max percentage used</input>
+                                    <input type="checkbox" ng-model="storage.quota.percentage.enabled" id="quotaMaxPercentage" ng-disabled="!storage.quota.enabled" /><translate>Max percentage used</translate>
                                 </label>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                             <span>{{storage.getQuotaPercentageSize(storage.quota.percentage.value) | bytes}} of {{storage.getQuotaTotalSize() | bytes}}</span>
                         </div>
                         <div class="col-md-offset-2 col-md-5">
-                            <span class="help-block" ng-if="storage.form.quotaPercentageValue.$error.min || storage.form.quotaPercentageValue.$error.max">The value must be in range 1 to 100.</span>
+                            <span class="help-block" ng-if="storage.form.quotaPercentageValue.$error.min || storage.form.quotaPercentageValue.$error.max" translate>The value must be in range 1 to 100.</span>
                         </div>
                     </div>
                     <div class="form-group" ng-class="{'has-error': storage.form.quotasMaxObjectsValue.$error.min}">
@@ -135,7 +135,7 @@
                         <div class="col-md-3">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" ng-model="storage.quota.objects.enabled" id="quotaMaxObjects" ng-disabled="!storage.quota.enabled">Max number of objects</input>
+                                    <input type="checkbox" ng-model="storage.quota.objects.enabled" id="quotaMaxObjects" ng-disabled="!storage.quota.enabled" /><translate>Max number of objects</translate>
                                 </label>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                             ng-disabled="!storage.quota.objects.enabled" min="1"></input>
                         </div>
                         <div class="col-md-offset-2 col-md-5">
-                            <span class="help-block" ng-if="storage.form.quotasMaxObjectsValue.$error.min">The value must be in greater than 0.</span>
+                            <span class="help-block" ng-if="storage.form.quotasMaxObjectsValue.$error.min" translate>The value must be in greater than 0.</span>
                         </div>
                     </div>
                 </div>
@@ -152,43 +152,43 @@
             <!-- End: Quotas -->
         </form>
         <div ng-show="storage.summary">
-            <strong>Pools to create on {{storage.cluster.name}}</strong>
+            <strong translate>Pools to create on {{storage.cluster.name}}</strong>
             <div class="row">
                 <div class="col-md-12">
                     <div class="storage-pool" ng-repeat="pool in storage.pools">
                         <div class="row">
                             <div class="col-md-2">
-                                <strong class="title">Name</strong>
+                                <strong class="title" translate>Name</strong>
                                 <div class="value">{{pool.name}}</div>
                             </div>
                             <div class="col-md-2">
-                                <strong class="title">Type</strong>
+                                <strong class="title" translate>Type</strong>
                                 <div class="value">{{pool.type}}</div>
                             </div>
                             <div class="col-md-2">
-                                <strong class="title">Storage Profile</strong>
+                                <strong class="title" translate>Storage Profile</strong>
                                 <div class="value">{{pool.profile.name}}</div>
                             </div>
                             <div class="col-md-1" ng-if="pool.type === 'Standard'">
-                                <strong class="title">Replicas</strong>
+                                <strong class="title" translate>Replicas</strong>
                                 <div class="value">{{pool.replicas}}</div>
                             </div>
                             <div class="col-md-1" ng-if="pool.type === 'Erasure Coded'">
-                                <strong class="title">EC Profile</strong>
+                                <strong class="title" translate>EC Profile</strong>
                                 <div class="value">{{pool.ecprofile.text}}</div>
                             </div>
                             <div class="col-md-2">
-                                <strong class="title">Optimized For</strong>
+                                <strong class="title" translate>Optimized For</strong>
                                 <div class="value">{{pool.capacity | bytes}}</div>
                             </div>
                             <div class="col-md-1">
-                                <strong class="title">OSDs</strong>
+                                <strong class="title" translate>OSDs</strong>
                                 <div class="value">{{storage.slusFiltered.length}}
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <strong class="title">Journal</strong>
-                                <div class="value">Optimized
+                                <strong class="title" translate>Journal</strong>
+                                <div class="value"><translate>Optimized</translate>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@
     </div>
     <div class="form-footer">
         <button type="button" class="btn btn-lg btn-primary" ng-click='storage.prepareSummary()' ng-if="!storage.summary"
-        ng-disabled="storage.form.$invalid">Next</button>
-        <button type="button" class="btn btn-lg btn-primary" ng-click='storage.submit()' ng-if="storage.summary">Submit</button>
-        <button type="button" class="btn btn-lg btn-default" ng-click='storage.cancel()'>Cancel</button>
+        ng-disabled="storage.form.$invalid" translate>Next</button>
+        <button type="button" class="btn btn-lg btn-primary" ng-click='storage.submit()' ng-if="storage.summary" translate>Submit</button>
+        <button type="button" class="btn btn-lg btn-default" ng-click='storage.cancel()' translate>Cancel</button>
     </div>

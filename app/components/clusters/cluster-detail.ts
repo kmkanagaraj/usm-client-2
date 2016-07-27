@@ -11,6 +11,7 @@ import * as ModalHelpers from '../modal/modal-helpers';
 import {numeral} from '../base/libs';
 import {RequestService} from '../rest/request';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
+import {I18N} from '../base/i18n';
 
 export class ClusterDetailController {
     private clusterHelpers: ClusterHelper;
@@ -54,7 +55,8 @@ export class ClusterDetailController {
         'StorageService',
         'BlockDeviceService',
         'RequestService',
-        'RequestTrackingService'
+        'RequestTrackingService',
+        'I18N'
     ];
 
     constructor(private qService: ng.IQService,
@@ -69,7 +71,8 @@ export class ClusterDetailController {
         private storageService: StorageService,
         private blockDeviceSvc: BlockDeviceService,
         private requestSvc: RequestService,
-        private requestTrackingSvc: RequestTrackingService) {
+        private requestTrackingSvc: RequestTrackingService,
+        private i18n: I18N) {
 
         this.status = ["Active", "Warning", "Error", "Unknown"];
         this.isLoading = { summaryData: true, clusterUtilizationData: true, trendsChartsData: true };
@@ -177,7 +180,7 @@ export class ClusterDetailController {
                      '</span>';
         };
         this.clusterUtilization.config.centerLabelFn = () => {
-              return ((usage.used * 100)/usage.total).toFixed(1) + "% Used";
+              return ((usage.used * 100)/usage.total).toFixed(1) + this.i18n._("% Used");
         };
         this.isLoading.clusterUtilizationData = false;
     }
@@ -202,7 +205,7 @@ export class ClusterDetailController {
             }
         });
         if (othersProfile.total > 0) {
-            this.utilizationByProfile.profiles.push({ "usage" : { "total": othersProfile.total, "used": othersProfile.used } , "subtitle" : "Others" });
+            this.utilizationByProfile.profiles.push({ "usage" : { "total": othersProfile.total, "used": othersProfile.used } , "subtitle" : this.i18n._("Others") });
         }
     }
 
@@ -262,7 +265,7 @@ export class ClusterDetailController {
                      '</span>';
         };
         this.systemUtilization[value].config.centerLabelFn = () => {
-              return ((usage.used * 100)/usage.total).toFixed(1) + "% Used";
+              return ((usage.used * 100)/usage.total).toFixed(1) + this.i18n._("% Used");
         };
     }
 

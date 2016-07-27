@@ -1,18 +1,18 @@
 <div class="container-fluid blockdevice-list">
     <ol class="breadcrumb">
-        <li><a href="#/storage">Storage</a></li>
-        <li>RBDs</li>
+        <li><a href="#/storage" translate>Storage</a></li>
+        <li translate>RBDs</li>
     </ol>
     <div class="page-header">
-        <h1>RBDs</h1>
+        <h1 translate>RBDs</h1>
     </div>
     <div class="row form-group" ng-if = "rbds.list.length > 0">
         <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Search" ng-model="search">
+            <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-model="search">
         </div>
         <div class="col-md-offset-6 col-md-3">
             <span class="pull-right">
-                <button class="btn btn-primary btn-lg" ng-click="rbds.create()">Add</button>
+                <button class="btn btn-primary btn-lg" ng-click="rbds.create()" translate>Add</button>
             </span>
         </div>
     </div>
@@ -21,11 +21,11 @@
             <div class="blank-slate-pf-icon">
                 <i class="fa fa-database"></i>
             </div>
-            <h1>Add Block Storage</h1>
-            <p> There are no RADOS Block Devices currently defined.  Click Add Storage to create RBDs.</p>
+            <h1 translate>Add Block Storage</h1>
+            <p translate> There are no RADOS Block Devices currently defined.  Click Add Storage to create RBDs.</p>
             <div class="blank-slate-pf-main-action">
                 <button class="btn btn-primary btn-lg" ng-click="rbds.create()">
-                Add Storage
+                <translate>Add Storage</translate>
                 </button>
             </div>
         </div>
@@ -35,13 +35,13 @@
             <div class="blank-slate-pf-icon">
                 <i class="fa fa-database"></i>
             </div>
-            <h1>Add Block Storage</h1>
-            <p> There are currently no Ceph clusters defined. Block Storage must be added to an existing cluster.</p>
-            <p> Start by creating or importing a cluster.</p>
-            <p> You may return here to add block devices after the cluster is created.</p>
+            <h1 translate>Add Block Storage</h1>
+            <p translate> There are currently no Ceph clusters defined. Block Storage must be added to an existing cluster.</p>
+            <p translate> Start by creating or importing a cluster.</p>
+            <p translate> You may return here to add block devices after the cluster is created.</p>
             <div class="blank-slate-pf-main-action">
                 <button class="btn btn-primary btn-lg" ng-click="rbds.createCluster()">
-                Create Cluster
+                <translate>Create Cluster</translate>
                 </button>
             </div>
         </div>

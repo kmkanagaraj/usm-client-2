@@ -1,10 +1,10 @@
 <div class="container-fluid events-page">
     <ol class="breadcrumb">
-        <li><a href="#/events">Admin</a></li>
-        <li>Events</li>
+        <li><a href="#/events" translate>Admin</a></li>
+        <li translate>Events</li>
     </ol>
     <div class="page-header">
-        <h1>Events</h1>
+        <h1 translate>Events</h1>
     </div>
     <div class="row toolbar-pf">
         <div class="col-sm-12">
@@ -13,12 +13,12 @@
                     <div class="input-group">
                         <div class="input-group-btn dropdown">
                             <button bs-dropdown="dropdown" id="dropdownmenu" class="btn btn-default dropdown-toggle text-capitalize" type="button">
-                                {{events.searchEntity}}<span class="caret"></span></button>
+                                {{events.searchEntity|translate}}<span class="caret"></span></button>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu">
-                                <li><a ng-click="events.setSearchEntity('Cluster')">Cluster</a></li>
-                                <li><a ng-click="events.setSearchEntity('Host')">Host</a></li>
+                                <li><a ng-click="events.setSearchEntity('Cluster')" translate>Cluster</a></li>
+                                <li><a ng-click="events.setSearchEntity('Host')" translate>Host</a></li>
                                 <li class="divider" role="separator"></li>
-                                <li><a ng-click="events.setSearchEntity('Description')">Description</a></li>
+                                <li><a ng-click="events.setSearchEntity('Description')" translate>Description</a></li>
                             </ul>
                         </div>
                         <!-- /btn-group -->
@@ -30,7 +30,7 @@
                     <div class="dropdown" ng-class="fromdateselector?'open':''">
                         <a class="dropdown-toggle" id="fromDateDropdown" role="button" bs-dropdown="dropdown" ng-click="fromdateselector=!fromdateselector">
                             <div class="input-group">
-                                <input type="text" placeholder="From" class="form-control" data-ng-model="events.fromDateTimeFilter" ng-blur="fromdateselector=false"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="text" placeholder="{{'From'|translate}}" class="form-control" data-ng-model="events.fromDateTimeFilter" ng-blur="fromdateselector=false"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                         </a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
@@ -43,7 +43,7 @@
                     <div class="dropdown" ng-class="todateselector?'open':''">
                         <a class="dropdown-toggle" id="toDateDropdown" role="button" bs-dropdown="dropdown" ng-click="todateselector=!todateselector">
                             <div class="input-group">
-                                <input type="text" placeholder="To" class="form-control" data-ng-model="events.toDateTimeFilter" ng-blur="todateselector=false"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="text" placeholder="{{'To'|translate}}" class="form-control" data-ng-model="events.toDateTimeFilter" ng-blur="todateselector=false"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                             </div>
                         </a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
@@ -53,26 +53,26 @@
                     </div>
                 </div>
                 <div class="form-group col-sm-3">
-                    <label><input type="radio" name="active" ng-model="events.statusFilter" value="active" checked ng-change="events.applyFilter('status','active')"> Active </label>
-                    <label><input type="radio" name="active" ng-model="events.statusFilter" value="dismissed" ng-change="events.applyFilter('status','dismissed')"> Dismissed </label>
-                    <label><input type="radio" name="active" ng-model="events.statusFilter" value="both" ng-change="events.applyFilter('status','active , dismissed')"> All </label>
+                    <label><input type="radio" name="active" ng-model="events.statusFilter" value="active" checked ng-change="events.applyFilter('status','active')"> <translate>Active</translate> </label>
+                    <label><input type="radio" name="active" ng-model="events.statusFilter" value="dismissed" ng-change="events.applyFilter('status','dismissed')"> <translate>Dismissed</translate> </label>
+                    <label><input type="radio" name="active" ng-model="events.statusFilter" value="both" ng-change="events.applyFilter('status','active , dismissed')"> <translate>All</translate> </label>
                 </div>
             </form>
             <div class="row toolbar-pf-results">
                 <div class="col-sm-12">
-                    <h5>{{events.totalCount}} Events</h5>
+                    <h5 translate>{{events.totalCount}} Events</h5>
                     <h5 ng-if="events.warningCount > 0"><a href class="pficon-warning-triangle-o warning" ng-click="events.applyFilter('severity','warning');events.severity='warning'"></a> {{events.warningCount}}</h5>
                     <h5 ng-if="events.criticalCount > 0"><a href class="pficon-error-circle-o critical" ng-click="events.applyFilter('severity','critical');events.severity='critical'"></a> {{events.criticalCount}}</h5>
-                    <p>Active filters:</p>
+                    <p translate>Active filters:</p>
                     <ul class="list-inline" ng-repeat="(key, value) in events.filterObject">
                         <li>
                             <span class="label label-info">
-                      {{key}} : {{value | date:'medium'}}
+                      {{key|translate}} : {{events.getLocalizedDateTime(value) | date:'medium'}}
                       <a ng-if="key !== 'status'" href="" ng-click="events.clearFilter(key)"><span class="pficon pficon-close"></span></a>
                             </span>
                         </li>
                     </ul>
-                    <p><a ng-click="events.resetFilters()">Clear All Filters</a></p>
+                    <p><a ng-click="events.resetFilters()" translate>Clear All Filters</a></p>
                 </div>
                 <!-- /col -->
             </div>
@@ -130,7 +130,7 @@
     <div class="list-group list-view-pf">
         <div class="list-group-item" ng-repeat="event in events.list | filter:search">
             <div class="list-view-pf-actions">
-                <button class="btn btn-default" ng-click="events.viewDetails(event.event_id)">Details</button>
+                <button class="btn btn-default" ng-click="events.viewDetails(event.event_id)" translate>Details</button>
                 <div class="dropdown pull-right dropdown-kebab-pf">
                     <button class="btn btn-link dropdown-toggle" type="button" id="dropdownKebabRight" bs-dropdown="dropdown" aria-haspopup="true"
                     aria-expanded="true">
@@ -153,7 +153,7 @@
                             {{events.alarmStatus[event.severity]}}
                         </div>
                         <div class="list-group-item-text">
-                            {{event.timestamp | date:'medium'}}
+                            {{events.getLocalizedDateTime(event.timestamp) | date:'medium'}}
                         </div>
                     </div>
                     <div class="list-view-pf-additional-info">

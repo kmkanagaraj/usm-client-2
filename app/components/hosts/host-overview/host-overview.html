@@ -8,13 +8,13 @@
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
                             <h2 class="card-pf-title">
-                                Host Summary
+                                <translate>Host Summary</translate>
                             </h2>
                             <center><div ng-if="hostoverview.isLoading.summaryData" class="spinner"></div></center>
                             <div ng-if="!hostoverview.isLoading.summaryData" class="card-pf-body">
                                 <p class="card-pf-aggregate-status-notifications">
                                     <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <label>Host Role</label>
+                                        <label translate>Host Role</label>
                                         <div>
                                             <span ng-repeat="role in hostoverview.summary.role">
                                                 {{role}}
@@ -22,11 +22,11 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <label>Up Since</label>
+                                        <label translate>Up Since</label>
                                         <div>{{hostoverview.summary.uptime | date : 'medium' }}</div>
                                     </div>
                                     <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <label>Cluster</label>
+                                        <label translate>Cluster</label>
                                         <div>
                                             <span ng-if="hostoverview.summary.clusterstatus === 0" class="pficon pficon-ok"></span>
                                             <span ng-if="hostoverview.summary.clusterstatus === 1" class="pficon pficon-warning-triangle-o"></span>
@@ -41,7 +41,7 @@
                     <div ng-if="hostoverview.isOsd" class="col-xs-12 col-sm-12 col-md-3">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
                             <h2 class="card-pf-title">
-                                <span ng-if="!hostoverview.isLoading.summaryData">{{hostoverview.summary.storage_logical_units.TotalSLU}}</span> OSDs
+                                <translate translate-comment="TRANSLATORS: '{{hostoverview...}}' should not be translated."><span ng-if="!hostoverview.isLoading.summaryData">{{hostoverview.summary.storage_logical_units.TotalSLU}}</span> OSDs</translate>
                             </h2>
                             <div class="card-pf-body">
                                 <center><div ng-if="hostoverview.isLoading.summaryData" class="spinner"></div></center>
@@ -64,7 +64,7 @@
                     <div class="col-xs-12 col-sm-12" ng-class="hostoverview.isOsd?'col-md-3':'col-md-6'">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
                             <h2 class="card-pf-title">
-                                <span ng-if="!hostoverview.isLoading.summaryData">{{hostoverview.summary.servicedetails.up.length + hostoverview.summary.servicedetails.down.length }}</span> Storage Services
+                                <translate translate-comment="TRANSLATORS: '{{hostoverview....}} should not be translated."><span ng-if="!hostoverview.isLoading.summaryData">{{hostoverview.summary.servicedetails.up.length + hostoverview.summary.servicedetails.down.length }}</span> Storage Services</translate>
                             </h2>
                             <div class="card-pf-body">
                                 <center><div ng-if="hostoverview.isLoading.summaryData" class="spinner"></div></center>
@@ -88,7 +88,7 @@
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-5">
-                                    <span class="pull-left system-performance">Utilization</span>
+                                    <span class="pull-left system-performance" translate>Utilization</span>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-7">
                                     <span class="pull-right time-slot">
@@ -121,12 +121,14 @@
                                                 <div class="utilization-data-block">
                                                     <center>
                                                         <strong>CPU</strong>
+                                                        <translate translate-comment="TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}' should not be translated but '%', 'Used' and the order are translatable.">
                                                         <div class="used-data-block">
                                                             {{hostoverview.host.utilizations.cpuusage.percentused | number : 1}}%
                                                         </div>
                                                          <div class="total-data-block">
                                                            Used
                                                         </div>
+                                                        </translate>
                                                     </center>
                                                 </div>
                                             </div>
@@ -157,13 +159,15 @@
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
                                                     <center>
-                                                        <strong>Memory</strong>
+                                                        <strong translate>Memory</strong>
+                                                        <translate translate-comment="TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}', 'bytes'  should not be translated but 'of' and the order are translatable.">
                                                         <div class="used-data-block">
                                                             {{hostoverview.host.utilizations.memoryusage.used | bytes}}
                                                         </div>
                                                          <div class="total-data-block">
                                                            of {{hostoverview.host.utilizations.memoryusage.total | bytes}}
                                                         </div>
+                                                        </translate>
                                                     </center>
                                                 </div>
                                             </div>
@@ -194,13 +198,15 @@
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
                                                     <center>
-                                                        <strong>Swap</strong>
+                                                        <strong translate>Swap</strong>
+                                                        <translate translate-comment="TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}', 'bytes'  should not be translated but 'of' and the order are translatable.">
                                                         <div class="used-data-block">
                                                             {{hostoverview.host.utilizations.swapusage.used | bytes}}
                                                         </div>
                                                          <div class="total-data-block">
                                                            of {{hostoverview.host.utilizations.swapusage.total | bytes}}
                                                         </div>
+                                                        </translate>
                                                     </center>
                                                 </div>
                                             </div>
@@ -231,13 +237,15 @@
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
                                                     <center>
-                                                        <strong>Storage</strong>
+                                                        <strong translate>Storage</strong>
+                                                        <translate translate-comment="TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}', 'bytes'  should not be translated but 'of' and the order are translatable.">
                                                         <div class="used-data-block">
                                                             {{hostoverview.host.utilizations.storageusage.used|bytes}}
                                                         </div>
                                                          <div class="total-data-block">
                                                            of {{hostoverview.host.utilizations.storageusage.total | bytes}}
                                                         </div>
+                                                        </translate>
                                                     </center>
                                                 </div>
                                             </div>
@@ -288,13 +296,15 @@
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
                                                     <center>
-                                                        <strong>Utilization</strong>
+                                                        <strong translate>Utilization</strong>
+                                                        <translate translate-comment="TRANSLATORS: '&lt;div&gt;', '{{hostoverview...}}', 'bytes'  should not be translated but 'of' and the order are translatable.">
                                                         <div class="used-data-block">
                                                             {{hostoverview.host.utilizations.networkusage.used|bytes}}
                                                         </div>
                                                          <div class="total-data-block">
                                                            of {{hostoverview.host.utilizations.networkusage.total | bytes}}
                                                         </div>
+                                                        </translate>
                                                     </center>
                                                 </div>
                                             </div>
@@ -309,7 +319,7 @@
                                         <div ng-if="!hostoverview.isLoading.summaryData" class="network-detail">
                                             <div class="network-detail-padding">
                                                 <span class="pficon pficon-ok"></span>
-                                                <label>Cluster Network </label>
+                                                <label translate>Cluster Network </label>
                                                 <div class="ip-address-detail">
                                                     <small>{{hostoverview.host.cluster_ip4}}</small>
                                                 </div>
