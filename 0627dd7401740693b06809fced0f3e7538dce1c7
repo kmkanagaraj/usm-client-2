@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa041b7_2621859e",
+        "filename": "app/components/clusters/osdsdetail/osd-detail.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-08-05T07:09:40Z",
+      "side": 1,
+      "message": "remove whitespace",
+      "revId": "0627dd7401740693b06809fced0f3e7538dce1c7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
