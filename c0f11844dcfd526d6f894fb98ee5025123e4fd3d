@@ -22,6 +22,30 @@
       "revId": "c0f11844dcfd526d6f894fb98ee5025123e4fd3d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_b5f2ef99",
+        "filename": "app/components/storage/storage-util.ts",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1006436
+      },
+      "writtenOn": "2016-09-08T10:47:24Z",
+      "side": 1,
+      "message": "in our case i think . if-else is fine .. because using switch-case anyway we have to pass \u0027true\u0027 value in main switch - it means it will check all condition one by one",
+      "parentUuid": "baa041b7_75c22755",
+      "range": {
+        "startLine": 26,
+        "startChar": 4,
+        "endLine": 43,
+        "endChar": 5
+      },
+      "revId": "c0f11844dcfd526d6f894fb98ee5025123e4fd3d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
