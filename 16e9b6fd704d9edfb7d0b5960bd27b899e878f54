@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_40ce1f84",
+        "filename": "app/components/storage/storage-new.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1006963
+      },
+      "writtenOn": "2016-09-20T09:55:17Z",
+      "side": 1,
+      "message": "those are unwanted spaces. hence removed. it wont impact UI",
+      "parentUuid": "baa041b7_e5fd45b2",
+      "range": {
+        "startLine": 40,
+        "startChar": 99,
+        "endLine": 40,
+        "endChar": 101
+      },
+      "revId": "16e9b6fd704d9edfb7d0b5960bd27b899e878f54",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_65281534",
         "filename": "app/components/storage/storage-new.html",
         "patchSetId": 1
