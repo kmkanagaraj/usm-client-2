@@ -8,6 +8,8 @@
   <div class="row">
     <div class="col-sm-12 col-md-12">
       <div ng-include src="'views/clusters/clusters-new-hosts.html'"></div>
+          <p class="text-info"><span class="pficon-warning-triangle-o"></span>
+            Ceph cluster expansion requires data movement between OSDs and can cause significant client IO performance impact if proper adjustments are not made.  Please contact Red Hat support for help with the recommended changes.</p>
           <div>
             <button type="button" class="btn btn-default" ng-click='cluster.cancel()'>Cancel</button>
             <button type="button" class="btn btn-primary" ng-show='cluster.isSubmitAvailable()' ng-click='cluster.submit()'>Expand Cluster</button>
