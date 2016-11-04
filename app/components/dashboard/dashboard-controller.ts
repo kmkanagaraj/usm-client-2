@@ -3,6 +3,8 @@ import {ClusterService} from '../rest/clusters';
 import {DashboardSummaryData} from '../rest/server';
 import {UsageData} from '../rest/server';
 import {numeral} from '../base/libs';
+import {I18N} from '../base/i18n';
+import {BytesFilter} from '../shared/filters/bytes';
 
 export class DashboardController {
     private summary: any;
@@ -23,6 +25,18 @@ export class DashboardController {
     private selectedTimeSlot: any;
     private timer: ng.IPromise<any>;
     private isLoading: any;
+    private bytes: any;
+    private updateSummaryLabels: any;
+    private updateCapacityLabels: any;
+    public  clustersCountLabel: string;
+    public  utilCapacityLabel: string;
+    public  hostsCountLabel: string;
+    public  monitorsCountLabel: string;
+    public  pgsCountLabel: string;
+    public  poolsCountLabel: string;
+    public  osdsCountLabel: string;
+    public  objectsCountLabel: string;
+    public  bindUtilCapacityLabel: any;
 
     static $inject: Array<string> = [
         '$scope',
@@ -30,7 +44,9 @@ export class DashboardController {
         '$log',
         '$interval',
         'ServerService',
-        'ClusterService'
+        'ClusterService',
+        '$sce',
+        'I18N'
     ];
 
     constructor(private scopeService: ng.IScope,
@@ -38,7 +54,9 @@ export class DashboardController {
         private $log: ng.ILogService,
         private intervalSvc: ng.IIntervalService,
         private serverService: ServerService,
-        private clusterService: ClusterService) {
+        private clusterService: ClusterService,
+        private $sce: ng.ISCEService,
+        private i18n: I18N) {
 
             this.isLoading = { summaryData: true, utilizationData: true, trendsChartsData: true };
             this.utilization = { data: {}, config: {} };
@@ -61,9 +79,9 @@ export class DashboardController {
                 throughput: {title:"",data:{xData:[],yData:[]},config:{}},
                 latency: {title:"",data:{xData:[],yData:[]},config:{}}
             };
-            this.timeSlots = [{ name: "Last 1 hour", value: "-1h" },
-                         { name: "Last 2 hours", value: "-2h" },
-                         { name: "Last 24 hours", value: "" }];
+            this.timeSlots = [{ name: this.i18n._("Last 1 hour"), value: "-1h" },
+                         { name: this.i18n._("Last 2 hours"), value: "-2h" },
+                         { name: this.i18n._("Last 24 hours"), value: "" }];
             this.selectedTimeSlot = this.timeSlots[0];
             // Summary data is returned as empty if there are no clusters in the system.
             // So here we are fetching the cluster list and redirect
@@ -79,6 +97,41 @@ export class DashboardController {
                     this.loadDashboardData();
                 }
             });
+            this.updateSummaryLabels = function () {
+                this.clustersCountLabel = i18n.sprintf(i18n._("%d Clusters"),
+                                                      this.isLoading.summaryData ? 0 :
+                                                      this.clusters.total);
+                this.hostsCountLabel = i18n.sprintf(i18n._("%d Hosts"),
+                                                    this.isLoading.summaryData ? 0 :
+                                                    this.hosts.total);
+                this.monitorsCountLabel = i18n.sprintf(i18n._("%d Monitors"),
+                                                       this.isLoading.summaryData ? 0 :
+                                                       this.monitors.total);
+                this.pgsCountLabel = i18n.sprintf(i18n._("%d PGs"),
+                                                  this.isLoading.summaryData ? 0 :
+                                                  this.pgs.total);
+                this.poolsCountLabel = i18n.sprintf(i18n._("%d Pools"),
+                                                    this.isLoading.summaryData ? 0 :
+                                                    this.pools.total);
+                this.osdsCountLabel = i18n.sprintf(i18n._("%d OSDs"),
+                                                    this.isLoading.summaryData ? 0 :
+                                                    this.osds.total);
+                this.objectsCountLabel = i18n.sprintf(i18n._("%d Objects"),
+                                                      this.isLoading.summaryData ? 0 :
+                                                      this.objects.total);
+            };
+            this.bytes = BytesFilter();
+            this.updateCapacityLabels = function () {
+                this.utilCapacityLabel =
+                        i18n.sprintf(i18n._("%s of %s used"),
+                                     '<label>' +
+                                     this.bytes(this.capacity.used) +
+                                     '</label>',
+                                     this.bytes(this.capacity.total));
+                this.bindUtilCapacityLabel = $sce.trustAsHtml(this.utilCapacityLabel);
+            };
+            this.updateSummaryLabels();
+            this.updateCapacityLabels();
     }
 
     /**
@@ -102,6 +155,7 @@ export class DashboardController {
             }
             this.changeTimeSlot(this.selectedTimeSlot);
             this.isLoading.summaryData = false;
+            this.updateSummaryLabels();
         });
         this.getOverallUtilization();
     }
@@ -124,7 +178,7 @@ export class DashboardController {
         this.utilization.config.chartId = "utilizationChart";
         this.utilization.config.thresholds = {'warning':'60','error':'90'};
         this.utilization.config.centerLabelFn = () => {
-              return ((usage.used * 100)/usage.total).toFixed(1) + "% Used";
+              return ((usage.used * 100)/usage.total).toFixed(1) + this.i18n._("% Used");
         };
         this.utilization.config.tooltipFn = (d) => {
               return '<span class="donut-tooltip-pf"style="white-space: nowrap;">' +
@@ -132,6 +186,7 @@ export class DashboardController {
                      '</span>';
         };
         this.isLoading.utilizationData = false;
+        this.updateCapacityLabels();
     }
 
     /**
@@ -154,7 +209,7 @@ export class DashboardController {
             }
         });
         if (othersProfile.total > 0) {
-            this.utilizationByProfile.profiles.push({ "usage" : { "total": othersProfile.total, "used": othersProfile.used } , "subtitle" : "Others" });
+            this.utilizationByProfile.profiles.push({ "usage" : { "total": othersProfile.total, "used": othersProfile.used } , "subtitle" : this.i18n._("Others") });
         }
     }
 
@@ -215,7 +270,7 @@ export class DashboardController {
                      '</span>';
         };
         this.systemUtilization[graphName].config.centerLabelFn = () => {
-              return ((usage.used * 100)/usage.total).toFixed(1) + "% Used";
+              return ((usage.used * 100)/usage.total).toFixed(1) + this.i18n._("% Used");
         };
     }
 

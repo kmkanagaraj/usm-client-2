@@ -1,10 +1,10 @@
 <div class="container-fluid padding clusters">
     <div class="page-header page-header-bleed-right">
-        <h1>Clusters</h1>
+        <h1 translate>Clusters</h1>
     </div>
     <div class="row" ng-if="clusters.clusterList.length > 0">
         <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Search" ng-model="search">
+            <input type="text" class="form-control" placeholder="{{'Search'|translate}}" ng-model="search">
         </div>
         <div class="col-md-6">
             <ul>
@@ -26,8 +26,8 @@
         </div>
         <div class="col-md-3">
             <span class="pull-right">
-            <button class="btn btn-primary btn-lg" ng-click="clusters.createNewCluster()">Create</button>
-            <button class="btn btn-default btn-lg" ng-click="clusters.importCluster()">Import</button>
+            <button class="btn btn-primary btn-lg" ng-click="clusters.createNewCluster()" translate>Create</button>
+            <button class="btn btn-default btn-lg" ng-click="clusters.importCluster()" translate>Import</button>
             </span>
         </div>
     </div>
@@ -36,10 +36,10 @@
             <div class="blank-slate-pf-icon">
                 <i class="pficon pficon-cluster"></i>
             </div>
-            <h1>Create or Import a Cluster to get Started</h1>
+            <h1 translate>Create or Import a Cluster to get Started</h1>
             <div class="blank-slate-pf-main-action">
-                <button class="btn btn-primary btn-lg" ng-click="clusters.createNewCluster()">Create Cluster</button>
-                <button class="btn btn-default btn-lg" ng-click="clusters.importCluster()">Import Cluster</button>
+                <button class="btn btn-primary btn-lg" ng-click="clusters.createNewCluster()" translate>Create Cluster</button>
+                <button class="btn btn-default btn-lg" ng-click="clusters.importCluster()" translate>Import Cluster</button>
             </div>
         </div>
     </center>
@@ -51,11 +51,11 @@
                         <span class="fa fa-ellipsis-v"></span>
                     </button>
                     <ul aria-labelledby="dropdownKebabRight" role="menu" class="dropdown-menu dropdown-menu-right" ng-if="cluster.state !== 4">
-                        <li ng-if="clusters.isExpandAvailable(cluster.state)"><a ng-click="clusters.expandCluster(cluster.clusterid, cluster.state)"><i class="fa fa-plus"></i> Expand</a></li>
-                        <li ng-if="clusters.isManageAvailable(cluster.state)"><a ng-click="clusters.enableCluster(cluster.clusterid, cluster.state)"><i class="fa fa-check"></i> Manage</a></li>
-                        <li ng-if="clusters.isUnManageAvailable(cluster.state)"><a ng-click="clusters.disableCluster(cluster.clusterid, cluster.state)"><i class="fa fa-times"></i> UnManage</a></li>
+                        <li ng-if="clusters.isExpandAvailable(cluster.state)"><a ng-click="clusters.expandCluster(cluster.clusterid, cluster.state)"><i class="fa fa-plus"></i> <translate>Expand</translate></a></li>
+                        <li ng-if="clusters.isManageAvailable(cluster.state)"><a ng-click="clusters.enableCluster(cluster.clusterid, cluster.state)"><i class="fa fa-check"></i> <translate>Manage</translate></a></li>
+                        <li ng-if="clusters.isUnManageAvailable(cluster.state)"><a ng-click="clusters.disableCluster(cluster.clusterid, cluster.state)"><i class="fa fa-times"></i> <translate>UnManage</translate></a></li>
                         <li class="divider" role="separator"></li>
-                        <li ng-if="clusters.isForgetAvailable(cluster.state)"><a ng-click="clusters.removeCluster(cluster.clusterid, cluster.state)"><i class="fa fa-trash"></i> Forget</a></li>
+                        <li ng-if="clusters.isForgetAvailable(cluster.state)"><a ng-click="clusters.removeCluster(cluster.clusterid, cluster.state)"><i class="fa fa-trash"></i> <translate>Forget</translate></a></li>
                     </ul>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                             <div class="list-view-pf-additional-info-item" ng-if="cluster.state === 0">
                                 <div class="progress progress-striped active">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                        <span>Creating</span>
+                                        <span translate>Creating</span>
                                     </div>
                                 </div>
                             </div>
@@ -96,9 +96,7 @@
                                     <chart-size chart-height="80"></chart-size>
                                     <chart-tooltip show-tooltip="false"></chart-tooltip>
                                 </c3chart>
-                                <div ng-class="{'overlap-donut-left' : (cluster.percent_used > 0)}">
-                                <strong ng-bind=" cluster.total_size - cluster.free_size | bytes "></strong> of {{ cluster.total_size | bytes
-                                }} used</div>
+                                <div ng-class="{'overlap-donut-left' : (cluster.percent_used > 0)}" ng-bind-html="cluster.bind_capacity_label"></div>
                             </div>
                         <div class="list-view-pf-additional-info-item">
                             <strong ng-bind="cluster.iops"></strong> IOPS
@@ -108,19 +106,19 @@
                             <strong>
                                 <a ng-if="cluster.state === 2" ng-href="#/clusters/{{cluster.clusterid}}?tab=Hosts" ng-bind="cluster.no_of_hosts"></a>
                                 <p ng-if="cluster.state !== 2" ng-bind="cluster.no_of_hosts"></p>
-                            </strong> Hosts
+                            </strong> <translate>Hosts</translate>
                         </div>
                         <div class="list-view-pf-additional-info-item">
                             <span class="fa  fa-database"></span>
                             <strong>
                                 <a ng-if="cluster.state === 2" ng-href="#/clusters/{{cluster.clusterid}}?tab=Pools" ng-bind="cluster.no_of_volumes_or_pools"></a>
                                 <p ng-if="cluster.state !== 2" ng-bind="cluster.no_of_volumes_or_pools"></p>
-                            </strong> Pools
+                            </strong> <translate>Pools</translate>
                         </div>
                         <div class="list-view-pf-additional-info-item">
                             <span class="pficon" ng-class="(cluster.almwarncount + cluster.almcritcount)>0? ((cluster.almcritcount > 0)?'pficon-error-circle-o' : 'pficon-warning-triangle-o' ):'pficon-ok'"></span>
-                            <a ng-href="#/events?clustername={{cluster.cluster_name}}" ng-if="(cluster.almwarncount + cluster.almcritcount) > 0"><strong>{{cluster.almwarncount + cluster.almcritcount}} </strong>Alerts</a>
-                            <strong ng-if="(cluster.almwarncount + cluster.almcritcount) < 1">0 Alerts</strong>
+                            <a ng-href="#/events?clustername={{cluster.cluster_name}}" ng-if="(cluster.almwarncount + cluster.almcritcount) > 0" ng-bind-html="cluster.bind_alerts_label">Alerts</a>
+                            <strong ng-if="(cluster.almwarncount + cluster.almcritcount) < 1" translate>0 Alerts</strong>
                         </div>
                 </div>
             </div>

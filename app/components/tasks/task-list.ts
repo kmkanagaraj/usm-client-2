@@ -2,6 +2,7 @@
 
 import {UtilService} from '../rest/util';
 import {RequestService} from '../rest/request';
+import {I18N} from '../base/i18n';
 
 export class TaskListController {
     private list: Array<any>;
@@ -10,28 +11,41 @@ export class TaskListController {
     private pageSize = 20;
     private totalPages = 1;
     private searchQuery: string;
-    private taskStatus = ['Inprogress', 'Completed', 'Failed'];
+    private taskStatus = [];
     private totalCount = 0;
     private fromDateTimeFilter: string;
     private toDateTimeFilter: string;
     private selectedStatus = [];
     private filterObject = {};
+    private updateTotalCountLabel: any;
+    public  totalCountLabel: string;
+
     static $inject: Array<string> = [
         '$scope',
         '$interval',
         '$location',
-        'RequestService'
+        'RequestService',
+        '$rootScope',
+        'I18N'
     ];
     constructor(
         private $scope: ng.IScope,
         private $interval: ng.IIntervalService,
         private $location: ng.ILocationService,
-        private requestSvc: RequestService) {
+        private requestSvc: RequestService,
+        $rootScope: ng.IRootScopeService,
+        private i18n: I18N) {
+        this.taskStatus = [this.i18n._('Inprogress'), this.i18n._('Completed'), this.i18n._('Failed')];
         this.timer = this.$interval(() => this.refresh(), 5000);
         this.$scope.$on('$destroy', () => {
             this.$interval.cancel(this.timer);
         });
         this.refresh();
+        this.updateTotalCountLabel = function() {
+            this.totalCountLabel = i18n.sprintf(
+                    i18n._("%d Results"), this.totalCount);
+        };
+        this.updateTotalCountLabel();
     }
 
     public refresh() {
@@ -39,6 +53,7 @@ export class TaskListController {
             this.totalCount = data.totalcount;
             this.totalPages = Math.ceil(data.totalcount / this.pageSize);
             this.loadData(data.tasks);
+            this.updateTotalCountLabel();
         });
     }
 
@@ -105,10 +120,13 @@ export class TaskListController {
         else {
             delete this.filterObject[key];
         }
-        this.fromDateTimeFilter = this.filterObject["from"];
-        this.toDateTimeFilter = this.filterObject["to"];
+        this.fromDateTimeFilter = this.filterObject[this.i18n.N_("from")];
+        this.toDateTimeFilter = this.filterObject[this.i18n.N_("to")];
         this.selectedStatus = this.filterObject["status"];
         this.searchQuery = this.filterObject["search"];
     }
 
+    public getLocalizedDateTime(timestamp) {
+        return this.i18n.getDateTime(timestamp);
+    }
 }

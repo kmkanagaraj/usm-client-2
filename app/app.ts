@@ -37,6 +37,7 @@ import {StorageProfileDisks} from './components/clusters/storageprofile/storagep
 import {ClusterConfigDetail} from "./components/clusters/configdetail/config-detail-directive";
 
 import {BytesFilter} from './components/shared/filters/bytes';
+import {I18N} from "./components/base/i18n";
 
 /* tslint:disable */
 var es6shim = require("es6-shim");
@@ -57,6 +58,7 @@ var jquery = $ = require("jquery");
 var patternfly = require("patternfly");
 var angularPatternfly = require("angular-patternfly");
 var dateTimePicker = require("angular-bootstrap-datetimepicker");
+var gettext = require("angular-gettext");
 /* tslint:enable */
 
 class USMApp {
@@ -75,6 +77,7 @@ class USMApp {
             'ui.bootstrap.datetimepicker',
             'patternfly.notification',
             'patternfly.form',
+            'gettext',
             RequestsModule,
             RestModule,
             HostModule,
@@ -109,8 +112,18 @@ class USMApp {
             .directive("taskDetail", () => new TaskDetail())
             .controller('TaskDetailController',TaskDetailController)
             .controller('EmailController',EmailController)
-            .service('MenuService', MenuService)
-            .run( function($rootScope, $location) {
+            // For uglify mangle
+            .service('I18N', ['gettextCatalog', 'numberFilter', I18N])
+            .service('MenuService', ['I18N', MenuService])
+            .run( function($rootScope, $location, $window, gettextCatalog) {
+/* tslint:disable */
+                var langInfo = $window.navigator.language || $window.navigator.userLanguage;
+                var langUrl = langInfo.replace('-', '_');
+                //gettextCatalog.debug = true;
+                gettextCatalog.setCurrentLanguage(langInfo);
+                gettextCatalog.loadRemote('./languages/' + langUrl + '.json');
+/* tslint:enable */
+
                $rootScope.$watch(function() {
                   return $location.path();
                 },

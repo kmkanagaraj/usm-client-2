@@ -11,6 +11,8 @@ import * as ModalHelpers from '../modal/modal-helpers';
 import {numeral} from '../base/libs';
 import {RequestService} from '../rest/request';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
+import {I18N} from '../base/i18n';
+import {BytesFilter} from '../shared/filters/bytes';
 
 export class ClusterDetailController {
     private clusterHelpers: ClusterHelper;
@@ -39,6 +41,18 @@ export class ClusterDetailController {
     private rbds = [];
     private paramsObject: any;
     private isLoading: any;
+    private bytes: any;
+    private updateLabels: any;
+    private updateSummaryLabels: any;
+    private updateCapacityLabels: any;
+    public  hostsCountLabel: string;
+    public  monitorsCountLabel: string;
+    public  pgsCountLabel: string;
+    public  poolsCountLabel: string;
+    public  osdsCountLabel: string;
+    public  objectsCountLabel: string;
+    public  clusterCapacityLabel: string;
+    public  bindClusterCapacityLabel: any;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -54,7 +68,9 @@ export class ClusterDetailController {
         'StorageService',
         'BlockDeviceService',
         'RequestService',
-        'RequestTrackingService'
+        'RequestTrackingService',
+        '$sce',
+        'I18N'
     ];
 
     constructor(private qService: ng.IQService,
@@ -69,7 +85,9 @@ export class ClusterDetailController {
         private storageService: StorageService,
         private blockDeviceSvc: BlockDeviceService,
         private requestSvc: RequestService,
-        private requestTrackingSvc: RequestTrackingService) {
+        private requestTrackingSvc: RequestTrackingService,
+        private $sce: ng.ISCEService,
+        private i18n: I18N) {
 
         this.status = ["Active", "Warning", "Error", "Unknown"];
         this.isLoading = { summaryData: true, clusterUtilizationData: true, trendsChartsData: true };
@@ -130,6 +148,38 @@ export class ClusterDetailController {
         });
         this.loadClusterSummary();
         this.refreshRBDs();
+        this.updateSummaryLabels = function() {
+            this.hostsCountLabel = i18n.sprintf(i18n._("%d Hosts"),
+                                                this.isLoading.summaryData ? 0 :
+                                                this.hosts.total);
+            this.monitorsCountLabel = i18n.sprintf(i18n._("%d Monitors"),
+                                                   this.isLoading.summaryData ? 0 :
+                                                   this.monitors.total);
+            this.pgsCountLabel = i18n.sprintf(i18n._("%d PGs"),
+                                              this.isLoading.summaryData ? 0 :
+                                              this.pgs.total);
+            this.poolsCountLabel = i18n.sprintf(i18n._("%d Pools"),
+                                                this.isLoading.summaryData ? 0 :
+                                                this.pools.total);
+            this.osdsCountLabel = i18n.sprintf(i18n._("%d OSDs"),
+                                               this.isLoading.summaryData ? 0 :
+                                               this.osds.total);
+            this.objectsCountLabel = i18n.sprintf(i18n._("%d Objects"),
+                                                  this.isLoading.summaryData ? 0 :
+                                                  this.objects.total);
+        };
+        this.bytes = BytesFilter();
+        this.updateCapacityLabels = function() {
+            this.clusterCapacityLabel =
+                    i18n.sprintf(i18n._("%s of %s Used"),
+                                 '<label>' +
+                                 this.bytes(this.capacity.used) +
+                                 '</label>',
+                                 this.bytes(this.capacity.total));
+            this.bindClusterCapacityLabel = $sce.trustAsHtml(this.clusterCapacityLabel);
+        };
+        this.updateSummaryLabels();
+        this.updateCapacityLabels();
     }
 
     public loadCluster(cluster: any) {
@@ -164,6 +214,7 @@ export class ClusterDetailController {
             have accurate data */
             this.changeTimeSlot(this.selectedTimeSlot);
             this.isLoading.summaryData = false;
+            this.updateSummaryLabels();
         });
     }
 
@@ -178,9 +229,10 @@ export class ClusterDetailController {
                      '</span>';
         };
         this.clusterUtilization.config.centerLabelFn = () => {
-              return ((usage.used * 100)/usage.total).toFixed(1) + "% Used";
+              return ((usage.used * 100)/usage.total).toFixed(1) + this.i18n._("% Used");
         };
         this.isLoading.clusterUtilizationData = false;
+        this.updateCapacityLabels();
     }
 
     public getUtilizationByProfile(profiles: any, monitoringplugins: any) {
@@ -203,7 +255,7 @@ export class ClusterDetailController {
             }
         });
         if (othersProfile.total > 0) {
-            this.utilizationByProfile.profiles.push({ "usage" : { "total": othersProfile.total, "used": othersProfile.used } , "subtitle" : "Others" });
+            this.utilizationByProfile.profiles.push({ "usage" : { "total": othersProfile.total, "used": othersProfile.used } , "subtitle" : this.i18n._("Others") });
         }
     }
 
@@ -263,7 +315,7 @@ export class ClusterDetailController {
                      '</span>';
         };
         this.systemUtilization[value].config.centerLabelFn = () => {
-              return ((usage.used * 100)/usage.total).toFixed(1) + "% Used";
+              return ((usage.used * 100)/usage.total).toFixed(1) + this.i18n._("% Used");
         };
     }
 

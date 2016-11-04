@@ -9,12 +9,15 @@ import {ServerService} from '../rest/server';
 import {RequestService} from '../rest/request';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
 import * as ModalHelpers from '../modal/modal-helpers';
+import {I18N} from '../base/i18n';
+import {BytesFilter} from '../shared/filters/bytes';
 
 export class ClustersController {
     public clusterList: Array<any>;
     private clusterHelper: ClusterHelper;
     private searchQuery: string;
     private paramsObject: any;
+    private bytes: any;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -28,7 +31,9 @@ export class ClustersController {
         'StorageService',
         'ServerService',
         'RequestService',
-        'RequestTrackingService'
+        'RequestTrackingService',
+        '$sce',
+        'I18N',
     ];
 
     //Timer to refresh the data every 10 seconds
@@ -47,7 +52,10 @@ export class ClustersController {
         private storageSvc: StorageService,
         private serverService: ServerService,
         private requestSvc: RequestService,
-        private requestTrackingSvc: RequestTrackingService) {
+        private requestTrackingSvc: RequestTrackingService,
+        private $sce: ng.ISCEService,
+        private i18n: I18N) {
+        this.bytes = BytesFilter();
         this.paramsObject = $location.search();
         if (Object.keys(this.paramsObject).length > 0) {
             this.updateSearchQuery(this.paramsObject);
@@ -133,8 +141,21 @@ export class ClustersController {
                 total_size: 0,
                 free_size: 0,
                 percent_used: 0,
-                iops:0
+                iops: 0,
+                alerts_label: '',
+                capacity_label: '',
+                bind_alerts_label: this.$sce.trustAsHtml(''),
+                bind_capacity_label: this.$sce.trustAsHtml('')
             };
+
+            if ((tempCluster.almwarncount + tempCluster.almcritcount) > 0) {
+                tempCluster.alerts_label = this.i18n.sprintf(
+                        this.i18n._("%s%d%s Alerts"),
+                        '<strong>',
+                        tempCluster.almwarncount + tempCluster.almcritcount,
+                        '</strong>');
+                tempCluster.bind_alerts_label = this.$sce.trustAsHtml(tempCluster.alerts_label);
+            }
 
             if (tempCluster.used === 0) {
                 tempCluster.area_spline_values = [{ '1': 0 }, { '1': 0 }];
@@ -149,6 +170,15 @@ export class ClustersController {
                 tempCluster.total_size = summary.usage.total;
                 tempCluster.free_size = summary.usage.total - summary.usage.used;
                 tempCluster.percent_used = summary.usage.percentused;
+                if (summary.usage.percentused > 0) {
+                    tempCluster.capacity_label = this.i18n.sprintf (
+                            this.i18n._("%s of %s used"),
+                            '<strong>' +
+                            this.bytes(summary.usage.used) +
+                            '</strong>',
+                            this.bytes(summary.usage.total));
+                    tempCluster.bind_capacity_label = this.$sce.trustAsHtml(tempCluster.capacity_label);
+                }
             });
 
             this.serverService.getListByCluster(cluster.clusterid).then((nodes) => {

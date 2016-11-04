@@ -2,6 +2,8 @@
 
 import {ServerService} from '../../rest/server';
 import {Node} from '../../rest/server';
+import {I18N} from '../../base/i18n';
+import {BytesFilter} from '../../shared/filters/bytes';
 
 export class HostOverviewController {
     private id: string;
@@ -12,13 +14,32 @@ export class HostOverviewController {
     private trendCharts: any;
     private isOsd: Boolean;
     private isLoading: any;
+    private bytes: any;
+    private updateSummaryLabels: any;
+    private updateHostLabels: any;
+    public  osdsCountLabel: string;
+    public  sssCountLabel: string;
+    public  cpuusageLabel: string;
+    public  memoryusageLabel: string;
+    public  swapusageLabel: string;
+    public  storageusageLabel: string;
+    public  utilusageLabel: string;
+    public  bindCpuusageLabel: any;
+    public  bindMemoryusageLabel: any;
+    public  bindSwapusageLabel: any;
+    public  bindStorageusageLabel: any;
+    public  bindUtilusageLabel: any;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
-        'ServerService'
+        'ServerService',
+        '$sce',
+        'I18N',
     ];
 
-    constructor(private serverService: ServerService) {
+    constructor(private serverService: ServerService,
+                private $sce: ng.ISCEService,
+                private i18n: I18N) {
             this.isLoading = { summaryData: true, donutChartsData: true, trendsChartsData: true };
             this.isOsd = false;
             this.summary = {};
@@ -49,13 +70,87 @@ export class HostOverviewController {
                 this.changeTimeSlotForUtilization(this.initialTime);
                 this.changeTimeSlotForPerformance(this.initialTime);
                 this.changeTimeSlotForNetwork(this.initialTime);
+                this.updateHostLabels();
             });
+            this.updateSummaryLabels = function() {
+                this.osdsCountLabel =
+                        i18n.sprintf(i18n._("%d OSDs"),
+                                     this.isLoading.summaryData ? 0 :
+                                     this.summary.storage_logical_units.total);
+                this.sssCountLabel =
+                        i18n.sprintf(i18n._("%d Storage Services"),
+                                     this.isLoading.summaryData ? 0 :
+                                     this.summary.servicedetails.up.length + this.summary.servicedetails.down.length);
+            };
+            this.bytes = BytesFilter();
+            this.updateHostLabels = function() {
+                this.cpuusageLabel =
+                        '<strong>CPU</strong> ' +
+                        i18n.sprintf(i18n._("%s%s%%%s %sUsed%s"),
+                                     '<div class="used-data-block">',
+                                     i18n.numberFilter(this.host.utilizations.cpuusage.percentused, 1),
+                                     '</div>',
+                                     '<div class="total-data-block">',
+                                     '</div>');
+                this.bindCpuusageLabel = this.$sce.trustAsHtml(this.cpuusageLabel);
+                this.memoryusageLabel =
+                        '<strong>' +
+                        i18n._("Memory") +
+                        '</strong> ' +
+                        i18n.sprintf(i18n._("%s of %s"),
+                                    '<div class="used-data-block">' +
+                                    this.bytes(this.host.utilizations.memoryusage.used) +
+                                    '</div>',
+                                    '<div class="total-data-block">' +
+                                    this.bytes(this.host.utilizations.memoryusage.total) +
+                                    '</div>');
+                this.bindMemoryusageLabel = this.$sce.trustAsHtml(this.memoryusageLabel);
+                this.swapusageLabel =
+                        '<strong>' +
+                        i18n._("Swap") +
+                        '</strong> ' +
+                        i18n.sprintf(i18n._("%s of %s"),
+                                     '<div class="used-data-block">' +
+                                     this.bytes(this.host.utilizations.swapusage.used) +
+                                     '</div>',
+                                     '<div class="total-data-block">' +
+                                     this.bytes(this.host.utilizations.swapusage.total) +
+                                     '</div>');
+                this.bindSwapusageLabel = this.$sce.trustAsHtml(this.swapusageLabel);
+                this.storageusageLabel =
+                        '<strong>' +
+                        i18n._("Storage") +
+                        '</strong> ' +
+                        i18n.sprintf(i18n._("%s of %s"),
+                                    '<div class="used-data-block">' +
+                                    this.bytes(this.host.utilizations.storageusage.used) +
+                                    '</div>',
+                                    '<div class="total-data-block">' +
+                                    this.bytes(this.host.utilizations.storageusage.total) +
+                                    '</div>');
+                this.bindStorageusageLabel = this.$sce.trustAsHtml(this.storageusageLabel);
+                this.utilusageLabel =
+                        '<strong>' +
+                        i18n._("Utilization") +
+                        '</strong> ' +
+                        i18n.sprintf(i18n._("%s of %s"),
+                                     '<div class="used-data-block">' +
+                                     this.bytes(this.host.utilizations.networkusage.used) +
+                                     '/s</div>',
+                                     '<div class="total-data-block">' +
+                                     this.bytes(this.host.utilizations.networkusage.total) +
+                                     '/s</div>');
+                this.bindUtilusageLabel = this.$sce.trustAsHtml(this.utilusageLabel);
+            };
+            this.updateSummaryLabels();
+            this.updateHostLabels();
     }
 
     public getHostSummary(nodeid: string) {
         this.serverService.getHostSummary(nodeid).then((summary) => {
             this.summary = summary;
             this.isLoading.summaryData = false;
+            this.updateSummaryLabels();
         });
     }
 

@@ -4,6 +4,7 @@ import {ServerService} from '../rest/server';
 import {RequestService} from '../rest/request';
 import {UtilService} from '../rest/util'
 import {RequestTrackingService} from '../requests/request-tracking-svc';
+import {I18N} from "../base/i18n";
 
 export class AcceptHostsController {
     private discoveredHosts: Array<any>;
@@ -11,7 +12,8 @@ export class AcceptHostsController {
     private expandcluster:string;
     private from:string;
     private timer;
-    static $inject: Array<string> = ['$location', '$scope', '$interval', '$log', '$timeout', '$modal', 'ServerService', 'RequestService', 'UtilService', 'RequestTrackingService'];
+    public  hostsAccepteLabel: string;
+    static $inject: Array<string> = ['$location', '$scope', '$interval', '$log', '$timeout', '$modal', 'ServerService', 'RequestService', 'UtilService', 'RequestTrackingService', 'I18N'];
     constructor(
         private $location: ng.ILocationService,
         private $scope: ng.IScope,
@@ -22,7 +24,8 @@ export class AcceptHostsController {
         private serverSvc: ServerService,
         private requestSvc: RequestService,
         private utilSvc: UtilService,
-        private requestTrackingSvc: RequestTrackingService) {
+        private requestTrackingSvc: RequestTrackingService,
+        private i18n: I18N) {
         var queryParams = this.$location.search();
         this.expandcluster = queryParams['expandcluster'];
         this.from = queryParams['from'];
@@ -40,8 +43,16 @@ export class AcceptHostsController {
                     state: "UNACCEPTED",
                 };
                 this.discoveredHosts.push(host);
+                this.hostsAccepteLabel = i18n.sprintf(i18n._("%d of %d hosts accepted (%d in progress)"),
+                                                      this.hostsInitialized(),
+                                                      this.discoveredHosts.length,
+                                                      this.hostsInProgress());
             })
         })
+        this.hostsAccepteLabel = i18n.sprintf(i18n._("%d of %d hosts accepted (%d in progress)"),
+                                              this.hostsInitialized(),
+                                              this.discoveredHosts.length,
+                                              this.hostsInProgress());
     }
 
     public refreshHostsStatus() {

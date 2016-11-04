@@ -2,43 +2,43 @@
 <div class="row" ng-if="configdetail.configData!==undefined">
   <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12">
     <div>
-      <h3>Ceph Cluster Configuration</h3>
+      <h3 translate>Ceph Cluster Configuration</h3>
       <div>
-        <p>General Cluster setting and defaults</p>
+        <p translate>General Cluster setting and defaults</p>
       </div>
     </div>
     <table class="table table-striped table-bordered">
       <tbody>
         <tr>
-          <td>Default Authentication</td>
+          <td translate>Default Authentication</td>
           <td ng-bind="configdetail.configData.cluster_configs.auth_client_required"></td>
         </tr>
         <tr>
-          <td>Default Replicas</td>
+          <td translate>Default Replicas</td>
           <td ng-bind="configdetail.configData.cluster_configs.osd_pool_default_size"></td>
         </tr>
         <tr>
-          <td>Minimum Replicas</td>
+          <td translate>Minimum Replicas</td>
           <td ng-bind="configdetail.configData.cluster_configs.osd_pool_default_min_size"></td>
         </tr>
         <tr>
-          <td>Bind to IPv6</td>
+          <td translate>Bind to IPv6</td>
           <td ng-bind="configdetail.configData.cluster_configs.ms_bind_ipv6"></td>
         </tr>
         <tr>
-          <td>OSD down-Out interval</td>
+          <td translate>OSD down-Out interval</td>
           <td ng-bind="configdetail.configData.cluster_configs.mon_osd_down_out_interval + ' s'"></td>
         </tr>
         <tr>
-          <td>OSD Report Timeout</td>
+          <td translate>OSD Report Timeout</td>
           <td ng-bind="configdetail.configData.cluster_configs.mon_osd_report_timeout + ' s'"></td>
         </tr>
         <tr>
-          <td>OSD Max Backfills</td>
+          <td translate>OSD Max Backfills</td>
           <td ng-bind="configdetail.configData.cluster_configs.osd_max_backfills"></td>
         </tr>
         <tr>
-          <td>OSD Max Scrubs</td>
+          <td translate>OSD Max Scrubs</td>
           <td ng-bind="configdetail.configData.cluster_configs.osd_max_scrubs"></td>
         </tr>
       </tbody>
@@ -46,32 +46,32 @@
   </div>
   <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12">
     <div>
-      <h3>Notifications</h3>
+      <h3 translate>Notifications</h3>
       <div>
-        <p>Generate notifications for the following events</p>
+        <p translate>Generate notifications for the following events</p>
       </div>
     </div>
     <table class="table table-striped table-bordered">
       <tbody>
         <tr ng-repeat="data in configdetail.configData.notification_list.notifications">
           <td><div class="text-capitalize">{{data.description}}</div></td>
-          <td ng-if="data.enabled">Enabled</td>
-          <td ng-if="!data.enabled">Disabled</td>
+          <td ng-if="data.enabled" translate>Enabled</td>
+          <td ng-if="!data.enabled" translate>Disabled</td>
         </tr>
       </tbody>
     </table>
     <div>
-      <h3>Thresholds</h3>
+      <h3 translate>Thresholds</h3>
       <div>
-        <p>Alert user when the following utilization thresholds have been breached</p>
+        <p translate>Alert user when the following utilization thresholds have been breached</p>
       </div>
     </div>
     <table class="table table-striped table-bordered">
       <tbody>
         <tr>
           <th></th>
-          <th>Warning (Near Full)</th>
-          <th>Critical (Full)</th>
+          <th translate>Warning (Near Full)</th>
+          <th translate>Critical (Full)</th>
         </tr>
         <tr ng-repeat="data in configdetail.configData.threshold_configs">
           <td><div class="text-capitalize">{{data.description}}</div></td>
@@ -80,6 +80,6 @@
         </tr>
       </tbody>
     </table>
-    <label>Polling Interval</label>: {{configdetail.configData.monitoringinterval/60}} Minutes
+    <label translate>Polling Interval</label>: {{configdetail.configData.monitoringinterval/60}} Minutes
   </div>
 </div>

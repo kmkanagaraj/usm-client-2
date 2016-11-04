@@ -6,6 +6,7 @@ import {ClusterService} from '../../rest/clusters';
 import {RequestService} from  '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import * as ModalHelper from '../../modal/modal-helpers';
+import {I18N} from '../../base/i18n';
 
 export class ImportClusterController {
     private clusterSummary: any;
@@ -13,8 +14,20 @@ export class ImportClusterController {
     private freeHosts: Array<any>;
     private step: number;
     private error: string;
+    public importSuggestionLabel: string;
+    public bindImportSuggestionLabel: any;
 
-    static $inject: Array<string> = ['$log', '$modal', '$location', 'ClusterService', 'RequestService', 'RequestTrackingService', 'ServerService'];
+    static $inject: Array<string> = [
+        '$log',
+        '$modal',
+        '$location',
+        'ClusterService',
+        'RequestService',
+        'RequestTrackingService',
+        'ServerService',
+        '$sce',
+        'I18N'
+    ];
     constructor(
         private logService: ng.ILogService,
         private modalService: any,
@@ -22,7 +35,15 @@ export class ImportClusterController {
         private clusterService: ClusterService,
         private requestService: RequestService,
         private requestTrackingService: RequestTrackingService,
-        private serverService: ServerService) {
+        private serverService: ServerService,
+        private $sce: ng.ISCEService,
+        private i18n: I18N) {
+        this.importSuggestionLabel = i18n.sprintf(
+                i18n._("The following cluster details have been detected. Review and click %sImport%s to continue importing this " +
+                       "cluster. Unaccepted hosts will be automatically accepted during import process."),
+                '<strong>',
+                '</strong>');
+        this.bindImportSuggestionLabel = $sce.trustAsHtml(this.importSuggestionLabel);
         this.loadAllFreeHosts();
         this.step = 1;
     }

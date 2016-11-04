@@ -12,6 +12,7 @@ import {ClusterHelper} from './cluster-helpers';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
 import * as ModalHelpers from '../modal/modal-helpers';
 import {numeral} from '../base/libs';
+import {I18N} from '../base/i18n';
 
 export class ClusterExpandController {
     private name: any;
@@ -26,6 +27,9 @@ export class ClusterExpandController {
     private errorMessage: string;
     private selectedHosts: number;
     private cephMixHostRoles: boolean = false;
+    private updateSelectedHostsLabel: any;
+    public  selectedHostsLabel: string;
+
     static $inject: Array<string> = [
         '$q',
         '$log',
@@ -40,7 +44,8 @@ export class ClusterExpandController {
         'ClusterService',
         'RequestService',
         'RequestTrackingService',
-        'ConfigService'
+        'ConfigService',
+        'I18N'
     ];
 
     constructor(private qService: ng.IQService,
@@ -56,7 +61,8 @@ export class ClusterExpandController {
         private clusterService: ClusterService,
         private requestService: RequestService,
         private requestTrackingService: RequestTrackingService,
-        private configSvc: ConfigService) {
+        private configSvc: ConfigService,
+        private i18n: I18N) {
 
         this.newHost = {};
         this.selectedHosts = 0;
@@ -65,6 +71,13 @@ export class ClusterExpandController {
         this.clusterHelper = new ClusterHelper(utilService, requestService, logService, timeoutService);
         this.clusterID = this.routeParamsSvc['id'];
         this.hostTypes = ["Monitor", "OSD Host", "OSD + Monitor"];
+        this.updateSelectedHostsLabel = function() {
+            this.selectedHostsLabel = i18n.sprintf(
+                    i18n._("%d of %d hosts selected"),
+                    this.selectedHosts,
+                    this.hosts.length);
+        }
+
         this.configSvc.getConfig().then((config) => {
             if (config.ceph_mix_host_roles) {
                 this.cephMixHostRoles = config.ceph_mix_host_roles;
@@ -92,6 +105,7 @@ export class ClusterExpandController {
                 }
             });
         }
+        this.updateSelectedHostsLabel();
     }
 
     public loadCluster(cluster: any) {
@@ -147,6 +161,7 @@ export class ClusterExpandController {
         _.each(this.hosts, (host) => {
             this.selectHost(host, true);
         });
+        this.updateSelectedHostsLabel();
     }
 
     public selectHost(host: any, selection: boolean) {

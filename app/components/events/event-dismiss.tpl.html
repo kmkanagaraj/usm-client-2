@@ -3,15 +3,15 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" ng-click="$hide()">&times;</button>
-                <h4 class="modal-title"> Dismiss Events </h4>
+                <h4 class="modal-title"> <translate>Dismiss Events</translate> </h4>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" translate>
                         Dismiss this event? Enter an optional comment and click OK to continue.
                     </div>
                     <div class="col-md-12">
-                        <textarea style="width:100%" ng-model="event.dismissMessage" rows="5" autofocus placeholder="Enter a Comment"></textarea>
+                        <textarea style="width:100%" ng-model="event.dismissMessage" rows="5" autofocus placeholder="{{'Enter a Comment'|translate}}"></textarea>
                     </div>
                     <div class="col-md-12" ng-if="event.errorMessage.length > 0">
                         <label class="critical" ng-bind="event.errorMessage"></label>
@@ -19,8 +19,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-primary btn-lg " ng-click="event.dismiss();">OK</button>
-                <button type="button" class="btn btn-primary btn-lg" ng-click="$hide()">Cancel</button>
+                <button class="btn btn-primary btn-lg " ng-click="event.dismiss();" translate>OK</button>
+                <button type="button" class="btn btn-primary btn-lg" ng-click="$hide()" translate>Cancel</button>
             </div>
         </div>
     </div>

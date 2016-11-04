@@ -6,6 +6,7 @@ import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import * as ModalHelpers from '../../modal/modal-helpers';
 import {numeral} from '../../base/libs';
+import {I18N} from '../../base/i18n';
 
 export class OsdDetailController {
     private id: any;
@@ -23,6 +24,8 @@ export class OsdDetailController {
     private selectByStorageProfile: any;
     private paramsObject: any;
     private timer: ng.IPromise<any>;
+    private updateTotalSelectedOSDsLabel: any;
+    public  totalSelectedOSDsLabel: string;
 
     //Services that are used in this class.
     static $inject: Array<string> = [
@@ -36,7 +39,8 @@ export class OsdDetailController {
         'ServerService',
         'ClusterService',
         'RequestService',
-        'RequestTrackingService'
+        'RequestTrackingService',
+        'I18N'
     ];
 
     constructor(private qService: ng.IQService,
@@ -49,7 +53,8 @@ export class OsdDetailController {
         private serverService: ServerService,
         private clusterService: ClusterService,
         private requestSvc: RequestService,
-        private requestTrackingSvc: RequestTrackingService) {
+        private requestTrackingSvc: RequestTrackingService,
+        private i18n: I18N) {
 
         this.filteredOSD = {};
         this.isLeftSidebarShow = true;
@@ -59,10 +64,10 @@ export class OsdDetailController {
         /* Note: This filterList is tightly coupled with status(osd,utilization,pg) order. if order
         of element will get change , it will break the filter features */
         this.filterList.OSDStatus = [
-            {name: "Up-In", icon: "pficon pficon-ok", enabled: false, checked: false},
-            {name: "Up-Out", icon: "pficon pficon-warning-triangle-o", enabled: false, checked: false},
-            {name: "Down-In", icon: "pficon pficon-warning-triangle-o", enabled: false, checked: false},
-            {name: "Down", icon: "fa fa-arrow-circle-o-down down-color", enabled: false, checked: false}
+            {name: this.i18n._("Up-In"), icon: "pficon pficon-ok", enabled: false, checked: false},
+            {name: this.i18n._("Up-Out"), icon: "pficon pficon-warning-triangle-o", enabled: false, checked: false},
+            {name: this.i18n._("Down-In"), icon: "pficon pficon-warning-triangle-o", enabled: false, checked: false},
+            {name: this.i18n._("Down"), icon: "fa fa-arrow-circle-o-down down-color", enabled: false, checked: false}
         ];
         this.filterList.PGStatus = [
             {name: "active", checked: false},
@@ -84,14 +89,14 @@ export class OsdDetailController {
             {name: "stale", checked: false},
         ];
         this.filterList.Utilization = [
-            {name: "Full (95% or more)", icon: "progress-bar-full", enabled: false, checked: false},
-            {name: "Near Full (85% or more)", icon: "progress-bar-near-full", enabled: false, checked: false},
+            {name: this.i18n._("Full (95% or more)"), icon: "progress-bar-full", enabled: false, checked: false},
+            {name: this.i18n._("Near Full (85% or more)"), icon: "progress-bar-near-full", enabled: false, checked: false},
             {name: "50% - 85%", icon: "progress-bar-average", enabled: false, checked: false},
-            {name: "Less than 50%", icon: "progress-bar-normal", enabled: false, checked: false}
+            {name: this.i18n._("Less than 50%"), icon: "progress-bar-normal", enabled: false, checked: false}
         ];
         this.storageProfileArray = [
-            {'name': 'All', 'value': ''},
-            {'name': 'Default', 'value': 'default'},
+            {'name': this.i18n._('All'), 'value': ''},
+            {'name': this.i18n._('Default'), 'value': 'default'},
             {'name': 'SAS', 'value': 'sas'},
             {'name': 'SSD', 'value': 'ssd'}
         ];
@@ -133,6 +138,11 @@ export class OsdDetailController {
                 }
             });
         },true);
+        this.updateTotalSelectedOSDsLabel = function() {
+            this.totalSelectedOSDsLabel = i18n.sprintf(
+                    i18n._("%d OSD Selected"), this.totalSelectedOSDs.length);
+        }
+        this.updateTotalSelectedOSDsLabel();
     }
 
     /* Getting OSD list here */
@@ -226,6 +236,7 @@ export class OsdDetailController {
         this.selection.allSelectedOsds= {};
         this.totalSelectedOSDs = [];
         this.timeoutService(() => this.getOSDs(), 10000);
+        this.updateTotalSelectedOSDsLabel();
     }
 
     /* Maintaining the total selected osds by checkbox for Action */
@@ -237,7 +248,9 @@ export class OsdDetailController {
                     this.totalSelectedOSDs.push(osd);
                 }
             });
+            this.updateTotalSelectedOSDsLabel();
         });
+        this.updateTotalSelectedOSDsLabel();
     }
 
     /* Applying filter on OSD list from the ng-repeat in UI. here we have 3 set of filters based on

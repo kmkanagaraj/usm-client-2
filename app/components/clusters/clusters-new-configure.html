@@ -1,16 +1,16 @@
 <div class="cluster-configuration">
   <form name="form" class="form-horizontal" novalidate>
     <div class="form-group">
-      <label class="col-md-2 control-label" for="textInput">Name</label>
+      <label class="col-md-2 control-label" for="textInput" translate>Name</label>
       <div class="col-md-6">
         <input type="text" id="textInput" name="clusterName" ng-class="form.clusterName.$error.required && form.clusterName.$touched ? 'form-control textbox-with-red-border': 'form-control'" ng-model="cluster.clusterName" autofocus required=""></input>
       </div>
       <div ng-show="form.clusterName.$touched">
-        <div ng-show="form.clusterName.$error.required" class="error-validation-msg">Cluster name is required</div>
+        <div ng-show="form.clusterName.$error.required" class="error-validation-msg" translate>Cluster name is required</div>
       </div>
     </div>
     <div class="form-group">
-      <label class="col-md-2 control-label" for="journalSizeValue">Journal Size</label>
+      <label class="col-md-2 control-label" for="journalSizeValue" translate>Journal Size</label>
       <div class="col-md-3">
         <div class="input-group">
           <input type="number" id="journalSizeValue" name="journalSizeValue" ng-model="cluster.journalSize.value" min="1" max="10240" required class="journal-size-value">
@@ -21,14 +21,14 @@
         </div>
       </div>
       <div ng-show="!form.journalSizeValue.$valid">
-        <div ng-show="form.journalSizeValue.$error.min || form.journalSizeValue.$error.max" class="error-validation-msg">Invalid journal size. Specify a journal size value between 1 and 10240.</div>
+        <div ng-show="form.journalSizeValue.$error.min || form.journalSizeValue.$error.max" class="error-validation-msg" translate>Invalid journal size. Specify a journal size value between 1 and 10240.</div>
       </div>
     </div>
     <div class="form-group">
       <div class="col-md-6 col-md-offset-2">
         <p class="text-info">
            <label class="fa fa-exclamation-circle"></label>
-           Automatic cluster expansion will be enabled.  Whenever new disks are added to any host of this cluster, the cluster will be expanded automatically.
+           <translate>Automatic cluster expansion will be enabled.  Whenever new disks are added to any host of this cluster, the cluster will be expanded automatically.</translate>
         </p>
       </div>
     </div>

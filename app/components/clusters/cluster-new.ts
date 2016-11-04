@@ -22,6 +22,7 @@ import * as ModalHelpers from '../modal/modal-helpers';
 import {VolumeHelpers} from '../volumes/volume-helpers';
 import {RequestTrackingService} from '../requests/request-tracking-svc';
 import {numeral} from '../base/libs';
+import {I18N} from '../base/i18n';
 
 export class ClusterNewController {
     private step: number;
@@ -53,6 +54,9 @@ export class ClusterNewController {
     private clusterHelper: ClusterHelper;
     private selectedHosts: number;
     private cephMixHostRoles: boolean = false;
+    private updateSelectedHostsLabel: any;
+    public  selectedHostsLabel: string;
+
     static $inject: Array<string> = [
         '$q',
         '$log',
@@ -68,7 +72,8 @@ export class ClusterNewController {
         'UtilService',
         'RequestService',
         'RequestTrackingService',
-        'ConfigService'
+        'ConfigService',
+        'I18N'
     ];
     /**
      * Initializing the properties of the class ClusterNewController.
@@ -87,7 +92,8 @@ export class ClusterNewController {
         private utilService: UtilService,
         private requestService: RequestService,
         private requestTrackingService: any,
-        private configSvc: ConfigService) {
+        private configSvc: ConfigService,
+        private i18n: I18N) {
 
         this.step = 1;
         this.clusterHelper = new ClusterHelper(utilService, requestService, logService, timeoutService);
@@ -98,7 +104,7 @@ export class ClusterNewController {
         this.pools = [];
         this.disks = [];
         this.newHost = {};
-        this.hostTypes = ["Monitor", "OSD Host", "OSD + Monitor"];
+        this.hostTypes = [this.i18n._("Monitor"), this.i18n._("OSD Host"), this.i18n._("OSD + Monitor")];
         this.availableNetworks = [];
         this.selectedHosts = 0;
         this.clusterTypes = this.clusterHelper.getClusterTypes();
@@ -114,6 +120,12 @@ export class ClusterNewController {
 
         this.newPool.copyCountList = VolumeHelpers.getCopiesList();
         this.newPool.copyCount = VolumeHelpers.getRecomendedCopyCount();
+        this.updateSelectedHostsLabel = function() {
+            this.selectedHostsLabel = i18n.sprintf(
+                    i18n._("%d of %d hosts selected"),
+                    this.selectedHosts,
+                    this.hosts.length);
+        }
 
         var queryParams = locationService.search();
         if (Object.keys(queryParams).length > 0 && queryParams['hostsaccepted'] === "true") {
@@ -144,6 +156,7 @@ export class ClusterNewController {
                 this.cephMixHostRoles = config.ceph_mix_host_roles;
             }
         });
+        this.updateSelectedHostsLabel();
     }
 
     public updateFingerPrint(host: any) {
@@ -198,6 +211,7 @@ export class ClusterNewController {
             this.availableNetworks[0].cluster = true;
             this.availableNetworks[0].access = true;
         }
+        this.updateSelectedHostsLabel();
     }
     public isMon(hostType: string): boolean {
         return hostType === this.hostTypes[0] || hostType === this.hostTypes[2];
@@ -285,6 +299,7 @@ export class ClusterNewController {
         _.each(this.hosts, (host) => {
             this.selectHost(host, true);
         });
+        this.updateSelectedHostsLabel();
     }
 
     public showDisks() {
@@ -384,11 +399,12 @@ export class ClusterNewController {
         else if(this.step === 2 && nextStep === 1){
             monCount = this.getMonCount();
             if(monCount < this.minMonsRequired){
-                this.errorMessage = " Choose at least " + this.minMonsRequired + " monitors to continue";
+                // Cannot extract the first " " with nggettext_extract 
+                this.errorMessage = " " + this.i18n.sprintf(this.i18n._("Choose at least %d monitors to continue"), this.minMonsRequired);
                 configValid = false;
             }
             else if(monCount%2 === 0){
-                this.errorMessage = " Number of Monitors cannot be even";
+                this.errorMessage = this.i18n._(" Number of Monitors cannot be even");
                 configValid = false;
             }
             else{

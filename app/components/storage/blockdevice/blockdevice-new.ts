@@ -12,6 +12,8 @@ import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import * as ModalHelpers from '../../modal/modal-helpers';
 import {numeral} from '../../base/libs';
+import {I18N} from '../../base/i18n';
+import {BytesFilter} from '../../shared/filters/bytes';
 
 export class BlockDeviceController {
     private cluster: Cluster;
@@ -25,6 +27,9 @@ export class BlockDeviceController {
     private rbdList: any[];
     private summary: boolean = false;
     private devicesSize: number;
+    private bytes: any;
+    private updateSelectedPoolLabel: any;
+    public  selectedPoolLabel: string;
 
     static $inject: Array<string> = [
         '$routeParams',
@@ -36,7 +41,8 @@ export class BlockDeviceController {
         'StorageService',
         'BlockDeviceService',
         'RequestTrackingService',
-        'RequestService'
+        'RequestService',
+        'I18N'
     ];
     constructor(private $routeParams: ng.route.IRouteParamsService,
         private $location: ng.ILocationService,
@@ -47,8 +53,15 @@ export class BlockDeviceController {
         private storageSvc: StorageService,
         private blockDeviceSvc: BlockDeviceService,
         private requestTrackingSvc: RequestTrackingService,
-        private requestSvc: RequestService) {
+        private requestSvc: RequestService,
+        private i18n: I18N) {
         this.devicesSize = 0;
+        this.bytes = BytesFilter();
+        this.updateSelectedPoolLabel = function() {
+            this.selectedPoolLabel = i18n.sprintf(
+                    i18n._("%s Available"),
+                    this.bytes(this.selectedPool.capacity.total - this.selectedPool.capacity.used));
+        }
         let clusterId = $routeParams['clusterid'];
         this.clusterSvc.get(clusterId).then(cluster => {
             this.cluster = cluster;
@@ -73,8 +86,10 @@ export class BlockDeviceController {
             else {
                 this.useExistingPool = false;
             }
+            this.updateSelectedPoolLabel();
         });
         this.rbdList = [];
+        this.updateSelectedPoolLabel();
     }
 
     public processUtilization() {

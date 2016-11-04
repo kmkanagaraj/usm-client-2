@@ -5,6 +5,8 @@ import {StorageProfile} from '../../rest/storage-profile';
 import {ServerService} from '../../rest/server';
 import {StorageProfileService} from '../../rest/storage-profile';
 import {numeral} from '../../base/libs';
+import {I18N} from "../../base/i18n";
+import {BytesFilter} from '../../shared/filters/bytes';
 
 export class StorageProfileDisksController {
     private hosts;
@@ -15,15 +17,20 @@ export class StorageProfileDisksController {
     private storageProfileDisks: {};
     private storageDisks: any[];
     private addingProfile = false;
+    private bytes: any;
+
     static $inject: Array<string> = [
         '$q',
         'ServerService',
-        'StorageProfileService'
+        'StorageProfileService',
+        'I18N'
     ];
     public constructor(
         private $q: ng.IQService,
         private serverSvc: ServerService,
-        private storageProfileSvc: StorageProfileService) {
+        private storageProfileSvc: StorageProfileService,
+        private i18n: I18N) {
+        this.bytes = BytesFilter();
         this.loadData();
     }
 
@@ -56,6 +63,13 @@ export class StorageProfileDisksController {
 
     public getDisksForStorageProfile(storageProfile: StorageProfile): any[] {
         return storageProfile && this.storageProfileDisks[storageProfile.name];
+    }
+
+    public getDisksForStorageProfileLabel(storageProfile: StorageProfile): string {
+        return this.i18n.sprintf(
+                this.i18n._("%d Disks %s"),
+                this.getDisksForStorageProfile(storageProfile).length,
+                this.bytes(this.getStorageProfileSize(storageProfile)));
     }
 
     public getStorageProfileSize(storageProfile: StorageProfile): number {

@@ -14,6 +14,7 @@ import {GetCephPGsForOSD} from '../storage-util';
 import {GetTwosPowList} from '../storage-util';
 import {GetOptimalSizeForPGNum} from '../storage-util';
 import {numeral} from '../../base/libs';
+import {I18N} from '../../base/i18n';
 
 export class ObjectStorageController {
     private cluster: Cluster;
@@ -21,8 +22,8 @@ export class ObjectStorageController {
     private slusFiltered: SLU[];
     private name: string;
     private count: number = 1;
-    private types = ['Standard'];
-    private type = 'Standard';
+    private types = [];
+    private type = null;
     private replicas: number = 3;
     private ecprofiles = [{ k: 2, m: 1, text: '2+1', value: 'default' }, { k: 4, m: 2, text: '4+2', value: 'k4m2' }, { k: 6, m: 3, text: '6+3', value: 'k6m3' }, { k: 8, m: 4, text: '8+4', value: 'k8m4' }];
     private ecprofile = this.ecprofiles[0];
@@ -38,6 +39,12 @@ export class ObjectStorageController {
     private poolName: string;
     private poolWithRbd: string;
     private rbdList: any[];
+    private updateOsdsCountLabel: any;
+    public  ecprofileLabel: string;
+    public  osdsCountLabel: string;
+    public  poolClusterLabel: string;
+    private performanceNoteLabel: string;
+    public  bindPerformanceNoteLabel: any;
 
     static $inject: Array<string> = [
         '$routeParams',
@@ -49,7 +56,9 @@ export class ObjectStorageController {
         'StorageProfileService',
         'StorageService',
         'RequestTrackingService',
-        'RequestService'
+        'RequestService',
+        '$sce',
+        'I18N'
     ];
     constructor(private $routeParams: ng.route.IRouteParamsService,
         private $location: ng.ILocationService,
@@ -60,9 +69,13 @@ export class ObjectStorageController {
         private storageProfileSvc: StorageProfileService,
         private storageSvc: StorageService,
         private requestTrackingSvc: RequestTrackingService,
-        private requestSvc: RequestService) {
+        private requestSvc: RequestService,
+        private $sce: ng.ISCEService,
+        private i18n: I18N) {
+        this.types.push(this.i18n._('Standard'));
+        this.type = this.i18n._('Standard');
         if(this.poolWithRbd !== "true") {
-            this.types.push('Erasure Coded');
+            this.types.push(this.i18n._('Erasure Coded'));
         }
         let clusterId = $routeParams['clusterid'];
         this.clusterSvc.get(clusterId).then(cluster => {
@@ -78,6 +91,31 @@ export class ObjectStorageController {
             this.profile = this.profiles[0];
             this.filterOSDs(this.profile.name);
         });
+        this.ecprofileLabel = i18n.sprintf(
+                i18n.getPlural(this.ecprofile.m,
+                               "%d Chunks of data; can loose up to %d host",
+                               "%d Chunks of data; can loose up to %d hosts",
+                               {}),
+                this.ecprofile.k,
+                this.ecprofile.m);
+        this.updateOsdsCountLabel = function() {
+            this.osdsCountLabel = i18n.sprintf(i18n._("%d OSDs"),
+                                               this.slusFiltered.length);
+        };
+        this.updateOsdsCountLabel();
+        this.performanceNoteLabel = '<strong>' + i18n._("Note:") + '</strong>' +
+                '&nbsp;' +
+                i18n.sprintf(i18n._("" +
+                        "Be aware that the PG count per pool value is critical " +
+                        "for cluster performance and stability. Please visit " +
+                        "the %sCeph PGs per Pool Calc tool%s to better " +
+                        "understand what value should be used."),
+                        '<a href="http://ceph.com/pgcalc/" target="_blank">',
+                        '</a>');
+        this.bindPerformanceNoteLabel = $sce.trustAsHtml(this.performanceNoteLabel);
+        this.poolClusterLabel = i18n.sprintf(
+                i18n._("Pools to create on %s"),
+                this.cluster.name);
     }
 
     public filterOSDs(storageprofile: string) {
@@ -87,12 +125,13 @@ export class ObjectStorageController {
     // Replica count is required for Placement Groups calculations
     // In case of EC pools, replica would be the sum of k and m
     public getReplicaCount() {
-        if (this.type === 'Standard') {
+        if (this.type === this.i18n._('Standard')) {
             return this.replicas;
         }
         else {
             return this.ecprofile.k + this.ecprofile.m;
         }
+        this.updateOsdsCountLabel();
     }
 
     public changeStorageProfile(selectedProfile: StorageProfile) {
@@ -157,7 +196,7 @@ export class ObjectStorageController {
                 options: {}
             };
 
-            if (pool.type === 'Standard') {
+            if (pool.type === this.i18n._('Standard')) {
                 storage['type'] = 'replicated';
                 storage['replicas'] = pool.replicas;
             }

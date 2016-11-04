@@ -7,6 +7,8 @@ import {RequestService} from '../../rest/request';
 import {RequestTrackingService} from '../../requests/request-tracking-svc';
 import {numeral} from '../../base/libs';
 import * as ModalHelpers from '../../modal/modal-helpers';
+import {I18N} from '../../base/i18n';
+import {BytesFilter} from '../../shared/filters/bytes';
 
 export class ObjectStorageListController {
     private clusterId: string;
@@ -22,6 +24,7 @@ export class ObjectStorageListController {
     private ecprofiles = [];
     private searchQuery: string;
     private paramsObject: any;
+    private bytes: any;
     static $inject: Array<string> = [
         '$scope',
         '$interval',
@@ -34,7 +37,9 @@ export class ObjectStorageListController {
         'StorageService',
         'RequestService',
         'RequestTrackingService',
-        'growl'
+        'growl',
+        '$sce',
+        'I18N',
     ];
     constructor(
         private $scope: ng.IScope,
@@ -48,7 +53,10 @@ export class ObjectStorageListController {
         private storageSvc: StorageService,
         private requestSvc: RequestService,
         private requestTrackingSvc: RequestTrackingService,
-        private growl: any) {
+        private growl: any,
+        private $sce: ng.ISCEService,
+        private i18n: I18N) {
+        this.bytes = BytesFilter();
         this.ecprofiles['default'] = '2+1';
         this.ecprofiles['k4m2'] = '4+2';
         this.ecprofiles['k6m3'] = '6+3';
@@ -145,6 +153,12 @@ export class ObjectStorageListController {
     }
 
     public loadData(storages) {
+        for (var i in storages.list) {
+            storages.list[i].quotaObjectsLabel = this.i18n.sprintf(
+                    this.i18n._("%d objects"),
+                    (storages.list[i].quota_params.quota_max_objects != undefined) ?
+                    storages.list[i].quota_params.quota_max_objects : 0);
+        }
         this.list = storages;
     }
 

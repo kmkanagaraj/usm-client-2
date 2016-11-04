@@ -8,13 +8,13 @@
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
                             <h2 class="card-pf-title">
-                                Host Summary
+                                <translate>Host Summary</translate>
                             </h2>
                             <center><div ng-if="hostoverview.isLoading.summaryData" class="spinner"></div></center>
                             <div ng-if="!hostoverview.isLoading.summaryData" class="card-pf-body">
                                 <p class="card-pf-aggregate-status-notifications">
                                     <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <label>Host Role</label>
+                                        <label translate>Host Role</label>
                                         <div>
                                             <span ng-repeat="role in hostoverview.summary.role">
                                                 {{role}}
@@ -22,11 +22,11 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <label>Up Since</label>
+                                        <label translate>Up Since</label>
                                         <div>{{hostoverview.summary.uptime | date : 'medium' }}</div>
                                     </div>
                                     <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <label>Cluster</label>
+                                        <label translate>Cluster</label>
                                         <div>
                                             <span ng-if="hostoverview.summary.clusterstatus === 0" class="pficon pficon-ok"></span>
                                             <span ng-if="hostoverview.summary.clusterstatus === 1" class="pficon pficon-warning-triangle-o"></span>
@@ -41,7 +41,7 @@
                     <div ng-if="hostoverview.isOsd" class="col-xs-12 col-sm-12 col-md-3">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
                             <h2 class="card-pf-title">
-                                <span ng-if="!hostoverview.isLoading.summaryData">{{hostoverview.summary.storage_logical_units.total}}</span> OSDs
+                                {{hostoverview.osdsCountLabel}}
                             </h2>
                             <div class="card-pf-body">
                                 <center><div ng-if="hostoverview.isLoading.summaryData" class="spinner"></div></center>
@@ -68,7 +68,7 @@
                     <div class="col-xs-12 col-sm-12" ng-class="hostoverview.isOsd?'col-md-3':'col-md-6'">
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
                             <h2 class="card-pf-title">
-                                <span ng-if="!hostoverview.isLoading.summaryData">{{hostoverview.summary.servicedetails.up.length + hostoverview.summary.servicedetails.down.length }}</span> Storage Services
+                                {{hostoverview.sssCountLabel}}
                             </h2>
                             <div class="card-pf-body">
                                 <center><div ng-if="hostoverview.isLoading.summaryData" class="spinner"></div></center>
@@ -92,7 +92,7 @@
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-5">
-                                    <span class="pull-left system-performance">Utilization</span>
+                                    <span class="pull-left system-performance" translate>Utilization</span>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-7">
                                     <span class="pull-right time-slot">
@@ -110,7 +110,7 @@
                                                 <strong>CPU</strong>
                                                 <div class="empty-chart-content no-data-available">
                                                     <span class="pficon pficon-info"></span>
-                                                    <span>No data available</span>
+                                                    <span translate>No data available</span>
                                                 </div>
                                             </center>
                                         </div>
@@ -123,14 +123,7 @@
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
-                                                    <center>
-                                                        <strong>CPU</strong>
-                                                        <div class="used-data-block">
-                                                            {{hostoverview.host.utilizations.cpuusage.percentused | number : 1}}%
-                                                        </div>
-                                                         <div class="total-data-block">
-                                                           Used
-                                                        </div>
+                                                    <center ng-bind-html="hostoverview.bindCpuusageLabel">
                                                     </center>
                                                 </div>
                                             </div>
@@ -144,10 +137,10 @@
                                     <div ng-if="!hostoverview.isLoading.donutChartsData && !hostoverview.isLoading.trendsChartsData" class="card-pf-body">
                                         <div class="row" ng-if="hostoverview.donutCharts.memory.data.total === 0">
                                             <center>
-                                                <strong>Memory</strong>
+                                                <strong translate>Memory</strong>
                                                 <div class="empty-chart-content no-data-available">
                                                     <span class="pficon pficon-info"></span>
-                                                    <span>No data available</span>
+                                                    <span translate>No data available</span>
                                                 </div>
                                             </center>
                                         </div>
@@ -160,14 +153,7 @@
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
-                                                    <center>
-                                                        <strong>Memory</strong>
-                                                        <div class="used-data-block">
-                                                            {{hostoverview.host.utilizations.memoryusage.used | bytes}}
-                                                        </div>
-                                                         <div class="total-data-block">
-                                                           of {{hostoverview.host.utilizations.memoryusage.total | bytes}}
-                                                        </div>
+                                                    <center ng-bind-html="hostoverview.bindMemoryusageLabel">
                                                     </center>
                                                 </div>
                                             </div>
@@ -181,10 +167,10 @@
                                     <div ng-if="!hostoverview.isLoading.donutChartsData && !hostoverview.isLoading.trendsChartsData" class="card-pf-body">
                                         <div class="row" ng-if="hostoverview.donutCharts.swap.data.total === 0">
                                             <center>
-                                                <strong>Swap</strong>
+                                                <strong translate>Swap</strong>
                                                 <div class="empty-chart-content no-data-available">
                                                     <span class="pficon pficon-info"></span>
-                                                    <span>No data available</span>
+                                                    <span translate>No data available</span>
                                                 </div>
                                             </center>
                                         </div>
@@ -197,14 +183,7 @@
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
-                                                    <center>
-                                                        <strong>Swap</strong>
-                                                        <div class="used-data-block">
-                                                            {{hostoverview.host.utilizations.swapusage.used | bytes}}
-                                                        </div>
-                                                         <div class="total-data-block">
-                                                           of {{hostoverview.host.utilizations.swapusage.total | bytes}}
-                                                        </div>
+                                                    <center ng-bind-html="hostoverview.bindSwapusageLabel">
                                                     </center>
                                                 </div>
                                             </div>
@@ -218,10 +197,10 @@
                                     <div ng-if="!hostoverview.isLoading.donutChartsData && !hostoverview.isLoading.trendsChartsData" class="card-pf-body">
                                         <div class="row" ng-if="hostoverview.donutCharts.storage.data.total === 0">
                                             <center>
-                                                <strong>Storage</strong>
+                                                <strong translate>Storage</strong>
                                                 <div class="empty-chart-content no-data-available">
                                                     <span class="pficon pficon-info"></span>
-                                                    <span>No data available</span>
+                                                    <span translate>No data available</span>
                                                 </div>
                                             </center>
                                         </div>
@@ -234,14 +213,7 @@
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
-                                                    <center>
-                                                        <strong>Storage</strong>
-                                                        <div class="used-data-block">
-                                                            {{hostoverview.host.utilizations.storageusage.used|bytes}}
-                                                        </div>
-                                                         <div class="total-data-block">
-                                                           of {{hostoverview.host.utilizations.storageusage.total | bytes}}
-                                                        </div>
+                                                    <center ng-bind-html="hostoverview.bindStorageusageLabel">
                                                     </center>
                                                 </div>
                                             </div>
@@ -260,7 +232,7 @@
                         <div class="card-pf card-pf-aggregate-status card-pf-with-action custom-height">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-5">
-                                    <span class="pull-left system-performance">Network</span>
+                                    <span class="pull-left system-performance" translate>Network</span>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-7">
                                     <span class="pull-right time-slot">
@@ -275,10 +247,10 @@
                                     <div ng-if="!hostoverview.isLoading.donutChartsData && !hostoverview.isLoading.trendsChartsData" class="card-pf-body">
                                         <div class="row" ng-if="hostoverview.donutCharts.network.data.total === 0">
                                             <center>
-                                                <strong>Utilization</strong>
+                                                <strong translate>Utilization</strong>
                                                 <div class="empty-chart-content no-data-available">
                                                     <span class="pficon pficon-info"></span>
-                                                    <span>No data available</span>
+                                                    <span translate>No data available</span>
                                                 </div>
                                             </center>
                                         </div>
@@ -291,14 +263,7 @@
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                                 <div class="utilization-data-block">
-                                                    <center>
-                                                        <strong>Utilization</strong>
-                                                        <div class="used-data-block">
-                                                            {{hostoverview.host.utilizations.networkusage.used|bytes}}/s
-                                                        </div>
-                                                         <div class="total-data-block">
-                                                           of {{hostoverview.host.utilizations.networkusage.total | bytes}}/s
-                                                        </div>
+                                                    <center ng-bind-html="hostoverview.bindUtilusageLabel">
                                                     </center>
                                                 </div>
                                             </div>
@@ -313,14 +278,14 @@
                                         <div ng-if="!hostoverview.isLoading.summaryData" class="network-detail">
                                             <div class="network-detail-padding">
                                                 <span class="pficon pficon-ok"></span>
-                                                <label>Cluster Network </label>
+                                                <label translate>Cluster Network </label>
                                                 <div class="ip-address-detail">
                                                     <small>{{hostoverview.host.cluster_ip4}}</small>
                                                 </div>
                                             </div>
                                             <div class="network-detail-padding">
                                                 <span class="pficon pficon-ok"></span>
-                                                <label>Public Network</label>
+                                                <label translate>Public Network</label>
                                                 <div class="ip-address-detail">
                                                     <small>{{hostoverview.host.public_ip4}}</small>
                                                 </div>

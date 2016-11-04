@@ -16,11 +16,46 @@ build-all: build-setup build
 build-setup:
 	sudo npm install -g gulp
 	sudo npm install -g tsd
+	sudo npm install -g grunt-cli
 	npm install
 	tsd install
 
-build:
+build: check
 	gulp compile --prod
+	grunt nggettext_compile
+
+pot:
+	gulp tsc
+	grunt nggettext_extract
+
+HAVE_PO := $(shell ls po/*.po 2>/dev/null)
+check:
+ifdef HAVE_PO
+	# Should be 'Language: zh-CN' but not 'Language: zh_CN' in zh_CN.po
+	# for Intl.DateTimeFormat() in app/components/base/i18n.ts
+	for po in po/*.po ; do \
+	    mo="po/`basename $$po .po`.mo"; \
+	    msgfmt --check --verbose $$po -o $$mo; \
+	    if test "$$?" -ne 0 ; then \
+	        exit -1; \
+	    fi; \
+	    rm $$mo; \
+	    name=`echo "$$po" | grep '-'`; \
+	    if test "x$$name" != x ; then \
+	        right_name=`echo $$language | sed -e 's/-/_/'`; \
+	        echo "ERROR: WRONG $$name CORRECTION: $$right_name"; \
+	        exit -1; \
+	    fi; \
+	    language=`grep '^"Language:' "$$po" | grep '_'`; \
+	    if test "x$$language" != x ; then \
+	        right_language=`echo $$language | sed -e 's/_/-/'`; \
+	        echo "ERROR: WRONG $$language CORRECTION: $$right_language in $$po"; \
+	        exit -1; \
+	    fi; \
+	done;
+else
+	@echo No PO files
+endif
 
 dist: build
 	@echo "making dist tarball in $(TARNAME)"

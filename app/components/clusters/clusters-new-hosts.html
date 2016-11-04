@@ -1,5 +1,5 @@
 <div>
-    <h3>
+    <h3 translate>
       Available Hosts
     </h3>
 
@@ -9,7 +9,7 @@
                 <div class="form-group has-clear">
                     <div class="search-pf-input-group">
                         <label for="search1" class="sr-only">Search</label>
-                        <input id="search1" ng-model="searchText" type="search" class="form-control" placeholder="Search"></input>
+                        <input id="search1" ng-model="searchText" type="search" class="form-control" placeholder="{{'Search'|translate}}"></input>
                         <button type="button" class="clear" aria-hidden="true" style="display: none;"><span class="pficon pficon-close"></span></button>
                     </div>
                 </div>
@@ -19,10 +19,10 @@
             </form>
         </div>
         <div class="col-md-6">
-            <span class="col-md-4"><label class="available-hosts-count"> {{ cluster.selectedHosts }} of {{ cluster.hosts.length }} hosts selected</label></span>
-            <a ng-click="cluster.selectAllHosts()" href="">Select All</a>
+            <span class="col-md-4"><label class="available-hosts-count"> {{ cluster.selectedHostsLabel }}</label></span>
+            <a ng-click="cluster.selectAllHosts()" href="" translate>Select All</a>
             <div class="pull-right">
-                <button class="btn btn-primary" ng-disabled="isAddRow" ng-click="isAddRow = true; cluster.newHost={}; cluster.errorMessage = ''">Add</button>
+                <button class="btn btn-primary" ng-disabled="isAddRow" ng-click="isAddRow = true; cluster.newHost={}; cluster.errorMessage = ''" translate>Add</button>
             </div>
         </div>
         <div class="col-md-12">
@@ -32,21 +32,21 @@
 
     <div class="row cluster-add-host-row" ng-show="isAddRow">
         <div class="col-md-3">
-            <input type="text" class="form-control" ng-model="cluster.newHost.hostname" placeholder="Hostname" ng-blur="cluster.updateFingerPrint(cluster.newHost)"> </input>
+            <input type="text" class="form-control" ng-model="cluster.newHost.hostname" placeholder="{{'Hostname'|translate}}" ng-blur="cluster.updateFingerPrint(cluster.newHost)"> </input>
         </div>
         <div class="col-md-3">
-            <input type="text" class="form-control" ng-model="cluster.newHost.username" placeholder="Username"> </input>
+            <input type="text" class="form-control" ng-model="cluster.newHost.username" placeholder="{{'Username'|translate}}"> </input>
         </div>
         <div class="col-md-3">
-            <input type="password" class="form-control" ng-model="cluster.newHost.password" placeholder="Password"> </input>
+            <input type="password" class="form-control" ng-model="cluster.newHost.password" placeholder="{{'Password'|translate}}"> </input>
         </div>
         <div class="col-md-3">
             <div class="pull-right">
                 <button class="btn btn-primary" ng-disabled="cluster.newHost.isVerifyingHost || !(cluster.newHost.hostname && cluster.newHost.username && cluster.newHost.password) || cluster.newHost.cautionMessage === 'Error!.'"
                 ng-click="cluster.addNewHost(newHost)">
-                    <i class="fa fa-spinner fa-spin" ng-show="cluster.newHost.isVerifyingHost"></i> Ok
+                    <i class="fa fa-spinner fa-spin" ng-show="cluster.newHost.isVerifyingHost"></i> <translate>Ok</translte>
                 </button>
-                <button class="btn btn-default" ng-click="isAddRow = false;">Cancel</button>
+                <button class="btn btn-default" ng-click="isAddRow = false;" translate>Cancel</button>
             </div>
         </div>
         <div ng-show="cluster.newHost.errorMessage.length>0" class="col-md-12 error-msg-color">

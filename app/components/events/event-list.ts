@@ -2,6 +2,7 @@
 
 import {UtilService} from '../rest/util';
 import {EventService} from '../rest/events';
+import {I18N} from '../base/i18n';
 
 export class EventListController {
     private list: Array<any>;
@@ -30,19 +31,26 @@ export class EventListController {
         "info"];
     private criticalEvents = [this.alarmStatus[1], this.alarmStatus[2]];
     private warningEvents = [this.alarmStatus[0], this.alarmStatus[3], this.alarmStatus[4]];
+    private updateTotalCountLabel: any;
+    public  totalCountLabel: string;
+
     static $inject: Array<string> = [
         '$scope',
         '$interval',
         '$location',
         '$modal',
-        'EventService'
+        'EventService',
+        '$rootScope',
+        'I18N'
     ];
     constructor(
         private $scope: ng.IScope,
         private $interval: ng.IIntervalService,
         private $location: ng.ILocationService,
         private modalSvc,
-        private eventSvc: EventService) {
+        private eventSvc: EventService,
+        $rootScope: ng.IRootScopeService,
+        private i18n: I18N) {
         var queryParams = $location.search();
         if (Object.keys(queryParams).length > 0) {
             if (queryParams['searchmessage'] !== undefined) {
@@ -67,6 +75,11 @@ export class EventListController {
         });
         this.filterObject['status'] = this.statusFilter;
         this.refresh();
+        this.updateTotalCountLabel = function() {
+            this.totalCountLabel = i18n.sprintf(i18n._("%d Events"),
+                                                this.totalCount);
+        }
+        this.updateTotalCountLabel();
     }
 
     public refresh() {
@@ -109,6 +122,7 @@ export class EventListController {
             this.totalCount = data.totalcount;
             this.totalPages = Math.ceil(data.totalcount / this.pageSize);
             this.list = data.events;
+            this.updateTotalCountLabel();
         });
         this.requestObject['pageno'] = 1;
         this.requestObject['severity'] = this.criticalEvents;
@@ -154,8 +168,8 @@ export class EventListController {
 
     public clearFilter(key) {
         delete this.filterObject[key];
-        this.fromDateTimeFilter = this.filterObject["from"];
-        this.toDateTimeFilter = this.filterObject["to"];
+        this.fromDateTimeFilter = this.filterObject[this.i18n.N_("from")];
+        this.toDateTimeFilter = this.filterObject[this.i18n.N_("to")];
         this.searchQuery = this.filterObject[this.searchEntity];
         this.severity = this.filterObject["severity"];
     }
@@ -188,5 +202,7 @@ export class EventListController {
         });
     }
 
-
+    public getLocalizedDateTime(timestamp) {
+        return this.i18n.getDateTime(timestamp);
+    }
 }
